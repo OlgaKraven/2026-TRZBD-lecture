@@ -1,0 +1,29 @@
+{
+  "language": "ru-RU",
+  "allowedTerms": [
+    "МДК",
+    "ПМ",
+    "TRZBD",
+    "GitHub",
+    "GitHub Pages",
+    "Playwright",
+    "TypeScript",
+    "React",
+    "Vite",
+    "localStorage",
+    "QR-код",
+    "IPR SMART",
+    "MySQL",
+    "PostgreSQL",
+    "SQL",
+    "PL/pgSQL",
+    "SQL/PSM",
+    "InnoDB",
+    "СУБД",
+    "ER-диаграмма",
+    "CASE-средство",
+    "Workbench",
+    "mysqldump"
+  ],
+  "ignoredScopes": ["URL", "program-code", "topic-identifiers", "file-names", "terminal-commands", "official-names", "author-surnames"]
+}

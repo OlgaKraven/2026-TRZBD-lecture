@@ -1,0 +1,44 @@
+{
+  "name": "2026-trzbd-lecture",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "generate:qr": "node scripts/generate-qr.mjs",
+    "typecheck": "tsc -b",
+    "lint": "oxlint src scripts tests",
+    "test": "vitest run",
+    "spellcheck": "node scripts/spellcheck.mjs",
+    "build": "npm run prepare:assets && npm run generate:qr && tsc -b && vite build",
+    "preview": "vite preview",
+    "test:e2e": "playwright test",
+    "export:pdf": "node scripts/export-pdf.mjs",
+    "check:pdf": "node scripts/check-pdf.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.38.0",
+    "motion": "^13.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.13.3",
+    "@types/pngjs": "^6.0.5",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "jsqr": "^1.4.0",
+    "oxlint": "^1.79.0",
+    "pdf-lib": "^1.17.1",
+    "pngjs": "^7.0.0",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.4",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
+  }
+}

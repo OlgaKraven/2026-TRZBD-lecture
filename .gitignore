@@ -1,0 +1,9 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+outputs/
+config/teacher-profile.json
+.env
+.env.*
+!.env.example
