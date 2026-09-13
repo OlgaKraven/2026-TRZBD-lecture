@@ -9,7 +9,7 @@ export default defineConfig({
   reporter: [['list']],
   use: {
     baseURL: 'http://127.0.0.1:5194/2026-TRZBD-lecture/',
-    channel: 'chrome',
+    channel: process.env.CI ? undefined : 'chrome',
     headless: true,
     trace: 'retain-on-failure',
   },

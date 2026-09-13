@@ -11,17 +11,22 @@
     "lint": "oxlint src scripts tests",
     "test": "vitest run",
     "spellcheck": "node scripts/spellcheck.mjs",
-    "build": "npm run prepare:assets && npm run generate:qr && tsc -b && vite build",
+    "build": "npm run validate:content && tsc -b && vite build && node scripts/build-offline.mjs",
     "preview": "vite preview",
     "test:e2e": "playwright test",
     "export:pdf": "node scripts/export-pdf.mjs",
-    "check:pdf": "node scripts/check-pdf.mjs"
+    "check:pdf": "node scripts/check-pdf.mjs",
+    "migrate": "node authoring/migrate.mjs",
+    "validate:content": "node scripts/validate-migration.mjs",
+    "check:teacher": "node scripts/validate-migration.mjs --teacher",
+    "check:privacy": "node scripts/check-course-privacy.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.38.0",
     "motion": "^13.1.1",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "@olgakraven/lecture-engine": "file:vendor/olgakraven-lecture-engine-0.2.1-uiabd.1.tgz"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",

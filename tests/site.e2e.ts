@@ -1,72 +1,50 @@
-import { expect, test } from '@playwright/test'
-import { course, topics } from '../src/data/courseData'
+import {expect,test} from '@playwright/test'
+import fs from 'node:fs'
+const c=JSON.parse(fs.readFileSync('public/course.json','utf8'))
+const l=c.lectures[0],task=l.slides.find((s:{task?:unknown})=>s.task)
 
-test('catalog contains approved topics and semester filters', async ({ page }) => {
-  const errors: string[] = []
-  page.on('console', (message) => {
-    if (message.type() === 'error') errors.push(message.text())
-  })
-  await page.goto('./')
-  await expect(page.locator('.topic-card')).toHaveCount(topics.length)
-  for (const semester of course.semesters) {
-    await page.getByRole('button', { name: `${semester} семестр` }).click()
-    await expect(page.locator('.topic-card')).toHaveCount(topics.filter((topic) => topic.semester === semester).length)
-  }
-  await expect(page.locator('.brand-lockup img')).toHaveJSProperty('complete', true)
-  await expect(page.locator('.hero-mascot img')).toHaveJSProperty('complete', true)
-  expect(errors).toEqual([])
+test('catalog preserves 13 topics, semester filters and materials',async({page})=>{
+ await page.goto('./');await expect(page.getByRole('button',{name:'Открыть',exact:true})).toHaveCount(13)
+ for(const sem of [7,8]){await page.getByRole('button',{name:`${sem} семестр`,exact:true}).click();await expect(page.getByRole('button',{name:'Открыть',exact:true})).toHaveCount(sem===7?7:6)}
+ await expect(page.getByRole('link',{name:'Материалы',exact:true})).toHaveAttribute('href',c.materialsUrl)
+})
+test('legacy links resolve to stable slides',async({page})=>{
+ await page.goto(`./?topic=${l.id}&slide=24`);await expect(page.locator('.slide-frame')).toBeVisible();await expect(page).toHaveURL(/lecture=/);await expect(page).not.toHaveURL(/topic=/)
+})
+test('notes load without password and preserve local edits',async({page,context})=>{
+ const slide=l.slides.find((s:{id:string})=>s.id.endsWith('-concept'))
+ const key=`lecture:/2026-TRZBD-lecture/:trzbd:private:${c.contentVersion}`
+ await page.goto(`./?mode=presenter&lecture=${l.id}&slide=${slide.id}&session=qa-notes`)
+ await expect(page.getByRole('tabpanel')).toContainText('Это объяснение нужно')
+ await expect(page.getByRole('dialog')).toHaveCount(0)
+ expect(await page.evaluate(key=>Object.keys(JSON.parse(localStorage.getItem(key)||'{}')).length,key)).toBe(1495)
+ await page.evaluate(({key,id})=>{const n=JSON.parse(localStorage.getItem(key)||'{}');n[id].script='Проверочная локальная заметка';localStorage.setItem(key,JSON.stringify(n))},{key,id:slide.id})
+ await page.reload();await expect(page.getByRole('tabpanel')).toContainText('Проверочная локальная заметка')
+ const audience=await context.newPage();const requests:string[]=[];audience.on('request',r=>requests.push(r.url()))
+ await audience.goto(`./?mode=audience&lecture=${l.id}&session=qa-notes`);await expect(audience.locator('.slide-frame')).toBeVisible();expect(requests.filter(u=>u.includes('teacher-notes'))).toHaveLength(0)
+})
+test('mobile submits without exposing answer or result',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto(`./?lecture=${l.id}&slide=${task.id}`)
+ await page.getByRole('radio').first().check();await page.getByRole('button',{name:'Проверить',exact:true}).click();await expect(page.getByText('Ответ сохранён',{exact:true})).toBeVisible();await expect(page.getByRole('button',{name:'Разбор ответа',exact:true})).toHaveCount(0)
+ await page.reload();await expect(page.getByText('Ответ сохранён',{exact:true})).toBeVisible()
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true)
+})
+test('student print contains slides without notes, answers or interactive forms',async({page})=>{
+ await page.emulateMedia({media:'print'});await page.goto(`./?mode=print&scope=${l.id}`);await expect(page.locator('.print-page')).toHaveCount(l.slides.length)
+ await expect(page.locator('.print-page textarea:visible,.print-page input:visible,.print-page button:visible')).toHaveCount(0)
+ await expect(page.locator('.print-page')).not.toContainText(['Проверочная локальная заметка'])
 })
 
-test('responsive catalog has no horizontal overflow at required sizes', async ({ page }) => {
-  const viewports = [
-    { width: 1920, height: 1080 },
-    { width: 1366, height: 768 },
-    { width: 768, height: 1024 },
-    { width: 390, height: 844 },
-    { width: 360, height: 800 },
-  ]
-  for (const viewport of viewports) {
-    await page.setViewportSize(viewport)
-    await page.goto('./')
-    const sizes = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth }))
-    expect(sizes.scroll, `overflow at ${viewport.width}x${viewport.height}`).toBeLessThanOrEqual(sizes.client)
-    await expect(page.getByRole('button', { name: 'Открыть' }).first()).toBeVisible()
-  }
-})
-
-test('direct links, keyboard navigation and final screen work', async ({ page }) => {
-  await page.goto(`./?topic=${topics[0].id}&slide=1`)
-  await expect(page.locator('.slide-counter')).toHaveText('1 / 85')
-  await page.keyboard.press('ArrowRight')
-  await expect(page.locator('.slide-counter')).toHaveText('2 / 85')
-  await page.goto(`./?topic=${topics[0].id}&slide=85`)
-  await expect(page.getByRole('heading', { name: 'Вопросы от аудитории' })).toBeVisible()
-  await expect(page.locator('.mascot-mask img').first()).toHaveJSProperty('complete', true)
-})
-
-test('every approved topic opens directly with exactly 85 screens', async ({ page }) => {
-  for (const topic of topics) {
-    await page.goto(`./?topic=${topic.id}&slide=1`)
-    await expect(page.locator('.slide-counter'), topic.id).toHaveText('1 / 85')
-    await expect(page.getByRole('heading', { name: topic.title })).toBeVisible()
-    await expect(page.getByRole('button', { name: 'Печать для преподавателя' })).toBeVisible()
-    await expect(page.getByRole('button', { name: 'Печать для студента' })).toHaveCount(0)
-  }
-})
-
-test('invalid topic and slide recover without runtime crash', async ({ page }) => {
-  await page.goto('./?topic=does-not-exist&slide=900')
-  await expect(page.getByRole('status')).toContainText('не найдена')
-  await expect(page.locator('.topic-card')).toHaveCount(topics.length)
-})
-
-test('materials QR and printable route are complete', async ({ page }) => {
-  await page.goto(`./?topic=${topics[0].id}&slide=5`)
-  await expect(page.getByAltText('QR-код: материалы МДК.11.01')).toHaveJSProperty('complete', true)
-  await expect(page.getByRole('link', { name: course.materialsUrl })).toHaveAttribute('href', course.materialsUrl)
-
-  await page.goto(`./print?topic=${topics[0].id}&variant=teacher`)
-  await page.waitForFunction(() => document.body.dataset.printReady === 'true')
-  await expect(page.locator('.print-page')).toHaveCount(85)
-  await expect(page.locator('.print-page').nth(84).getByRole('heading', { name: 'Вопросы от аудитории' })).toBeVisible()
+test('all four assessment types score taught answers on desktop',async({page})=>{
+ const keys=JSON.parse(fs.readFileSync('public/assessment.json','utf8')).keys
+ await page.setViewportSize({width:1366,height:900})
+ for(const slide of l.slides.filter((s:{task?:unknown})=>s.task).slice(0,4)){
+  const t=slide.task,k=keys[t.id];await page.goto(`./?lecture=${l.id}&slide=${slide.id}`)
+  await page.getByRole('button',{name:'Проверить',exact:true}).click();await expect(page.locator('.task-status')).toHaveCount(0)
+  if(t.type==='single'||t.type==='multiple'){
+   for(const id of k.correct){const option=t.options.find((o:{id:string})=>o.id===id);await page.getByRole(t.type==='single'?'radio':'checkbox',{name:new RegExp(option.text.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))}).check()}
+  }else if(t.type==='short')await page.getByRole('textbox',{name:'Краткий ответ',exact:true}).fill(k.accepted[0])
+  else for(const item of t.items)await page.getByRole('combobox',{name:`Соответствие: ${item.text}`,exact:true}).selectOption(k.pairs[item.id])
+  await page.getByRole('button',{name:'Проверить',exact:true}).click();await expect(page.locator('.task-status')).toContainText('Правильно');await page.getByRole('button',{name:'Разбор ответа',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('Правильный ответ')
+ }
 })

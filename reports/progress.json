@@ -1,0 +1,11 @@
+{
+  "phase": "verified-local",
+  "sourceCommit": "bc98870aa70ebe1e249f623dfc9387dfbfff2471",
+  "engine": "0.2.1-uiabd.1",
+  "lectures": 13,
+  "slides": 1495,
+  "tasks": 416,
+  "teacherNotes": 1495,
+  "pdfs": 13,
+  "next": "publish"
+}

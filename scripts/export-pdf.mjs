@@ -5,10 +5,11 @@ import path from 'node:path'
 import { chromium } from '@playwright/test'
 import { PDFDocument } from 'pdf-lib'
 
-const basePath = '/2026-TRZBD-lecture/'
-const port = 5294
-const source = await readFile(path.resolve('src', 'data', 'courseData.ts'), 'utf8')
-const allTopics = [...source.matchAll(/id:\s*'(s\d{2}-[^']+)'/g)].map((match) => match[1])
+const courseId='trzbd'
+const basePath='/2026-TRZBD-lecture/'
+const port=5295
+const course = JSON.parse(await readFile('public/course.json','utf8'))
+const allTopics = course.lectures.map(l=>l.id)
 const args = process.argv.slice(2)
 const valueAfter = (flag) => {
   const index = args.indexOf(flag)
@@ -17,9 +18,9 @@ const valueAfter = (flag) => {
 const requestedTopic = valueAfter('--topic')
 const requestedVariant = valueAfter('--variant')
 if (requestedTopic && !allTopics.includes(requestedTopic)) throw new Error(`Unknown topic: ${requestedTopic}`)
-if (requestedVariant && !['student', 'teacher'].includes(requestedVariant)) throw new Error(`Unknown variant: ${requestedVariant}`)
+if (requestedVariant && requestedVariant !== 'student') throw new Error('PDF is student-only. Teacher scenarios are in private/teacher-pack.json.')
 const topics = requestedTopic ? [requestedTopic] : allTopics
-const variants = requestedVariant ? [requestedVariant] : ['student', 'teacher']
+const variants = ['student']
 if (!fs.existsSync(path.resolve('dist', 'index.html'))) throw new Error('dist is missing. Run npm run build first.')
 
 const profilePath = path.resolve('config', 'teacher-profile.json')
@@ -49,25 +50,32 @@ const waitForServer = async () => {
   }
   throw new Error(`Preview server did not start. ${serverLog}`)
 }
+
 let browser
+const geometry=[]
 try {
   await waitForServer()
-  browser = await chromium.launch({ headless: true })
+  browser = await chromium.launch({ channel: 'chrome', headless: true })
   const context = await browser.newContext({ viewport: { width: 1600, height: 900 } })
   await context.addInitScript(({ key, value }) => {
     localStorage.setItem(key, JSON.stringify(value))
-  }, { key: 'trzbd.teacherProfile', value: profile })
+  }, { key: `lecture:${basePath}:${courseId}:profile`, value: {...profile,department:profile.organizationUnit||''} })
   const page = await context.newPage()
   await page.emulateMedia({ media: 'print', reducedMotion: 'reduce' })
 
   for (const topic of topics) {
     for (const variant of variants) {
-      const url = `${baseUrl}print?topic=${encodeURIComponent(topic)}&variant=${variant}`
+      const url = `${baseUrl}?mode=print&scope=${encodeURIComponent(topic)}`
       await page.goto(url, { waitUntil: 'networkidle' })
-      await page.waitForFunction(() => document.body.dataset.printReady === 'true', undefined, { timeout: 60_000 })
+      await page.locator('.print-page').last().waitFor()
+      await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(im=>im.decode().catch(()=>{})))})
+      const issues=await page.locator('.slide-frame').evaluateAll(els=>els.flatMap(el=>{
+        const r=el.getBoundingClientRect();return [...el.querySelectorAll('.slide-copy h2,.slide-copy p,.slide-copy li,.slide-copy td,.slide-copy figcaption,.slide-footer')].filter(e=>{const b=e.getBoundingClientRect();return b.bottom>r.bottom+2||b.right>r.right+2||b.left<r.left-2}).map(e=>({slide:el.getAttribute('data-slide-id'),text:e.textContent?.slice(0,100)}))
+      }));geometry.push({topic,issues});
       const pageElements = await page.locator('.print-page').count()
-      if (pageElements !== 85) throw new Error(`${topic}/${variant}: DOM has ${pageElements} pages`)
-      const outputDir = path.resolve('outputs', 'pdf', variant)
+      const expected=course.lectures.find(l=>l.id===topic).slides.length
+      if (pageElements !== expected) throw new Error(`${topic}/${variant}: DOM has ${pageElements} pages`)
+      const outputDir = path.resolve(valueAfter('--out')||path.join('outputs','pdf','student'))
       await mkdir(outputDir, { recursive: true })
       const outputPath = path.join(outputDir, `${topic}.pdf`)
       await page.pdf({
@@ -79,10 +87,11 @@ try {
         outline: true,
       })
       const pdf = await PDFDocument.load(await readFile(outputPath))
-      if (pdf.getPageCount() !== 85) throw new Error(`${topic}/${variant}: PDF has ${pdf.getPageCount()} pages`)
-      console.log(`Exported ${variant}: ${topic} — 85 pages`)
+      if (pdf.getPageCount() !== expected) throw new Error(`${topic}/${variant}: PDF has ${pdf.getPageCount()} pages`)
+      console.log(`Exported ${variant}: ${topic} — ${expected} pages`)
     }
   }
+  await mkdir('reports',{recursive:true});await fs.promises.writeFile('reports/pdf-geometry.json',JSON.stringify(geometry,null,2));
 } finally {
   await browser?.close()
   server.kill()

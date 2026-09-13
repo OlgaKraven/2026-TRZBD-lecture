@@ -1,0 +1,67 @@
+[
+  {
+    "lecture": "s07-01-source-data-package",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s07-02-table-list-from-source-data",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s07-03-implement-table-set",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s07-04-er-diagram",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s07-05-prepare-and-load-data",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s07-06-validate-load-and-delivery-script",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s07-07-control-queries",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s08-01-views",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s08-02-coordinated-data-changes",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s08-03-search-field-indexes",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s08-04-access-control",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s08-05-backup-and-protection",
+    "pages": 115,
+    "textPages": 115
+  },
+  {
+    "lecture": "s08-06-results-package",
+    "pages": 115,
+    "textPages": 115
+  }
+]

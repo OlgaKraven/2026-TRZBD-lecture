@@ -1,0 +1,3642 @@
+[
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q01",
+    "title": "Границы комплекта",
+    "slideIds": [
+      "s07-01-source-data-package-q01-section",
+      "s07-01-source-data-package-q01-concept",
+      "s07-01-source-data-package-q01-rule",
+      "s07-01-source-data-package-q01-example",
+      "s07-01-source-data-package-q01-practice",
+      "s07-01-source-data-package-q01-decision",
+      "s07-01-source-data-package-q01-warning",
+      "s07-01-source-data-package-q01-notebook",
+      "s07-01-source-data-package-q01-T01-slide",
+      "s07-01-source-data-package-q01-T02-slide",
+      "s07-01-source-data-package-q01-T03-slide",
+      "s07-01-source-data-package-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q01-T01",
+      "s07-01-source-data-package-q01-T02",
+      "s07-01-source-data-package-q01-T03",
+      "s07-01-source-data-package-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q01-section",
+      "s07-01-source-data-package-q01-concept",
+      "s07-01-source-data-package-q01-rule",
+      "s07-01-source-data-package-q01-example",
+      "s07-01-source-data-package-q01-practice",
+      "s07-01-source-data-package-q01-decision",
+      "s07-01-source-data-package-q01-warning",
+      "s07-01-source-data-package-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q02",
+    "title": "Текстовое описание",
+    "slideIds": [
+      "s07-01-source-data-package-q02-section",
+      "s07-01-source-data-package-q02-concept",
+      "s07-01-source-data-package-q02-rule",
+      "s07-01-source-data-package-q02-example",
+      "s07-01-source-data-package-q02-practice",
+      "s07-01-source-data-package-q02-decision",
+      "s07-01-source-data-package-q02-warning",
+      "s07-01-source-data-package-q02-notebook",
+      "s07-01-source-data-package-q02-T01-slide",
+      "s07-01-source-data-package-q02-T02-slide",
+      "s07-01-source-data-package-q02-T03-slide",
+      "s07-01-source-data-package-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q02-T01",
+      "s07-01-source-data-package-q02-T02",
+      "s07-01-source-data-package-q02-T03",
+      "s07-01-source-data-package-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q02-section",
+      "s07-01-source-data-package-q02-concept",
+      "s07-01-source-data-package-q02-rule",
+      "s07-01-source-data-package-q02-example",
+      "s07-01-source-data-package-q02-practice",
+      "s07-01-source-data-package-q02-decision",
+      "s07-01-source-data-package-q02-warning",
+      "s07-01-source-data-package-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q03",
+    "title": "Табличные файлы",
+    "slideIds": [
+      "s07-01-source-data-package-q03-section",
+      "s07-01-source-data-package-q03-concept",
+      "s07-01-source-data-package-q03-rule",
+      "s07-01-source-data-package-q03-example",
+      "s07-01-source-data-package-q03-practice",
+      "s07-01-source-data-package-q03-decision",
+      "s07-01-source-data-package-q03-warning",
+      "s07-01-source-data-package-q03-notebook",
+      "s07-01-source-data-package-q03-T01-slide",
+      "s07-01-source-data-package-q03-T02-slide",
+      "s07-01-source-data-package-q03-T03-slide",
+      "s07-01-source-data-package-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q03-T01",
+      "s07-01-source-data-package-q03-T02",
+      "s07-01-source-data-package-q03-T03",
+      "s07-01-source-data-package-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q03-section",
+      "s07-01-source-data-package-q03-concept",
+      "s07-01-source-data-package-q03-rule",
+      "s07-01-source-data-package-q03-example",
+      "s07-01-source-data-package-q03-practice",
+      "s07-01-source-data-package-q03-decision",
+      "s07-01-source-data-package-q03-warning",
+      "s07-01-source-data-package-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q04",
+    "title": "Обязательные результаты",
+    "slideIds": [
+      "s07-01-source-data-package-q04-section",
+      "s07-01-source-data-package-q04-concept",
+      "s07-01-source-data-package-q04-rule",
+      "s07-01-source-data-package-q04-example",
+      "s07-01-source-data-package-q04-practice",
+      "s07-01-source-data-package-q04-decision",
+      "s07-01-source-data-package-q04-warning",
+      "s07-01-source-data-package-q04-notebook",
+      "s07-01-source-data-package-q04-T01-slide",
+      "s07-01-source-data-package-q04-T02-slide",
+      "s07-01-source-data-package-q04-T03-slide",
+      "s07-01-source-data-package-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q04-T01",
+      "s07-01-source-data-package-q04-T02",
+      "s07-01-source-data-package-q04-T03",
+      "s07-01-source-data-package-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q04-section",
+      "s07-01-source-data-package-q04-concept",
+      "s07-01-source-data-package-q04-rule",
+      "s07-01-source-data-package-q04-example",
+      "s07-01-source-data-package-q04-practice",
+      "s07-01-source-data-package-q04-decision",
+      "s07-01-source-data-package-q04-warning",
+      "s07-01-source-data-package-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q05",
+    "title": "Сопоставление полей",
+    "slideIds": [
+      "s07-01-source-data-package-q05-section",
+      "s07-01-source-data-package-q05-concept",
+      "s07-01-source-data-package-q05-rule",
+      "s07-01-source-data-package-q05-example",
+      "s07-01-source-data-package-q05-practice",
+      "s07-01-source-data-package-q05-decision",
+      "s07-01-source-data-package-q05-warning",
+      "s07-01-source-data-package-q05-notebook",
+      "s07-01-source-data-package-q05-T01-slide",
+      "s07-01-source-data-package-q05-T02-slide",
+      "s07-01-source-data-package-q05-T03-slide",
+      "s07-01-source-data-package-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q05-T01",
+      "s07-01-source-data-package-q05-T02",
+      "s07-01-source-data-package-q05-T03",
+      "s07-01-source-data-package-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q05-section",
+      "s07-01-source-data-package-q05-concept",
+      "s07-01-source-data-package-q05-rule",
+      "s07-01-source-data-package-q05-example",
+      "s07-01-source-data-package-q05-practice",
+      "s07-01-source-data-package-q05-decision",
+      "s07-01-source-data-package-q05-warning",
+      "s07-01-source-data-package-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q06",
+    "title": "Данные справочников",
+    "slideIds": [
+      "s07-01-source-data-package-q06-section",
+      "s07-01-source-data-package-q06-concept",
+      "s07-01-source-data-package-q06-rule",
+      "s07-01-source-data-package-q06-example",
+      "s07-01-source-data-package-q06-practice",
+      "s07-01-source-data-package-q06-decision",
+      "s07-01-source-data-package-q06-warning",
+      "s07-01-source-data-package-q06-notebook",
+      "s07-01-source-data-package-q06-T01-slide",
+      "s07-01-source-data-package-q06-T02-slide",
+      "s07-01-source-data-package-q06-T03-slide",
+      "s07-01-source-data-package-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q06-T01",
+      "s07-01-source-data-package-q06-T02",
+      "s07-01-source-data-package-q06-T03",
+      "s07-01-source-data-package-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q06-section",
+      "s07-01-source-data-package-q06-concept",
+      "s07-01-source-data-package-q06-rule",
+      "s07-01-source-data-package-q06-example",
+      "s07-01-source-data-package-q06-practice",
+      "s07-01-source-data-package-q06-decision",
+      "s07-01-source-data-package-q06-warning",
+      "s07-01-source-data-package-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q07",
+    "title": "Риски качества",
+    "slideIds": [
+      "s07-01-source-data-package-q07-section",
+      "s07-01-source-data-package-q07-concept",
+      "s07-01-source-data-package-q07-rule",
+      "s07-01-source-data-package-q07-example",
+      "s07-01-source-data-package-q07-practice",
+      "s07-01-source-data-package-q07-decision",
+      "s07-01-source-data-package-q07-warning",
+      "s07-01-source-data-package-q07-notebook",
+      "s07-01-source-data-package-q07-T01-slide",
+      "s07-01-source-data-package-q07-T02-slide",
+      "s07-01-source-data-package-q07-T03-slide",
+      "s07-01-source-data-package-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q07-T01",
+      "s07-01-source-data-package-q07-T02",
+      "s07-01-source-data-package-q07-T03",
+      "s07-01-source-data-package-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q07-section",
+      "s07-01-source-data-package-q07-concept",
+      "s07-01-source-data-package-q07-rule",
+      "s07-01-source-data-package-q07-example",
+      "s07-01-source-data-package-q07-practice",
+      "s07-01-source-data-package-q07-decision",
+      "s07-01-source-data-package-q07-warning",
+      "s07-01-source-data-package-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-01-source-data-package",
+    "questionId": "s07-01-source-data-package-q08",
+    "title": "Протокол разбора",
+    "slideIds": [
+      "s07-01-source-data-package-q08-section",
+      "s07-01-source-data-package-q08-concept",
+      "s07-01-source-data-package-q08-rule",
+      "s07-01-source-data-package-q08-example",
+      "s07-01-source-data-package-q08-practice",
+      "s07-01-source-data-package-q08-decision",
+      "s07-01-source-data-package-q08-warning",
+      "s07-01-source-data-package-q08-notebook",
+      "s07-01-source-data-package-q08-T01-slide",
+      "s07-01-source-data-package-q08-T02-slide",
+      "s07-01-source-data-package-q08-T03-slide",
+      "s07-01-source-data-package-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s07-01-source-data-package-q08-T01",
+      "s07-01-source-data-package-q08-T02",
+      "s07-01-source-data-package-q08-T03",
+      "s07-01-source-data-package-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-01-source-data-package-q08-section",
+      "s07-01-source-data-package-q08-concept",
+      "s07-01-source-data-package-q08-rule",
+      "s07-01-source-data-package-q08-example",
+      "s07-01-source-data-package-q08-practice",
+      "s07-01-source-data-package-q08-decision",
+      "s07-01-source-data-package-q08-warning",
+      "s07-01-source-data-package-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q01",
+    "title": "Повторяющиеся значения",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q01-section",
+      "s07-02-table-list-from-source-data-q01-concept",
+      "s07-02-table-list-from-source-data-q01-rule",
+      "s07-02-table-list-from-source-data-q01-example",
+      "s07-02-table-list-from-source-data-q01-practice",
+      "s07-02-table-list-from-source-data-q01-decision",
+      "s07-02-table-list-from-source-data-q01-warning",
+      "s07-02-table-list-from-source-data-q01-notebook",
+      "s07-02-table-list-from-source-data-q01-T01-slide",
+      "s07-02-table-list-from-source-data-q01-T02-slide",
+      "s07-02-table-list-from-source-data-q01-T03-slide",
+      "s07-02-table-list-from-source-data-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q01-T01",
+      "s07-02-table-list-from-source-data-q01-T02",
+      "s07-02-table-list-from-source-data-q01-T03",
+      "s07-02-table-list-from-source-data-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q01-section",
+      "s07-02-table-list-from-source-data-q01-concept",
+      "s07-02-table-list-from-source-data-q01-rule",
+      "s07-02-table-list-from-source-data-q01-example",
+      "s07-02-table-list-from-source-data-q01-practice",
+      "s07-02-table-list-from-source-data-q01-decision",
+      "s07-02-table-list-from-source-data-q01-warning",
+      "s07-02-table-list-from-source-data-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q02",
+    "title": "Справочники",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q02-section",
+      "s07-02-table-list-from-source-data-q02-concept",
+      "s07-02-table-list-from-source-data-q02-rule",
+      "s07-02-table-list-from-source-data-q02-example",
+      "s07-02-table-list-from-source-data-q02-practice",
+      "s07-02-table-list-from-source-data-q02-decision",
+      "s07-02-table-list-from-source-data-q02-warning",
+      "s07-02-table-list-from-source-data-q02-notebook",
+      "s07-02-table-list-from-source-data-q02-T01-slide",
+      "s07-02-table-list-from-source-data-q02-T02-slide",
+      "s07-02-table-list-from-source-data-q02-T03-slide",
+      "s07-02-table-list-from-source-data-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q02-T01",
+      "s07-02-table-list-from-source-data-q02-T02",
+      "s07-02-table-list-from-source-data-q02-T03",
+      "s07-02-table-list-from-source-data-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q02-section",
+      "s07-02-table-list-from-source-data-q02-concept",
+      "s07-02-table-list-from-source-data-q02-rule",
+      "s07-02-table-list-from-source-data-q02-example",
+      "s07-02-table-list-from-source-data-q02-practice",
+      "s07-02-table-list-from-source-data-q02-decision",
+      "s07-02-table-list-from-source-data-q02-warning",
+      "s07-02-table-list-from-source-data-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q03",
+    "title": "Составные поля",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q03-section",
+      "s07-02-table-list-from-source-data-q03-concept",
+      "s07-02-table-list-from-source-data-q03-rule",
+      "s07-02-table-list-from-source-data-q03-example",
+      "s07-02-table-list-from-source-data-q03-practice",
+      "s07-02-table-list-from-source-data-q03-decision",
+      "s07-02-table-list-from-source-data-q03-warning",
+      "s07-02-table-list-from-source-data-q03-notebook",
+      "s07-02-table-list-from-source-data-q03-T01-slide",
+      "s07-02-table-list-from-source-data-q03-T02-slide",
+      "s07-02-table-list-from-source-data-q03-T03-slide",
+      "s07-02-table-list-from-source-data-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q03-T01",
+      "s07-02-table-list-from-source-data-q03-T02",
+      "s07-02-table-list-from-source-data-q03-T03",
+      "s07-02-table-list-from-source-data-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q03-section",
+      "s07-02-table-list-from-source-data-q03-concept",
+      "s07-02-table-list-from-source-data-q03-rule",
+      "s07-02-table-list-from-source-data-q03-example",
+      "s07-02-table-list-from-source-data-q03-practice",
+      "s07-02-table-list-from-source-data-q03-decision",
+      "s07-02-table-list-from-source-data-q03-warning",
+      "s07-02-table-list-from-source-data-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q04",
+    "title": "Границы сущностей",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q04-section",
+      "s07-02-table-list-from-source-data-q04-concept",
+      "s07-02-table-list-from-source-data-q04-rule",
+      "s07-02-table-list-from-source-data-q04-example",
+      "s07-02-table-list-from-source-data-q04-practice",
+      "s07-02-table-list-from-source-data-q04-decision",
+      "s07-02-table-list-from-source-data-q04-warning",
+      "s07-02-table-list-from-source-data-q04-notebook",
+      "s07-02-table-list-from-source-data-q04-T01-slide",
+      "s07-02-table-list-from-source-data-q04-T02-slide",
+      "s07-02-table-list-from-source-data-q04-T03-slide",
+      "s07-02-table-list-from-source-data-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q04-T01",
+      "s07-02-table-list-from-source-data-q04-T02",
+      "s07-02-table-list-from-source-data-q04-T03",
+      "s07-02-table-list-from-source-data-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q04-section",
+      "s07-02-table-list-from-source-data-q04-concept",
+      "s07-02-table-list-from-source-data-q04-rule",
+      "s07-02-table-list-from-source-data-q04-example",
+      "s07-02-table-list-from-source-data-q04-practice",
+      "s07-02-table-list-from-source-data-q04-decision",
+      "s07-02-table-list-from-source-data-q04-warning",
+      "s07-02-table-list-from-source-data-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q05",
+    "title": "Имена таблиц и полей",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q05-section",
+      "s07-02-table-list-from-source-data-q05-concept",
+      "s07-02-table-list-from-source-data-q05-rule",
+      "s07-02-table-list-from-source-data-q05-example",
+      "s07-02-table-list-from-source-data-q05-practice",
+      "s07-02-table-list-from-source-data-q05-decision",
+      "s07-02-table-list-from-source-data-q05-warning",
+      "s07-02-table-list-from-source-data-q05-notebook",
+      "s07-02-table-list-from-source-data-q05-T01-slide",
+      "s07-02-table-list-from-source-data-q05-T02-slide",
+      "s07-02-table-list-from-source-data-q05-T03-slide",
+      "s07-02-table-list-from-source-data-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q05-T01",
+      "s07-02-table-list-from-source-data-q05-T02",
+      "s07-02-table-list-from-source-data-q05-T03",
+      "s07-02-table-list-from-source-data-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q05-section",
+      "s07-02-table-list-from-source-data-q05-concept",
+      "s07-02-table-list-from-source-data-q05-rule",
+      "s07-02-table-list-from-source-data-q05-example",
+      "s07-02-table-list-from-source-data-q05-practice",
+      "s07-02-table-list-from-source-data-q05-decision",
+      "s07-02-table-list-from-source-data-q05-warning",
+      "s07-02-table-list-from-source-data-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q06",
+    "title": "Первичные ключи",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q06-section",
+      "s07-02-table-list-from-source-data-q06-concept",
+      "s07-02-table-list-from-source-data-q06-rule",
+      "s07-02-table-list-from-source-data-q06-example",
+      "s07-02-table-list-from-source-data-q06-practice",
+      "s07-02-table-list-from-source-data-q06-decision",
+      "s07-02-table-list-from-source-data-q06-warning",
+      "s07-02-table-list-from-source-data-q06-notebook",
+      "s07-02-table-list-from-source-data-q06-T01-slide",
+      "s07-02-table-list-from-source-data-q06-T02-slide",
+      "s07-02-table-list-from-source-data-q06-T03-slide",
+      "s07-02-table-list-from-source-data-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q06-T01",
+      "s07-02-table-list-from-source-data-q06-T02",
+      "s07-02-table-list-from-source-data-q06-T03",
+      "s07-02-table-list-from-source-data-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q06-section",
+      "s07-02-table-list-from-source-data-q06-concept",
+      "s07-02-table-list-from-source-data-q06-rule",
+      "s07-02-table-list-from-source-data-q06-example",
+      "s07-02-table-list-from-source-data-q06-practice",
+      "s07-02-table-list-from-source-data-q06-decision",
+      "s07-02-table-list-from-source-data-q06-warning",
+      "s07-02-table-list-from-source-data-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q07",
+    "title": "Внешние ключи",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q07-section",
+      "s07-02-table-list-from-source-data-q07-concept",
+      "s07-02-table-list-from-source-data-q07-rule",
+      "s07-02-table-list-from-source-data-q07-example",
+      "s07-02-table-list-from-source-data-q07-practice",
+      "s07-02-table-list-from-source-data-q07-decision",
+      "s07-02-table-list-from-source-data-q07-warning",
+      "s07-02-table-list-from-source-data-q07-notebook",
+      "s07-02-table-list-from-source-data-q07-T01-slide",
+      "s07-02-table-list-from-source-data-q07-T02-slide",
+      "s07-02-table-list-from-source-data-q07-T03-slide",
+      "s07-02-table-list-from-source-data-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q07-T01",
+      "s07-02-table-list-from-source-data-q07-T02",
+      "s07-02-table-list-from-source-data-q07-T03",
+      "s07-02-table-list-from-source-data-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q07-section",
+      "s07-02-table-list-from-source-data-q07-concept",
+      "s07-02-table-list-from-source-data-q07-rule",
+      "s07-02-table-list-from-source-data-q07-example",
+      "s07-02-table-list-from-source-data-q07-practice",
+      "s07-02-table-list-from-source-data-q07-decision",
+      "s07-02-table-list-from-source-data-q07-warning",
+      "s07-02-table-list-from-source-data-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-02-table-list-from-source-data",
+    "questionId": "s07-02-table-list-from-source-data-q08",
+    "title": "Каталог таблиц",
+    "slideIds": [
+      "s07-02-table-list-from-source-data-q08-section",
+      "s07-02-table-list-from-source-data-q08-concept",
+      "s07-02-table-list-from-source-data-q08-rule",
+      "s07-02-table-list-from-source-data-q08-example",
+      "s07-02-table-list-from-source-data-q08-practice",
+      "s07-02-table-list-from-source-data-q08-decision",
+      "s07-02-table-list-from-source-data-q08-warning",
+      "s07-02-table-list-from-source-data-q08-notebook",
+      "s07-02-table-list-from-source-data-q08-T01-slide",
+      "s07-02-table-list-from-source-data-q08-T02-slide",
+      "s07-02-table-list-from-source-data-q08-T03-slide",
+      "s07-02-table-list-from-source-data-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s07-02-table-list-from-source-data-q08-T01",
+      "s07-02-table-list-from-source-data-q08-T02",
+      "s07-02-table-list-from-source-data-q08-T03",
+      "s07-02-table-list-from-source-data-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-02-table-list-from-source-data-q08-section",
+      "s07-02-table-list-from-source-data-q08-concept",
+      "s07-02-table-list-from-source-data-q08-rule",
+      "s07-02-table-list-from-source-data-q08-example",
+      "s07-02-table-list-from-source-data-q08-practice",
+      "s07-02-table-list-from-source-data-q08-decision",
+      "s07-02-table-list-from-source-data-q08-warning",
+      "s07-02-table-list-from-source-data-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q01",
+    "title": "Создание схемы",
+    "slideIds": [
+      "s07-03-implement-table-set-q01-section",
+      "s07-03-implement-table-set-q01-concept",
+      "s07-03-implement-table-set-q01-rule",
+      "s07-03-implement-table-set-q01-example",
+      "s07-03-implement-table-set-q01-practice",
+      "s07-03-implement-table-set-q01-decision",
+      "s07-03-implement-table-set-q01-warning",
+      "s07-03-implement-table-set-q01-notebook",
+      "s07-03-implement-table-set-q01-T01-slide",
+      "s07-03-implement-table-set-q01-T02-slide",
+      "s07-03-implement-table-set-q01-T03-slide",
+      "s07-03-implement-table-set-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q01-T01",
+      "s07-03-implement-table-set-q01-T02",
+      "s07-03-implement-table-set-q01-T03",
+      "s07-03-implement-table-set-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q01-section",
+      "s07-03-implement-table-set-q01-concept",
+      "s07-03-implement-table-set-q01-rule",
+      "s07-03-implement-table-set-q01-example",
+      "s07-03-implement-table-set-q01-practice",
+      "s07-03-implement-table-set-q01-decision",
+      "s07-03-implement-table-set-q01-warning",
+      "s07-03-implement-table-set-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q02",
+    "title": "Типы данных",
+    "slideIds": [
+      "s07-03-implement-table-set-q02-section",
+      "s07-03-implement-table-set-q02-concept",
+      "s07-03-implement-table-set-q02-rule",
+      "s07-03-implement-table-set-q02-example",
+      "s07-03-implement-table-set-q02-practice",
+      "s07-03-implement-table-set-q02-decision",
+      "s07-03-implement-table-set-q02-warning",
+      "s07-03-implement-table-set-q02-notebook",
+      "s07-03-implement-table-set-q02-T01-slide",
+      "s07-03-implement-table-set-q02-T02-slide",
+      "s07-03-implement-table-set-q02-T03-slide",
+      "s07-03-implement-table-set-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q02-T01",
+      "s07-03-implement-table-set-q02-T02",
+      "s07-03-implement-table-set-q02-T03",
+      "s07-03-implement-table-set-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q02-section",
+      "s07-03-implement-table-set-q02-concept",
+      "s07-03-implement-table-set-q02-rule",
+      "s07-03-implement-table-set-q02-example",
+      "s07-03-implement-table-set-q02-practice",
+      "s07-03-implement-table-set-q02-decision",
+      "s07-03-implement-table-set-q02-warning",
+      "s07-03-implement-table-set-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q03",
+    "title": "Первичные ключи",
+    "slideIds": [
+      "s07-03-implement-table-set-q03-section",
+      "s07-03-implement-table-set-q03-concept",
+      "s07-03-implement-table-set-q03-rule",
+      "s07-03-implement-table-set-q03-example",
+      "s07-03-implement-table-set-q03-practice",
+      "s07-03-implement-table-set-q03-decision",
+      "s07-03-implement-table-set-q03-warning",
+      "s07-03-implement-table-set-q03-notebook",
+      "s07-03-implement-table-set-q03-T01-slide",
+      "s07-03-implement-table-set-q03-T02-slide",
+      "s07-03-implement-table-set-q03-T03-slide",
+      "s07-03-implement-table-set-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q03-T01",
+      "s07-03-implement-table-set-q03-T02",
+      "s07-03-implement-table-set-q03-T03",
+      "s07-03-implement-table-set-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q03-section",
+      "s07-03-implement-table-set-q03-concept",
+      "s07-03-implement-table-set-q03-rule",
+      "s07-03-implement-table-set-q03-example",
+      "s07-03-implement-table-set-q03-practice",
+      "s07-03-implement-table-set-q03-decision",
+      "s07-03-implement-table-set-q03-warning",
+      "s07-03-implement-table-set-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q04",
+    "title": "Внешние ключи",
+    "slideIds": [
+      "s07-03-implement-table-set-q04-section",
+      "s07-03-implement-table-set-q04-concept",
+      "s07-03-implement-table-set-q04-rule",
+      "s07-03-implement-table-set-q04-example",
+      "s07-03-implement-table-set-q04-practice",
+      "s07-03-implement-table-set-q04-decision",
+      "s07-03-implement-table-set-q04-warning",
+      "s07-03-implement-table-set-q04-notebook",
+      "s07-03-implement-table-set-q04-T01-slide",
+      "s07-03-implement-table-set-q04-T02-slide",
+      "s07-03-implement-table-set-q04-T03-slide",
+      "s07-03-implement-table-set-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q04-T01",
+      "s07-03-implement-table-set-q04-T02",
+      "s07-03-implement-table-set-q04-T03",
+      "s07-03-implement-table-set-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q04-section",
+      "s07-03-implement-table-set-q04-concept",
+      "s07-03-implement-table-set-q04-rule",
+      "s07-03-implement-table-set-q04-example",
+      "s07-03-implement-table-set-q04-practice",
+      "s07-03-implement-table-set-q04-decision",
+      "s07-03-implement-table-set-q04-warning",
+      "s07-03-implement-table-set-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q05",
+    "title": "Обязательные поля",
+    "slideIds": [
+      "s07-03-implement-table-set-q05-section",
+      "s07-03-implement-table-set-q05-concept",
+      "s07-03-implement-table-set-q05-rule",
+      "s07-03-implement-table-set-q05-example",
+      "s07-03-implement-table-set-q05-practice",
+      "s07-03-implement-table-set-q05-decision",
+      "s07-03-implement-table-set-q05-warning",
+      "s07-03-implement-table-set-q05-notebook",
+      "s07-03-implement-table-set-q05-T01-slide",
+      "s07-03-implement-table-set-q05-T02-slide",
+      "s07-03-implement-table-set-q05-T03-slide",
+      "s07-03-implement-table-set-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q05-T01",
+      "s07-03-implement-table-set-q05-T02",
+      "s07-03-implement-table-set-q05-T03",
+      "s07-03-implement-table-set-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q05-section",
+      "s07-03-implement-table-set-q05-concept",
+      "s07-03-implement-table-set-q05-rule",
+      "s07-03-implement-table-set-q05-example",
+      "s07-03-implement-table-set-q05-practice",
+      "s07-03-implement-table-set-q05-decision",
+      "s07-03-implement-table-set-q05-warning",
+      "s07-03-implement-table-set-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q06",
+    "title": "Уникальность",
+    "slideIds": [
+      "s07-03-implement-table-set-q06-section",
+      "s07-03-implement-table-set-q06-concept",
+      "s07-03-implement-table-set-q06-rule",
+      "s07-03-implement-table-set-q06-example",
+      "s07-03-implement-table-set-q06-practice",
+      "s07-03-implement-table-set-q06-decision",
+      "s07-03-implement-table-set-q06-warning",
+      "s07-03-implement-table-set-q06-notebook",
+      "s07-03-implement-table-set-q06-T01-slide",
+      "s07-03-implement-table-set-q06-T02-slide",
+      "s07-03-implement-table-set-q06-T03-slide",
+      "s07-03-implement-table-set-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q06-T01",
+      "s07-03-implement-table-set-q06-T02",
+      "s07-03-implement-table-set-q06-T03",
+      "s07-03-implement-table-set-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q06-section",
+      "s07-03-implement-table-set-q06-concept",
+      "s07-03-implement-table-set-q06-rule",
+      "s07-03-implement-table-set-q06-example",
+      "s07-03-implement-table-set-q06-practice",
+      "s07-03-implement-table-set-q06-decision",
+      "s07-03-implement-table-set-q06-warning",
+      "s07-03-implement-table-set-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q07",
+    "title": "Порядок выполнения",
+    "slideIds": [
+      "s07-03-implement-table-set-q07-section",
+      "s07-03-implement-table-set-q07-concept",
+      "s07-03-implement-table-set-q07-rule",
+      "s07-03-implement-table-set-q07-example",
+      "s07-03-implement-table-set-q07-practice",
+      "s07-03-implement-table-set-q07-decision",
+      "s07-03-implement-table-set-q07-warning",
+      "s07-03-implement-table-set-q07-notebook",
+      "s07-03-implement-table-set-q07-T01-slide",
+      "s07-03-implement-table-set-q07-T02-slide",
+      "s07-03-implement-table-set-q07-T03-slide",
+      "s07-03-implement-table-set-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q07-T01",
+      "s07-03-implement-table-set-q07-T02",
+      "s07-03-implement-table-set-q07-T03",
+      "s07-03-implement-table-set-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q07-section",
+      "s07-03-implement-table-set-q07-concept",
+      "s07-03-implement-table-set-q07-rule",
+      "s07-03-implement-table-set-q07-example",
+      "s07-03-implement-table-set-q07-practice",
+      "s07-03-implement-table-set-q07-decision",
+      "s07-03-implement-table-set-q07-warning",
+      "s07-03-implement-table-set-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-03-implement-table-set",
+    "questionId": "s07-03-implement-table-set-q08",
+    "title": "Воспроизводимый скрипт",
+    "slideIds": [
+      "s07-03-implement-table-set-q08-section",
+      "s07-03-implement-table-set-q08-concept",
+      "s07-03-implement-table-set-q08-rule",
+      "s07-03-implement-table-set-q08-example",
+      "s07-03-implement-table-set-q08-practice",
+      "s07-03-implement-table-set-q08-decision",
+      "s07-03-implement-table-set-q08-warning",
+      "s07-03-implement-table-set-q08-notebook",
+      "s07-03-implement-table-set-q08-T01-slide",
+      "s07-03-implement-table-set-q08-T02-slide",
+      "s07-03-implement-table-set-q08-T03-slide",
+      "s07-03-implement-table-set-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s07-03-implement-table-set-q08-T01",
+      "s07-03-implement-table-set-q08-T02",
+      "s07-03-implement-table-set-q08-T03",
+      "s07-03-implement-table-set-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-03-implement-table-set-q08-section",
+      "s07-03-implement-table-set-q08-concept",
+      "s07-03-implement-table-set-q08-rule",
+      "s07-03-implement-table-set-q08-example",
+      "s07-03-implement-table-set-q08-practice",
+      "s07-03-implement-table-set-q08-decision",
+      "s07-03-implement-table-set-q08-warning",
+      "s07-03-implement-table-set-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q01",
+    "title": "Обратное проектирование",
+    "slideIds": [
+      "s07-04-er-diagram-q01-section",
+      "s07-04-er-diagram-q01-concept",
+      "s07-04-er-diagram-q01-rule",
+      "s07-04-er-diagram-q01-example",
+      "s07-04-er-diagram-q01-practice",
+      "s07-04-er-diagram-q01-decision",
+      "s07-04-er-diagram-q01-warning",
+      "s07-04-er-diagram-q01-notebook",
+      "s07-04-er-diagram-q01-T01-slide",
+      "s07-04-er-diagram-q01-T02-slide",
+      "s07-04-er-diagram-q01-T03-slide",
+      "s07-04-er-diagram-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q01-T01",
+      "s07-04-er-diagram-q01-T02",
+      "s07-04-er-diagram-q01-T03",
+      "s07-04-er-diagram-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q01-section",
+      "s07-04-er-diagram-q01-concept",
+      "s07-04-er-diagram-q01-rule",
+      "s07-04-er-diagram-q01-example",
+      "s07-04-er-diagram-q01-practice",
+      "s07-04-er-diagram-q01-decision",
+      "s07-04-er-diagram-q01-warning",
+      "s07-04-er-diagram-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q02",
+    "title": "Таблицы и атрибуты",
+    "slideIds": [
+      "s07-04-er-diagram-q02-section",
+      "s07-04-er-diagram-q02-concept",
+      "s07-04-er-diagram-q02-rule",
+      "s07-04-er-diagram-q02-example",
+      "s07-04-er-diagram-q02-practice",
+      "s07-04-er-diagram-q02-decision",
+      "s07-04-er-diagram-q02-warning",
+      "s07-04-er-diagram-q02-notebook",
+      "s07-04-er-diagram-q02-T01-slide",
+      "s07-04-er-diagram-q02-T02-slide",
+      "s07-04-er-diagram-q02-T03-slide",
+      "s07-04-er-diagram-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q02-T01",
+      "s07-04-er-diagram-q02-T02",
+      "s07-04-er-diagram-q02-T03",
+      "s07-04-er-diagram-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q02-section",
+      "s07-04-er-diagram-q02-concept",
+      "s07-04-er-diagram-q02-rule",
+      "s07-04-er-diagram-q02-example",
+      "s07-04-er-diagram-q02-practice",
+      "s07-04-er-diagram-q02-decision",
+      "s07-04-er-diagram-q02-warning",
+      "s07-04-er-diagram-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q03",
+    "title": "Связи и кратность",
+    "slideIds": [
+      "s07-04-er-diagram-q03-section",
+      "s07-04-er-diagram-q03-concept",
+      "s07-04-er-diagram-q03-rule",
+      "s07-04-er-diagram-q03-example",
+      "s07-04-er-diagram-q03-practice",
+      "s07-04-er-diagram-q03-decision",
+      "s07-04-er-diagram-q03-warning",
+      "s07-04-er-diagram-q03-notebook",
+      "s07-04-er-diagram-q03-T01-slide",
+      "s07-04-er-diagram-q03-T02-slide",
+      "s07-04-er-diagram-q03-T03-slide",
+      "s07-04-er-diagram-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q03-T01",
+      "s07-04-er-diagram-q03-T02",
+      "s07-04-er-diagram-q03-T03",
+      "s07-04-er-diagram-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q03-section",
+      "s07-04-er-diagram-q03-concept",
+      "s07-04-er-diagram-q03-rule",
+      "s07-04-er-diagram-q03-example",
+      "s07-04-er-diagram-q03-practice",
+      "s07-04-er-diagram-q03-decision",
+      "s07-04-er-diagram-q03-warning",
+      "s07-04-er-diagram-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q04",
+    "title": "Первичные и внешние ключи",
+    "slideIds": [
+      "s07-04-er-diagram-q04-section",
+      "s07-04-er-diagram-q04-concept",
+      "s07-04-er-diagram-q04-rule",
+      "s07-04-er-diagram-q04-example",
+      "s07-04-er-diagram-q04-practice",
+      "s07-04-er-diagram-q04-decision",
+      "s07-04-er-diagram-q04-warning",
+      "s07-04-er-diagram-q04-notebook",
+      "s07-04-er-diagram-q04-T01-slide",
+      "s07-04-er-diagram-q04-T02-slide",
+      "s07-04-er-diagram-q04-T03-slide",
+      "s07-04-er-diagram-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q04-T01",
+      "s07-04-er-diagram-q04-T02",
+      "s07-04-er-diagram-q04-T03",
+      "s07-04-er-diagram-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q04-section",
+      "s07-04-er-diagram-q04-concept",
+      "s07-04-er-diagram-q04-rule",
+      "s07-04-er-diagram-q04-example",
+      "s07-04-er-diagram-q04-practice",
+      "s07-04-er-diagram-q04-decision",
+      "s07-04-er-diagram-q04-warning",
+      "s07-04-er-diagram-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q05",
+    "title": "Сверка со скриптом",
+    "slideIds": [
+      "s07-04-er-diagram-q05-section",
+      "s07-04-er-diagram-q05-concept",
+      "s07-04-er-diagram-q05-rule",
+      "s07-04-er-diagram-q05-example",
+      "s07-04-er-diagram-q05-practice",
+      "s07-04-er-diagram-q05-decision",
+      "s07-04-er-diagram-q05-warning",
+      "s07-04-er-diagram-q05-notebook",
+      "s07-04-er-diagram-q05-T01-slide",
+      "s07-04-er-diagram-q05-T02-slide",
+      "s07-04-er-diagram-q05-T03-slide",
+      "s07-04-er-diagram-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q05-T01",
+      "s07-04-er-diagram-q05-T02",
+      "s07-04-er-diagram-q05-T03",
+      "s07-04-er-diagram-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q05-section",
+      "s07-04-er-diagram-q05-concept",
+      "s07-04-er-diagram-q05-rule",
+      "s07-04-er-diagram-q05-example",
+      "s07-04-er-diagram-q05-practice",
+      "s07-04-er-diagram-q05-decision",
+      "s07-04-er-diagram-q05-warning",
+      "s07-04-er-diagram-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q06",
+    "title": "Расположение объектов",
+    "slideIds": [
+      "s07-04-er-diagram-q06-section",
+      "s07-04-er-diagram-q06-concept",
+      "s07-04-er-diagram-q06-rule",
+      "s07-04-er-diagram-q06-example",
+      "s07-04-er-diagram-q06-practice",
+      "s07-04-er-diagram-q06-decision",
+      "s07-04-er-diagram-q06-warning",
+      "s07-04-er-diagram-q06-notebook",
+      "s07-04-er-diagram-q06-T01-slide",
+      "s07-04-er-diagram-q06-T02-slide",
+      "s07-04-er-diagram-q06-T03-slide",
+      "s07-04-er-diagram-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q06-T01",
+      "s07-04-er-diagram-q06-T02",
+      "s07-04-er-diagram-q06-T03",
+      "s07-04-er-diagram-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q06-section",
+      "s07-04-er-diagram-q06-concept",
+      "s07-04-er-diagram-q06-rule",
+      "s07-04-er-diagram-q06-example",
+      "s07-04-er-diagram-q06-practice",
+      "s07-04-er-diagram-q06-decision",
+      "s07-04-er-diagram-q06-warning",
+      "s07-04-er-diagram-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q07",
+    "title": "Версия диаграммы",
+    "slideIds": [
+      "s07-04-er-diagram-q07-section",
+      "s07-04-er-diagram-q07-concept",
+      "s07-04-er-diagram-q07-rule",
+      "s07-04-er-diagram-q07-example",
+      "s07-04-er-diagram-q07-practice",
+      "s07-04-er-diagram-q07-decision",
+      "s07-04-er-diagram-q07-warning",
+      "s07-04-er-diagram-q07-notebook",
+      "s07-04-er-diagram-q07-T01-slide",
+      "s07-04-er-diagram-q07-T02-slide",
+      "s07-04-er-diagram-q07-T03-slide",
+      "s07-04-er-diagram-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q07-T01",
+      "s07-04-er-diagram-q07-T02",
+      "s07-04-er-diagram-q07-T03",
+      "s07-04-er-diagram-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q07-section",
+      "s07-04-er-diagram-q07-concept",
+      "s07-04-er-diagram-q07-rule",
+      "s07-04-er-diagram-q07-example",
+      "s07-04-er-diagram-q07-practice",
+      "s07-04-er-diagram-q07-decision",
+      "s07-04-er-diagram-q07-warning",
+      "s07-04-er-diagram-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-04-er-diagram",
+    "questionId": "s07-04-er-diagram-q08",
+    "title": "Экспорт PDF",
+    "slideIds": [
+      "s07-04-er-diagram-q08-section",
+      "s07-04-er-diagram-q08-concept",
+      "s07-04-er-diagram-q08-rule",
+      "s07-04-er-diagram-q08-example",
+      "s07-04-er-diagram-q08-practice",
+      "s07-04-er-diagram-q08-decision",
+      "s07-04-er-diagram-q08-warning",
+      "s07-04-er-diagram-q08-notebook",
+      "s07-04-er-diagram-q08-T01-slide",
+      "s07-04-er-diagram-q08-T02-slide",
+      "s07-04-er-diagram-q08-T03-slide",
+      "s07-04-er-diagram-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s07-04-er-diagram-q08-T01",
+      "s07-04-er-diagram-q08-T02",
+      "s07-04-er-diagram-q08-T03",
+      "s07-04-er-diagram-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-04-er-diagram-q08-section",
+      "s07-04-er-diagram-q08-concept",
+      "s07-04-er-diagram-q08-rule",
+      "s07-04-er-diagram-q08-example",
+      "s07-04-er-diagram-q08-practice",
+      "s07-04-er-diagram-q08-decision",
+      "s07-04-er-diagram-q08-warning",
+      "s07-04-er-diagram-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q01",
+    "title": "Заголовки и структура",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q01-section",
+      "s07-05-prepare-and-load-data-q01-concept",
+      "s07-05-prepare-and-load-data-q01-rule",
+      "s07-05-prepare-and-load-data-q01-example",
+      "s07-05-prepare-and-load-data-q01-practice",
+      "s07-05-prepare-and-load-data-q01-decision",
+      "s07-05-prepare-and-load-data-q01-warning",
+      "s07-05-prepare-and-load-data-q01-notebook",
+      "s07-05-prepare-and-load-data-q01-T01-slide",
+      "s07-05-prepare-and-load-data-q01-T02-slide",
+      "s07-05-prepare-and-load-data-q01-T03-slide",
+      "s07-05-prepare-and-load-data-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q01-T01",
+      "s07-05-prepare-and-load-data-q01-T02",
+      "s07-05-prepare-and-load-data-q01-T03",
+      "s07-05-prepare-and-load-data-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q01-section",
+      "s07-05-prepare-and-load-data-q01-concept",
+      "s07-05-prepare-and-load-data-q01-rule",
+      "s07-05-prepare-and-load-data-q01-example",
+      "s07-05-prepare-and-load-data-q01-practice",
+      "s07-05-prepare-and-load-data-q01-decision",
+      "s07-05-prepare-and-load-data-q01-warning",
+      "s07-05-prepare-and-load-data-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q02",
+    "title": "Кодировка и разделители",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q02-section",
+      "s07-05-prepare-and-load-data-q02-concept",
+      "s07-05-prepare-and-load-data-q02-rule",
+      "s07-05-prepare-and-load-data-q02-example",
+      "s07-05-prepare-and-load-data-q02-practice",
+      "s07-05-prepare-and-load-data-q02-decision",
+      "s07-05-prepare-and-load-data-q02-warning",
+      "s07-05-prepare-and-load-data-q02-notebook",
+      "s07-05-prepare-and-load-data-q02-T01-slide",
+      "s07-05-prepare-and-load-data-q02-T02-slide",
+      "s07-05-prepare-and-load-data-q02-T03-slide",
+      "s07-05-prepare-and-load-data-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q02-T01",
+      "s07-05-prepare-and-load-data-q02-T02",
+      "s07-05-prepare-and-load-data-q02-T03",
+      "s07-05-prepare-and-load-data-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q02-section",
+      "s07-05-prepare-and-load-data-q02-concept",
+      "s07-05-prepare-and-load-data-q02-rule",
+      "s07-05-prepare-and-load-data-q02-example",
+      "s07-05-prepare-and-load-data-q02-practice",
+      "s07-05-prepare-and-load-data-q02-decision",
+      "s07-05-prepare-and-load-data-q02-warning",
+      "s07-05-prepare-and-load-data-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q03",
+    "title": "Пустые ячейки",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q03-section",
+      "s07-05-prepare-and-load-data-q03-concept",
+      "s07-05-prepare-and-load-data-q03-rule",
+      "s07-05-prepare-and-load-data-q03-example",
+      "s07-05-prepare-and-load-data-q03-practice",
+      "s07-05-prepare-and-load-data-q03-decision",
+      "s07-05-prepare-and-load-data-q03-warning",
+      "s07-05-prepare-and-load-data-q03-notebook",
+      "s07-05-prepare-and-load-data-q03-T01-slide",
+      "s07-05-prepare-and-load-data-q03-T02-slide",
+      "s07-05-prepare-and-load-data-q03-T03-slide",
+      "s07-05-prepare-and-load-data-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q03-T01",
+      "s07-05-prepare-and-load-data-q03-T02",
+      "s07-05-prepare-and-load-data-q03-T03",
+      "s07-05-prepare-and-load-data-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q03-section",
+      "s07-05-prepare-and-load-data-q03-concept",
+      "s07-05-prepare-and-load-data-q03-rule",
+      "s07-05-prepare-and-load-data-q03-example",
+      "s07-05-prepare-and-load-data-q03-practice",
+      "s07-05-prepare-and-load-data-q03-decision",
+      "s07-05-prepare-and-load-data-q03-warning",
+      "s07-05-prepare-and-load-data-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q04",
+    "title": "Повторы",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q04-section",
+      "s07-05-prepare-and-load-data-q04-concept",
+      "s07-05-prepare-and-load-data-q04-rule",
+      "s07-05-prepare-and-load-data-q04-example",
+      "s07-05-prepare-and-load-data-q04-practice",
+      "s07-05-prepare-and-load-data-q04-decision",
+      "s07-05-prepare-and-load-data-q04-warning",
+      "s07-05-prepare-and-load-data-q04-notebook",
+      "s07-05-prepare-and-load-data-q04-T01-slide",
+      "s07-05-prepare-and-load-data-q04-T02-slide",
+      "s07-05-prepare-and-load-data-q04-T03-slide",
+      "s07-05-prepare-and-load-data-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q04-T01",
+      "s07-05-prepare-and-load-data-q04-T02",
+      "s07-05-prepare-and-load-data-q04-T03",
+      "s07-05-prepare-and-load-data-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q04-section",
+      "s07-05-prepare-and-load-data-q04-concept",
+      "s07-05-prepare-and-load-data-q04-rule",
+      "s07-05-prepare-and-load-data-q04-example",
+      "s07-05-prepare-and-load-data-q04-practice",
+      "s07-05-prepare-and-load-data-q04-decision",
+      "s07-05-prepare-and-load-data-q04-warning",
+      "s07-05-prepare-and-load-data-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q05",
+    "title": "Некорректные значения",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q05-section",
+      "s07-05-prepare-and-load-data-q05-concept",
+      "s07-05-prepare-and-load-data-q05-rule",
+      "s07-05-prepare-and-load-data-q05-example",
+      "s07-05-prepare-and-load-data-q05-practice",
+      "s07-05-prepare-and-load-data-q05-decision",
+      "s07-05-prepare-and-load-data-q05-warning",
+      "s07-05-prepare-and-load-data-q05-notebook",
+      "s07-05-prepare-and-load-data-q05-T01-slide",
+      "s07-05-prepare-and-load-data-q05-T02-slide",
+      "s07-05-prepare-and-load-data-q05-T03-slide",
+      "s07-05-prepare-and-load-data-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q05-T01",
+      "s07-05-prepare-and-load-data-q05-T02",
+      "s07-05-prepare-and-load-data-q05-T03",
+      "s07-05-prepare-and-load-data-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q05-section",
+      "s07-05-prepare-and-load-data-q05-concept",
+      "s07-05-prepare-and-load-data-q05-rule",
+      "s07-05-prepare-and-load-data-q05-example",
+      "s07-05-prepare-and-load-data-q05-practice",
+      "s07-05-prepare-and-load-data-q05-decision",
+      "s07-05-prepare-and-load-data-q05-warning",
+      "s07-05-prepare-and-load-data-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q06",
+    "title": "Порядок загрузки",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q06-section",
+      "s07-05-prepare-and-load-data-q06-concept",
+      "s07-05-prepare-and-load-data-q06-rule",
+      "s07-05-prepare-and-load-data-q06-example",
+      "s07-05-prepare-and-load-data-q06-practice",
+      "s07-05-prepare-and-load-data-q06-decision",
+      "s07-05-prepare-and-load-data-q06-warning",
+      "s07-05-prepare-and-load-data-q06-notebook",
+      "s07-05-prepare-and-load-data-q06-T01-slide",
+      "s07-05-prepare-and-load-data-q06-T02-slide",
+      "s07-05-prepare-and-load-data-q06-T03-slide",
+      "s07-05-prepare-and-load-data-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q06-T01",
+      "s07-05-prepare-and-load-data-q06-T02",
+      "s07-05-prepare-and-load-data-q06-T03",
+      "s07-05-prepare-and-load-data-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q06-section",
+      "s07-05-prepare-and-load-data-q06-concept",
+      "s07-05-prepare-and-load-data-q06-rule",
+      "s07-05-prepare-and-load-data-q06-example",
+      "s07-05-prepare-and-load-data-q06-practice",
+      "s07-05-prepare-and-load-data-q06-decision",
+      "s07-05-prepare-and-load-data-q06-warning",
+      "s07-05-prepare-and-load-data-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q07",
+    "title": "Текст в ключ справочника",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q07-section",
+      "s07-05-prepare-and-load-data-q07-concept",
+      "s07-05-prepare-and-load-data-q07-rule",
+      "s07-05-prepare-and-load-data-q07-example",
+      "s07-05-prepare-and-load-data-q07-practice",
+      "s07-05-prepare-and-load-data-q07-decision",
+      "s07-05-prepare-and-load-data-q07-warning",
+      "s07-05-prepare-and-load-data-q07-notebook",
+      "s07-05-prepare-and-load-data-q07-T01-slide",
+      "s07-05-prepare-and-load-data-q07-T02-slide",
+      "s07-05-prepare-and-load-data-q07-T03-slide",
+      "s07-05-prepare-and-load-data-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q07-T01",
+      "s07-05-prepare-and-load-data-q07-T02",
+      "s07-05-prepare-and-load-data-q07-T03",
+      "s07-05-prepare-and-load-data-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q07-section",
+      "s07-05-prepare-and-load-data-q07-concept",
+      "s07-05-prepare-and-load-data-q07-rule",
+      "s07-05-prepare-and-load-data-q07-example",
+      "s07-05-prepare-and-load-data-q07-practice",
+      "s07-05-prepare-and-load-data-q07-decision",
+      "s07-05-prepare-and-load-data-q07-warning",
+      "s07-05-prepare-and-load-data-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-05-prepare-and-load-data",
+    "questionId": "s07-05-prepare-and-load-data-q08",
+    "title": "Протокол загрузки",
+    "slideIds": [
+      "s07-05-prepare-and-load-data-q08-section",
+      "s07-05-prepare-and-load-data-q08-concept",
+      "s07-05-prepare-and-load-data-q08-rule",
+      "s07-05-prepare-and-load-data-q08-example",
+      "s07-05-prepare-and-load-data-q08-practice",
+      "s07-05-prepare-and-load-data-q08-decision",
+      "s07-05-prepare-and-load-data-q08-warning",
+      "s07-05-prepare-and-load-data-q08-notebook",
+      "s07-05-prepare-and-load-data-q08-T01-slide",
+      "s07-05-prepare-and-load-data-q08-T02-slide",
+      "s07-05-prepare-and-load-data-q08-T03-slide",
+      "s07-05-prepare-and-load-data-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s07-05-prepare-and-load-data-q08-T01",
+      "s07-05-prepare-and-load-data-q08-T02",
+      "s07-05-prepare-and-load-data-q08-T03",
+      "s07-05-prepare-and-load-data-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-05-prepare-and-load-data-q08-section",
+      "s07-05-prepare-and-load-data-q08-concept",
+      "s07-05-prepare-and-load-data-q08-rule",
+      "s07-05-prepare-and-load-data-q08-example",
+      "s07-05-prepare-and-load-data-q08-practice",
+      "s07-05-prepare-and-load-data-q08-decision",
+      "s07-05-prepare-and-load-data-q08-warning",
+      "s07-05-prepare-and-load-data-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q01",
+    "title": "Контроль числа строк",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q01-section",
+      "s07-06-validate-load-and-delivery-script-q01-concept",
+      "s07-06-validate-load-and-delivery-script-q01-rule",
+      "s07-06-validate-load-and-delivery-script-q01-example",
+      "s07-06-validate-load-and-delivery-script-q01-practice",
+      "s07-06-validate-load-and-delivery-script-q01-decision",
+      "s07-06-validate-load-and-delivery-script-q01-warning",
+      "s07-06-validate-load-and-delivery-script-q01-notebook",
+      "s07-06-validate-load-and-delivery-script-q01-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q01-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q01-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q01-T01",
+      "s07-06-validate-load-and-delivery-script-q01-T02",
+      "s07-06-validate-load-and-delivery-script-q01-T03",
+      "s07-06-validate-load-and-delivery-script-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q01-section",
+      "s07-06-validate-load-and-delivery-script-q01-concept",
+      "s07-06-validate-load-and-delivery-script-q01-rule",
+      "s07-06-validate-load-and-delivery-script-q01-example",
+      "s07-06-validate-load-and-delivery-script-q01-practice",
+      "s07-06-validate-load-and-delivery-script-q01-decision",
+      "s07-06-validate-load-and-delivery-script-q01-warning",
+      "s07-06-validate-load-and-delivery-script-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q02",
+    "title": "Обязательные поля",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q02-section",
+      "s07-06-validate-load-and-delivery-script-q02-concept",
+      "s07-06-validate-load-and-delivery-script-q02-rule",
+      "s07-06-validate-load-and-delivery-script-q02-example",
+      "s07-06-validate-load-and-delivery-script-q02-practice",
+      "s07-06-validate-load-and-delivery-script-q02-decision",
+      "s07-06-validate-load-and-delivery-script-q02-warning",
+      "s07-06-validate-load-and-delivery-script-q02-notebook",
+      "s07-06-validate-load-and-delivery-script-q02-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q02-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q02-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q02-T01",
+      "s07-06-validate-load-and-delivery-script-q02-T02",
+      "s07-06-validate-load-and-delivery-script-q02-T03",
+      "s07-06-validate-load-and-delivery-script-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q02-section",
+      "s07-06-validate-load-and-delivery-script-q02-concept",
+      "s07-06-validate-load-and-delivery-script-q02-rule",
+      "s07-06-validate-load-and-delivery-script-q02-example",
+      "s07-06-validate-load-and-delivery-script-q02-practice",
+      "s07-06-validate-load-and-delivery-script-q02-decision",
+      "s07-06-validate-load-and-delivery-script-q02-warning",
+      "s07-06-validate-load-and-delivery-script-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q03",
+    "title": "Сиротские записи",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q03-section",
+      "s07-06-validate-load-and-delivery-script-q03-concept",
+      "s07-06-validate-load-and-delivery-script-q03-rule",
+      "s07-06-validate-load-and-delivery-script-q03-example",
+      "s07-06-validate-load-and-delivery-script-q03-practice",
+      "s07-06-validate-load-and-delivery-script-q03-decision",
+      "s07-06-validate-load-and-delivery-script-q03-warning",
+      "s07-06-validate-load-and-delivery-script-q03-notebook",
+      "s07-06-validate-load-and-delivery-script-q03-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q03-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q03-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q03-T01",
+      "s07-06-validate-load-and-delivery-script-q03-T02",
+      "s07-06-validate-load-and-delivery-script-q03-T03",
+      "s07-06-validate-load-and-delivery-script-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q03-section",
+      "s07-06-validate-load-and-delivery-script-q03-concept",
+      "s07-06-validate-load-and-delivery-script-q03-rule",
+      "s07-06-validate-load-and-delivery-script-q03-example",
+      "s07-06-validate-load-and-delivery-script-q03-practice",
+      "s07-06-validate-load-and-delivery-script-q03-decision",
+      "s07-06-validate-load-and-delivery-script-q03-warning",
+      "s07-06-validate-load-and-delivery-script-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q04",
+    "title": "Отклонённые строки",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q04-section",
+      "s07-06-validate-load-and-delivery-script-q04-concept",
+      "s07-06-validate-load-and-delivery-script-q04-rule",
+      "s07-06-validate-load-and-delivery-script-q04-example",
+      "s07-06-validate-load-and-delivery-script-q04-practice",
+      "s07-06-validate-load-and-delivery-script-q04-decision",
+      "s07-06-validate-load-and-delivery-script-q04-warning",
+      "s07-06-validate-load-and-delivery-script-q04-notebook",
+      "s07-06-validate-load-and-delivery-script-q04-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q04-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q04-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q04-T01",
+      "s07-06-validate-load-and-delivery-script-q04-T02",
+      "s07-06-validate-load-and-delivery-script-q04-T03",
+      "s07-06-validate-load-and-delivery-script-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q04-section",
+      "s07-06-validate-load-and-delivery-script-q04-concept",
+      "s07-06-validate-load-and-delivery-script-q04-rule",
+      "s07-06-validate-load-and-delivery-script-q04-example",
+      "s07-06-validate-load-and-delivery-script-q04-practice",
+      "s07-06-validate-load-and-delivery-script-q04-decision",
+      "s07-06-validate-load-and-delivery-script-q04-warning",
+      "s07-06-validate-load-and-delivery-script-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q05",
+    "title": "Состав скрипта поставки",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q05-section",
+      "s07-06-validate-load-and-delivery-script-q05-concept",
+      "s07-06-validate-load-and-delivery-script-q05-rule",
+      "s07-06-validate-load-and-delivery-script-q05-example",
+      "s07-06-validate-load-and-delivery-script-q05-practice",
+      "s07-06-validate-load-and-delivery-script-q05-decision",
+      "s07-06-validate-load-and-delivery-script-q05-warning",
+      "s07-06-validate-load-and-delivery-script-q05-notebook",
+      "s07-06-validate-load-and-delivery-script-q05-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q05-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q05-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q05-T01",
+      "s07-06-validate-load-and-delivery-script-q05-T02",
+      "s07-06-validate-load-and-delivery-script-q05-T03",
+      "s07-06-validate-load-and-delivery-script-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q05-section",
+      "s07-06-validate-load-and-delivery-script-q05-concept",
+      "s07-06-validate-load-and-delivery-script-q05-rule",
+      "s07-06-validate-load-and-delivery-script-q05-example",
+      "s07-06-validate-load-and-delivery-script-q05-practice",
+      "s07-06-validate-load-and-delivery-script-q05-decision",
+      "s07-06-validate-load-and-delivery-script-q05-warning",
+      "s07-06-validate-load-and-delivery-script-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q06",
+    "title": "Чистая база",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q06-section",
+      "s07-06-validate-load-and-delivery-script-q06-concept",
+      "s07-06-validate-load-and-delivery-script-q06-rule",
+      "s07-06-validate-load-and-delivery-script-q06-example",
+      "s07-06-validate-load-and-delivery-script-q06-practice",
+      "s07-06-validate-load-and-delivery-script-q06-decision",
+      "s07-06-validate-load-and-delivery-script-q06-warning",
+      "s07-06-validate-load-and-delivery-script-q06-notebook",
+      "s07-06-validate-load-and-delivery-script-q06-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q06-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q06-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q06-T01",
+      "s07-06-validate-load-and-delivery-script-q06-T02",
+      "s07-06-validate-load-and-delivery-script-q06-T03",
+      "s07-06-validate-load-and-delivery-script-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q06-section",
+      "s07-06-validate-load-and-delivery-script-q06-concept",
+      "s07-06-validate-load-and-delivery-script-q06-rule",
+      "s07-06-validate-load-and-delivery-script-q06-example",
+      "s07-06-validate-load-and-delivery-script-q06-practice",
+      "s07-06-validate-load-and-delivery-script-q06-decision",
+      "s07-06-validate-load-and-delivery-script-q06-warning",
+      "s07-06-validate-load-and-delivery-script-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q07",
+    "title": "Повторяемость",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q07-section",
+      "s07-06-validate-load-and-delivery-script-q07-concept",
+      "s07-06-validate-load-and-delivery-script-q07-rule",
+      "s07-06-validate-load-and-delivery-script-q07-example",
+      "s07-06-validate-load-and-delivery-script-q07-practice",
+      "s07-06-validate-load-and-delivery-script-q07-decision",
+      "s07-06-validate-load-and-delivery-script-q07-warning",
+      "s07-06-validate-load-and-delivery-script-q07-notebook",
+      "s07-06-validate-load-and-delivery-script-q07-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q07-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q07-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q07-T01",
+      "s07-06-validate-load-and-delivery-script-q07-T02",
+      "s07-06-validate-load-and-delivery-script-q07-T03",
+      "s07-06-validate-load-and-delivery-script-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q07-section",
+      "s07-06-validate-load-and-delivery-script-q07-concept",
+      "s07-06-validate-load-and-delivery-script-q07-rule",
+      "s07-06-validate-load-and-delivery-script-q07-example",
+      "s07-06-validate-load-and-delivery-script-q07-practice",
+      "s07-06-validate-load-and-delivery-script-q07-decision",
+      "s07-06-validate-load-and-delivery-script-q07-warning",
+      "s07-06-validate-load-and-delivery-script-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-06-validate-load-and-delivery-script",
+    "questionId": "s07-06-validate-load-and-delivery-script-q08",
+    "title": "Протокол поставки",
+    "slideIds": [
+      "s07-06-validate-load-and-delivery-script-q08-section",
+      "s07-06-validate-load-and-delivery-script-q08-concept",
+      "s07-06-validate-load-and-delivery-script-q08-rule",
+      "s07-06-validate-load-and-delivery-script-q08-example",
+      "s07-06-validate-load-and-delivery-script-q08-practice",
+      "s07-06-validate-load-and-delivery-script-q08-decision",
+      "s07-06-validate-load-and-delivery-script-q08-warning",
+      "s07-06-validate-load-and-delivery-script-q08-notebook",
+      "s07-06-validate-load-and-delivery-script-q08-T01-slide",
+      "s07-06-validate-load-and-delivery-script-q08-T02-slide",
+      "s07-06-validate-load-and-delivery-script-q08-T03-slide",
+      "s07-06-validate-load-and-delivery-script-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s07-06-validate-load-and-delivery-script-q08-T01",
+      "s07-06-validate-load-and-delivery-script-q08-T02",
+      "s07-06-validate-load-and-delivery-script-q08-T03",
+      "s07-06-validate-load-and-delivery-script-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-06-validate-load-and-delivery-script-q08-section",
+      "s07-06-validate-load-and-delivery-script-q08-concept",
+      "s07-06-validate-load-and-delivery-script-q08-rule",
+      "s07-06-validate-load-and-delivery-script-q08-example",
+      "s07-06-validate-load-and-delivery-script-q08-practice",
+      "s07-06-validate-load-and-delivery-script-q08-decision",
+      "s07-06-validate-load-and-delivery-script-q08-warning",
+      "s07-06-validate-load-and-delivery-script-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q01",
+    "title": "Итоги по таблицам",
+    "slideIds": [
+      "s07-07-control-queries-q01-section",
+      "s07-07-control-queries-q01-concept",
+      "s07-07-control-queries-q01-rule",
+      "s07-07-control-queries-q01-example",
+      "s07-07-control-queries-q01-practice",
+      "s07-07-control-queries-q01-decision",
+      "s07-07-control-queries-q01-warning",
+      "s07-07-control-queries-q01-notebook",
+      "s07-07-control-queries-q01-T01-slide",
+      "s07-07-control-queries-q01-T02-slide",
+      "s07-07-control-queries-q01-T03-slide",
+      "s07-07-control-queries-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q01-T01",
+      "s07-07-control-queries-q01-T02",
+      "s07-07-control-queries-q01-T03",
+      "s07-07-control-queries-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q01-section",
+      "s07-07-control-queries-q01-concept",
+      "s07-07-control-queries-q01-rule",
+      "s07-07-control-queries-q01-example",
+      "s07-07-control-queries-q01-practice",
+      "s07-07-control-queries-q01-decision",
+      "s07-07-control-queries-q01-warning",
+      "s07-07-control-queries-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q02",
+    "title": "Связанные записи",
+    "slideIds": [
+      "s07-07-control-queries-q02-section",
+      "s07-07-control-queries-q02-concept",
+      "s07-07-control-queries-q02-rule",
+      "s07-07-control-queries-q02-example",
+      "s07-07-control-queries-q02-practice",
+      "s07-07-control-queries-q02-decision",
+      "s07-07-control-queries-q02-warning",
+      "s07-07-control-queries-q02-notebook",
+      "s07-07-control-queries-q02-T01-slide",
+      "s07-07-control-queries-q02-T02-slide",
+      "s07-07-control-queries-q02-T03-slide",
+      "s07-07-control-queries-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q02-T01",
+      "s07-07-control-queries-q02-T02",
+      "s07-07-control-queries-q02-T03",
+      "s07-07-control-queries-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q02-section",
+      "s07-07-control-queries-q02-concept",
+      "s07-07-control-queries-q02-rule",
+      "s07-07-control-queries-q02-example",
+      "s07-07-control-queries-q02-practice",
+      "s07-07-control-queries-q02-decision",
+      "s07-07-control-queries-q02-warning",
+      "s07-07-control-queries-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q03",
+    "title": "Расхождения с файлами",
+    "slideIds": [
+      "s07-07-control-queries-q03-section",
+      "s07-07-control-queries-q03-concept",
+      "s07-07-control-queries-q03-rule",
+      "s07-07-control-queries-q03-example",
+      "s07-07-control-queries-q03-practice",
+      "s07-07-control-queries-q03-decision",
+      "s07-07-control-queries-q03-warning",
+      "s07-07-control-queries-q03-notebook",
+      "s07-07-control-queries-q03-T01-slide",
+      "s07-07-control-queries-q03-T02-slide",
+      "s07-07-control-queries-q03-T03-slide",
+      "s07-07-control-queries-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q03-T01",
+      "s07-07-control-queries-q03-T02",
+      "s07-07-control-queries-q03-T03",
+      "s07-07-control-queries-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q03-section",
+      "s07-07-control-queries-q03-concept",
+      "s07-07-control-queries-q03-rule",
+      "s07-07-control-queries-q03-example",
+      "s07-07-control-queries-q03-practice",
+      "s07-07-control-queries-q03-decision",
+      "s07-07-control-queries-q03-warning",
+      "s07-07-control-queries-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q04",
+    "title": "Пустоты и дубли",
+    "slideIds": [
+      "s07-07-control-queries-q04-section",
+      "s07-07-control-queries-q04-concept",
+      "s07-07-control-queries-q04-rule",
+      "s07-07-control-queries-q04-example",
+      "s07-07-control-queries-q04-practice",
+      "s07-07-control-queries-q04-decision",
+      "s07-07-control-queries-q04-warning",
+      "s07-07-control-queries-q04-notebook",
+      "s07-07-control-queries-q04-T01-slide",
+      "s07-07-control-queries-q04-T02-slide",
+      "s07-07-control-queries-q04-T03-slide",
+      "s07-07-control-queries-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q04-T01",
+      "s07-07-control-queries-q04-T02",
+      "s07-07-control-queries-q04-T03",
+      "s07-07-control-queries-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q04-section",
+      "s07-07-control-queries-q04-concept",
+      "s07-07-control-queries-q04-rule",
+      "s07-07-control-queries-q04-example",
+      "s07-07-control-queries-q04-practice",
+      "s07-07-control-queries-q04-decision",
+      "s07-07-control-queries-q04-warning",
+      "s07-07-control-queries-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q05",
+    "title": "Соединения",
+    "slideIds": [
+      "s07-07-control-queries-q05-section",
+      "s07-07-control-queries-q05-concept",
+      "s07-07-control-queries-q05-rule",
+      "s07-07-control-queries-q05-example",
+      "s07-07-control-queries-q05-practice",
+      "s07-07-control-queries-q05-decision",
+      "s07-07-control-queries-q05-warning",
+      "s07-07-control-queries-q05-notebook",
+      "s07-07-control-queries-q05-T01-slide",
+      "s07-07-control-queries-q05-T02-slide",
+      "s07-07-control-queries-q05-T03-slide",
+      "s07-07-control-queries-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q05-T01",
+      "s07-07-control-queries-q05-T02",
+      "s07-07-control-queries-q05-T03",
+      "s07-07-control-queries-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q05-section",
+      "s07-07-control-queries-q05-concept",
+      "s07-07-control-queries-q05-rule",
+      "s07-07-control-queries-q05-example",
+      "s07-07-control-queries-q05-practice",
+      "s07-07-control-queries-q05-decision",
+      "s07-07-control-queries-q05-warning",
+      "s07-07-control-queries-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q06",
+    "title": "Агрегирование",
+    "slideIds": [
+      "s07-07-control-queries-q06-section",
+      "s07-07-control-queries-q06-concept",
+      "s07-07-control-queries-q06-rule",
+      "s07-07-control-queries-q06-example",
+      "s07-07-control-queries-q06-practice",
+      "s07-07-control-queries-q06-decision",
+      "s07-07-control-queries-q06-warning",
+      "s07-07-control-queries-q06-notebook",
+      "s07-07-control-queries-q06-T01-slide",
+      "s07-07-control-queries-q06-T02-slide",
+      "s07-07-control-queries-q06-T03-slide",
+      "s07-07-control-queries-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q06-T01",
+      "s07-07-control-queries-q06-T02",
+      "s07-07-control-queries-q06-T03",
+      "s07-07-control-queries-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q06-section",
+      "s07-07-control-queries-q06-concept",
+      "s07-07-control-queries-q06-rule",
+      "s07-07-control-queries-q06-example",
+      "s07-07-control-queries-q06-practice",
+      "s07-07-control-queries-q06-decision",
+      "s07-07-control-queries-q06-warning",
+      "s07-07-control-queries-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q07",
+    "title": "Отчётный запрос",
+    "slideIds": [
+      "s07-07-control-queries-q07-section",
+      "s07-07-control-queries-q07-concept",
+      "s07-07-control-queries-q07-rule",
+      "s07-07-control-queries-q07-example",
+      "s07-07-control-queries-q07-practice",
+      "s07-07-control-queries-q07-decision",
+      "s07-07-control-queries-q07-warning",
+      "s07-07-control-queries-q07-notebook",
+      "s07-07-control-queries-q07-T01-slide",
+      "s07-07-control-queries-q07-T02-slide",
+      "s07-07-control-queries-q07-T03-slide",
+      "s07-07-control-queries-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q07-T01",
+      "s07-07-control-queries-q07-T02",
+      "s07-07-control-queries-q07-T03",
+      "s07-07-control-queries-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q07-section",
+      "s07-07-control-queries-q07-concept",
+      "s07-07-control-queries-q07-rule",
+      "s07-07-control-queries-q07-example",
+      "s07-07-control-queries-q07-practice",
+      "s07-07-control-queries-q07-decision",
+      "s07-07-control-queries-q07-warning",
+      "s07-07-control-queries-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s07-07-control-queries",
+    "questionId": "s07-07-control-queries-q08",
+    "title": "Пакет запросов",
+    "slideIds": [
+      "s07-07-control-queries-q08-section",
+      "s07-07-control-queries-q08-concept",
+      "s07-07-control-queries-q08-rule",
+      "s07-07-control-queries-q08-example",
+      "s07-07-control-queries-q08-practice",
+      "s07-07-control-queries-q08-decision",
+      "s07-07-control-queries-q08-warning",
+      "s07-07-control-queries-q08-notebook",
+      "s07-07-control-queries-q08-T01-slide",
+      "s07-07-control-queries-q08-T02-slide",
+      "s07-07-control-queries-q08-T03-slide",
+      "s07-07-control-queries-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s07-07-control-queries-q08-T01",
+      "s07-07-control-queries-q08-T02",
+      "s07-07-control-queries-q08-T03",
+      "s07-07-control-queries-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s07-07-control-queries-q08-section",
+      "s07-07-control-queries-q08-concept",
+      "s07-07-control-queries-q08-rule",
+      "s07-07-control-queries-q08-example",
+      "s07-07-control-queries-q08-practice",
+      "s07-07-control-queries-q08-decision",
+      "s07-07-control-queries-q08-warning",
+      "s07-07-control-queries-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q01",
+    "title": "Назначение представления",
+    "slideIds": [
+      "s08-01-views-q01-section",
+      "s08-01-views-q01-concept",
+      "s08-01-views-q01-rule",
+      "s08-01-views-q01-example",
+      "s08-01-views-q01-practice",
+      "s08-01-views-q01-decision",
+      "s08-01-views-q01-warning",
+      "s08-01-views-q01-notebook",
+      "s08-01-views-q01-T01-slide",
+      "s08-01-views-q01-T02-slide",
+      "s08-01-views-q01-T03-slide",
+      "s08-01-views-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q01-T01",
+      "s08-01-views-q01-T02",
+      "s08-01-views-q01-T03",
+      "s08-01-views-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q01-section",
+      "s08-01-views-q01-concept",
+      "s08-01-views-q01-rule",
+      "s08-01-views-q01-example",
+      "s08-01-views-q01-practice",
+      "s08-01-views-q01-decision",
+      "s08-01-views-q01-warning",
+      "s08-01-views-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q02",
+    "title": "Состав колонок",
+    "slideIds": [
+      "s08-01-views-q02-section",
+      "s08-01-views-q02-concept",
+      "s08-01-views-q02-rule",
+      "s08-01-views-q02-example",
+      "s08-01-views-q02-practice",
+      "s08-01-views-q02-decision",
+      "s08-01-views-q02-warning",
+      "s08-01-views-q02-notebook",
+      "s08-01-views-q02-T01-slide",
+      "s08-01-views-q02-T02-slide",
+      "s08-01-views-q02-T03-slide",
+      "s08-01-views-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q02-T01",
+      "s08-01-views-q02-T02",
+      "s08-01-views-q02-T03",
+      "s08-01-views-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q02-section",
+      "s08-01-views-q02-concept",
+      "s08-01-views-q02-rule",
+      "s08-01-views-q02-example",
+      "s08-01-views-q02-practice",
+      "s08-01-views-q02-decision",
+      "s08-01-views-q02-warning",
+      "s08-01-views-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q03",
+    "title": "Контрольное представление",
+    "slideIds": [
+      "s08-01-views-q03-section",
+      "s08-01-views-q03-concept",
+      "s08-01-views-q03-rule",
+      "s08-01-views-q03-example",
+      "s08-01-views-q03-practice",
+      "s08-01-views-q03-decision",
+      "s08-01-views-q03-warning",
+      "s08-01-views-q03-notebook",
+      "s08-01-views-q03-T01-slide",
+      "s08-01-views-q03-T02-slide",
+      "s08-01-views-q03-T03-slide",
+      "s08-01-views-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q03-T01",
+      "s08-01-views-q03-T02",
+      "s08-01-views-q03-T03",
+      "s08-01-views-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q03-section",
+      "s08-01-views-q03-concept",
+      "s08-01-views-q03-rule",
+      "s08-01-views-q03-example",
+      "s08-01-views-q03-practice",
+      "s08-01-views-q03-decision",
+      "s08-01-views-q03-warning",
+      "s08-01-views-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q04",
+    "title": "Отчётное представление",
+    "slideIds": [
+      "s08-01-views-q04-section",
+      "s08-01-views-q04-concept",
+      "s08-01-views-q04-rule",
+      "s08-01-views-q04-example",
+      "s08-01-views-q04-practice",
+      "s08-01-views-q04-decision",
+      "s08-01-views-q04-warning",
+      "s08-01-views-q04-notebook",
+      "s08-01-views-q04-T01-slide",
+      "s08-01-views-q04-T02-slide",
+      "s08-01-views-q04-T03-slide",
+      "s08-01-views-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q04-T01",
+      "s08-01-views-q04-T02",
+      "s08-01-views-q04-T03",
+      "s08-01-views-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q04-section",
+      "s08-01-views-q04-concept",
+      "s08-01-views-q04-rule",
+      "s08-01-views-q04-example",
+      "s08-01-views-q04-practice",
+      "s08-01-views-q04-decision",
+      "s08-01-views-q04-warning",
+      "s08-01-views-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q05",
+    "title": "Соединения и агрегаты",
+    "slideIds": [
+      "s08-01-views-q05-section",
+      "s08-01-views-q05-concept",
+      "s08-01-views-q05-rule",
+      "s08-01-views-q05-example",
+      "s08-01-views-q05-practice",
+      "s08-01-views-q05-decision",
+      "s08-01-views-q05-warning",
+      "s08-01-views-q05-notebook",
+      "s08-01-views-q05-T01-slide",
+      "s08-01-views-q05-T02-slide",
+      "s08-01-views-q05-T03-slide",
+      "s08-01-views-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q05-T01",
+      "s08-01-views-q05-T02",
+      "s08-01-views-q05-T03",
+      "s08-01-views-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q05-section",
+      "s08-01-views-q05-concept",
+      "s08-01-views-q05-rule",
+      "s08-01-views-q05-example",
+      "s08-01-views-q05-practice",
+      "s08-01-views-q05-decision",
+      "s08-01-views-q05-warning",
+      "s08-01-views-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q06",
+    "title": "SQL SECURITY",
+    "slideIds": [
+      "s08-01-views-q06-section",
+      "s08-01-views-q06-concept",
+      "s08-01-views-q06-rule",
+      "s08-01-views-q06-example",
+      "s08-01-views-q06-practice",
+      "s08-01-views-q06-decision",
+      "s08-01-views-q06-warning",
+      "s08-01-views-q06-notebook",
+      "s08-01-views-q06-T01-slide",
+      "s08-01-views-q06-T02-slide",
+      "s08-01-views-q06-T03-slide",
+      "s08-01-views-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q06-T01",
+      "s08-01-views-q06-T02",
+      "s08-01-views-q06-T03",
+      "s08-01-views-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q06-section",
+      "s08-01-views-q06-concept",
+      "s08-01-views-q06-rule",
+      "s08-01-views-q06-example",
+      "s08-01-views-q06-practice",
+      "s08-01-views-q06-decision",
+      "s08-01-views-q06-warning",
+      "s08-01-views-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q07",
+    "title": "Изменяемость",
+    "slideIds": [
+      "s08-01-views-q07-section",
+      "s08-01-views-q07-concept",
+      "s08-01-views-q07-rule",
+      "s08-01-views-q07-example",
+      "s08-01-views-q07-practice",
+      "s08-01-views-q07-decision",
+      "s08-01-views-q07-warning",
+      "s08-01-views-q07-notebook",
+      "s08-01-views-q07-T01-slide",
+      "s08-01-views-q07-T02-slide",
+      "s08-01-views-q07-T03-slide",
+      "s08-01-views-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q07-T01",
+      "s08-01-views-q07-T02",
+      "s08-01-views-q07-T03",
+      "s08-01-views-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q07-section",
+      "s08-01-views-q07-concept",
+      "s08-01-views-q07-rule",
+      "s08-01-views-q07-example",
+      "s08-01-views-q07-practice",
+      "s08-01-views-q07-decision",
+      "s08-01-views-q07-warning",
+      "s08-01-views-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-01-views",
+    "questionId": "s08-01-views-q08",
+    "title": "Реестр представлений",
+    "slideIds": [
+      "s08-01-views-q08-section",
+      "s08-01-views-q08-concept",
+      "s08-01-views-q08-rule",
+      "s08-01-views-q08-example",
+      "s08-01-views-q08-practice",
+      "s08-01-views-q08-decision",
+      "s08-01-views-q08-warning",
+      "s08-01-views-q08-notebook",
+      "s08-01-views-q08-T01-slide",
+      "s08-01-views-q08-T02-slide",
+      "s08-01-views-q08-T03-slide",
+      "s08-01-views-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s08-01-views-q08-T01",
+      "s08-01-views-q08-T02",
+      "s08-01-views-q08-T03",
+      "s08-01-views-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-01-views-q08-section",
+      "s08-01-views-q08-concept",
+      "s08-01-views-q08-rule",
+      "s08-01-views-q08-example",
+      "s08-01-views-q08-practice",
+      "s08-01-views-q08-decision",
+      "s08-01-views-q08-warning",
+      "s08-01-views-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q01",
+    "title": "Граница транзакции",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q01-section",
+      "s08-02-coordinated-data-changes-q01-concept",
+      "s08-02-coordinated-data-changes-q01-rule",
+      "s08-02-coordinated-data-changes-q01-example",
+      "s08-02-coordinated-data-changes-q01-practice",
+      "s08-02-coordinated-data-changes-q01-decision",
+      "s08-02-coordinated-data-changes-q01-warning",
+      "s08-02-coordinated-data-changes-q01-notebook",
+      "s08-02-coordinated-data-changes-q01-T01-slide",
+      "s08-02-coordinated-data-changes-q01-T02-slide",
+      "s08-02-coordinated-data-changes-q01-T03-slide",
+      "s08-02-coordinated-data-changes-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q01-T01",
+      "s08-02-coordinated-data-changes-q01-T02",
+      "s08-02-coordinated-data-changes-q01-T03",
+      "s08-02-coordinated-data-changes-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q01-section",
+      "s08-02-coordinated-data-changes-q01-concept",
+      "s08-02-coordinated-data-changes-q01-rule",
+      "s08-02-coordinated-data-changes-q01-example",
+      "s08-02-coordinated-data-changes-q01-practice",
+      "s08-02-coordinated-data-changes-q01-decision",
+      "s08-02-coordinated-data-changes-q01-warning",
+      "s08-02-coordinated-data-changes-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q02",
+    "title": "START TRANSACTION",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q02-section",
+      "s08-02-coordinated-data-changes-q02-concept",
+      "s08-02-coordinated-data-changes-q02-rule",
+      "s08-02-coordinated-data-changes-q02-example",
+      "s08-02-coordinated-data-changes-q02-practice",
+      "s08-02-coordinated-data-changes-q02-decision",
+      "s08-02-coordinated-data-changes-q02-warning",
+      "s08-02-coordinated-data-changes-q02-notebook",
+      "s08-02-coordinated-data-changes-q02-T01-slide",
+      "s08-02-coordinated-data-changes-q02-T02-slide",
+      "s08-02-coordinated-data-changes-q02-T03-slide",
+      "s08-02-coordinated-data-changes-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q02-T01",
+      "s08-02-coordinated-data-changes-q02-T02",
+      "s08-02-coordinated-data-changes-q02-T03",
+      "s08-02-coordinated-data-changes-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q02-section",
+      "s08-02-coordinated-data-changes-q02-concept",
+      "s08-02-coordinated-data-changes-q02-rule",
+      "s08-02-coordinated-data-changes-q02-example",
+      "s08-02-coordinated-data-changes-q02-practice",
+      "s08-02-coordinated-data-changes-q02-decision",
+      "s08-02-coordinated-data-changes-q02-warning",
+      "s08-02-coordinated-data-changes-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q03",
+    "title": "COMMIT",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q03-section",
+      "s08-02-coordinated-data-changes-q03-concept",
+      "s08-02-coordinated-data-changes-q03-rule",
+      "s08-02-coordinated-data-changes-q03-example",
+      "s08-02-coordinated-data-changes-q03-practice",
+      "s08-02-coordinated-data-changes-q03-decision",
+      "s08-02-coordinated-data-changes-q03-warning",
+      "s08-02-coordinated-data-changes-q03-notebook",
+      "s08-02-coordinated-data-changes-q03-T01-slide",
+      "s08-02-coordinated-data-changes-q03-T02-slide",
+      "s08-02-coordinated-data-changes-q03-T03-slide",
+      "s08-02-coordinated-data-changes-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q03-T01",
+      "s08-02-coordinated-data-changes-q03-T02",
+      "s08-02-coordinated-data-changes-q03-T03",
+      "s08-02-coordinated-data-changes-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q03-section",
+      "s08-02-coordinated-data-changes-q03-concept",
+      "s08-02-coordinated-data-changes-q03-rule",
+      "s08-02-coordinated-data-changes-q03-example",
+      "s08-02-coordinated-data-changes-q03-practice",
+      "s08-02-coordinated-data-changes-q03-decision",
+      "s08-02-coordinated-data-changes-q03-warning",
+      "s08-02-coordinated-data-changes-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q04",
+    "title": "ROLLBACK",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q04-section",
+      "s08-02-coordinated-data-changes-q04-concept",
+      "s08-02-coordinated-data-changes-q04-rule",
+      "s08-02-coordinated-data-changes-q04-example",
+      "s08-02-coordinated-data-changes-q04-practice",
+      "s08-02-coordinated-data-changes-q04-decision",
+      "s08-02-coordinated-data-changes-q04-warning",
+      "s08-02-coordinated-data-changes-q04-notebook",
+      "s08-02-coordinated-data-changes-q04-T01-slide",
+      "s08-02-coordinated-data-changes-q04-T02-slide",
+      "s08-02-coordinated-data-changes-q04-T03-slide",
+      "s08-02-coordinated-data-changes-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q04-T01",
+      "s08-02-coordinated-data-changes-q04-T02",
+      "s08-02-coordinated-data-changes-q04-T03",
+      "s08-02-coordinated-data-changes-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q04-section",
+      "s08-02-coordinated-data-changes-q04-concept",
+      "s08-02-coordinated-data-changes-q04-rule",
+      "s08-02-coordinated-data-changes-q04-example",
+      "s08-02-coordinated-data-changes-q04-practice",
+      "s08-02-coordinated-data-changes-q04-decision",
+      "s08-02-coordinated-data-changes-q04-warning",
+      "s08-02-coordinated-data-changes-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q05",
+    "title": "Процедура изменения",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q05-section",
+      "s08-02-coordinated-data-changes-q05-concept",
+      "s08-02-coordinated-data-changes-q05-rule",
+      "s08-02-coordinated-data-changes-q05-example",
+      "s08-02-coordinated-data-changes-q05-practice",
+      "s08-02-coordinated-data-changes-q05-decision",
+      "s08-02-coordinated-data-changes-q05-warning",
+      "s08-02-coordinated-data-changes-q05-notebook",
+      "s08-02-coordinated-data-changes-q05-T01-slide",
+      "s08-02-coordinated-data-changes-q05-T02-slide",
+      "s08-02-coordinated-data-changes-q05-T03-slide",
+      "s08-02-coordinated-data-changes-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q05-T01",
+      "s08-02-coordinated-data-changes-q05-T02",
+      "s08-02-coordinated-data-changes-q05-T03",
+      "s08-02-coordinated-data-changes-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q05-section",
+      "s08-02-coordinated-data-changes-q05-concept",
+      "s08-02-coordinated-data-changes-q05-rule",
+      "s08-02-coordinated-data-changes-q05-example",
+      "s08-02-coordinated-data-changes-q05-practice",
+      "s08-02-coordinated-data-changes-q05-decision",
+      "s08-02-coordinated-data-changes-q05-warning",
+      "s08-02-coordinated-data-changes-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q06",
+    "title": "Проверка параметров",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q06-section",
+      "s08-02-coordinated-data-changes-q06-concept",
+      "s08-02-coordinated-data-changes-q06-rule",
+      "s08-02-coordinated-data-changes-q06-example",
+      "s08-02-coordinated-data-changes-q06-practice",
+      "s08-02-coordinated-data-changes-q06-decision",
+      "s08-02-coordinated-data-changes-q06-warning",
+      "s08-02-coordinated-data-changes-q06-notebook",
+      "s08-02-coordinated-data-changes-q06-T01-slide",
+      "s08-02-coordinated-data-changes-q06-T02-slide",
+      "s08-02-coordinated-data-changes-q06-T03-slide",
+      "s08-02-coordinated-data-changes-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q06-T01",
+      "s08-02-coordinated-data-changes-q06-T02",
+      "s08-02-coordinated-data-changes-q06-T03",
+      "s08-02-coordinated-data-changes-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q06-section",
+      "s08-02-coordinated-data-changes-q06-concept",
+      "s08-02-coordinated-data-changes-q06-rule",
+      "s08-02-coordinated-data-changes-q06-example",
+      "s08-02-coordinated-data-changes-q06-practice",
+      "s08-02-coordinated-data-changes-q06-decision",
+      "s08-02-coordinated-data-changes-q06-warning",
+      "s08-02-coordinated-data-changes-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q07",
+    "title": "Триггер журнала",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q07-section",
+      "s08-02-coordinated-data-changes-q07-concept",
+      "s08-02-coordinated-data-changes-q07-rule",
+      "s08-02-coordinated-data-changes-q07-example",
+      "s08-02-coordinated-data-changes-q07-practice",
+      "s08-02-coordinated-data-changes-q07-decision",
+      "s08-02-coordinated-data-changes-q07-warning",
+      "s08-02-coordinated-data-changes-q07-notebook",
+      "s08-02-coordinated-data-changes-q07-T01-slide",
+      "s08-02-coordinated-data-changes-q07-T02-slide",
+      "s08-02-coordinated-data-changes-q07-T03-slide",
+      "s08-02-coordinated-data-changes-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q07-T01",
+      "s08-02-coordinated-data-changes-q07-T02",
+      "s08-02-coordinated-data-changes-q07-T03",
+      "s08-02-coordinated-data-changes-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q07-section",
+      "s08-02-coordinated-data-changes-q07-concept",
+      "s08-02-coordinated-data-changes-q07-rule",
+      "s08-02-coordinated-data-changes-q07-example",
+      "s08-02-coordinated-data-changes-q07-practice",
+      "s08-02-coordinated-data-changes-q07-decision",
+      "s08-02-coordinated-data-changes-q07-warning",
+      "s08-02-coordinated-data-changes-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-02-coordinated-data-changes",
+    "questionId": "s08-02-coordinated-data-changes-q08",
+    "title": "Проверка согласованности",
+    "slideIds": [
+      "s08-02-coordinated-data-changes-q08-section",
+      "s08-02-coordinated-data-changes-q08-concept",
+      "s08-02-coordinated-data-changes-q08-rule",
+      "s08-02-coordinated-data-changes-q08-example",
+      "s08-02-coordinated-data-changes-q08-practice",
+      "s08-02-coordinated-data-changes-q08-decision",
+      "s08-02-coordinated-data-changes-q08-warning",
+      "s08-02-coordinated-data-changes-q08-notebook",
+      "s08-02-coordinated-data-changes-q08-T01-slide",
+      "s08-02-coordinated-data-changes-q08-T02-slide",
+      "s08-02-coordinated-data-changes-q08-T03-slide",
+      "s08-02-coordinated-data-changes-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s08-02-coordinated-data-changes-q08-T01",
+      "s08-02-coordinated-data-changes-q08-T02",
+      "s08-02-coordinated-data-changes-q08-T03",
+      "s08-02-coordinated-data-changes-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-02-coordinated-data-changes-q08-section",
+      "s08-02-coordinated-data-changes-q08-concept",
+      "s08-02-coordinated-data-changes-q08-rule",
+      "s08-02-coordinated-data-changes-q08-example",
+      "s08-02-coordinated-data-changes-q08-practice",
+      "s08-02-coordinated-data-changes-q08-decision",
+      "s08-02-coordinated-data-changes-q08-warning",
+      "s08-02-coordinated-data-changes-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q01",
+    "title": "Поля поиска",
+    "slideIds": [
+      "s08-03-search-field-indexes-q01-section",
+      "s08-03-search-field-indexes-q01-concept",
+      "s08-03-search-field-indexes-q01-rule",
+      "s08-03-search-field-indexes-q01-example",
+      "s08-03-search-field-indexes-q01-practice",
+      "s08-03-search-field-indexes-q01-decision",
+      "s08-03-search-field-indexes-q01-warning",
+      "s08-03-search-field-indexes-q01-notebook",
+      "s08-03-search-field-indexes-q01-T01-slide",
+      "s08-03-search-field-indexes-q01-T02-slide",
+      "s08-03-search-field-indexes-q01-T03-slide",
+      "s08-03-search-field-indexes-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q01-T01",
+      "s08-03-search-field-indexes-q01-T02",
+      "s08-03-search-field-indexes-q01-T03",
+      "s08-03-search-field-indexes-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q01-section",
+      "s08-03-search-field-indexes-q01-concept",
+      "s08-03-search-field-indexes-q01-rule",
+      "s08-03-search-field-indexes-q01-example",
+      "s08-03-search-field-indexes-q01-practice",
+      "s08-03-search-field-indexes-q01-decision",
+      "s08-03-search-field-indexes-q01-warning",
+      "s08-03-search-field-indexes-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q02",
+    "title": "Избирательность",
+    "slideIds": [
+      "s08-03-search-field-indexes-q02-section",
+      "s08-03-search-field-indexes-q02-concept",
+      "s08-03-search-field-indexes-q02-rule",
+      "s08-03-search-field-indexes-q02-example",
+      "s08-03-search-field-indexes-q02-practice",
+      "s08-03-search-field-indexes-q02-decision",
+      "s08-03-search-field-indexes-q02-warning",
+      "s08-03-search-field-indexes-q02-notebook",
+      "s08-03-search-field-indexes-q02-T01-slide",
+      "s08-03-search-field-indexes-q02-T02-slide",
+      "s08-03-search-field-indexes-q02-T03-slide",
+      "s08-03-search-field-indexes-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q02-T01",
+      "s08-03-search-field-indexes-q02-T02",
+      "s08-03-search-field-indexes-q02-T03",
+      "s08-03-search-field-indexes-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q02-section",
+      "s08-03-search-field-indexes-q02-concept",
+      "s08-03-search-field-indexes-q02-rule",
+      "s08-03-search-field-indexes-q02-example",
+      "s08-03-search-field-indexes-q02-practice",
+      "s08-03-search-field-indexes-q02-decision",
+      "s08-03-search-field-indexes-q02-warning",
+      "s08-03-search-field-indexes-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q03",
+    "title": "Составной индекс",
+    "slideIds": [
+      "s08-03-search-field-indexes-q03-section",
+      "s08-03-search-field-indexes-q03-concept",
+      "s08-03-search-field-indexes-q03-rule",
+      "s08-03-search-field-indexes-q03-example",
+      "s08-03-search-field-indexes-q03-practice",
+      "s08-03-search-field-indexes-q03-decision",
+      "s08-03-search-field-indexes-q03-warning",
+      "s08-03-search-field-indexes-q03-notebook",
+      "s08-03-search-field-indexes-q03-T01-slide",
+      "s08-03-search-field-indexes-q03-T02-slide",
+      "s08-03-search-field-indexes-q03-T03-slide",
+      "s08-03-search-field-indexes-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q03-T01",
+      "s08-03-search-field-indexes-q03-T02",
+      "s08-03-search-field-indexes-q03-T03",
+      "s08-03-search-field-indexes-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q03-section",
+      "s08-03-search-field-indexes-q03-concept",
+      "s08-03-search-field-indexes-q03-rule",
+      "s08-03-search-field-indexes-q03-example",
+      "s08-03-search-field-indexes-q03-practice",
+      "s08-03-search-field-indexes-q03-decision",
+      "s08-03-search-field-indexes-q03-warning",
+      "s08-03-search-field-indexes-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q04",
+    "title": "Внешние ключи и уникальность",
+    "slideIds": [
+      "s08-03-search-field-indexes-q04-section",
+      "s08-03-search-field-indexes-q04-concept",
+      "s08-03-search-field-indexes-q04-rule",
+      "s08-03-search-field-indexes-q04-example",
+      "s08-03-search-field-indexes-q04-practice",
+      "s08-03-search-field-indexes-q04-decision",
+      "s08-03-search-field-indexes-q04-warning",
+      "s08-03-search-field-indexes-q04-notebook",
+      "s08-03-search-field-indexes-q04-T01-slide",
+      "s08-03-search-field-indexes-q04-T02-slide",
+      "s08-03-search-field-indexes-q04-T03-slide",
+      "s08-03-search-field-indexes-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q04-T01",
+      "s08-03-search-field-indexes-q04-T02",
+      "s08-03-search-field-indexes-q04-T03",
+      "s08-03-search-field-indexes-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q04-section",
+      "s08-03-search-field-indexes-q04-concept",
+      "s08-03-search-field-indexes-q04-rule",
+      "s08-03-search-field-indexes-q04-example",
+      "s08-03-search-field-indexes-q04-practice",
+      "s08-03-search-field-indexes-q04-decision",
+      "s08-03-search-field-indexes-q04-warning",
+      "s08-03-search-field-indexes-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q05",
+    "title": "CREATE INDEX",
+    "slideIds": [
+      "s08-03-search-field-indexes-q05-section",
+      "s08-03-search-field-indexes-q05-concept",
+      "s08-03-search-field-indexes-q05-rule",
+      "s08-03-search-field-indexes-q05-example",
+      "s08-03-search-field-indexes-q05-practice",
+      "s08-03-search-field-indexes-q05-decision",
+      "s08-03-search-field-indexes-q05-warning",
+      "s08-03-search-field-indexes-q05-notebook",
+      "s08-03-search-field-indexes-q05-T01-slide",
+      "s08-03-search-field-indexes-q05-T02-slide",
+      "s08-03-search-field-indexes-q05-T03-slide",
+      "s08-03-search-field-indexes-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q05-T01",
+      "s08-03-search-field-indexes-q05-T02",
+      "s08-03-search-field-indexes-q05-T03",
+      "s08-03-search-field-indexes-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q05-section",
+      "s08-03-search-field-indexes-q05-concept",
+      "s08-03-search-field-indexes-q05-rule",
+      "s08-03-search-field-indexes-q05-example",
+      "s08-03-search-field-indexes-q05-practice",
+      "s08-03-search-field-indexes-q05-decision",
+      "s08-03-search-field-indexes-q05-warning",
+      "s08-03-search-field-indexes-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q06",
+    "title": "EXPLAIN до и после",
+    "slideIds": [
+      "s08-03-search-field-indexes-q06-section",
+      "s08-03-search-field-indexes-q06-concept",
+      "s08-03-search-field-indexes-q06-rule",
+      "s08-03-search-field-indexes-q06-example",
+      "s08-03-search-field-indexes-q06-practice",
+      "s08-03-search-field-indexes-q06-decision",
+      "s08-03-search-field-indexes-q06-warning",
+      "s08-03-search-field-indexes-q06-notebook",
+      "s08-03-search-field-indexes-q06-T01-slide",
+      "s08-03-search-field-indexes-q06-T02-slide",
+      "s08-03-search-field-indexes-q06-T03-slide",
+      "s08-03-search-field-indexes-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q06-T01",
+      "s08-03-search-field-indexes-q06-T02",
+      "s08-03-search-field-indexes-q06-T03",
+      "s08-03-search-field-indexes-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q06-section",
+      "s08-03-search-field-indexes-q06-concept",
+      "s08-03-search-field-indexes-q06-rule",
+      "s08-03-search-field-indexes-q06-example",
+      "s08-03-search-field-indexes-q06-practice",
+      "s08-03-search-field-indexes-q06-decision",
+      "s08-03-search-field-indexes-q06-warning",
+      "s08-03-search-field-indexes-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q07",
+    "title": "Цена индекса",
+    "slideIds": [
+      "s08-03-search-field-indexes-q07-section",
+      "s08-03-search-field-indexes-q07-concept",
+      "s08-03-search-field-indexes-q07-rule",
+      "s08-03-search-field-indexes-q07-example",
+      "s08-03-search-field-indexes-q07-practice",
+      "s08-03-search-field-indexes-q07-decision",
+      "s08-03-search-field-indexes-q07-warning",
+      "s08-03-search-field-indexes-q07-notebook",
+      "s08-03-search-field-indexes-q07-T01-slide",
+      "s08-03-search-field-indexes-q07-T02-slide",
+      "s08-03-search-field-indexes-q07-T03-slide",
+      "s08-03-search-field-indexes-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q07-T01",
+      "s08-03-search-field-indexes-q07-T02",
+      "s08-03-search-field-indexes-q07-T03",
+      "s08-03-search-field-indexes-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q07-section",
+      "s08-03-search-field-indexes-q07-concept",
+      "s08-03-search-field-indexes-q07-rule",
+      "s08-03-search-field-indexes-q07-example",
+      "s08-03-search-field-indexes-q07-practice",
+      "s08-03-search-field-indexes-q07-decision",
+      "s08-03-search-field-indexes-q07-warning",
+      "s08-03-search-field-indexes-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-03-search-field-indexes",
+    "questionId": "s08-03-search-field-indexes-q08",
+    "title": "Реестр индексов",
+    "slideIds": [
+      "s08-03-search-field-indexes-q08-section",
+      "s08-03-search-field-indexes-q08-concept",
+      "s08-03-search-field-indexes-q08-rule",
+      "s08-03-search-field-indexes-q08-example",
+      "s08-03-search-field-indexes-q08-practice",
+      "s08-03-search-field-indexes-q08-decision",
+      "s08-03-search-field-indexes-q08-warning",
+      "s08-03-search-field-indexes-q08-notebook",
+      "s08-03-search-field-indexes-q08-T01-slide",
+      "s08-03-search-field-indexes-q08-T02-slide",
+      "s08-03-search-field-indexes-q08-T03-slide",
+      "s08-03-search-field-indexes-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s08-03-search-field-indexes-q08-T01",
+      "s08-03-search-field-indexes-q08-T02",
+      "s08-03-search-field-indexes-q08-T03",
+      "s08-03-search-field-indexes-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-03-search-field-indexes-q08-section",
+      "s08-03-search-field-indexes-q08-concept",
+      "s08-03-search-field-indexes-q08-rule",
+      "s08-03-search-field-indexes-q08-example",
+      "s08-03-search-field-indexes-q08-practice",
+      "s08-03-search-field-indexes-q08-decision",
+      "s08-03-search-field-indexes-q08-warning",
+      "s08-03-search-field-indexes-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q01",
+    "title": "Уровни доступа",
+    "slideIds": [
+      "s08-04-access-control-q01-section",
+      "s08-04-access-control-q01-concept",
+      "s08-04-access-control-q01-rule",
+      "s08-04-access-control-q01-example",
+      "s08-04-access-control-q01-practice",
+      "s08-04-access-control-q01-decision",
+      "s08-04-access-control-q01-warning",
+      "s08-04-access-control-q01-notebook",
+      "s08-04-access-control-q01-T01-slide",
+      "s08-04-access-control-q01-T02-slide",
+      "s08-04-access-control-q01-T03-slide",
+      "s08-04-access-control-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q01-T01",
+      "s08-04-access-control-q01-T02",
+      "s08-04-access-control-q01-T03",
+      "s08-04-access-control-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q01-section",
+      "s08-04-access-control-q01-concept",
+      "s08-04-access-control-q01-rule",
+      "s08-04-access-control-q01-example",
+      "s08-04-access-control-q01-practice",
+      "s08-04-access-control-q01-decision",
+      "s08-04-access-control-q01-warning",
+      "s08-04-access-control-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q02",
+    "title": "Учётные записи и роли",
+    "slideIds": [
+      "s08-04-access-control-q02-section",
+      "s08-04-access-control-q02-concept",
+      "s08-04-access-control-q02-rule",
+      "s08-04-access-control-q02-example",
+      "s08-04-access-control-q02-practice",
+      "s08-04-access-control-q02-decision",
+      "s08-04-access-control-q02-warning",
+      "s08-04-access-control-q02-notebook",
+      "s08-04-access-control-q02-T01-slide",
+      "s08-04-access-control-q02-T02-slide",
+      "s08-04-access-control-q02-T03-slide",
+      "s08-04-access-control-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q02-T01",
+      "s08-04-access-control-q02-T02",
+      "s08-04-access-control-q02-T03",
+      "s08-04-access-control-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q02-section",
+      "s08-04-access-control-q02-concept",
+      "s08-04-access-control-q02-rule",
+      "s08-04-access-control-q02-example",
+      "s08-04-access-control-q02-practice",
+      "s08-04-access-control-q02-decision",
+      "s08-04-access-control-q02-warning",
+      "s08-04-access-control-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q03",
+    "title": "Минимальные полномочия",
+    "slideIds": [
+      "s08-04-access-control-q03-section",
+      "s08-04-access-control-q03-concept",
+      "s08-04-access-control-q03-rule",
+      "s08-04-access-control-q03-example",
+      "s08-04-access-control-q03-practice",
+      "s08-04-access-control-q03-decision",
+      "s08-04-access-control-q03-warning",
+      "s08-04-access-control-q03-notebook",
+      "s08-04-access-control-q03-T01-slide",
+      "s08-04-access-control-q03-T02-slide",
+      "s08-04-access-control-q03-T03-slide",
+      "s08-04-access-control-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q03-T01",
+      "s08-04-access-control-q03-T02",
+      "s08-04-access-control-q03-T03",
+      "s08-04-access-control-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q03-section",
+      "s08-04-access-control-q03-concept",
+      "s08-04-access-control-q03-rule",
+      "s08-04-access-control-q03-example",
+      "s08-04-access-control-q03-practice",
+      "s08-04-access-control-q03-decision",
+      "s08-04-access-control-q03-warning",
+      "s08-04-access-control-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q04",
+    "title": "GRANT и REVOKE",
+    "slideIds": [
+      "s08-04-access-control-q04-section",
+      "s08-04-access-control-q04-concept",
+      "s08-04-access-control-q04-rule",
+      "s08-04-access-control-q04-example",
+      "s08-04-access-control-q04-practice",
+      "s08-04-access-control-q04-decision",
+      "s08-04-access-control-q04-warning",
+      "s08-04-access-control-q04-notebook",
+      "s08-04-access-control-q04-T01-slide",
+      "s08-04-access-control-q04-T02-slide",
+      "s08-04-access-control-q04-T03-slide",
+      "s08-04-access-control-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q04-T01",
+      "s08-04-access-control-q04-T02",
+      "s08-04-access-control-q04-T03",
+      "s08-04-access-control-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q04-section",
+      "s08-04-access-control-q04-concept",
+      "s08-04-access-control-q04-rule",
+      "s08-04-access-control-q04-example",
+      "s08-04-access-control-q04-practice",
+      "s08-04-access-control-q04-decision",
+      "s08-04-access-control-q04-warning",
+      "s08-04-access-control-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q05",
+    "title": "Доступ через view",
+    "slideIds": [
+      "s08-04-access-control-q05-section",
+      "s08-04-access-control-q05-concept",
+      "s08-04-access-control-q05-rule",
+      "s08-04-access-control-q05-example",
+      "s08-04-access-control-q05-practice",
+      "s08-04-access-control-q05-decision",
+      "s08-04-access-control-q05-warning",
+      "s08-04-access-control-q05-notebook",
+      "s08-04-access-control-q05-T01-slide",
+      "s08-04-access-control-q05-T02-slide",
+      "s08-04-access-control-q05-T03-slide",
+      "s08-04-access-control-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q05-T01",
+      "s08-04-access-control-q05-T02",
+      "s08-04-access-control-q05-T03",
+      "s08-04-access-control-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q05-section",
+      "s08-04-access-control-q05-concept",
+      "s08-04-access-control-q05-rule",
+      "s08-04-access-control-q05-example",
+      "s08-04-access-control-q05-practice",
+      "s08-04-access-control-q05-decision",
+      "s08-04-access-control-q05-warning",
+      "s08-04-access-control-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q06",
+    "title": "Разрешённые операции",
+    "slideIds": [
+      "s08-04-access-control-q06-section",
+      "s08-04-access-control-q06-concept",
+      "s08-04-access-control-q06-rule",
+      "s08-04-access-control-q06-example",
+      "s08-04-access-control-q06-practice",
+      "s08-04-access-control-q06-decision",
+      "s08-04-access-control-q06-warning",
+      "s08-04-access-control-q06-notebook",
+      "s08-04-access-control-q06-T01-slide",
+      "s08-04-access-control-q06-T02-slide",
+      "s08-04-access-control-q06-T03-slide",
+      "s08-04-access-control-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q06-T01",
+      "s08-04-access-control-q06-T02",
+      "s08-04-access-control-q06-T03",
+      "s08-04-access-control-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q06-section",
+      "s08-04-access-control-q06-concept",
+      "s08-04-access-control-q06-rule",
+      "s08-04-access-control-q06-example",
+      "s08-04-access-control-q06-practice",
+      "s08-04-access-control-q06-decision",
+      "s08-04-access-control-q06-warning",
+      "s08-04-access-control-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q07",
+    "title": "Запрещённые операции",
+    "slideIds": [
+      "s08-04-access-control-q07-section",
+      "s08-04-access-control-q07-concept",
+      "s08-04-access-control-q07-rule",
+      "s08-04-access-control-q07-example",
+      "s08-04-access-control-q07-practice",
+      "s08-04-access-control-q07-decision",
+      "s08-04-access-control-q07-warning",
+      "s08-04-access-control-q07-notebook",
+      "s08-04-access-control-q07-T01-slide",
+      "s08-04-access-control-q07-T02-slide",
+      "s08-04-access-control-q07-T03-slide",
+      "s08-04-access-control-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q07-T01",
+      "s08-04-access-control-q07-T02",
+      "s08-04-access-control-q07-T03",
+      "s08-04-access-control-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q07-section",
+      "s08-04-access-control-q07-concept",
+      "s08-04-access-control-q07-rule",
+      "s08-04-access-control-q07-example",
+      "s08-04-access-control-q07-practice",
+      "s08-04-access-control-q07-decision",
+      "s08-04-access-control-q07-warning",
+      "s08-04-access-control-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-04-access-control",
+    "questionId": "s08-04-access-control-q08",
+    "title": "Матрица прав",
+    "slideIds": [
+      "s08-04-access-control-q08-section",
+      "s08-04-access-control-q08-concept",
+      "s08-04-access-control-q08-rule",
+      "s08-04-access-control-q08-example",
+      "s08-04-access-control-q08-practice",
+      "s08-04-access-control-q08-decision",
+      "s08-04-access-control-q08-warning",
+      "s08-04-access-control-q08-notebook",
+      "s08-04-access-control-q08-T01-slide",
+      "s08-04-access-control-q08-T02-slide",
+      "s08-04-access-control-q08-T03-slide",
+      "s08-04-access-control-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s08-04-access-control-q08-T01",
+      "s08-04-access-control-q08-T02",
+      "s08-04-access-control-q08-T03",
+      "s08-04-access-control-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-04-access-control-q08-section",
+      "s08-04-access-control-q08-concept",
+      "s08-04-access-control-q08-rule",
+      "s08-04-access-control-q08-example",
+      "s08-04-access-control-q08-practice",
+      "s08-04-access-control-q08-decision",
+      "s08-04-access-control-q08-warning",
+      "s08-04-access-control-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q01",
+    "title": "Состав копии",
+    "slideIds": [
+      "s08-05-backup-and-protection-q01-section",
+      "s08-05-backup-and-protection-q01-concept",
+      "s08-05-backup-and-protection-q01-rule",
+      "s08-05-backup-and-protection-q01-example",
+      "s08-05-backup-and-protection-q01-practice",
+      "s08-05-backup-and-protection-q01-decision",
+      "s08-05-backup-and-protection-q01-warning",
+      "s08-05-backup-and-protection-q01-notebook",
+      "s08-05-backup-and-protection-q01-T01-slide",
+      "s08-05-backup-and-protection-q01-T02-slide",
+      "s08-05-backup-and-protection-q01-T03-slide",
+      "s08-05-backup-and-protection-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q01-T01",
+      "s08-05-backup-and-protection-q01-T02",
+      "s08-05-backup-and-protection-q01-T03",
+      "s08-05-backup-and-protection-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q01-section",
+      "s08-05-backup-and-protection-q01-concept",
+      "s08-05-backup-and-protection-q01-rule",
+      "s08-05-backup-and-protection-q01-example",
+      "s08-05-backup-and-protection-q01-practice",
+      "s08-05-backup-and-protection-q01-decision",
+      "s08-05-backup-and-protection-q01-warning",
+      "s08-05-backup-and-protection-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q02",
+    "title": "Учётная запись копирования",
+    "slideIds": [
+      "s08-05-backup-and-protection-q02-section",
+      "s08-05-backup-and-protection-q02-concept",
+      "s08-05-backup-and-protection-q02-rule",
+      "s08-05-backup-and-protection-q02-example",
+      "s08-05-backup-and-protection-q02-practice",
+      "s08-05-backup-and-protection-q02-decision",
+      "s08-05-backup-and-protection-q02-warning",
+      "s08-05-backup-and-protection-q02-notebook",
+      "s08-05-backup-and-protection-q02-T01-slide",
+      "s08-05-backup-and-protection-q02-T02-slide",
+      "s08-05-backup-and-protection-q02-T03-slide",
+      "s08-05-backup-and-protection-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q02-T01",
+      "s08-05-backup-and-protection-q02-T02",
+      "s08-05-backup-and-protection-q02-T03",
+      "s08-05-backup-and-protection-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q02-section",
+      "s08-05-backup-and-protection-q02-concept",
+      "s08-05-backup-and-protection-q02-rule",
+      "s08-05-backup-and-protection-q02-example",
+      "s08-05-backup-and-protection-q02-practice",
+      "s08-05-backup-and-protection-q02-decision",
+      "s08-05-backup-and-protection-q02-warning",
+      "s08-05-backup-and-protection-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q03",
+    "title": "Создание dump",
+    "slideIds": [
+      "s08-05-backup-and-protection-q03-section",
+      "s08-05-backup-and-protection-q03-concept",
+      "s08-05-backup-and-protection-q03-rule",
+      "s08-05-backup-and-protection-q03-example",
+      "s08-05-backup-and-protection-q03-practice",
+      "s08-05-backup-and-protection-q03-decision",
+      "s08-05-backup-and-protection-q03-warning",
+      "s08-05-backup-and-protection-q03-notebook",
+      "s08-05-backup-and-protection-q03-T01-slide",
+      "s08-05-backup-and-protection-q03-T02-slide",
+      "s08-05-backup-and-protection-q03-T03-slide",
+      "s08-05-backup-and-protection-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q03-T01",
+      "s08-05-backup-and-protection-q03-T02",
+      "s08-05-backup-and-protection-q03-T03",
+      "s08-05-backup-and-protection-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q03-section",
+      "s08-05-backup-and-protection-q03-concept",
+      "s08-05-backup-and-protection-q03-rule",
+      "s08-05-backup-and-protection-q03-example",
+      "s08-05-backup-and-protection-q03-practice",
+      "s08-05-backup-and-protection-q03-decision",
+      "s08-05-backup-and-protection-q03-warning",
+      "s08-05-backup-and-protection-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q04",
+    "title": "Контрольное восстановление",
+    "slideIds": [
+      "s08-05-backup-and-protection-q04-section",
+      "s08-05-backup-and-protection-q04-concept",
+      "s08-05-backup-and-protection-q04-rule",
+      "s08-05-backup-and-protection-q04-example",
+      "s08-05-backup-and-protection-q04-practice",
+      "s08-05-backup-and-protection-q04-decision",
+      "s08-05-backup-and-protection-q04-warning",
+      "s08-05-backup-and-protection-q04-notebook",
+      "s08-05-backup-and-protection-q04-T01-slide",
+      "s08-05-backup-and-protection-q04-T02-slide",
+      "s08-05-backup-and-protection-q04-T03-slide",
+      "s08-05-backup-and-protection-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q04-T01",
+      "s08-05-backup-and-protection-q04-T02",
+      "s08-05-backup-and-protection-q04-T03",
+      "s08-05-backup-and-protection-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q04-section",
+      "s08-05-backup-and-protection-q04-concept",
+      "s08-05-backup-and-protection-q04-rule",
+      "s08-05-backup-and-protection-q04-example",
+      "s08-05-backup-and-protection-q04-practice",
+      "s08-05-backup-and-protection-q04-decision",
+      "s08-05-backup-and-protection-q04-warning",
+      "s08-05-backup-and-protection-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q05",
+    "title": "Сверка таблиц",
+    "slideIds": [
+      "s08-05-backup-and-protection-q05-section",
+      "s08-05-backup-and-protection-q05-concept",
+      "s08-05-backup-and-protection-q05-rule",
+      "s08-05-backup-and-protection-q05-example",
+      "s08-05-backup-and-protection-q05-practice",
+      "s08-05-backup-and-protection-q05-decision",
+      "s08-05-backup-and-protection-q05-warning",
+      "s08-05-backup-and-protection-q05-notebook",
+      "s08-05-backup-and-protection-q05-T01-slide",
+      "s08-05-backup-and-protection-q05-T02-slide",
+      "s08-05-backup-and-protection-q05-T03-slide",
+      "s08-05-backup-and-protection-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q05-T01",
+      "s08-05-backup-and-protection-q05-T02",
+      "s08-05-backup-and-protection-q05-T03",
+      "s08-05-backup-and-protection-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q05-section",
+      "s08-05-backup-and-protection-q05-concept",
+      "s08-05-backup-and-protection-q05-rule",
+      "s08-05-backup-and-protection-q05-example",
+      "s08-05-backup-and-protection-q05-practice",
+      "s08-05-backup-and-protection-q05-decision",
+      "s08-05-backup-and-protection-q05-warning",
+      "s08-05-backup-and-protection-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q06",
+    "title": "Сверка строк",
+    "slideIds": [
+      "s08-05-backup-and-protection-q06-section",
+      "s08-05-backup-and-protection-q06-concept",
+      "s08-05-backup-and-protection-q06-rule",
+      "s08-05-backup-and-protection-q06-example",
+      "s08-05-backup-and-protection-q06-practice",
+      "s08-05-backup-and-protection-q06-decision",
+      "s08-05-backup-and-protection-q06-warning",
+      "s08-05-backup-and-protection-q06-notebook",
+      "s08-05-backup-and-protection-q06-T01-slide",
+      "s08-05-backup-and-protection-q06-T02-slide",
+      "s08-05-backup-and-protection-q06-T03-slide",
+      "s08-05-backup-and-protection-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q06-T01",
+      "s08-05-backup-and-protection-q06-T02",
+      "s08-05-backup-and-protection-q06-T03",
+      "s08-05-backup-and-protection-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q06-section",
+      "s08-05-backup-and-protection-q06-concept",
+      "s08-05-backup-and-protection-q06-rule",
+      "s08-05-backup-and-protection-q06-example",
+      "s08-05-backup-and-protection-q06-practice",
+      "s08-05-backup-and-protection-q06-decision",
+      "s08-05-backup-and-protection-q06-warning",
+      "s08-05-backup-and-protection-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q07",
+    "title": "Проверка целостности",
+    "slideIds": [
+      "s08-05-backup-and-protection-q07-section",
+      "s08-05-backup-and-protection-q07-concept",
+      "s08-05-backup-and-protection-q07-rule",
+      "s08-05-backup-and-protection-q07-example",
+      "s08-05-backup-and-protection-q07-practice",
+      "s08-05-backup-and-protection-q07-decision",
+      "s08-05-backup-and-protection-q07-warning",
+      "s08-05-backup-and-protection-q07-notebook",
+      "s08-05-backup-and-protection-q07-T01-slide",
+      "s08-05-backup-and-protection-q07-T02-slide",
+      "s08-05-backup-and-protection-q07-T03-slide",
+      "s08-05-backup-and-protection-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q07-T01",
+      "s08-05-backup-and-protection-q07-T02",
+      "s08-05-backup-and-protection-q07-T03",
+      "s08-05-backup-and-protection-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q07-section",
+      "s08-05-backup-and-protection-q07-concept",
+      "s08-05-backup-and-protection-q07-rule",
+      "s08-05-backup-and-protection-q07-example",
+      "s08-05-backup-and-protection-q07-practice",
+      "s08-05-backup-and-protection-q07-decision",
+      "s08-05-backup-and-protection-q07-warning",
+      "s08-05-backup-and-protection-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-05-backup-and-protection",
+    "questionId": "s08-05-backup-and-protection-q08",
+    "title": "Протокол и защита",
+    "slideIds": [
+      "s08-05-backup-and-protection-q08-section",
+      "s08-05-backup-and-protection-q08-concept",
+      "s08-05-backup-and-protection-q08-rule",
+      "s08-05-backup-and-protection-q08-example",
+      "s08-05-backup-and-protection-q08-practice",
+      "s08-05-backup-and-protection-q08-decision",
+      "s08-05-backup-and-protection-q08-warning",
+      "s08-05-backup-and-protection-q08-notebook",
+      "s08-05-backup-and-protection-q08-T01-slide",
+      "s08-05-backup-and-protection-q08-T02-slide",
+      "s08-05-backup-and-protection-q08-T03-slide",
+      "s08-05-backup-and-protection-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s08-05-backup-and-protection-q08-T01",
+      "s08-05-backup-and-protection-q08-T02",
+      "s08-05-backup-and-protection-q08-T03",
+      "s08-05-backup-and-protection-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-05-backup-and-protection-q08-section",
+      "s08-05-backup-and-protection-q08-concept",
+      "s08-05-backup-and-protection-q08-rule",
+      "s08-05-backup-and-protection-q08-example",
+      "s08-05-backup-and-protection-q08-practice",
+      "s08-05-backup-and-protection-q08-decision",
+      "s08-05-backup-and-protection-q08-warning",
+      "s08-05-backup-and-protection-q08-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q01",
+    "title": "База и объекты",
+    "slideIds": [
+      "s08-06-results-package-q01-section",
+      "s08-06-results-package-q01-concept",
+      "s08-06-results-package-q01-rule",
+      "s08-06-results-package-q01-example",
+      "s08-06-results-package-q01-practice",
+      "s08-06-results-package-q01-decision",
+      "s08-06-results-package-q01-warning",
+      "s08-06-results-package-q01-notebook",
+      "s08-06-results-package-q01-T01-slide",
+      "s08-06-results-package-q01-T02-slide",
+      "s08-06-results-package-q01-T03-slide",
+      "s08-06-results-package-q01-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q01-T01",
+      "s08-06-results-package-q01-T02",
+      "s08-06-results-package-q01-T03",
+      "s08-06-results-package-q01-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q01-section",
+      "s08-06-results-package-q01-concept",
+      "s08-06-results-package-q01-rule",
+      "s08-06-results-package-q01-example",
+      "s08-06-results-package-q01-practice",
+      "s08-06-results-package-q01-decision",
+      "s08-06-results-package-q01-warning",
+      "s08-06-results-package-q01-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q02",
+    "title": "Загруженные данные",
+    "slideIds": [
+      "s08-06-results-package-q02-section",
+      "s08-06-results-package-q02-concept",
+      "s08-06-results-package-q02-rule",
+      "s08-06-results-package-q02-example",
+      "s08-06-results-package-q02-practice",
+      "s08-06-results-package-q02-decision",
+      "s08-06-results-package-q02-warning",
+      "s08-06-results-package-q02-notebook",
+      "s08-06-results-package-q02-T01-slide",
+      "s08-06-results-package-q02-T02-slide",
+      "s08-06-results-package-q02-T03-slide",
+      "s08-06-results-package-q02-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q02-T01",
+      "s08-06-results-package-q02-T02",
+      "s08-06-results-package-q02-T03",
+      "s08-06-results-package-q02-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q02-section",
+      "s08-06-results-package-q02-concept",
+      "s08-06-results-package-q02-rule",
+      "s08-06-results-package-q02-example",
+      "s08-06-results-package-q02-practice",
+      "s08-06-results-package-q02-decision",
+      "s08-06-results-package-q02-warning",
+      "s08-06-results-package-q02-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q03",
+    "title": "ER-диаграмма",
+    "slideIds": [
+      "s08-06-results-package-q03-section",
+      "s08-06-results-package-q03-concept",
+      "s08-06-results-package-q03-rule",
+      "s08-06-results-package-q03-example",
+      "s08-06-results-package-q03-practice",
+      "s08-06-results-package-q03-decision",
+      "s08-06-results-package-q03-warning",
+      "s08-06-results-package-q03-notebook",
+      "s08-06-results-package-q03-T01-slide",
+      "s08-06-results-package-q03-T02-slide",
+      "s08-06-results-package-q03-T03-slide",
+      "s08-06-results-package-q03-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q03-T01",
+      "s08-06-results-package-q03-T02",
+      "s08-06-results-package-q03-T03",
+      "s08-06-results-package-q03-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q03-section",
+      "s08-06-results-package-q03-concept",
+      "s08-06-results-package-q03-rule",
+      "s08-06-results-package-q03-example",
+      "s08-06-results-package-q03-practice",
+      "s08-06-results-package-q03-decision",
+      "s08-06-results-package-q03-warning",
+      "s08-06-results-package-q03-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q04",
+    "title": "SQL-скрипты",
+    "slideIds": [
+      "s08-06-results-package-q04-section",
+      "s08-06-results-package-q04-concept",
+      "s08-06-results-package-q04-rule",
+      "s08-06-results-package-q04-example",
+      "s08-06-results-package-q04-practice",
+      "s08-06-results-package-q04-decision",
+      "s08-06-results-package-q04-warning",
+      "s08-06-results-package-q04-notebook",
+      "s08-06-results-package-q04-T01-slide",
+      "s08-06-results-package-q04-T02-slide",
+      "s08-06-results-package-q04-T03-slide",
+      "s08-06-results-package-q04-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q04-T01",
+      "s08-06-results-package-q04-T02",
+      "s08-06-results-package-q04-T03",
+      "s08-06-results-package-q04-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q04-section",
+      "s08-06-results-package-q04-concept",
+      "s08-06-results-package-q04-rule",
+      "s08-06-results-package-q04-example",
+      "s08-06-results-package-q04-practice",
+      "s08-06-results-package-q04-decision",
+      "s08-06-results-package-q04-warning",
+      "s08-06-results-package-q04-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q05",
+    "title": "Протокол проверки",
+    "slideIds": [
+      "s08-06-results-package-q05-section",
+      "s08-06-results-package-q05-concept",
+      "s08-06-results-package-q05-rule",
+      "s08-06-results-package-q05-example",
+      "s08-06-results-package-q05-practice",
+      "s08-06-results-package-q05-decision",
+      "s08-06-results-package-q05-warning",
+      "s08-06-results-package-q05-notebook",
+      "s08-06-results-package-q05-T01-slide",
+      "s08-06-results-package-q05-T02-slide",
+      "s08-06-results-package-q05-T03-slide",
+      "s08-06-results-package-q05-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q05-T01",
+      "s08-06-results-package-q05-T02",
+      "s08-06-results-package-q05-T03",
+      "s08-06-results-package-q05-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q05-section",
+      "s08-06-results-package-q05-concept",
+      "s08-06-results-package-q05-rule",
+      "s08-06-results-package-q05-example",
+      "s08-06-results-package-q05-practice",
+      "s08-06-results-package-q05-decision",
+      "s08-06-results-package-q05-warning",
+      "s08-06-results-package-q05-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q06",
+    "title": "Резервная копия",
+    "slideIds": [
+      "s08-06-results-package-q06-section",
+      "s08-06-results-package-q06-concept",
+      "s08-06-results-package-q06-rule",
+      "s08-06-results-package-q06-example",
+      "s08-06-results-package-q06-practice",
+      "s08-06-results-package-q06-decision",
+      "s08-06-results-package-q06-warning",
+      "s08-06-results-package-q06-notebook",
+      "s08-06-results-package-q06-T01-slide",
+      "s08-06-results-package-q06-T02-slide",
+      "s08-06-results-package-q06-T03-slide",
+      "s08-06-results-package-q06-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q06-T01",
+      "s08-06-results-package-q06-T02",
+      "s08-06-results-package-q06-T03",
+      "s08-06-results-package-q06-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q06-section",
+      "s08-06-results-package-q06-concept",
+      "s08-06-results-package-q06-rule",
+      "s08-06-results-package-q06-example",
+      "s08-06-results-package-q06-practice",
+      "s08-06-results-package-q06-decision",
+      "s08-06-results-package-q06-warning",
+      "s08-06-results-package-q06-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q07",
+    "title": "Учётные данные",
+    "slideIds": [
+      "s08-06-results-package-q07-section",
+      "s08-06-results-package-q07-concept",
+      "s08-06-results-package-q07-rule",
+      "s08-06-results-package-q07-example",
+      "s08-06-results-package-q07-practice",
+      "s08-06-results-package-q07-decision",
+      "s08-06-results-package-q07-warning",
+      "s08-06-results-package-q07-notebook",
+      "s08-06-results-package-q07-T01-slide",
+      "s08-06-results-package-q07-T02-slide",
+      "s08-06-results-package-q07-T03-slide",
+      "s08-06-results-package-q07-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q07-T01",
+      "s08-06-results-package-q07-T02",
+      "s08-06-results-package-q07-T03",
+      "s08-06-results-package-q07-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q07-section",
+      "s08-06-results-package-q07-concept",
+      "s08-06-results-package-q07-rule",
+      "s08-06-results-package-q07-example",
+      "s08-06-results-package-q07-practice",
+      "s08-06-results-package-q07-decision",
+      "s08-06-results-package-q07-warning",
+      "s08-06-results-package-q07-notebook"
+    ]
+  },
+  {
+    "lectureId": "s08-06-results-package",
+    "questionId": "s08-06-results-package-q08",
+    "title": "Чистый итоговый запуск",
+    "slideIds": [
+      "s08-06-results-package-q08-section",
+      "s08-06-results-package-q08-concept",
+      "s08-06-results-package-q08-rule",
+      "s08-06-results-package-q08-example",
+      "s08-06-results-package-q08-practice",
+      "s08-06-results-package-q08-decision",
+      "s08-06-results-package-q08-warning",
+      "s08-06-results-package-q08-notebook",
+      "s08-06-results-package-q08-T01-slide",
+      "s08-06-results-package-q08-T02-slide",
+      "s08-06-results-package-q08-T03-slide",
+      "s08-06-results-package-q08-T04-slide"
+    ],
+    "taskIds": [
+      "s08-06-results-package-q08-T01",
+      "s08-06-results-package-q08-T02",
+      "s08-06-results-package-q08-T03",
+      "s08-06-results-package-q08-T04"
+    ],
+    "evidenceSlideIds": [
+      "s08-06-results-package-q08-section",
+      "s08-06-results-package-q08-concept",
+      "s08-06-results-package-q08-rule",
+      "s08-06-results-package-q08-example",
+      "s08-06-results-package-q08-practice",
+      "s08-06-results-package-q08-decision",
+      "s08-06-results-package-q08-warning",
+      "s08-06-results-package-q08-notebook"
+    ]
+  }
+]

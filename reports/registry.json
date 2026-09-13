@@ -1,0 +1,240 @@
+[
+  {
+    "id": "s07-01-source-data-package",
+    "title": "Комплект исходных данных для разработки базы",
+    "semester": 7,
+    "lectureHours": 2,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.1"
+    ],
+    "labNumbers": [
+      1
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 149
+  },
+  {
+    "id": "s07-02-table-list-from-source-data",
+    "title": "Перечень таблиц по комплекту исходных данных",
+    "semester": 7,
+    "lectureHours": 4,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.1",
+      "ПК 11.2"
+    ],
+    "labNumbers": [
+      2,
+      3
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 147
+  },
+  {
+    "id": "s07-03-implement-table-set",
+    "title": "Реализация согласованного перечня таблиц",
+    "semester": 7,
+    "lectureHours": 4,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.3",
+      "ПК 11.4"
+    ],
+    "labNumbers": [
+      4,
+      5
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 146
+  },
+  {
+    "id": "s07-04-er-diagram",
+    "title": "ER-диаграмма реализованной базы",
+    "semester": 7,
+    "lectureHours": 2,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.2",
+      "ПК 11.3"
+    ],
+    "labNumbers": [
+      6
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 145
+  },
+  {
+    "id": "s07-05-prepare-and-load-data",
+    "title": "Подготовка файлов и загрузка данных",
+    "semester": 7,
+    "lectureHours": 4,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.1",
+      "ПК 11.4"
+    ],
+    "labNumbers": [
+      7,
+      8
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 144
+  },
+  {
+    "id": "s07-06-validate-load-and-delivery-script",
+    "title": "Проверка загрузки и скрипт поставки",
+    "semester": 7,
+    "lectureHours": 2,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.3",
+      "ПК 11.4"
+    ],
+    "labNumbers": [
+      9
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 145
+  },
+  {
+    "id": "s07-07-control-queries",
+    "title": "Контрольные запросы по загруженным данным",
+    "semester": 7,
+    "lectureHours": 2,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.4"
+    ],
+    "labNumbers": [
+      10
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 144
+  },
+  {
+    "id": "s08-01-views",
+    "title": "Представления по загруженной базе",
+    "semester": 8,
+    "lectureHours": 4,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.3",
+      "ПК 11.4"
+    ],
+    "labNumbers": [
+      11
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 144
+  },
+  {
+    "id": "s08-02-coordinated-data-changes",
+    "title": "Согласованное изменение загруженных данных",
+    "semester": 8,
+    "lectureHours": 2,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.4",
+      "ПК 11.5"
+    ],
+    "labNumbers": [
+      12
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 144
+  },
+  {
+    "id": "s08-03-search-field-indexes",
+    "title": "Индексы полей поиска загруженной базы",
+    "semester": 8,
+    "lectureHours": 2,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.5"
+    ],
+    "labNumbers": [
+      13
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 144
+  },
+  {
+    "id": "s08-04-access-control",
+    "title": "Разграничение доступа к загруженной базе",
+    "semester": 8,
+    "lectureHours": 4,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.5",
+      "ПК 11.6"
+    ],
+    "labNumbers": [
+      14
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 144
+  },
+  {
+    "id": "s08-05-backup-and-protection",
+    "title": "Резервное копирование и защита комплекта",
+    "semester": 8,
+    "lectureHours": 4,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.5",
+      "ПК 11.6"
+    ],
+    "labNumbers": [
+      15
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 144
+  },
+  {
+    "id": "s08-06-results-package",
+    "title": "Сборка комплекта результатов",
+    "semester": 8,
+    "lectureHours": 2,
+    "competencies": [
+      "ОК 02",
+      "ПК 11.1",
+      "ПК 11.2",
+      "ПК 11.3",
+      "ПК 11.4",
+      "ПК 11.5",
+      "ПК 11.6"
+    ],
+    "labNumbers": [
+      16
+    ],
+    "slides": 115,
+    "questions": 8,
+    "tasks": 32,
+    "estimatedMinutes": 143
+  }
+]

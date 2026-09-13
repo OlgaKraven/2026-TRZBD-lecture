@@ -1,0 +1,54 @@
+[
+  {
+    "topic": "s07-01-source-data-package",
+    "issues": []
+  },
+  {
+    "topic": "s07-02-table-list-from-source-data",
+    "issues": []
+  },
+  {
+    "topic": "s07-03-implement-table-set",
+    "issues": []
+  },
+  {
+    "topic": "s07-04-er-diagram",
+    "issues": []
+  },
+  {
+    "topic": "s07-05-prepare-and-load-data",
+    "issues": []
+  },
+  {
+    "topic": "s07-06-validate-load-and-delivery-script",
+    "issues": []
+  },
+  {
+    "topic": "s07-07-control-queries",
+    "issues": []
+  },
+  {
+    "topic": "s08-01-views",
+    "issues": []
+  },
+  {
+    "topic": "s08-02-coordinated-data-changes",
+    "issues": []
+  },
+  {
+    "topic": "s08-03-search-field-indexes",
+    "issues": []
+  },
+  {
+    "topic": "s08-04-access-control",
+    "issues": []
+  },
+  {
+    "topic": "s08-05-backup-and-protection",
+    "issues": []
+  },
+  {
+    "topic": "s08-06-results-package",
+    "issues": []
+  }
+]

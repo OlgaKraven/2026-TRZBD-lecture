@@ -23,7 +23,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v5
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
       - name: Install
         run: npm ci
@@ -37,6 +37,10 @@ jobs:
         run: npm run spellcheck
       - name: Build
         run: npm run build
+      - name: Privacy check
+        run: npm run check:privacy
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
       - name: Browser tests
         run: npm run test:e2e
       - name: Configure Pages

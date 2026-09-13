@@ -7,3 +7,6 @@ config/teacher-profile.json
 .env
 .env.*
 !.env.example
+
+/private/
+*.tsbuildinfo

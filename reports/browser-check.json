@@ -1,0 +1,19 @@
+{
+  "viewports": [
+    {
+      "width": 390,
+      "slides": 1495,
+      "horizontalOverflow": 0
+    },
+    {
+      "width": 1366,
+      "slides": 1495,
+      "horizontalOverflow": 0
+    }
+  ],
+  "notesAutoLoaded": 1495,
+  "passwordRequested": false,
+  "localEditsPreserved": true,
+  "audienceFetchesTeacherNotes": false,
+  "mobileAnswerSavedAfterReload": true
+}
