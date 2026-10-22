@@ -22,7 +22,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s07-01-source-data-package-literature-primary-2"
+      "s07-01-source-data-package-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -49,7 +49,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s07-01-source-data-package-literature-additional-2"
+      "s07-01-source-data-package-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -823,7 +823,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s07-02-table-list-from-source-data-literature-primary-2"
+      "s07-02-table-list-from-source-data-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -850,7 +850,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s07-02-table-list-from-source-data-literature-additional-2"
+      "s07-02-table-list-from-source-data-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -1624,7 +1624,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s07-03-implement-table-set-literature-primary-2"
+      "s07-03-implement-table-set-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -1651,7 +1651,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s07-03-implement-table-set-literature-additional-2"
+      "s07-03-implement-table-set-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -2425,7 +2425,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s07-04-er-diagram-literature-primary-2"
+      "s07-04-er-diagram-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -2452,7 +2452,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s07-04-er-diagram-literature-additional-2"
+      "s07-04-er-diagram-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -3226,7 +3226,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s07-05-prepare-and-load-data-literature-primary-2"
+      "s07-05-prepare-and-load-data-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -3253,7 +3253,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s07-05-prepare-and-load-data-literature-additional-2"
+      "s07-05-prepare-and-load-data-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -4027,7 +4027,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s07-06-validate-load-and-delivery-script-literature-primary-2"
+      "s07-06-validate-load-and-delivery-script-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -4054,7 +4054,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s07-06-validate-load-and-delivery-script-literature-additional-2"
+      "s07-06-validate-load-and-delivery-script-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -4828,7 +4828,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s07-07-control-queries-literature-primary-2"
+      "s07-07-control-queries-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -4855,7 +4855,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s07-07-control-queries-literature-additional-2"
+      "s07-07-control-queries-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5629,7 +5629,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s08-01-views-literature-primary-2"
+      "s08-01-views-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5656,7 +5656,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s08-01-views-literature-additional-2"
+      "s08-01-views-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6430,7 +6430,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-literature-primary-2"
+      "s08-02-coordinated-data-changes-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6457,7 +6457,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-literature-additional-2"
+      "s08-02-coordinated-data-changes-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7231,7 +7231,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s08-03-search-field-indexes-literature-primary-2"
+      "s08-03-search-field-indexes-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7258,7 +7258,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s08-03-search-field-indexes-literature-additional-2"
+      "s08-03-search-field-indexes-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8032,7 +8032,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s08-04-access-control-literature-primary-2"
+      "s08-04-access-control-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8059,7 +8059,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s08-04-access-control-literature-additional-2"
+      "s08-04-access-control-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8833,7 +8833,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s08-05-backup-and-protection-literature-primary-2"
+      "s08-05-backup-and-protection-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8860,7 +8860,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s08-05-backup-and-protection-literature-additional-2"
+      "s08-05-backup-and-protection-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -9634,7 +9634,7 @@
     "oldSlide": 3,
     "oldTitle": "Основная литература",
     "newSlideIds": [
-      "s08-06-results-package-literature-primary-2"
+      "s08-06-results-package-literature-primary-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -9661,7 +9661,7 @@
     "oldSlide": 4,
     "oldTitle": "Дополнительная литература",
     "newSlideIds": [
-      "s08-06-results-package-literature-additional-2"
+      "s08-06-results-package-literature-additional-1"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },

@@ -1,0 +1,5 @@
+import type {LessonPlayer} from './useLessonPlayer'
+export function PlayerControls({player,labels={back:'Назад',next:'Далее'},name='Управление разбором'}:{player:LessonPlayer;labels?:{back:string;next:string};name?:string}){
+ const {step,fraction}=player.state
+ return <div className="lesson-player" role="group" aria-label={name} data-local-controls><div className="player-buttons"><button disabled={step===0} onClick={()=>player.go(step-1)}>{labels.back}</button><button disabled={player.reduced||player.limit===0} onClick={player.toggle}>{player.playing?'Пауза':'Показать'}</button><button onClick={()=>player.go(0)}>Повторить</button><span aria-live="polite">Шаг {step} / {player.limit}</span><button disabled={step>=player.limit} onClick={()=>player.go(step+1)}>{labels.next}</button></div><div className="player-progress" aria-hidden="true"><span style={{width:((step+fraction)/(player.limit||1)*100)+'%'}}/></div>{player.reduced&&<small>Включено уменьшенное движение: доступны ручные шаги.</small>}</div>
+}

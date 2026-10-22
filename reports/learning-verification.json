@@ -1,8 +1,14 @@
 {
   "lectures": 13,
-  "slideIdsPreserved": 974,
+  "slides": 1273,
+  "existingIdsRetained": 948,
+  "readingPagesRegroupedWithRedirects": 26,
+  "addedAssessmentPages": 312,
+  "addedDatabaseMaps": 13,
+  "assessmentTasks": 416,
   "workedDisplaysUnchanged": 125,
   "independentCases": 104,
+  "databaseCaseModels": 104,
   "definitions": 104,
   "legacyReviews": "retained in post-attempt teacher answers and assessment explanation",
   "status": "passed"

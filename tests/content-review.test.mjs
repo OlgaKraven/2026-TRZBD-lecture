@@ -11,11 +11,13 @@ describe('содержательная редакция всего курса',(
   const blocks=qs.filter(q=>q.lectureId===l.id);
   expect(blocks.flatMap(q=>q.sourceQuestionNumbers).sort((a,b)=>a-b)).toEqual([1,2,3,4,5,6,7,8]);
   for(const q of blocks){
-   const s=l.slides.find(s=>s.id===q.slideIds.find(id=>id.endsWith('T01-slide')));
+   const s=l.slides.find(s=>s.task?.id===q.taskIds[0]);
    const index=l.slides.indexOf(s);
    expect(l.slides[index-1].id).toMatch(/-review$/);
    expect(n[s.id].script).not.toContain(n[s.id].answer);
    expect(n[s.id].answer.length).toBeGreaterThan(50);
+   expect(l.slides.filter(s=>q.slideIds.includes(s.id)&&s.task).map(s=>s.task.type)).toEqual(['single','multiple','short','matching']);
+   expect(l.slides.findIndex(s=>s.id===q.notebookId)).toBeLessThan(l.slides.findIndex(s=>s.id===q.evidenceSlideIds.find(id=>id.endsWith('-concept'))));
   }
  });
  it('сохраняет все 1495 прежних ссылок курса',()=>{

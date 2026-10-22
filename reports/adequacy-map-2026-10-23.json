@@ -1,0 +1,2830 @@
+{
+  "contentVersion": "trzbd-2026.10.23-database-cases-r8",
+  "scope": "13 lectures / 104 original questions; review of definitions, mechanisms, examples, independent cases and teacher text; not a claim of RPD compliance",
+  "questions": [
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 1,
+      "title": "Границы комплекта",
+      "definition": "Комплект исходных данных",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-scope-concept",
+        "s07-01-source-data-package-content-scope-reasoning-1",
+        "s07-01-source-data-package-content-scope-reasoning-2"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-scope-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-scope-review",
+      "caseTables": [
+        "requests.csv",
+        "branches"
+      ],
+      "operation": "SELECT s.branch_code\nFROM stg_requests s LEFT JOIN branches b ON b.code=s.branch_code\nWHERE b.id IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 2,
+      "title": "Текстовое описание",
+      "definition": "Ограничение целостности",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-description-concept",
+        "s07-01-source-data-package-content-description-reasoning-1",
+        "s07-01-source-data-package-content-description-reasoning-2"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-description-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-description-review",
+      "caseTables": [
+        "stg_acts",
+        "acts: варианты ключа"
+      ],
+      "operation": "SELECT act_no, COUNT(*) AS n\nFROM stg_acts GROUP BY act_no HAVING COUNT(*)>1;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 3,
+      "title": "Табличные файлы",
+      "definition": "Промежуточная таблица (staging)",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-files-concept",
+        "s07-01-source-data-package-content-files-reasoning-1",
+        "s07-01-source-data-package-content-files-reasoning-2"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-files-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-files-review",
+      "caseTables": [
+        "stg_acts",
+        "acts",
+        "import_errors"
+      ],
+      "operation": "SELECT source_row, date_text FROM stg_acts;\n-- Календарная проверка до INSERT в acts.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 4,
+      "title": "Обязательные результаты",
+      "definition": "Критерий приёмки",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-deliverables-concept",
+        "s07-01-source-data-package-content-deliverables-reasoning-1"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-deliverables-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-deliverables-review",
+      "caseTables": [
+        "Источник",
+        "Изолированная цель"
+      ],
+      "operation": "SHOW FULL TABLES FROM service_training;\nSHOW CREATE TABLE service_training.requests;\nSELECT COUNT(*) FROM service_training.requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 5,
+      "title": "Сопоставление полей",
+      "definition": "Карта полей",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-mapping-concept",
+        "s07-01-source-data-package-content-mapping-reasoning-1",
+        "s07-01-source-data-package-content-mapping-reasoning-2"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-mapping-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-mapping-review",
+      "caseTables": [
+        "orders.csv",
+        "clients",
+        "orders"
+      ],
+      "operation": "SELECT s.order_no,c.id AS client_id\nFROM stg_orders s JOIN clients c ON c.code=s.buyer_code;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 6,
+      "title": "Данные справочников",
+      "definition": "Справочник",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-reference-concept",
+        "s07-01-source-data-package-content-reference-reasoning-1"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-reference-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-reference-review",
+      "caseTables": [
+        "statuses",
+        "stg_requests"
+      ],
+      "operation": "SELECT s.status FROM stg_requests s\nLEFT JOIN statuses d ON d.code=s.status WHERE d.code IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 7,
+      "title": "Риски качества",
+      "definition": "Дефект качества данных",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-quality-concept",
+        "s07-01-source-data-package-content-quality-reasoning-1",
+        "s07-01-source-data-package-content-quality-reasoning-2"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-quality-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-quality-review",
+      "caseTables": [
+        "stg_orders",
+        "import_errors"
+      ],
+      "operation": "SELECT order_no,COUNT(*) FROM stg_orders\nGROUP BY order_no HAVING COUNT(*)>1;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-01-source-data-package",
+      "question": 8,
+      "title": "Протокол разбора",
+      "definition": "Протокол разбора",
+      "lectureMap": "s07-01-source-data-package-content-database-map",
+      "mechanism": [
+        "s07-01-source-data-package-content-passport-concept",
+        "s07-01-source-data-package-content-passport-reasoning-1",
+        "s07-01-source-data-package-content-passport-reasoning-2"
+      ],
+      "worked": [
+        "s07-01-source-data-package-content-passport-example"
+      ],
+      "casePassport": "s07-01-source-data-package-content-passport-review",
+      "caseTables": [
+        "import_run",
+        "import_errors"
+      ],
+      "operation": "SELECT run_id, input_rows, accepted+rejected AS accounted\nFROM import_run;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 1,
+      "title": "Повторяющиеся значения",
+      "definition": "Функциональная зависимость X → Y",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-dependencies-concept",
+        "s07-02-table-list-from-source-data-content-dependencies-reasoning-1",
+        "s07-02-table-list-from-source-data-content-dependencies-reasoning-2"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-dependencies-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-dependencies-review",
+      "caseTables": [
+        "employees"
+      ],
+      "operation": "SELECT surname, COUNT(DISTINCT employee_no)\nFROM employees GROUP BY surname;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 2,
+      "title": "Справочники",
+      "definition": "Категориальный справочник",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-dictionary-concept",
+        "s07-02-table-list-from-source-data-content-dictionary-reasoning-1"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-dictionary-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-dictionary-review",
+      "caseTables": [
+        "work_types",
+        "stg_works"
+      ],
+      "operation": "SELECT s.type_code FROM stg_works s\nLEFT JOIN work_types t ON t.code=s.type_code WHERE t.code IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 3,
+      "title": "Составные поля",
+      "definition": "Таблица связи",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-multivalue-concept",
+        "s07-02-table-list-from-source-data-content-multivalue-reasoning-1",
+        "s07-02-table-list-from-source-data-content-multivalue-reasoning-2"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-multivalue-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-multivalue-review",
+      "caseTables": [
+        "source_parts",
+        "request_parts"
+      ],
+      "operation": "SELECT request_no,part_code,COUNT(*) AS qty\nFROM source_parts GROUP BY request_no,part_code;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 4,
+      "title": "Границы сущностей",
+      "definition": "Сущность",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-entities-concept",
+        "s07-02-table-list-from-source-data-content-entities-reasoning-1",
+        "s07-02-table-list-from-source-data-content-entities-reasoning-2"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-entities-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-entities-review",
+      "caseTables": [
+        "clients",
+        "requests"
+      ],
+      "operation": "SELECT r.id,c.phone FROM requests r\nJOIN clients c ON c.id=r.client_id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 5,
+      "title": "Имена таблиц и полей",
+      "definition": "Внешний ключ (FK)",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-naming-concept",
+        "s07-02-table-list-from-source-data-content-naming-reasoning-1",
+        "s07-02-table-list-from-source-data-content-naming-reasoning-2"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-naming-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-naming-review",
+      "caseTables": [
+        "employees",
+        "repairs"
+      ],
+      "operation": "SELECT r.id,a.name AS assigned,p.name AS approved\nFROM repairs r JOIN employees a ON a.id=r.assigned_employee_id\nJOIN employees p ON p.id=r.approved_employee_id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 6,
+      "title": "Первичные ключи",
+      "definition": "Первичный ключ (PK)",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-primary-concept",
+        "s07-02-table-list-from-source-data-content-primary-reasoning-1"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-primary-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-primary-review",
+      "caseTables": [
+        "clients"
+      ],
+      "operation": "SELECT passport_no,COUNT(*) FROM clients\nGROUP BY passport_no HAVING COUNT(*)>1;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 7,
+      "title": "Внешние ключи",
+      "definition": "Ссылочная целостность",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-foreign-concept",
+        "s07-02-table-list-from-source-data-content-foreign-reasoning-1",
+        "s07-02-table-list-from-source-data-content-foreign-reasoning-2"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-foreign-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-foreign-review",
+      "caseTables": [
+        "source_requests",
+        "clients",
+        "requests"
+      ],
+      "operation": "SELECT r.id FROM requests r JOIN clients c ON c.id=r.client_id\nJOIN source_requests s ON s.request_no=r.id\nWHERE c.code<>s.client_code;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "question": 8,
+      "title": "Каталог таблиц",
+      "definition": "Каталог таблиц",
+      "lectureMap": "s07-02-table-list-from-source-data-content-database-map",
+      "mechanism": [
+        "s07-02-table-list-from-source-data-content-catalog-concept",
+        "s07-02-table-list-from-source-data-content-catalog-reasoning-1",
+        "s07-02-table-list-from-source-data-content-catalog-reasoning-2"
+      ],
+      "worked": [
+        "s07-02-table-list-from-source-data-content-catalog-example"
+      ],
+      "casePassport": "s07-02-table-list-from-source-data-content-catalog-review",
+      "caseTables": [
+        "Каталог",
+        "Реализованная схема"
+      ],
+      "operation": "SHOW CREATE TABLE request_items;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 1,
+      "title": "Создание схемы",
+      "definition": "Схема базы данных",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-schema-concept",
+        "s07-03-implement-table-set-content-schema-reasoning-1"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-schema-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-schema-review",
+      "caseTables": [
+        "Сессия",
+        "Цель DDL",
+        "Соседняя база"
+      ],
+      "operation": "USE training_a;\nSELECT DATABASE();\nSHOW TABLES;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 2,
+      "title": "Типы данных",
+      "definition": "Тип данных",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-types-concept",
+        "s07-03-implement-table-set-content-types-reasoning-1",
+        "s07-03-implement-table-set-content-types-reasoning-2"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-types-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-types-review",
+      "caseTables": [
+        "stg_parts",
+        "parts"
+      ],
+      "operation": "CREATE TABLE parts (id INT PRIMARY KEY, article VARCHAR(20) NOT NULL);",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 3,
+      "title": "Первичные ключи",
+      "definition": "AUTO_INCREMENT",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-pk-concept",
+        "s07-03-implement-table-set-content-pk-reasoning-1",
+        "s07-03-implement-table-set-content-pk-reasoning-2"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-pk-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-pk-review",
+      "caseTables": [
+        "requests: состояние"
+      ],
+      "operation": "SELECT COUNT(*) AS accepted_rows FROM requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 4,
+      "title": "Внешние ключи",
+      "definition": "Родительское отношение",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-fk-concept",
+        "s07-03-implement-table-set-content-fk-reasoning-1"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-fk-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-fk-review",
+      "caseTables": [
+        "branches",
+        "Вставляемая request"
+      ],
+      "operation": "SELECT id,code FROM branches WHERE id=77;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 5,
+      "title": "Обязательные поля",
+      "definition": "NOT NULL",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-required-concept",
+        "s07-03-implement-table-set-content-required-reasoning-1",
+        "s07-03-implement-table-set-content-required-reasoning-2"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-required-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-required-review",
+      "caseTables": [
+        "clients"
+      ],
+      "operation": "SELECT id FROM clients WHERE TRIM(name)='';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 6,
+      "title": "Уникальность",
+      "definition": "UNIQUE",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-unique-concept",
+        "s07-03-implement-table-set-content-unique-reasoning-1",
+        "s07-03-implement-table-set-content-unique-reasoning-2"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-unique-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-unique-review",
+      "caseTables": [
+        "users"
+      ],
+      "operation": "SELECT id FROM users WHERE nickname IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 7,
+      "title": "Порядок выполнения",
+      "definition": "Граф зависимостей DDL",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-order-concept",
+        "s07-03-implement-table-set-content-order-reasoning-1",
+        "s07-03-implement-table-set-content-order-reasoning-2"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-order-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-order-review",
+      "caseTables": [
+        "clients",
+        "orders",
+        "order_lines"
+      ],
+      "operation": "-- При объявлении FK внутри CREATE TABLE:\n-- clients → orders → order_lines",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "question": 8,
+      "title": "Воспроизводимый скрипт",
+      "definition": "Воспроизводимый скрипт",
+      "lectureMap": "s07-03-implement-table-set-content-database-map",
+      "mechanism": [
+        "s07-03-implement-table-set-content-reproducible-concept",
+        "s07-03-implement-table-set-content-reproducible-reasoning-1",
+        "s07-03-implement-table-set-content-reproducible-reasoning-2"
+      ],
+      "worked": [
+        "s07-03-implement-table-set-content-reproducible-example"
+      ],
+      "casePassport": "s07-03-implement-table-set-content-reproducible-review",
+      "caseTables": [
+        "Рабочая схема",
+        "Чистая схема"
+      ],
+      "operation": "CREATE DATABASE training_clean;\nUSE training_clean;\n-- Затем полный DDL поставки.\nSHOW CREATE TABLE requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 1,
+      "title": "Обратное проектирование",
+      "definition": "Обратное проектирование",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-reverse-concept",
+        "s07-04-er-diagram-content-reverse-reasoning-1",
+        "s07-04-er-diagram-content-reverse-reasoning-2"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-reverse-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-reverse-review",
+      "caseTables": [
+        "requests",
+        "clients"
+      ],
+      "operation": "SELECT TABLE_NAME,COLUMN_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME\nFROM information_schema.KEY_COLUMN_USAGE\nWHERE TABLE_SCHEMA=DATABASE() AND REFERENCED_TABLE_NAME IS NOT NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 2,
+      "title": "Таблицы и атрибуты",
+      "definition": "Атрибут отношения",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-attributes-concept",
+        "s07-04-er-diagram-content-attributes-reasoning-1"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-attributes-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-attributes-review",
+      "caseTables": [
+        "invoice_lines",
+        "invoices"
+      ],
+      "operation": "SELECT COLUMN_NAME,IS_NULLABLE,DATA_TYPE FROM information_schema.COLUMNS\nWHERE TABLE_SCHEMA=DATABASE() AND TABLE_NAME='invoice_lines';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 3,
+      "title": "Связи и кратность",
+      "definition": "Кратность связи",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-cardinality-concept",
+        "s07-04-er-diagram-content-cardinality-reasoning-1",
+        "s07-04-er-diagram-content-cardinality-reasoning-2"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-cardinality-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-cardinality-review",
+      "caseTables": [
+        "customers",
+        "invoices"
+      ],
+      "operation": "SELECT c.id,COUNT(i.id) FROM customers c\nLEFT JOIN invoices i ON i.customer_id=c.id GROUP BY c.id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 4,
+      "title": "Первичные и внешние ключи",
+      "definition": "Составной ключ",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-keys-concept",
+        "s07-04-er-diagram-content-keys-reasoning-1",
+        "s07-04-er-diagram-content-keys-reasoning-2"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-keys-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-keys-review",
+      "caseTables": [
+        "receipts",
+        "receipt_lines"
+      ],
+      "operation": "SELECT receipt_id,line_no,part_id,price\nFROM receipt_lines ORDER BY receipt_id,line_no;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 5,
+      "title": "Сверка со скриптом",
+      "definition": "Сверка модели",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-reconcile-concept",
+        "s07-04-er-diagram-content-reconcile-reasoning-1",
+        "s07-04-er-diagram-content-reconcile-reasoning-2"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-reconcile-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-reconcile-review",
+      "caseTables": [
+        "ER: requests",
+        "DDL: requests"
+      ],
+      "operation": "SHOW CREATE TABLE requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 6,
+      "title": "Расположение объектов",
+      "definition": "Трассировка связи на ER",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-layout-concept",
+        "s07-04-er-diagram-content-layout-reasoning-1"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-layout-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-layout-review",
+      "caseTables": [
+        "clients",
+        "requests",
+        "audit"
+      ],
+      "operation": "SELECT TABLE_NAME,REFERENCED_TABLE_NAME\nFROM information_schema.KEY_COLUMN_USAGE\nWHERE TABLE_SCHEMA=DATABASE() AND REFERENCED_TABLE_NAME='audit';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 7,
+      "title": "Версия диаграммы",
+      "definition": "Версия схемы",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-version-concept",
+        "s07-04-er-diagram-content-version-reasoning-1"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-version-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-version-review",
+      "caseTables": [
+        "ER-снимок",
+        "Новая DDL"
+      ],
+      "operation": "SELECT CONSTRAINT_NAME,DELETE_RULE FROM information_schema.REFERENTIAL_CONSTRAINTS\nWHERE CONSTRAINT_SCHEMA=DATABASE();",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "question": 8,
+      "title": "Экспорт PDF",
+      "definition": "Переносимое изображение модели",
+      "lectureMap": "s07-04-er-diagram-content-database-map",
+      "mechanism": [
+        "s07-04-er-diagram-content-export-concept",
+        "s07-04-er-diagram-content-export-reasoning-1",
+        "s07-04-er-diagram-content-export-reasoning-2"
+      ],
+      "worked": [
+        "s07-04-er-diagram-content-export-example"
+      ],
+      "casePassport": "s07-04-er-diagram-content-export-review",
+      "caseTables": [
+        "customers",
+        "invoices"
+      ],
+      "operation": "SHOW CREATE TABLE invoices;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 1,
+      "title": "Заголовки и структура",
+      "definition": "Контракт CSV",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-header-concept",
+        "s07-05-prepare-and-load-data-content-header-reasoning-1",
+        "s07-05-prepare-and-load-data-content-header-reasoning-2"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-header-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-header-review",
+      "caseTables": [
+        "CSV: фактический порядок",
+        "stg_branches: ожидаемый"
+      ],
+      "operation": "-- До INSERT сравнить заголовок: code,name\n-- Получено: name,code → отклонить либо явно сопоставить по именам.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 2,
+      "title": "Кодировка и разделители",
+      "definition": "Экранирование CSV",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-csv-concept",
+        "s07-05-prepare-and-load-data-content-csv-reasoning-1"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-csv-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-csv-review",
+      "caseTables": [
+        "Строка CSV",
+        "stg_branches"
+      ],
+      "operation": "-- После закрывающей кавычки разрешены разделитель или конец записи.\n-- Символ X нарушает контракт CSV.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 3,
+      "title": "Пустые ячейки",
+      "definition": "NULL",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-empty-concept",
+        "s07-05-prepare-and-load-data-content-empty-reasoning-1",
+        "s07-05-prepare-and-load-data-content-empty-reasoning-2"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-empty-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-empty-review",
+      "caseTables": [
+        "stg_requests",
+        "requests"
+      ],
+      "operation": "SELECT source_row FROM stg_requests WHERE TRIM(code_text)='';\n-- NULLIF(comment_text,'') применяют только при таком контракте комментария.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 4,
+      "title": "Повторы",
+      "definition": "Бизнес-дубль",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-duplicates-concept",
+        "s07-05-prepare-and-load-data-content-duplicates-reasoning-1",
+        "s07-05-prepare-and-load-data-content-duplicates-reasoning-2"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-duplicates-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-duplicates-review",
+      "caseTables": [
+        "stg_orders"
+      ],
+      "operation": "SELECT order_no,COUNT(*),MIN(amount),MAX(amount)\nFROM stg_orders GROUP BY order_no HAVING COUNT(*)>1;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 5,
+      "title": "Некорректные значения",
+      "definition": "Предметная валидация",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-invalid-concept",
+        "s07-05-prepare-and-load-data-content-invalid-reasoning-1",
+        "s07-05-prepare-and-load-data-content-invalid-reasoning-2"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-invalid-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-invalid-review",
+      "caseTables": [
+        "stg_request_parts",
+        "request_parts"
+      ],
+      "operation": "SELECT source_row,qty FROM stg_request_parts WHERE qty<=0;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 6,
+      "title": "Порядок загрузки",
+      "definition": "Порядок загрузки",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-load-order-concept",
+        "s07-05-prepare-and-load-data-content-load-order-reasoning-1"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-load-order-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-load-order-review",
+      "caseTables": [
+        "departments",
+        "employees"
+      ],
+      "operation": "SELECT e.id FROM stg_employees e\nLEFT JOIN departments d ON d.id=e.department_id WHERE d.id IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 7,
+      "title": "Текст в ключ справочника",
+      "definition": "Разрешение кода",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-resolve-concept",
+        "s07-05-prepare-and-load-data-content-resolve-reasoning-1",
+        "s07-05-prepare-and-load-data-content-resolve-reasoning-2"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-resolve-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-resolve-review",
+      "caseTables": [
+        "branches",
+        "stg_requests"
+      ],
+      "operation": "SELECT code,COUNT(*) FROM branches\nGROUP BY code HAVING COUNT(*)<>1;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "question": 8,
+      "title": "Протокол загрузки",
+      "definition": "Баланс загрузки",
+      "lectureMap": "s07-05-prepare-and-load-data-content-database-map",
+      "mechanism": [
+        "s07-05-prepare-and-load-data-content-balance-concept",
+        "s07-05-prepare-and-load-data-content-balance-reasoning-1"
+      ],
+      "worked": [
+        "s07-05-prepare-and-load-data-content-balance-example"
+      ],
+      "casePassport": "s07-05-prepare-and-load-data-content-balance-review",
+      "caseTables": [
+        "import_run",
+        "row_outcome"
+      ],
+      "operation": "SELECT source_row FROM stg_rows s\nWHERE NOT EXISTS (SELECT 1 FROM row_outcome o WHERE o.source_row=s.source_row);",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 1,
+      "title": "Контроль числа строк",
+      "definition": "Контроль количества",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-counts-concept",
+        "s07-06-validate-load-and-delivery-script-content-counts-reasoning-1",
+        "s07-06-validate-load-and-delivery-script-content-counts-reasoning-2"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-counts-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-counts-review",
+      "caseTables": [
+        "expected_orders",
+        "orders"
+      ],
+      "operation": "SELECT e.order_no FROM expected_orders e LEFT JOIN orders o USING(order_no) WHERE o.order_no IS NULL;\nSELECT o.order_no FROM orders o LEFT JOIN expected_orders e USING(order_no) WHERE e.order_no IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 2,
+      "title": "Обязательные поля",
+      "definition": "Логическая пустота",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-required-concept",
+        "s07-06-validate-load-and-delivery-script-content-required-reasoning-1"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-required-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-required-review",
+      "caseTables": [
+        "requests"
+      ],
+      "operation": "SELECT id FROM requests WHERE TRIM(request_no)='';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 3,
+      "title": "Сиротские записи",
+      "definition": "Строка-сирота",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-orphans-concept",
+        "s07-06-validate-load-and-delivery-script-content-orphans-reasoning-1"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-orphans-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-orphans-review",
+      "caseTables": [
+        "source_requests",
+        "clients",
+        "requests"
+      ],
+      "operation": "SELECT r.request_no FROM requests r JOIN clients c ON c.id=r.client_id\nJOIN source_requests s USING(request_no) WHERE c.code<>s.client_code;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 4,
+      "title": "Отклонённые строки",
+      "definition": "Протокол отклонений",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-rejections-concept",
+        "s07-06-validate-load-and-delivery-script-content-rejections-reasoning-1"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-rejections-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-rejections-review",
+      "caseTables": [
+        "import_errors: неполно",
+        "import_errors: однозначно"
+      ],
+      "operation": "SELECT source_file,source_row,reason FROM import_errors\nORDER BY source_file,source_row;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 5,
+      "title": "Состав скрипта поставки",
+      "definition": "Скрипт поставки",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-delivery-concept",
+        "s07-06-validate-load-and-delivery-script-content-delivery-reasoning-1"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-delivery-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-delivery-review",
+      "caseTables": [
+        "Этап 1",
+        "Этап 2",
+        "Этап 3"
+      ],
+      "operation": "-- ddl.sql → data.sql → views.sql → check.sql\nSELECT DATABASE();\nSHOW FULL TABLES;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 6,
+      "title": "Чистая база",
+      "definition": "Чистая цель испытания",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-clean-concept",
+        "s07-06-validate-load-and-delivery-script-content-clean-reasoning-1"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-clean-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-clean-review",
+      "caseTables": [
+        "Старая цель",
+        "Новая цель"
+      ],
+      "operation": "CREATE DATABASE training_acceptance;\nUSE training_acceptance;\n-- Исполнить полный маршрут поставки.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 7,
+      "title": "Повторяемость",
+      "definition": "Повторяемость результата",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-repeat-concept",
+        "s07-06-validate-load-and-delivery-script-content-repeat-reasoning-1"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-repeat-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-repeat-review",
+      "caseTables": [
+        "Запуск A: clients",
+        "Запуск B: clients",
+        "requests: связь"
+      ],
+      "operation": "SELECT r.request_no,c.code FROM requests r\nJOIN clients c ON c.id=r.client_id ORDER BY r.request_no;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "question": 8,
+      "title": "Протокол поставки",
+      "definition": "Свидетельство проверки",
+      "lectureMap": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "mechanism": [
+        "s07-06-validate-load-and-delivery-script-content-protocol-concept",
+        "s07-06-validate-load-and-delivery-script-content-protocol-reasoning-1"
+      ],
+      "worked": [
+        "s07-06-validate-load-and-delivery-script-content-protocol-example"
+      ],
+      "casePassport": "s07-06-validate-load-and-delivery-script-content-protocol-review",
+      "caseTables": [
+        "Проверяемое утверждение",
+        "Свидетельство"
+      ],
+      "operation": "SELECT r.id FROM requests r LEFT JOIN clients c ON c.id=r.client_id\nWHERE r.client_id IS NOT NULL AND c.id IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 1,
+      "title": "Итоги по таблицам",
+      "definition": "Гранулярность результата",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-totals-concept",
+        "s07-07-control-queries-content-totals-reasoning-1",
+        "s07-07-control-queries-content-totals-reasoning-2"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-totals-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-totals-review",
+      "caseTables": [
+        "requests",
+        "request_parts"
+      ],
+      "operation": "SELECT COUNT(DISTINCT r.id) AS requests_count\nFROM requests r JOIN request_parts p ON p.request_id=r.id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 2,
+      "title": "Связанные записи",
+      "definition": "JOIN",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-joins-concept",
+        "s07-07-control-queries-content-joins-reasoning-1"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-joins-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-joins-review",
+      "caseTables": [
+        "clients",
+        "orders"
+      ],
+      "operation": "SELECT c.id,o.id FROM clients c\nINNER JOIN orders o ON o.client_id=c.id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 3,
+      "title": "Расхождения с файлами",
+      "definition": "Разность множеств ключей",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-differences-concept",
+        "s07-07-control-queries-content-differences-reasoning-1"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-differences-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-differences-review",
+      "caseTables": [
+        "expected",
+        "actual"
+      ],
+      "operation": "SELECT e.code FROM expected e LEFT JOIN actual a USING(code) WHERE a.code IS NULL;\nSELECT a.code FROM actual a LEFT JOIN expected e USING(code) WHERE e.code IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 4,
+      "title": "Пустоты и дубли",
+      "definition": "Бизнес-ключ",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-empty-duplicate-concept",
+        "s07-07-control-queries-content-empty-duplicate-reasoning-1",
+        "s07-07-control-queries-content-empty-duplicate-reasoning-2"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-empty-duplicate-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-empty-duplicate-review",
+      "caseTables": [
+        "orders"
+      ],
+      "operation": "SELECT no,COUNT(*) AS n FROM orders\nGROUP BY no HAVING COUNT(*)>1;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 5,
+      "title": "Соединения",
+      "definition": "LEFT JOIN",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-outer-concept",
+        "s07-07-control-queries-content-outer-reasoning-1",
+        "s07-07-control-queries-content-outer-reasoning-2"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-outer-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-outer-review",
+      "caseTables": [
+        "branches",
+        "requests"
+      ],
+      "operation": "SELECT b.id,r.id FROM branches b LEFT JOIN requests r ON r.branch_id=b.id\nWHERE r.status='WORK';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 6,
+      "title": "Агрегирование",
+      "definition": "COUNT(выражение)",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-aggregate-concept",
+        "s07-07-control-queries-content-aggregate-reasoning-1",
+        "s07-07-control-queries-content-aggregate-reasoning-2"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-aggregate-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-aggregate-review",
+      "caseTables": [
+        "branches",
+        "requests"
+      ],
+      "operation": "SELECT b.id,COUNT(*) AS joined_rows,COUNT(r.id) AS requests_count\nFROM branches b LEFT JOIN requests r ON r.branch_id=b.id GROUP BY b.id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 7,
+      "title": "Отчётный запрос",
+      "definition": "Контракт отчётного запроса",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-report-concept",
+        "s07-07-control-queries-content-report-reasoning-1",
+        "s07-07-control-queries-content-report-reasoning-2"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-report-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-report-review",
+      "caseTables": [
+        "requests"
+      ],
+      "operation": "SELECT client_id,status_id,COUNT(*) FROM requests\nGROUP BY client_id,status_id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "question": 8,
+      "title": "Пакет запросов",
+      "definition": "Набор контрольных запросов",
+      "lectureMap": "s07-07-control-queries-content-database-map",
+      "mechanism": [
+        "s07-07-control-queries-content-suite-concept",
+        "s07-07-control-queries-content-suite-reasoning-1"
+      ],
+      "worked": [
+        "s07-07-control-queries-content-suite-example"
+      ],
+      "casePassport": "s07-07-control-queries-content-suite-review",
+      "caseTables": [
+        "source_requests",
+        "clients",
+        "requests"
+      ],
+      "operation": "SELECT r.request_no FROM requests r LEFT JOIN clients c ON c.id=r.client_id WHERE c.id IS NULL;\n-- Отдельно сравнить c.code с source_requests.client_code.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 1,
+      "title": "Назначение представления",
+      "definition": "Представление (VIEW)",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-meaning-concept",
+        "s08-01-views-content-meaning-reasoning-1",
+        "s08-01-views-content-meaning-reasoning-2",
+        "s08-01-views-content-meaning-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-meaning-example"
+      ],
+      "casePassport": "s08-01-views-content-meaning-review",
+      "caseTables": [
+        "requests: до UPDATE",
+        "requests: после COMMIT",
+        "v_new"
+      ],
+      "operation": "CREATE VIEW v_new AS SELECT id,status FROM requests WHERE status='NEW';\nSELECT id,status FROM v_new;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 2,
+      "title": "Состав колонок",
+      "definition": "Контракт представления",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-contract-concept",
+        "s08-01-views-content-contract-reasoning-1",
+        "s08-01-views-content-contract-reasoning-2",
+        "s08-01-views-content-contract-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-contract-example"
+      ],
+      "casePassport": "s08-01-views-content-contract-review",
+      "caseTables": [
+        "requests",
+        "v_requests: контракт"
+      ],
+      "operation": "CREATE VIEW v_requests AS\nSELECT request_no,branch_code FROM requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 3,
+      "title": "Контрольное представление",
+      "definition": "Контрольное представление",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-control-concept",
+        "s08-01-views-content-control-reasoning-1",
+        "s08-01-views-content-control-reasoning-2",
+        "s08-01-views-content-control-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-control-example"
+      ],
+      "casePassport": "s08-01-views-content-control-review",
+      "caseTables": [
+        "source_requests",
+        "clients / requests",
+        "v_bad_client"
+      ],
+      "operation": "SELECT r.request_no FROM requests r JOIN clients c ON c.id=r.client_id\nJOIN source_requests s USING(request_no) WHERE c.code<>s.client_code;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 4,
+      "title": "Отчётное представление",
+      "definition": "Агрегатное представление",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-report-concept",
+        "s08-01-views-content-report-reasoning-1",
+        "s08-01-views-content-report-reasoning-2",
+        "s08-01-views-content-report-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-report-example"
+      ],
+      "casePassport": "s08-01-views-content-report-review",
+      "caseTables": [
+        "branches",
+        "requests",
+        "v_branch_count"
+      ],
+      "operation": "CREATE VIEW v_branch_count AS\nSELECT b.id AS branch_id,COUNT(r.id) AS request_count\nFROM branches b LEFT JOIN requests r ON r.branch_id=b.id GROUP BY b.id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 5,
+      "title": "Соединения и агрегаты",
+      "definition": "Кратность соединения",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-joins-concept",
+        "s08-01-views-content-joins-reasoning-1",
+        "s08-01-views-content-joins-reasoning-2",
+        "s08-01-views-content-joins-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-joins-example"
+      ],
+      "casePassport": "s08-01-views-content-joins-review",
+      "caseTables": [
+        "requests",
+        "works",
+        "parts_used"
+      ],
+      "operation": "SELECT r.id,w.id,p.id FROM requests r\nJOIN works w ON w.request_id=r.id\nJOIN parts_used p ON p.request_id=r.id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 6,
+      "title": "SQL SECURITY",
+      "definition": "SQL SECURITY DEFINER",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-security-concept",
+        "s08-01-views-content-security-reasoning-1",
+        "s08-01-views-content-security-reasoning-2",
+        "s08-01-views-content-security-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-security-example"
+      ],
+      "casePassport": "s08-01-views-content-security-review",
+      "caseTables": [
+        "reader",
+        "v_requests",
+        "report_owner"
+      ],
+      "operation": "SHOW CREATE VIEW v_requests;\nSELECT CURRENT_USER(),CURRENT_ROLE();\nSELECT * FROM v_requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 7,
+      "title": "Изменяемость",
+      "definition": "Обновляемое представление",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-updates-concept",
+        "s08-01-views-content-updates-reasoning-1",
+        "s08-01-views-content-updates-reasoning-2",
+        "s08-01-views-content-updates-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-updates-example"
+      ],
+      "casePassport": "s08-01-views-content-updates-review",
+      "caseTables": [
+        "requests",
+        "v_counts"
+      ],
+      "operation": "CREATE VIEW v_counts AS SELECT branch_id,COUNT(*) AS n\nFROM requests GROUP BY branch_id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-01-views",
+      "question": 8,
+      "title": "Реестр представлений",
+      "definition": "Реестр представлений",
+      "lectureMap": "s08-01-views-content-database-map",
+      "mechanism": [
+        "s08-01-views-content-register-concept",
+        "s08-01-views-content-register-reasoning-1",
+        "s08-01-views-content-register-reasoning-2",
+        "s08-01-views-content-register-reasoning-3"
+      ],
+      "worked": [
+        "s08-01-views-content-register-example"
+      ],
+      "casePassport": "s08-01-views-content-register-review",
+      "caseTables": [
+        "v_requests",
+        "Целевые аккаунты"
+      ],
+      "operation": "SHOW CREATE VIEW v_requests;\n-- В отдельном соединении целевого reader:\nSELECT * FROM v_requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 1,
+      "title": "Граница транзакции",
+      "definition": "Транзакция",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-boundary-concept",
+        "s08-02-coordinated-data-changes-content-boundary-reasoning-1",
+        "s08-02-coordinated-data-changes-content-boundary-reasoning-2",
+        "s08-02-coordinated-data-changes-content-boundary-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-boundary-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-boundary-review",
+      "caseTables": [
+        "requests",
+        "completed_works",
+        "work_types"
+      ],
+      "operation": "START TRANSACTION;\nUPDATE requests SET status='CLOSED' WHERE id='Q1';\nINSERT INTO completed_works(request_id,type_id) VALUES ('Q1',999);\n-- При отказе FK обработчик операции выполняет ROLLBACK.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 2,
+      "title": "START TRANSACTION",
+      "definition": "START TRANSACTION",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-start-concept",
+        "s08-02-coordinated-data-changes-content-start-reasoning-1",
+        "s08-02-coordinated-data-changes-content-start-reasoning-2",
+        "s08-02-coordinated-data-changes-content-start-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-start-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-start-review",
+      "caseTables": [
+        "Сессия A",
+        "Сессия B",
+        "requests"
+      ],
+      "operation": "-- Соединение A: START TRANSACTION;\n-- Соединение B: SET autocommit=1; UPDATE requests SET status='CLOSED' WHERE id='Q2';\n-- Соединение A: ROLLBACK;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 3,
+      "title": "COMMIT",
+      "definition": "COMMIT",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-commit-concept",
+        "s08-02-coordinated-data-changes-content-commit-reasoning-1",
+        "s08-02-coordinated-data-changes-content-commit-reasoning-2",
+        "s08-02-coordinated-data-changes-content-commit-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-commit-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-commit-review",
+      "caseTables": [
+        "requests: до",
+        "Внутри транзакции",
+        "После решения"
+      ],
+      "operation": "SELECT SUM(amount) FROM completed_works WHERE operation_id='OP1';\n-- Если ожидается 100, а получено 150: ROLLBACK;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 4,
+      "title": "ROLLBACK",
+      "definition": "Ошибка оператора",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-errors-concept",
+        "s08-02-coordinated-data-changes-content-errors-reasoning-1",
+        "s08-02-coordinated-data-changes-content-errors-reasoning-2",
+        "s08-02-coordinated-data-changes-content-errors-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-errors-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-errors-review",
+      "caseTables": [
+        "works",
+        "Транзакция"
+      ],
+      "operation": "START TRANSACTION;\nINSERT INTO works(id,code) VALUES (2,'W2');\nINSERT INTO works(id,code) VALUES (3,'W1');\n-- Ошибку обычного дублирования обработать: ROLLBACK;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 5,
+      "title": "Процедура изменения",
+      "definition": "Хранимая процедура",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-procedure-concept",
+        "s08-02-coordinated-data-changes-content-procedure-reasoning-1",
+        "s08-02-coordinated-data-changes-content-procedure-reasoning-2",
+        "s08-02-coordinated-data-changes-content-procedure-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-procedure-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-procedure-review",
+      "caseTables": [
+        "close_request",
+        "requests",
+        "operation_log"
+      ],
+      "operation": "-- В начале блока процедуры, до исполняемых операторов:\nDECLARE EXIT HANDLER FOR SQLEXCEPTION\nBEGIN\n  ROLLBACK;\n  RESIGNAL;\nEND;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 6,
+      "title": "Проверка параметров",
+      "definition": "Предусловие операции",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-parameters-concept",
+        "s08-02-coordinated-data-changes-content-parameters-reasoning-1",
+        "s08-02-coordinated-data-changes-content-parameters-reasoning-2",
+        "s08-02-coordinated-data-changes-content-parameters-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-parameters-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-parameters-review",
+      "caseTables": [
+        "requests",
+        "completed_works"
+      ],
+      "operation": "UPDATE requests SET status='CLOSED'\nWHERE id='Q1' AND status IN ('NEW','WORK');\nSELECT ROW_COUNT();",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 7,
+      "title": "Триггер журнала",
+      "definition": "Триггер",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-trigger-concept",
+        "s08-02-coordinated-data-changes-content-trigger-reasoning-1",
+        "s08-02-coordinated-data-changes-content-trigger-reasoning-2",
+        "s08-02-coordinated-data-changes-content-trigger-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-trigger-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-trigger-review",
+      "caseTables": [
+        "requests InnoDB",
+        "status_audit InnoDB"
+      ],
+      "operation": "START TRANSACTION;\nUPDATE requests SET status='CLOSED' WHERE id='Q1';\n-- AFTER UPDATE добавил WORK → CLOSED.\nROLLBACK;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "question": 8,
+      "title": "Проверка согласованности",
+      "definition": "Матрица испытаний",
+      "lectureMap": "s08-02-coordinated-data-changes-content-database-map",
+      "mechanism": [
+        "s08-02-coordinated-data-changes-content-proof-concept",
+        "s08-02-coordinated-data-changes-content-proof-reasoning-1",
+        "s08-02-coordinated-data-changes-content-proof-reasoning-2",
+        "s08-02-coordinated-data-changes-content-proof-reasoning-3"
+      ],
+      "worked": [
+        "s08-02-coordinated-data-changes-content-proof-example"
+      ],
+      "casePassport": "s08-02-coordinated-data-changes-content-proof-review",
+      "caseTables": [
+        "requests",
+        "completed_works",
+        "status_audit"
+      ],
+      "operation": "-- Снимок до: requests, completed_works, status_audit.\nCALL close_request('Q1',999);\n-- Снимок после: сравнить все три таблицы по ключам.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 1,
+      "title": "Поля поиска",
+      "definition": "Индекс",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-workload-concept",
+        "s08-03-search-field-indexes-content-workload-reasoning-1",
+        "s08-03-search-field-indexes-content-workload-reasoning-2",
+        "s08-03-search-field-indexes-content-workload-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-workload-example"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-workload-review",
+      "caseTables": [
+        "requests",
+        "Кандидат B-tree"
+      ],
+      "operation": "EXPLAIN SELECT id FROM requests\nWHERE branch_id='B8' AND received_at>='2026-01-01';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 2,
+      "title": "Избирательность",
+      "definition": "Избирательность условия",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-selectivity-concept",
+        "s08-03-search-field-indexes-content-selectivity-reasoning-1",
+        "s08-03-search-field-indexes-content-selectivity-reasoning-2",
+        "s08-03-search-field-indexes-content-selectivity-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-selectivity-example"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-selectivity-review",
+      "caseTables": [
+        "requests: распределение",
+        "Всего"
+      ],
+      "operation": "SELECT COUNT(*) AS total, SUM(status='NEW') AS matched FROM requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 3,
+      "title": "Составной индекс",
+      "definition": "Левый префикс составного B-tree",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-prefix-concept",
+        "s08-03-search-field-indexes-content-prefix-reasoning-1",
+        "s08-03-search-field-indexes-content-prefix-reasoning-2",
+        "s08-03-search-field-indexes-content-prefix-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-prefix-example"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-prefix-review",
+      "caseTables": [
+        "B-tree (branch_id, received_at)",
+        "Условие"
+      ],
+      "operation": "EXPLAIN SELECT id FROM requests WHERE received_at>='2026-02-01';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 4,
+      "title": "Внешние ключи и уникальность",
+      "definition": "Ключ индекса",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-existing-concept",
+        "s08-03-search-field-indexes-content-existing-reasoning-1",
+        "s08-03-search-field-indexes-content-existing-reasoning-2",
+        "s08-03-search-field-indexes-content-existing-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-existing-example"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-existing-review",
+      "caseTables": [
+        "SHOW INDEX: parts",
+        "Предлагается"
+      ],
+      "operation": "SHOW INDEX FROM parts;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 5,
+      "title": "CREATE INDEX",
+      "definition": "CREATE INDEX",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-create-concept",
+        "s08-03-search-field-indexes-content-create-reasoning-1",
+        "s08-03-search-field-indexes-content-create-reasoning-2",
+        "s08-03-search-field-indexes-content-create-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-create-example"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-create-review",
+      "caseTables": [
+        "Сессия: до DDL",
+        "CREATE INDEX"
+      ],
+      "operation": "-- Сначала явно завершить бизнес-транзакцию.\n-- Отдельный этап:\nCREATE INDEX ix_branch_date ON requests(branch_id,received_at);",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 6,
+      "title": "EXPLAIN до и после",
+      "definition": "План выполнения",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-plans-concept",
+        "s08-03-search-field-indexes-content-plans-reasoning-1",
+        "s08-03-search-field-indexes-content-plans-reasoning-2",
+        "s08-03-search-field-indexes-content-plans-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-plans-example",
+        "s08-03-search-field-indexes-content-plans-result"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-plans-review",
+      "caseTables": [
+        "EXPLAIN: узел",
+        "Результат SELECT"
+      ],
+      "operation": "EXPLAIN SELECT id FROM requests WHERE branch_id='B8';\nEXPLAIN ANALYZE SELECT id FROM requests WHERE branch_id='B8';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 7,
+      "title": "Цена индекса",
+      "definition": "Стоимость поддержания индекса",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-cost-concept",
+        "s08-03-search-field-indexes-content-cost-reasoning-1",
+        "s08-03-search-field-indexes-content-cost-reasoning-2",
+        "s08-03-search-field-indexes-content-cost-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-cost-example"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-cost-review",
+      "caseTables": [
+        "Нагрузка чтения",
+        "Нагрузка записи",
+        "Индекс"
+      ],
+      "operation": "SHOW INDEX FROM requests;\n-- Сравнить измерения одной нагрузки до и после на одинаковых данных.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "question": 8,
+      "title": "Реестр индексов",
+      "definition": "Реестр индексов",
+      "lectureMap": "s08-03-search-field-indexes-content-database-map",
+      "mechanism": [
+        "s08-03-search-field-indexes-content-index-register-concept",
+        "s08-03-search-field-indexes-content-index-register-reasoning-1",
+        "s08-03-search-field-indexes-content-index-register-reasoning-2",
+        "s08-03-search-field-indexes-content-index-register-reasoning-3"
+      ],
+      "worked": [
+        "s08-03-search-field-indexes-content-index-register-example"
+      ],
+      "casePassport": "s08-03-search-field-indexes-content-index-register-review",
+      "caseTables": [
+        "index_registry",
+        "Воспроизводимое испытание"
+      ],
+      "operation": "SHOW INDEX FROM requests;\nEXPLAIN SELECT id FROM requests WHERE branch_id='B8' AND received_at>='2026-01-01';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 1,
+      "title": "Уровни доступа",
+      "definition": "Привилегия",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-responsibility-concept",
+        "s08-04-access-control-content-responsibility-reasoning-1",
+        "s08-04-access-control-content-responsibility-reasoning-2"
+      ],
+      "worked": [
+        "s08-04-access-control-content-responsibility-example"
+      ],
+      "casePassport": "s08-04-access-control-content-responsibility-review",
+      "caseTables": [
+        "reader",
+        "v_report",
+        "requests"
+      ],
+      "operation": "GRANT SELECT ON service_training.v_report TO 'reader'@'localhost';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 2,
+      "title": "Учётные записи и роли",
+      "definition": "Роль",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-activation-concept",
+        "s08-04-access-control-content-activation-reasoning-1",
+        "s08-04-access-control-content-activation-reasoning-2"
+      ],
+      "worked": [
+        "s08-04-access-control-content-activation-example"
+      ],
+      "casePassport": "s08-04-access-control-content-activation-review",
+      "caseTables": [
+        "Пользователь",
+        "Роль",
+        "Текущая сессия"
+      ],
+      "operation": "SELECT CURRENT_USER(),CURRENT_ROLE();\nSET ROLE 'reader';\nSELECT * FROM service_training.v_report;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 3,
+      "title": "Минимальные полномочия",
+      "definition": "Принцип минимальных привилегий",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-least-concept",
+        "s08-04-access-control-content-least-reasoning-1",
+        "s08-04-access-control-content-least-reasoning-2"
+      ],
+      "worked": [
+        "s08-04-access-control-content-least-example"
+      ],
+      "casePassport": "s08-04-access-control-content-least-review",
+      "caseTables": [
+        "operator",
+        "completed_works"
+      ],
+      "operation": "GRANT INSERT ON service_training.completed_works TO 'operator'@'localhost';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 4,
+      "title": "GRANT и REVOKE",
+      "definition": "REVOKE",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-grant-revoke-concept",
+        "s08-04-access-control-content-grant-revoke-reasoning-1",
+        "s08-04-access-control-content-grant-revoke-reasoning-2"
+      ],
+      "worked": [
+        "s08-04-access-control-content-grant-revoke-example"
+      ],
+      "casePassport": "s08-04-access-control-content-grant-revoke-review",
+      "caseTables": [
+        "reader1: прямой путь",
+        "reader: активная роль",
+        "Эффективный доступ"
+      ],
+      "operation": "SHOW GRANTS FOR CURRENT_USER;\nSELECT CURRENT_ROLE();\nSELECT * FROM service_training.v_report;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 5,
+      "title": "Доступ через view",
+      "definition": "Интерфейс доступа через VIEW",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-view-concept",
+        "s08-04-access-control-content-view-reasoning-1",
+        "s08-04-access-control-content-view-reasoning-2"
+      ],
+      "worked": [
+        "s08-04-access-control-content-view-example"
+      ],
+      "casePassport": "s08-04-access-control-content-view-review",
+      "caseTables": [
+        "v_clients_public",
+        "clients",
+        "reader1"
+      ],
+      "operation": "-- В соединении reader1:\nSELECT phone FROM service_training.clients;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 6,
+      "title": "Разрешённые операции",
+      "definition": "Позитивный тест доступа",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-allowed-concept",
+        "s08-04-access-control-content-allowed-reasoning-1"
+      ],
+      "worked": [
+        "s08-04-access-control-content-allowed-example"
+      ],
+      "casePassport": "s08-04-access-control-content-allowed-review",
+      "caseTables": [
+        "admin connection",
+        "editor connection",
+        "completed_works"
+      ],
+      "operation": "SELECT CURRENT_USER(),CURRENT_ROLE();\n-- Затем согласованный INSERT в тестовой транзакции editor.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 7,
+      "title": "Запрещённые операции",
+      "definition": "Негативный тест доступа",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-denied-concept",
+        "s08-04-access-control-content-denied-reasoning-1"
+      ],
+      "worked": [
+        "s08-04-access-control-content-denied-example"
+      ],
+      "casePassport": "s08-04-access-control-content-denied-review",
+      "caseTables": [
+        "Неподходящий тест",
+        "Корректный тест"
+      ],
+      "operation": "-- Под проверяемым пользователем в отдельной учебной цели:\nDELETE FROM service_training.requests WHERE id=-1;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "question": 8,
+      "title": "Матрица прав",
+      "definition": "Матрица доступа",
+      "lectureMap": "s08-04-access-control-content-database-map",
+      "mechanism": [
+        "s08-04-access-control-content-matrix-concept",
+        "s08-04-access-control-content-matrix-reasoning-1"
+      ],
+      "worked": [
+        "s08-04-access-control-content-matrix-example"
+      ],
+      "casePassport": "s08-04-access-control-content-matrix-review",
+      "caseTables": [
+        "Матрица reader",
+        "Фактическое испытание"
+      ],
+      "operation": "SELECT CURRENT_USER(),CURRENT_ROLE();\nSELECT * FROM service_training.v_report;\nSELECT * FROM service_training.requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 1,
+      "title": "Состав копии",
+      "definition": "Резервная копия",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-scope-concept",
+        "s08-05-backup-and-protection-content-scope-reasoning-1",
+        "s08-05-backup-and-protection-content-scope-reasoning-2"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-scope-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-scope-review",
+      "caseTables": [
+        "Состав поставки",
+        "Полученный dump"
+      ],
+      "operation": "SHOW FULL TABLES FROM service_training;\nSHOW PROCEDURE STATUS WHERE Db='service_training';\nSHOW TRIGGERS FROM service_training;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 2,
+      "title": "Учётная запись копирования",
+      "definition": "Учётная запись резервирования",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-backup-user-concept",
+        "s08-05-backup-and-protection-content-backup-user-reasoning-1"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-backup-user-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-backup-user-review",
+      "caseTables": [
+        "backup account",
+        "Required scope"
+      ],
+      "operation": "SHOW GRANTS FOR CURRENT_USER;\nSHOW PROCEDURE STATUS WHERE Db='service_training';",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 3,
+      "title": "Создание dump",
+      "definition": "Логическая резервная копия",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-dump-concept",
+        "s08-05-backup-and-protection-content-dump-reasoning-1"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-dump-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-dump-review",
+      "caseTables": [
+        "Сессия dump",
+        "Параллельная сессия"
+      ],
+      "operation": "-- На согласованное окно dump исключают конфликтующий DDL.\n-- --single-transaction относится к согласованному снимку транзакционных данных.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 4,
+      "title": "Контрольное восстановление",
+      "definition": "Контрольное восстановление",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-restore-concept",
+        "s08-05-backup-and-protection-content-restore-reasoning-1",
+        "s08-05-backup-and-protection-content-restore-reasoning-2"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-restore-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-restore-review",
+      "caseTables": [
+        "Исходный экземпляр",
+        "Та же машина: restore_copy",
+        "Изолированный экземпляр"
+      ],
+      "operation": "SHOW CREATE VIEW restore_copy.v_requests;\n-- Контрольное восстановление: отдельный экземпляр с согласованным именем схемы.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 5,
+      "title": "Сверка таблиц",
+      "definition": "Состав объектов восстановления",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-objects-concept",
+        "s08-05-backup-and-protection-content-objects-reasoning-1",
+        "s08-05-backup-and-protection-content-objects-reasoning-2"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-objects-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-objects-review",
+      "caseTables": [
+        "Ожидаемые таблицы",
+        "Восстановленные таблицы"
+      ],
+      "operation": "SELECT TABLE_NAME,TABLE_TYPE FROM information_schema.TABLES\nWHERE TABLE_SCHEMA='service_training' ORDER BY TABLE_NAME;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 6,
+      "title": "Сверка строк",
+      "definition": "Сверка восстановленных данных",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-rows-concept",
+        "s08-05-backup-and-protection-content-rows-reasoning-1"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-rows-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-rows-review",
+      "caseTables": [
+        "Источник: request_parts",
+        "Восстановленная: request_parts"
+      ],
+      "operation": "SELECT request_id,part_id,qty FROM request_parts\nORDER BY request_id,part_id;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 7,
+      "title": "Проверка целостности",
+      "definition": "Проверка поведения после восстановления",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-behavior-concept",
+        "s08-05-backup-and-protection-content-behavior-reasoning-1",
+        "s08-05-backup-and-protection-content-behavior-reasoning-2"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-behavior-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-behavior-review",
+      "caseTables": [
+        "Восстановленная процедура",
+        "Целевой сервер",
+        "Контрольные таблицы"
+      ],
+      "operation": "SHOW CREATE PROCEDURE close_request;\n-- В изолированной цели, после согласования контекста:\nCALL close_request('Q1',1);",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "question": 8,
+      "title": "Протокол и защита",
+      "definition": "Протокол резервирования",
+      "lectureMap": "s08-05-backup-and-protection-content-database-map",
+      "mechanism": [
+        "s08-05-backup-and-protection-content-protection-concept",
+        "s08-05-backup-and-protection-content-protection-reasoning-1",
+        "s08-05-backup-and-protection-content-protection-reasoning-2"
+      ],
+      "worked": [
+        "s08-05-backup-and-protection-content-protection-example"
+      ],
+      "casePassport": "s08-05-backup-and-protection-content-protection-review",
+      "caseTables": [
+        "Переданный файл",
+        "Полученный файл",
+        "Проверка базы"
+      ],
+      "operation": "-- После проверки SHA-256 восстановить копию в изолированной цели.\nSHOW FULL TABLES FROM service_training;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 1,
+      "title": "База и объекты",
+      "definition": "Комплект результатов",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-objects-concept",
+        "s08-06-results-package-content-objects-reasoning-1"
+      ],
+      "worked": [
+        "s08-06-results-package-content-objects-example"
+      ],
+      "casePassport": "s08-06-results-package-content-objects-review",
+      "caseTables": [
+        "Комплект: фактически",
+        "Комплект: согласованно"
+      ],
+      "operation": "SHOW CREATE TABLE requests;\n-- Сравнить с ER и исполнить load + check для этого DDL.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 2,
+      "title": "Загруженные данные",
+      "definition": "Происхождение данных",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-data-concept",
+        "s08-06-results-package-content-data-reasoning-1",
+        "s08-06-results-package-content-data-reasoning-2"
+      ],
+      "worked": [
+        "s08-06-results-package-content-data-example"
+      ],
+      "casePassport": "s08-06-results-package-content-data-review",
+      "caseTables": [
+        "source.csv",
+        "Целевая таблица",
+        "rejections"
+      ],
+      "operation": "SELECT source_file,source_row,reason FROM import_errors ORDER BY source_row;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 3,
+      "title": "ER-диаграмма",
+      "definition": "Поставочная ER-модель",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-er-concept",
+        "s08-06-results-package-content-er-reasoning-1",
+        "s08-06-results-package-content-er-reasoning-2"
+      ],
+      "worked": [
+        "s08-06-results-package-content-er-example"
+      ],
+      "casePassport": "s08-06-results-package-content-er-review",
+      "caseTables": [
+        "ER: parts",
+        "DDL: parts"
+      ],
+      "operation": "SHOW CREATE TABLE parts;\nSHOW INDEX FROM parts;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 4,
+      "title": "SQL-скрипты",
+      "definition": "Маршрут развёртывания",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-scripts-concept",
+        "s08-06-results-package-content-scripts-reasoning-1"
+      ],
+      "worked": [
+        "s08-06-results-package-content-scripts-example"
+      ],
+      "casePassport": "s08-06-results-package-content-scripts-review",
+      "caseTables": [
+        "init.sql",
+        "load.sql",
+        "views.sql"
+      ],
+      "operation": "-- Маршрут поставки:\n-- init.sql → load.sql → views.sql → проверки\nSELECT DATABASE();",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 5,
+      "title": "Протокол проверки",
+      "definition": "Трассируемость результата",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-evidence-concept",
+        "s08-06-results-package-content-evidence-reasoning-1"
+      ],
+      "worked": [
+        "s08-06-results-package-content-evidence-example"
+      ],
+      "casePassport": "s08-06-results-package-content-evidence-review",
+      "caseTables": [
+        "requests",
+        "clients",
+        "Приёмочный протокол"
+      ],
+      "operation": "SELECT r.id FROM requests r LEFT JOIN clients c ON c.id=r.client_id\nWHERE r.client_id IS NOT NULL AND c.id IS NULL;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 6,
+      "title": "Резервная копия",
+      "definition": "Испытанная резервная копия",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-backup-concept",
+        "s08-06-results-package-content-backup-reasoning-1"
+      ],
+      "worked": [
+        "s08-06-results-package-content-backup-example"
+      ],
+      "casePassport": "s08-06-results-package-content-backup-review",
+      "caseTables": [
+        "Источник",
+        "Изолированная цель"
+      ],
+      "operation": "SHOW FULL TABLES FROM service_training;\nSHOW CREATE VIEW service_training.v_requests;",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 7,
+      "title": "Учётные данные",
+      "definition": "Секрет доступа",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-secrets-concept",
+        "s08-06-results-package-content-secrets-reasoning-1"
+      ],
+      "worked": [
+        "s08-06-results-package-content-secrets-example"
+      ],
+      "casePassport": "s08-06-results-package-content-secrets-review",
+      "caseTables": [
+        "Пример подключения",
+        "Локальная настройка"
+      ],
+      "operation": "-- Пароль не указывается в общем примере:\n-- mysql --host=127.0.0.1 --user=training_reader --password",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "question": 8,
+      "title": "Чистый итоговый запуск",
+      "definition": "Сквозное испытание поставки",
+      "lectureMap": "s08-06-results-package-content-database-map",
+      "mechanism": [
+        "s08-06-results-package-content-final-run-concept",
+        "s08-06-results-package-content-final-run-reasoning-1",
+        "s08-06-results-package-content-final-run-reasoning-2"
+      ],
+      "worked": [
+        "s08-06-results-package-content-final-run-example"
+      ],
+      "casePassport": "s08-06-results-package-content-final-run-review",
+      "caseTables": [
+        "Передаваемый архив",
+        "Чистая цель",
+        "Результат испытания"
+      ],
+      "operation": "SELECT DATABASE();\nSHOW FULL TABLES;\n-- Затем контрольные SELECT, разрешённые и запрещённые действия, restore-проверка.",
+      "types": [
+        "single",
+        "multiple",
+        "short",
+        "matching"
+      ]
+    }
+  ]
+}

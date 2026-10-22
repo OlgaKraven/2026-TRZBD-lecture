@@ -1,10 +1,19 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {learningContent} from './learning-content.mjs';
+import {caseModel} from './database-cases.mjs';
+import {courseMaps} from './course-maps.mjs';
 export function enrichLearning(course,notes,questions,keys,registry){
- const learning={schemaVersion:1,contentVersion:course.contentVersion,questions:[],slides:{}};
+ const learning={schemaVersion:1,contentVersion:course.contentVersion,questions:[],slides:{},lectureModels:{}};
  const glossary=new Map();
  for(const [li,l] of course.lectures.entries()){
+  const map=courseMaps[li],mapId=l.id+'-content-database-map';
+  const {walkthrough,...publicMap}=map;
+  learning.lectureModels[mapId]=publicMap;
+  const context=l.slides.findIndex(s=>s.id.endsWith('-context'));
+  l.slides.splice(context+1,0,{id:mapId,kind:'theory',kicker:'Схема данных',title:map.title,body:map.meaning});
+  const contextNote=notes[l.slides[context].id];
+  notes[mapId]={...contextNote,script:walkthrough,questions:'Какой объект и какое свойство связывает каждая линия этой схемы?',answer:map.links.map(l=>l.label).join('. '),notebook:'',estimatedSeconds:120};
   const qs=questions.filter(q=>q.lectureId===l.id);
   if(qs.length!==8||learningContent[li]?.length!==8)throw Error('Missing authored learning content: '+l.id);
   for(const [qi,q] of qs.entries()){
@@ -18,15 +27,20 @@ export function enrichLearning(course,notes,questions,keys,registry){
    const passport=l.slides.find(s=>s.id.endsWith('-review')&&q.slideIds.includes(s.id));
    const previousReview={...notes[passport.id]};
    const id=q.questionId;
-   const inspect=definition.term+' — '+definition.definition+' Сопоставьте это свойство с указанными исходными условиями; ещё не выбирайте ответ по внешнему сходству формулировок.';
-   const caseData={...activity,inspect,id,revision:createHash('sha256').update(JSON.stringify({...activity,inspect})).digest('hex').slice(0,12),title:definition.term,lectureId:l.id,passportId:passport.id};
+   const model=caseModel(li,qi);
+   const inspect=model.trace[1];
+   const caseData={...activity,inspect,model,id,revision:createHash('sha256').update(JSON.stringify({...activity,inspect,model})).digest('hex').slice(0,12),title:definition.term,lectureId:l.id,passportId:passport.id};
    passport.title=definition.term+': самостоятельное исследование';
    passport.body=activity.data;
-   notes[passport.id].script='Перед основной самопроверкой рассмотрим другой случай. '+activity.data+' '+activity.question+' Сначала запишите прогноз, затем сопоставьте исходные условия. Выберите решение и обоснуйте его; разбор откроем после попытки. Дополнение не изменяет баллы основной самопроверки.';
+   notes[passport.id].script='Рассмотрим другой набор данных для этого правила. '+activity.data+' '+activity.question+' Покажите схему '+model.tables.map(t=>t.name).join(' → ')+'. '+model.trace[0]+' Попросите группу зафиксировать прогноз. Откройте «Разбор кейса» в этом окне; в режиме показа схема и шаги появятся у аудитории. На этапе проверки разберите конкретные поля и условие операции: '+model.trace[1]+' Ответ группы сопоставьте с данными после попытки, затем отдельно разрешите показ разбора аудитории.';
    notes[passport.id].questions=activity.question;
-   notes[passport.id].answer='Для самостоятельного дополнения: '+activity.options[activity.correct]+'. '+activity.reason;
+   notes[passport.id].answer='Для самостоятельного дополнения: '+activity.options[activity.correct]+'. '+activity.reason+' '+model.trace[2];
    notes[test.id].answer+='\nРазбор исходного самостоятельного случая: '+previousReview.script;
    notes[test.id].script=notes[test.id].script.replace('После ответа перейдём к следующему экрану с объяснением.','После попытки откройте разбор ответа и сопоставьте его с обоснованием группы.');
+   if(li===7&&qi===0){
+    const mechanism=l.slides.find(s=>q.slideIds.includes(s.id)&&s.id.endsWith('-concept'));
+    notes[mechanism.id].script+=' Видимость определяет транзакция чтения, а не имя VIEW. Обычный SELECT InnoDB при REPEATABLE READ читает снимок первого согласованного чтения этой транзакции и собственные изменения; чужой поздний COMMIT не обновляет такой снимок. В новой транзакции снимок формируется заново. В независимом кейсе явно задана новая транзакция после изменения Q9, поэтому там видна CLOSED. Мы не вводим здесь все уровни изоляции, но не обещаем, что любое повторное чтение VIEW немедленно увидит чужие изменения.';
+   }
    const oldIndex=l.slides.indexOf(passport);l.slides.splice(oldIndex,1);l.slides.splice(l.slides.indexOf(test),0,passport);
    q.slideIds=l.slides.filter(s=>q.slideIds.includes(s.id)).map(s=>s.id);
    const item={id,number:qi+1,title:q.title,definition,rule,case:caseData,passportId:passport.id,testId:test.id,slideIds:q.slideIds};

@@ -1,0 +1,87 @@
+{
+  "version": "8.4.13",
+  "isolated": true,
+  "checks": [
+    {
+      "name": "Код K9 разрешается в client_id=17",
+      "status": "passed"
+    },
+    {
+      "name": "Одинаковая фамилия не определяет табельный номер",
+      "status": "passed"
+    },
+    {
+      "name": "Повтор детали сохраняет количество 2 и 1",
+      "status": "passed"
+    },
+    {
+      "name": "PK не устраняет бизнес-дубль паспорта",
+      "status": "passed"
+    },
+    {
+      "name": "TRIM обнаруживает пробельное обязательное имя",
+      "status": "passed"
+    },
+    {
+      "name": "Nullable UNIQUE допускает два NULL",
+      "status": "passed"
+    },
+    {
+      "name": "Предметная проверка отклоняет qty=-2",
+      "status": "passed"
+    },
+    {
+      "name": "Равные COUNT не скрывают пропуск Q3 и лишний Q8",
+      "status": "passed"
+    },
+    {
+      "name": "COUNT DISTINCT считает одну заявку после трёх деталей",
+      "status": "passed"
+    },
+    {
+      "name": "INNER JOIN C8/C9 даёт две пары",
+      "status": "passed"
+    },
+    {
+      "name": "Повтор бизнес-номера U5 обнаруживается HAVING",
+      "status": "passed"
+    },
+    {
+      "name": "WHERE после LEFT JOIN исключает B5",
+      "status": "passed"
+    },
+    {
+      "name": "COUNT(*) и COUNT(r.id) для пустого B5 равны 1 и 0",
+      "status": "passed"
+    },
+    {
+      "name": "VIEW пересчитывает отбор после подтверждённого изменения",
+      "status": "passed"
+    },
+    {
+      "name": "Агрегатное VIEW сохраняет B5 с нулём",
+      "status": "passed"
+    },
+    {
+      "name": "Две работы и три детали дают шесть строк",
+      "status": "passed"
+    },
+    {
+      "name": "GROUP BY VIEW описывает группу, а не базовую строку",
+      "status": "passed"
+    },
+    {
+      "name": "INSERT через агрегатное VIEW отклонён",
+      "status": "passed"
+    },
+    {
+      "name": "Обычная ошибка UNIQUE оставляет первый INSERT незавершённым",
+      "status": "passed"
+    },
+    {
+      "name": "Доля совпадений 18000 / 24000 = 75%",
+      "status": "passed"
+    }
+  ],
+  "limits": "Execution covers the listed SQL fixtures. Metadata, permission, backup and procedure fragments are also reviewed with the existing course SQL checks; this report does not claim execution of all 104 fragments."
+}

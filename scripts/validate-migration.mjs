@@ -26,6 +26,9 @@ for(const q of learning.questions){
  const l=c.lectures.find(l=>l.id===q.case.lectureId);assert(l,'Unknown case lecture');
  const passport=l.slides.findIndex(s=>s.id===q.passportId),test=l.slides.findIndex(s=>s.id===q.testId);
  assert(passport>=0&&test===passport+1,'Passport must directly precede its assessment');
+ const original=topics.find(t=>t.id===l.id).questions[q.number-1];assert.equal(q.title,original.title);
+ const block=l.slides.filter(s=>q.slideIds.includes(s.id));assert.deepEqual(block.filter(s=>s.task).map(s=>s.task.type),['single','multiple','short','matching']);
+ assert(block.findIndex(s=>s.kind==='notebook')<block.findIndex(s=>s.kind==='example'),'Definition must precede the example');
  assert(q.definition.term&&q.definition.definition&&q.case.data&&q.case.question&&q.case.reason,'Incomplete learning case');
  assert(Number.isInteger(q.case.correct)&&q.case.correct>=0&&q.case.correct<q.case.options.length,'Invalid independent-case key');
  for(const id of q.slideIds)assert.equal(learning.slides[id]?.questionId,q.id,'Question membership lost');

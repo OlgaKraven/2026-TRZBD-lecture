@@ -3,10 +3,11 @@ import {course as sourceCourse,topics} from './legacy-course.ts';
 import {buildDeck} from './legacy-deck.ts';
 import {rewritePriority} from './rewrite-priority.mjs';
 import {enrichLearning} from './enrich-learning.mjs';
+import {restoreTeaching} from './restore-teaching.mjs';
 const write=(path,data)=>fs.writeFileSync(path,JSON.stringify(data,null,2)+'\n');
-const version='trzbd-2026.10.23-learning-r5';
+const version='trzbd-2026.10.23-database-cases-r8';
 fs.mkdirSync('private',{recursive:true});
-const course={schemaVersion:1,contentVersion:version,id:'trzbd',code:'МДК.11.01 · 4 курс',discipline:'Технология разработки и защиты баз данных',year:'2026–2027',heroTitle:'Разрабатывайте и защищайте',heroAccent:'базы данных',slogan:'От исходных данных — к проверенной и защищённой базе',mascot:'brand/mascot/trzbd-database-rhino-catalog.png',mascotAlt:'Носорог — разработчик и защитник баз данных',logo:'brand/synergy-logo.png',ornament:'brand/side-ornament.png',font:'fonts/raleway-cyrillic.woff2',topicArrow:'brand/topic-arrow.webp',materialsUrl:sourceCourse.materialsUrl,demo:false,semesters:sourceCourse.semesters,assessment:{mode:'autonomous',url:'assessment.json'},lectures:[],glossary:[],curriculum:[]};
+const course={schemaVersion:1,contentVersion:version,id:'trzbd',code:'МДК.11.01 · 4 курс',discipline:'Технология разработки и защиты баз данных',year:'2026–2027',heroTitle:'Разрабатывайте и защищайте',heroAccent:'базы данных',slogan:'От исходных данных — к проверенной и защищённой базе',mascot:'brand/mascot/trzbd-schema-protection-catalog.png',mascotAlt:'Носорог — разработчик и защитник баз данных',logo:'brand/synergy-wordmark.jpg',ornament:'brand/side-ornament.png',font:'fonts/raleway-cyrillic.woff2',topicArrow:'brand/topic-arrow.webp',materialsUrl:sourceCourse.materialsUrl,demo:false,semesters:sourceCourse.semesters,assessment:{mode:'autonomous',url:'assessment.json'},lectures:[],glossary:[],curriculum:[]};
 const first=buildDeck(topics[0],sourceCourse);
 course.literature=Object.fromEntries(['primary','additional'].map((group,i)=>[group,first[i+2].bullets.map((citation,j)=>({citation,url:first[i+2].links[j].url}))]));
 const notes={},keys={},questions=[],mapping=[],links={},registry=[];
@@ -68,6 +69,7 @@ for(const [li,t] of topics.entries()){
 }
 rewritePriority({course,notes,keys,questions,registry,mapping,links});
 enrichLearning(course,notes,questions,keys,registry);
+restoreTeaching(course,notes,questions,keys,registry,links,mapping);
 const pack={schemaVersion:1,courseId:course.id,contentVersion:version,notes};
 write('public/course.json',course);write('public/teacher-notes.json',pack);write('private/teacher-pack.json',pack);
 write('public/assessment.json',{schemaVersion:1,courseId:course.id,contentVersion:version,mode:'autonomous-educational',keys});

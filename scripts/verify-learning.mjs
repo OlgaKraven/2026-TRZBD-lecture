@@ -8,10 +8,15 @@ const previous=JSON.parse(execFileSync('git',['show','73db447d9006776fc62114169d
 const before=new Map(previous.lectures.flatMap(l=>l.slides.map(s=>[s.id,s])));
 assert.equal(current.lectures.length,13);assert.equal(learning.questions.length,104);
 const ids=current.lectures.flatMap(l=>l.slides.map(s=>s.id));
-assert.deepEqual(new Set(ids),new Set(before.keys()));
+const redirects=JSON.parse(fs.readFileSync('public/slide-redirects.json','utf8'));
+const regrouped=[...before.values()].filter(s=>!ids.includes(s.id));
+assert.equal(regrouped.length,26);for(const s of regrouped){assert.equal(s.kind,'literature');assert(ids.includes(redirects[s.id]));}
+assert.equal(ids.filter(id=>!before.has(id)).length,325);
+assert.equal(Object.keys(learning.lectureModels).length,13);
 const inputs=new Set();let worked=0;
 for(const l of current.lectures){
- assert.equal(l.slides.length,previous.lectures.find(x=>x.id===l.id).slides.length);
+ const oldLecture=previous.lectures.find(x=>x.id===l.id);
+ assert.deepEqual(l.slides.filter(s=>s.kind==='literature').flatMap(s=>s.references),oldLecture.slides.filter(s=>s.kind==='literature').flatMap(s=>s.references));
  for(const s of l.slides){const old=before.get(s.id);
   if(s.visual||s.image||s.rows){for(const field of ['visual','image','columns','rows'])assert.deepEqual(s[field],old[field],s.id);worked++;}
   if(s.id.includes('-reasoning-'))assert.equal(s.body,s.id==='s08-03-search-field-indexes-content-index-register-reasoning-1'?old.body.replace('10093','9799'):old.body);
@@ -22,8 +27,13 @@ for(const l of current.lectures){
   assert.equal(passport+1,test);assert.ok(q.definition.definition.length>30);assert.ok(q.rule.length>20);
   assert.ok(!inputs.has(q.case.data));inputs.add(q.case.data);
   assert.ok(q.case.options[q.case.correct]);assert.ok(q.case.reason.length>50);
-  assert.ok(notes[q.testId].answer.includes(before.get(q.passportId).body),'Review lost: '+q.id);
+  assert(q.case.model.tables.length>0);assert.equal(q.case.model.trace.length,3);assert(q.case.model.sql.trim());
+  for(const t of q.case.model.tables){assert(t.columns.length);for(const row of t.rows)assert.equal(row.length,t.columns.length,q.id+': '+t.name);}
+  for(const e of q.case.model.links){assert(q.case.model.tables[e.from]);assert(q.case.model.tables[e.to]);assert(e.label.trim());}
+  const originalTask=q.testIds.find(id=>id.endsWith('-T01-slide'));
+  assert.ok(notes[originalTask].answer.includes(before.get(q.passportId).body),'Review lost: '+q.id);
+  assert.deepEqual(q.testIds.map(id=>l.slides.find(s=>s.id===id).task.type),['single','multiple','short','matching']);
  }
 }
-const report={lectures:13,slideIdsPreserved:ids.length,workedDisplaysUnchanged:worked,independentCases:inputs.size,definitions:learning.questions.length,legacyReviews:'retained in post-attempt teacher answers and assessment explanation',status:'passed'};
+const report={lectures:13,slides:ids.length,existingIdsRetained:ids.filter(id=>before.has(id)).length,readingPagesRegroupedWithRedirects:regrouped.length,addedAssessmentPages:312,addedDatabaseMaps:13,assessmentTasks:416,workedDisplaysUnchanged:worked,independentCases:inputs.size,databaseCaseModels:learning.questions.filter(q=>q.case.model.tables.length).length,definitions:learning.questions.length,legacyReviews:'retained in post-attempt teacher answers and assessment explanation',status:'passed'};
 fs.writeFileSync('reports/learning-verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

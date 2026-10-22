@@ -144,7 +144,7 @@ export function CourseCatalog({
   return <div className="ok-page" data-layout={view} data-theme={theme} aria-label="Каталог лекций">
     <header className="ok-header">
       <a className="ok-brand" href="#ok-top" aria-label="ТРЗБД — каталог лекций">
-        <img className="ok-logo" src={asset(course.logo)} alt="" />
+        <img className="ok-logo" src={asset('brand/synergy-mark.png')} alt="" />
         <span>{course.code}<span className="ok-brand-sub">ТРЗБД</span></span>
       </a>
       <nav className="ok-header-actions" aria-label="Навигация курса">
@@ -204,7 +204,7 @@ export function CourseCatalog({
         <div className="ok-empty" hidden={!!visibleLectures.length}><h3>Темы не найдены</h3><p>Попробуйте другое слово или выберите все темы.</p><button className="ok-button" type="button" onClick={() => { setFilters({ search: '', semester: 'all' }); searchRef.current?.focus() }}>Сбросить поиск</button></div>
       </section>
     </main>
-    <footer className="ok-footer"><span>{course.discipline}</span><span>{course.code}</span></footer>
+
     <dialog className="ok-materials-dialog" ref={materialsDialogRef} aria-labelledby="ok-materials-heading" onClose={closeMaterials}>
       <button className="ok-close" type="button" aria-label="Закрыть материалы" onClick={() => materialsDialogRef.current?.close()}><X aria-hidden="true" /></button>
       <h2 id="ok-materials-heading">Материалы</h2>

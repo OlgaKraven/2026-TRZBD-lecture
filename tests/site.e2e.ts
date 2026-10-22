@@ -1,5 +1,6 @@
 import {expect,test} from '@playwright/test'
 import fs from 'node:fs'
+import {topics} from '../authoring/legacy-course'
 const c=JSON.parse(fs.readFileSync('public/course.json','utf8'))
 const l=c.lectures[0],task=l.slides.find((s:{task?:unknown})=>s.task)
 
@@ -51,6 +52,8 @@ test('all four assessment types score taught answers on desktop',async({page})=>
   else for(const item of t.items)await page.getByRole('combobox',{name:`Соответствие: ${item.text}`,exact:true}).selectOption(k.pairs[item.id])
   await page.getByRole('button',{name:'Проверить',exact:true}).click();await expect(page.locator('.task-status')).toContainText('Правильно');await page.getByRole('button',{name:'Разбор ответа',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('Правильный ответ')
  }
+ await page.getByRole('button',{name:'Закрыть',exact:true}).click();await page.getByRole('button',{name:'Ещё',exact:true}).click();await page.getByRole('button',{name:'Обзор самопроверки',exact:true}).click()
+ await expect(page.getByRole('dialog').locator('summary').first()).toContainText('4 / 4 проверено · 4 / 4 баллов')
 })
 
 test('arrow navigation survives clicked buttons and leaves input editing alone',async({page})=>{
@@ -80,6 +83,11 @@ test('each independent case supports a wrong and correct attempt without changin
   await page.getByRole('radio').nth(item.correct).check()
   await page.getByRole('button',{name:'Проверить решение',exact:true}).click();await expect(page.locator('.case-feedback')).toContainText('Выбор верен')
   await expect(page.locator('.case-feedback')).toContainText(item.reason)
+  const data=page.getByRole('region',{name:'Схема и данные кейса',exact:true})
+  await expect(data.locator('.database-table')).toHaveCount(item.model.tables.length)
+  for(let step=0;step<3;step++)await data.getByRole('button',{name:'Далее по данным',exact:true}).click()
+  await expect(data.locator('.model-result')).toHaveText('Наблюдаемый результат'+item.model.trace[2])
+  await expect(data.locator('.case-sql')).toContainText(item.model.sql)
  }
  expect(await page.evaluate(()=>Object.keys(localStorage).filter(k=>k.includes(':answers:')).length)).toBe(0)
  await page.reload();await expect(page.locator('.case-feedback')).toContainText('Выбор верен')
@@ -104,7 +112,7 @@ test('teacher and audience sync only public state and reveal answers explicitly'
 test('all preserved pages fit printable frames with complete definitions and code',async({page})=>{
  test.setTimeout(90_000)
  await page.setViewportSize({width:1280,height:720});await page.goto('./?mode=print&scope=all')
- await expect(page.locator('.print-page')).toHaveCount(974);await page.evaluate(()=>document.fonts.ready)
+ await expect(page.locator('.print-page')).toHaveCount(c.lectures.reduce((sum:number,l:{slides:unknown[]})=>sum+l.slides.length,0));await page.evaluate(()=>document.fonts.ready)
  const overflow=await page.locator('.paper-content').evaluateAll(els=>els.filter(e=>e.scrollHeight>e.clientHeight+3).map(e=>({id:e.parentElement?.getAttribute('data-slide-id'),over:e.scrollHeight-e.clientHeight})))
  fs.mkdirSync('outputs/verification',{recursive:true});fs.writeFileSync('outputs/verification/layout-overflow.json',JSON.stringify(overflow,null,2))
  expect(overflow).toEqual([])
@@ -136,4 +144,97 @@ test('previous personal script edits migrate without replacing revised defaults'
  const download=await page.request.get(`./teacher-text/lecture-01.teacher.md`)
  expect(download.status()).toBe(200);expect((await download.text()).startsWith('# 1.')).toBe(true)
  const pending=page.waitForEvent('download');await page.getByRole('link',{name:'Скачать текст преподавателя',exact:true}).click();expect((await pending).suggestedFilename()).toBe('lecture-01.teacher.md')
+})
+
+test('reference layouts show the mascot, complete topic map, QR cards and slide-only folio',async({page})=>{
+ await page.setViewportSize({width:1280,height:800});await page.goto('./')
+ await expect(page.locator('.ok-footer')).toHaveCount(0);await expect(page.locator('.ok-rhino')).toBeVisible()
+ expect(await page.locator('.ok-rhino').evaluate((e:HTMLImageElement)=>e.complete&&e.naturalWidth>500)).toBe(true)
+ await page.goto(`./?lecture=${l.id}&slide=${l.slides[0].id}`)
+ await expect(page.locator('.slide-eyebrow')).toHaveText('ЛЕКЦИЯ');await expect(page.locator('.paper footer')).toHaveText('01')
+ expect(await page.locator('.wordmark').evaluate((e:HTMLImageElement)=>e.naturalWidth>e.naturalHeight*4)).toBe(true)
+ expect(await page.locator('.toolbar-title').evaluate(e=>getComputedStyle(e).borderLeftWidth)).toBe('4px')
+ await expect(page.getByRole('button',{name:'Следующий слайд',exact:true})).toHaveText('Вперёд')
+ for(const topic of topics){
+  const lecture=c.lectures.find((x:{id:string})=>x.id===topic.id),agenda=lecture.slides.find((s:{kind:string})=>s.kind==='agenda')
+  await page.goto(`./?lecture=${lecture.id}&slide=${agenda.id}`)
+  await expect(page.locator('.topic-map li b')).toHaveText(topic.questions.map(q=>q.title))
+ }
+ const literature=l.slides.find((s:{kind:string})=>s.kind==='literature'),materials=l.slides.find((s:{kind:string})=>s.kind==='materials')
+ await page.goto(`./?lecture=${l.id}&slide=${literature.id}`);await expect(page.locator('.reading-card')).toHaveCount(2);await expect(page.locator('.reading-card img')).toHaveCount(2)
+ await page.goto(`./?lecture=${l.id}&slide=${materials.id}`);await expect(page.locator('.materials-card img')).toBeVisible();await expect(page.locator('.materials-card a')).toHaveAttribute('href',c.materialsUrl)
+})
+
+test('diagram play pauses at a fractional position, resumes, and supports reduced motion',async({page})=>{
+ const lecture=c.lectures[8],slide=lecture.slides.find((s:{id:string})=>s.id.endsWith('procedure-example')),storage='trzbd:visual:'+slide.id
+ await page.goto(`./?lecture=${lecture.id}&slide=${slide.id}`)
+ const controls=page.getByRole('group',{name:'Пошаговая схема',exact:true})
+ await expect(controls).toBeVisible();await page.waitForTimeout(220)
+ expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)||'{"step":0,"fraction":0}'),storage)).toEqual({step:0,fraction:0})
+ await controls.getByRole('button',{name:'Показать',exact:true}).click();await page.waitForTimeout(420);await controls.getByRole('button',{name:'Пауза',exact:true}).click()
+ const paused=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),storage);expect(paused.fraction).toBeGreaterThan(.1)
+ await page.waitForTimeout(240);expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),storage)).toEqual(paused)
+ await controls.getByRole('button',{name:'Показать',exact:true}).click();await page.waitForTimeout(260);await controls.getByRole('button',{name:'Пауза',exact:true}).click()
+ const resumed=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),storage);expect(resumed.step+resumed.fraction).toBeGreaterThan(paused.step+paused.fraction)
+ await controls.getByRole('button',{name:'Далее',exact:true}).click();await expect(page.locator('.code-line.model-focus')).toHaveCount(1)
+ await controls.getByRole('button',{name:'Повторить',exact:true}).click();await expect(controls).toContainText('Шаг 0 /')
+ await page.emulateMedia({reducedMotion:'reduce'});await expect(controls.getByRole('button',{name:'Показать',exact:true})).toBeDisabled();await controls.getByRole('button',{name:'Далее',exact:true}).click();await expect(page.locator('.code-line.model-focus')).toHaveCount(1)
+ await page.emulateMedia({reducedMotion:'no-preference'});await controls.getByRole('button',{name:'Показать',exact:true}).click();await page.waitForTimeout(150)
+ await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,value:true});document.dispatchEvent(new Event('visibilitychange'))})
+ await expect(controls.getByRole('button',{name:'Показать',exact:true})).toBeVisible();const hidden=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),storage)
+ await page.evaluate(()=>{delete (document as Document&{hidden?:boolean}).hidden;document.dispatchEvent(new Event('visibilitychange'))});await page.waitForTimeout(180)
+ expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),storage)).toEqual(hidden)
+})
+
+test('switching case scenario cancels an in-flight explanation',async({page})=>{
+ await page.goto('./?mode=interactive&case=s08-02-coordinated-data-changes-content-boundary')
+ await page.getByLabel('Мой прогноз',{exact:true}).fill('Изменения должны быть совместными.');await page.getByRole('button',{name:'Далее',exact:true}).click()
+ const model=page.getByRole('region',{name:'Предметная модель'})
+ await model.getByRole('button',{name:'Показать',exact:true}).click();await page.waitForTimeout(300)
+ await model.getByRole('combobox').selectOption('success');await expect(model).toContainText('Шаг 0 /');await expect(model.getByRole('button',{name:'Показать',exact:true})).toBeVisible()
+ await page.waitForTimeout(350);await expect(model).toContainText('Шаг 0 /');await expect(model.locator('tbody')).toContainText('WORK')
+})
+
+test('diagram steps and animated focus sync to the audience without controls',async({page,context})=>{
+ const lecture=c.lectures[8],slide=lecture.slides.find((s:{id:string})=>s.id.endsWith('procedure-example'))
+ await page.goto(`./?lecture=${lecture.id}&slide=${slide.id}`)
+ const pending=context.waitForEvent('page');await page.getByRole('button',{name:'Режим показа',exact:true}).click();const audience=await pending
+ await expect(audience.locator('.paper')).toHaveAttribute('data-slide-id',slide.id)
+ const controls=page.getByRole('group',{name:'Пошаговая схема',exact:true});await controls.getByRole('button',{name:'Показать',exact:true}).click()
+ await expect(audience.locator('.code-line.model-focus')).toHaveCount(1);await controls.getByRole('button',{name:'Пауза',exact:true}).click()
+ await expect(audience.getByRole('group',{name:'Пошаговая схема',exact:true})).toHaveCount(0)
+ await controls.getByRole('button',{name:'Далее',exact:true}).click();await expect(audience.locator('.code-line.model-focus')).toHaveText(await page.locator('.code-line.model-focus').innerText())
+ await page.getByRole('button',{name:'Завершить показ',exact:true}).click();await expect(audience.locator('.black-screen')).toBeVisible();await audience.close()
+})
+
+test('case stays in presentation, syncs database steps and scenarios, and reveals no private draft',async({page,context})=>{
+ const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8')),q=learning.questions.find((q:{id:string})=>q.id==='s08-02-coordinated-data-changes-content-boundary')
+ await page.goto(`./?lecture=${q.case.lectureId}&slide=${q.passportId}`)
+ const pending=context.waitForEvent('page');await page.getByRole('button',{name:'Режим показа',exact:true}).click();const audience=await pending
+ await page.getByRole('button',{name:'Разбор кейса ↗',exact:true}).click()
+ await expect(page.getByRole('dialog',{name:'Разбор кейса',exact:true})).toBeVisible();expect(new URL(page.url()).searchParams.get('mode')).toBe('presenter')
+ await expect(audience.locator('.case-projection')).toBeVisible();await expect(audience.locator('textarea,input,select,button')).toHaveCount(0)
+ await page.getByLabel('Мой прогноз',{exact:true}).fill('Личная гипотеза преподавателя, не для трансляции')
+ await page.getByRole('button',{name:'Далее',exact:true}).click()
+ const model=page.getByRole('region',{name:'Схема и данные кейса',exact:true});await model.getByRole('button',{name:'Далее по данным',exact:true}).click()
+ await expect(audience.locator('.case-sql')).toContainText('START TRANSACTION')
+ await expect(audience.locator('.case-projection')).not.toContainText('Личная гипотеза')
+ const subject=page.getByRole('region',{name:'Предметная модель',exact:true});await subject.getByRole('combobox').selectOption('success');await subject.getByRole('button',{name:'Далее по модели',exact:true}).click()
+ const projected=audience.getByRole('region',{name:'Предметная модель',exact:true});await expect(projected).toContainText(/допустимая работа/i);await expect(projected.locator('tbody')).toContainText('CLOSED')
+ await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('radio').nth(q.case.correct).check();await page.getByLabel('Моё обоснование',{exact:true}).fill('Проверены все изменения InnoDB.');await page.getByRole('button',{name:'Проверить решение',exact:true}).click()
+ await expect(audience.locator('.case-public-answer')).toHaveCount(0);await page.getByRole('button',{name:'Показать разбор аудитории',exact:true}).click();await expect(audience.locator('.case-public-answer')).toContainText(q.case.reason)
+ await page.getByRole('button',{name:'Скрыть разбор у аудитории',exact:true}).click();await expect(audience.locator('.case-public-answer')).toHaveCount(0)
+ await page.getByRole('button',{name:'К слайдам',exact:false}).click();await expect(audience.locator('.case-projection')).toHaveCount(0);await expect(audience.locator('.paper')).toHaveAttribute('data-slide-id',q.passportId);await audience.close()
+})
+
+test('matching dropdowns remain readable and keyboard usable in presenter mode and contents names questions',async({page})=>{
+ for(const lecture of c.lectures){
+  const s=lecture.slides.find((s:{task?:{type:string}})=>s.task?.type==='matching')
+  await page.setViewportSize({width:1280,height:800});await page.goto(`./?mode=presenter&lecture=${lecture.id}&slide=${s.id}`)
+  const select=page.getByRole('combobox').first();await expect(select).toBeVisible()
+  expect(await select.evaluate(e=>parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(14)
+  await select.focus();await page.keyboard.press('ArrowDown');await page.keyboard.press('Enter');await expect(select).not.toHaveValue('')
+  expect(new URL(page.url()).searchParams.get('slide')).toBe(s.id)
+  await page.getByRole('button',{name:'Содержание',exact:true}).click();await expect(page.getByRole('dialog').getByRole('button',{name:/Вопрос 1\./})).toHaveCount(1);await page.getByRole('button',{name:'Закрыть',exact:true}).click()
+ }
 })

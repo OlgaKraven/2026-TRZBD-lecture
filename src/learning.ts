@@ -1,9 +1,10 @@
 import type {Course,Lecture,Note,Slide} from '@olgakraven/lecture-engine'
 export type {Course,Lecture,Note,Slide}
 export type Profile={fullName:string;position:string;department:string}
-export type Case={id:string;revision:string;title:string;lectureId:string;passportId:string;data:string;question:string;options:string[];correct:number;reason:string;inspect:string}
-export type Question={id:string;number:number;title:string;definition:{term:string;definition:string};rule:string;case:Case;passportId:string;testId:string;slideIds:string[]}
-export type Learning={contentVersion:string;questions:Question[];slides:Record<string,{questionId:string;number:number}>}
+export type CaseModel={tables:{name:string;columns:string[];rows:string[][];result?:boolean}[];links:{from:number;to:number;label:string}[];sql:string;trace:string[]}
+export type Case={id:string;revision:string;title:string;lectureId:string;passportId:string;data:string;question:string;options:string[];correct:number;reason:string;inspect:string;model:CaseModel}
+export type Question={id:string;number:number;title:string;definition:{term:string;definition:string};rule:string;case:Case;passportId:string;testId:string;testIds?:string[];slideIds:string[]}
+export type Learning={contentVersion:string;questions:Question[];slides:Record<string,{questionId:string;number:number}>;lectureModels:Record<string,CaseModel>}
 export type CatalogProps={course:Course;base:string;profile:Profile;materials:string;theme:'light'|'dark';storagePrefix:string;invalidLecture:boolean;onOpenLecture:(l:Lecture)=>void;onPrint:(scope:string)=>void;onProfileChange:(p:Profile)=>void;onMaterialsChange:(s:string)=>void;onThemeChange:(s:'light'|'dark')=>void}
 export type Answer=string|string[]|Record<string,string>
 export type Key={type:string;correct?:string[];accepted?:string[];pairs?:Record<string,string>;explanation:string}

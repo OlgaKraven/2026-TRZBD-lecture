@@ -5,6 +5,8 @@ const i=process.argv.indexOf('--out');if(i<0)throw Error('Укажите --out �
 const out=path.resolve(process.argv[i+1]);fs.mkdirSync(out,{recursive:true});
 const bytes=fs.readFileSync('public/course.json'),c=JSON.parse(bytes),p=JSON.parse(fs.readFileSync('public/teacher-notes.json','utf8'));
 const sha=createHash('sha256').update(bytes).digest('hex');
+const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8'));
+const modelText=model=>model.tables.map(t=>'**'+t.name+'**\n\n'+t.columns.map(c=>'- '+c).join('\n')+(t.rows.length?'\n\n| '+t.columns.join(' | ')+' |\n| '+t.columns.map(()=>'---').join(' | ')+' |\n'+t.rows.map(r=>'| '+r.map(v=>String(v).replaceAll('|','\\|')||'∅').join(' | ')+' |').join('\n'):'')).join('\n\n')+'\n\n'+model.links.map(l=>'- '+l.label).join('\n')+(model.sql?'\n\n```sql\n'+model.sql+'\n```':'')+'\n\n';
 const support=path.join(out,'_support');fs.mkdirSync(support,{recursive:true});
 const routes=[];
 for(const [index,l] of c.lectures.entries()){
@@ -13,8 +15,8 @@ for(const [index,l] of c.lectures.entries()){
  const header=`# ${index+1}. ${l.title}\n\n`;
  const minutes=slides=>Math.round(slides.reduce((sum,s)=>sum+p.notes[s.id].estimatedSeconds,0)/60);
  const supplementary=l.slides.filter(s=>s.id.endsWith('-review'));
- routes.push({lectureId:l.id,slideIds:l.slides.map(s=>s.id),estimatedMinutes:minutes(l.slides),explanationAndMainTasksMinutes:minutes(l.slides.filter(s=>!supplementary.includes(s))),independentSupplementsMinutes:minutes(supplementary),timing:'word-count and action-based rough estimate; supplements can be studied independently; not classroom measurement or approved timetable'});
- const route='Текст сохраняет все вопросы и объяснения в порядке показа. На самостоятельных случаях сначала дайте группе ответить, затем откройте преподавательский разбор. Дополнения по кнопке «Интерактивная схема» пригодны и для самостоятельной работы после общего объяснения; при выполнении в аудитории им нужно отдельное время. Фактический темп зависит от обсуждения и демонстраций; время полей панели — предварительная оценка речи и действий, а не утверждённый хронометраж занятия.\n\n';
+ routes.push({lectureId:l.id,slideIds:l.slides.map(s=>s.id),estimatedMinutes:minutes(l.slides),explanationMinutes:minutes(l.slides.filter(s=>!s.task&&!supplementary.includes(s))),selfAssessmentMinutes:minutes(l.slides.filter(s=>s.task)),independentSupplementsMinutes:minutes(supplementary),timing:'word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable'});
+ const route='Текст сохраняет все вопросы и объяснения в порядке показа. На самостоятельных случаях сначала дайте группе ответить, затем откройте преподавательский разбор. Схемы показывают конкретные поля, связи и операцию; просите объяснить каждую линию и предсказать результат. В режиме показа разбор открывается в текущем окне и у аудитории; прогноз, обоснование и личные заметки аудитории не передаются. Итоговый ответ показывайте отдельной командой после обсуждения. Дополнения по кнопке «Разбор кейса» и четыре формата самопроверки пригодны для самостоятельной работы после общего объяснения; при выполнении в аудитории им нужно отдельное время. Фактический темп зависит от обсуждения и демонстраций; время полей панели — предварительная оценка речи и действий, а не утверждённый хронометраж занятия.\n\n';
  let teacher=header+route+'Текст следует фактическому порядку экранов. В самостоятельном случае сначала дано условие; ответ расположен после него в отдельном преподавательском разборе.\n\n';
  const preparation=[...new Set(l.slides.map(s=>p.notes[s.id].preparation).filter(Boolean))];
  teacher+='## Подготовка к занятию\n\n'+preparation.join('\n\n')+'\n\n';
@@ -23,11 +25,16 @@ for(const [index,l] of c.lectures.entries()){
  for(const [si,s] of l.slides.entries()){
   const n=p.notes[s.id],anchor='screen-'+String(si+1).padStart(3,'0');
   teacher+=`<a id="${anchor}"></a>\n## Слайд ${si+1}. ${s.title}\n<!-- source-slides: ${s.id} -->\n\n`;
+  const model=learning.lectureModels?.[s.id]||learning.questions.find(q=>q.passportId===s.id)?.case.model;
+  if(model)teacher+='### Схема и исходные данные\n\n'+modelText(model);
+  if(s.references)teacher+=s.references.map(r=>r.citation+(r.url?'\n\n[Открыть источник]('+r.url+')':'')).join('\n\n')+'\n\n';
   if(s.rows&&s.columns){
    const cell=v=>String(v).replaceAll('|','\\|').replaceAll('\n','<br>');
    teacher+='| '+s.columns.map(cell).join(' | ')+' |\n| '+s.columns.map(()=>'---').join(' | ')+' |\n'+s.rows.map(row=>'| '+row.map(cell).join(' | ')+' |').join('\n')+'\n\n';
   }
   if(s.visual?.type==='codeParts')for(const part of s.visual.parts)teacher+='```'+(/^(node|mysqldump)/.test(part.code)?'text':'sql')+'\n'+part.code+'\n```\n\n';
+  if(s.task?.items)teacher+='**Элементы для сопоставления:**\n\n'+s.task.items.map((x,i)=>(i+1)+'. '+x.text).join('\n')+'\n\n';
+  if(s.task?.options)teacher+='**Варианты ответа:**\n\n'+s.task.options.map((x,i)=>(i+1)+'. '+x.text).join('\n')+'\n\n';
   if(s.image?.src.startsWith('data:image/png;base64,')){
    const bytes=Buffer.from(s.image.src.split(',')[1],'base64'),name='image-'+createHash('sha256').update(bytes).digest('hex').slice(0,12)+'.png';
    fs.writeFileSync(path.join(support,name),bytes);

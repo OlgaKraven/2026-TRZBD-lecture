@@ -1,0 +1,5408 @@
+{
+  "desktop": {
+    "version": "trzbd-2026.10.23-database-cases-r8",
+    "checks": [
+      {
+        "id": "s07-01-source-data-package-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-scope-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-scope-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-scope-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-scope-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-scope-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-scope-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-description-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-description-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-description-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-description-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-description-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-description-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-files-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-files-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-files-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-files-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-files-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-files-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-deliverables-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-deliverables-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-deliverables-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-deliverables-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-deliverables-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-deliverables-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-mapping-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-mapping-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-mapping-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-mapping-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-mapping-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-mapping-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-reference-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-reference-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-reference-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-reference-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-reference-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-reference-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-quality-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-quality-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-quality-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-quality-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-quality-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-quality-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-passport-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-01-source-data-package-content-passport-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-passport-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-passport-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-passport-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-01-source-data-package-content-passport-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dependencies-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dependencies-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dependencies-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dependencies-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dependencies-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dependencies-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dictionary-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dictionary-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dictionary-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dictionary-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dictionary-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-dictionary-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-multivalue-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-multivalue-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-multivalue-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-multivalue-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-multivalue-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-multivalue-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-entities-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-entities-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-entities-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-entities-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-entities-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-entities-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-naming-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-naming-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-naming-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-naming-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-naming-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-naming-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-primary-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-primary-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-primary-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-primary-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-primary-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-primary-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-foreign-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-foreign-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-foreign-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-foreign-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-foreign-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-foreign-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-catalog-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-catalog-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-catalog-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-catalog-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-catalog-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-02-table-list-from-source-data-content-catalog-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-schema-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-schema-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-schema-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-schema-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-schema-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-schema-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-types-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-types-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-types-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-types-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-types-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-types-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-pk-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-pk-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-pk-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-pk-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-pk-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-pk-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-fk-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-fk-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-fk-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-fk-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-fk-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-fk-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-required-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-required-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-required-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-required-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-required-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-required-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-unique-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-unique-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-unique-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-unique-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-unique-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-unique-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-order-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-order-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-order-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-order-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-order-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-order-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-reproducible-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-03-implement-table-set-content-reproducible-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-reproducible-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-reproducible-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-reproducible-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-03-implement-table-set-content-reproducible-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reverse-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-reverse-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reverse-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reverse-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reverse-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reverse-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-attributes-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-attributes-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-attributes-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-attributes-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-attributes-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-attributes-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-cardinality-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-cardinality-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-cardinality-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-cardinality-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-cardinality-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-cardinality-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-keys-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-keys-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-keys-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-keys-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-keys-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-keys-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-result-step-1",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-result-step-2",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-reconcile-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-layout-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-layout-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-layout-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-layout-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-layout-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-layout-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-version-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-version-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-version-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-version-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-version-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-version-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-export-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-04-er-diagram-content-export-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-export-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-export-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-export-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-04-er-diagram-content-export-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-header-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-header-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-header-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-header-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-header-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-header-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-csv-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-csv-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-csv-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-csv-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-csv-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-csv-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-empty-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-empty-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-empty-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-empty-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-empty-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-empty-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-duplicates-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-duplicates-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-duplicates-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-duplicates-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-duplicates-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-duplicates-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-invalid-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-invalid-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-invalid-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-invalid-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-invalid-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-invalid-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-load-order-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-load-order-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-load-order-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-load-order-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-load-order-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-load-order-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-resolve-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-resolve-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-resolve-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-resolve-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-resolve-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-resolve-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-balance-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-balance-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-balance-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-balance-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-balance-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-05-prepare-and-load-data-content-balance-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-counts-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-counts-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-counts-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-counts-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-counts-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-counts-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-required-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-required-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-required-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-required-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-required-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-required-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-orphans-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-orphans-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-orphans-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-orphans-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-orphans-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-orphans-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-rejections-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-rejections-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-rejections-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-rejections-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-rejections-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-rejections-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-delivery-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-delivery-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-delivery-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-delivery-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-delivery-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-delivery-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-clean-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-clean-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-clean-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-clean-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-clean-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-clean-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-repeat-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-repeat-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-repeat-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-repeat-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-repeat-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-repeat-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-protocol-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-protocol-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-protocol-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-protocol-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-protocol-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-06-validate-load-and-delivery-script-content-protocol-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-totals-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-totals-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-totals-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-totals-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-totals-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-totals-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-joins-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-joins-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-joins-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-joins-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-joins-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-joins-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-differences-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-differences-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-differences-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-differences-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-differences-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-differences-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-empty-duplicate-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-empty-duplicate-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-empty-duplicate-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-empty-duplicate-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-empty-duplicate-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-empty-duplicate-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-outer-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-outer-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-outer-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-outer-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-outer-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-outer-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-aggregate-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-aggregate-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-aggregate-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-aggregate-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-aggregate-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-aggregate-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-report-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-report-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-report-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-report-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-report-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-report-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-suite-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s07-07-control-queries-content-suite-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-suite-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-suite-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-suite-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s07-07-control-queries-content-suite-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-context-1",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-context-2",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-meaning-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-meaning-result-step-1",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-meaning-result-step-2",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-meaning-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-meaning-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-meaning-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-meaning-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-meaning-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-contract-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-contract-result-step-1",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-contract-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-contract-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-contract-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-contract-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-contract-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-control-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-control-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-control-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-control-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-control-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-control-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-report-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-report-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-report-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-report-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-report-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-report-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-joins-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-joins-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-joins-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-joins-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-joins-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-joins-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-security-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-security-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-security-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-security-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-security-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-security-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-updates-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-updates-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-updates-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-updates-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-updates-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-updates-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-register-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-01-views-content-register-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-register-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-register-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-register-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-01-views-content-register-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-boundary-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-boundary-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-boundary-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-boundary-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-boundary-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-boundary-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-start-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-start-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-start-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-start-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-start-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-start-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-commit-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-commit-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-commit-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-commit-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-commit-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-commit-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-errors-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-errors-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-errors-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-errors-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-errors-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-errors-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-procedure-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-procedure-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-procedure-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-procedure-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-procedure-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-procedure-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-parameters-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-parameters-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-parameters-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-parameters-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-parameters-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-parameters-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-trigger-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-trigger-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-trigger-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-trigger-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-trigger-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-trigger-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-proof-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-proof-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-proof-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-proof-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-proof-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-02-coordinated-data-changes-content-proof-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-workload-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-workload-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-workload-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-workload-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-workload-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-workload-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-selectivity-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-selectivity-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-selectivity-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-selectivity-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-selectivity-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-selectivity-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-prefix-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-prefix-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-prefix-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-prefix-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-prefix-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-prefix-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-existing-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-existing-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-existing-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-existing-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-existing-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-existing-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-create-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-create-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-create-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-create-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-create-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-create-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-plans-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-plans-result",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-plans-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-plans-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-plans-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-plans-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-plans-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-cost-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-cost-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-cost-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-cost-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-cost-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-cost-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-index-register-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-index-register-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-index-register-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-index-register-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-index-register-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-03-search-field-indexes-content-index-register-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-responsibility-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-responsibility-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-responsibility-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-responsibility-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-responsibility-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-responsibility-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-activation-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-activation-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-activation-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-activation-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-activation-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-activation-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-least-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-least-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-least-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-least-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-least-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-least-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-grant-revoke-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-grant-revoke-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-grant-revoke-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-grant-revoke-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-grant-revoke-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-grant-revoke-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-view-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-view-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-view-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-view-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-view-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-view-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-allowed-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-allowed-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-allowed-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-allowed-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-allowed-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-allowed-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-denied-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-denied-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-denied-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-denied-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-denied-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-denied-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-matrix-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-04-access-control-content-matrix-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-matrix-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-matrix-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-matrix-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-04-access-control-content-matrix-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-scope-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-scope-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-scope-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-scope-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-scope-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-scope-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-backup-user-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-backup-user-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-backup-user-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-backup-user-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-backup-user-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-backup-user-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-dump-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-dump-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-dump-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-dump-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-dump-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-dump-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-restore-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-restore-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-restore-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-restore-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-restore-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-restore-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-objects-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-objects-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-objects-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-objects-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-objects-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-objects-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-rows-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-rows-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-rows-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-rows-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-rows-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-rows-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-behavior-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-behavior-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-behavior-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-behavior-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-behavior-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-behavior-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-protection-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-protection-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-protection-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-protection-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-protection-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-05-backup-and-protection-content-protection-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-context",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-database-map",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-objects-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-objects-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-objects-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-objects-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-objects-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-objects-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-data-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-data-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-data-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-data-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-data-T01-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-data-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-er-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-er-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-er-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-er-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-er-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-er-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-scripts-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-scripts-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-scripts-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-scripts-T03-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-scripts-T04-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-scripts-T01-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-evidence-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-evidence-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-evidence-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-evidence-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-evidence-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-evidence-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-backup-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-backup-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-backup-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-backup-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-backup-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-backup-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-secrets-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-secrets-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-secrets-T02-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-secrets-T01-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-secrets-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-secrets-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-final-run-example",
+        "type": "visual",
+        "height": 362,
+        "scroll": 362
+      },
+      {
+        "id": "s08-06-results-package-content-final-run-review",
+        "type": "visual",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-final-run-T01-slide",
+        "type": "single",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-final-run-T02-slide",
+        "type": "multiple",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-final-run-T03-slide",
+        "type": "short",
+        "height": 414,
+        "scroll": 414
+      },
+      {
+        "id": "s08-06-results-package-content-final-run-T04-slide",
+        "type": "matching",
+        "height": 414,
+        "scroll": 414
+      }
+    ],
+    "overflow": []
+  },
+  "mobile": [
+    {
+      "mode": "light",
+      "kind": "catalog",
+      "overlap": false,
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "light",
+      "id": "s07-01-source-data-package-title",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "light",
+      "id": "s07-01-source-data-package-literature-primary-1",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "light",
+      "id": "s07-01-source-data-package-materials",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "light",
+      "id": "s07-01-source-data-package-agenda",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "light",
+      "id": "s07-01-source-data-package-content-scope-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "light",
+      "id": "s07-01-source-data-package-content-scope-T01-slide",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "dark",
+      "kind": "catalog",
+      "overlap": false,
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "dark",
+      "id": "s07-01-source-data-package-title",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "dark",
+      "id": "s07-01-source-data-package-literature-primary-1",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "dark",
+      "id": "s07-01-source-data-package-materials",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "dark",
+      "id": "s07-01-source-data-package-agenda",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "dark",
+      "id": "s07-01-source-data-package-content-scope-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "mode": "dark",
+      "id": "s07-01-source-data-package-content-scope-T01-slide",
+      "width": 320,
+      "scroll": 320
+    }
+  ],
+  "databaseMobile": [
+    {
+      "kind": "course-map",
+      "id": "s07-01-source-data-package-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s07-02-table-list-from-source-data-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s07-03-implement-table-set-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s07-04-er-diagram-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s07-05-prepare-and-load-data-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s07-07-control-queries-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s08-01-views-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s08-02-coordinated-data-changes-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s08-03-search-field-indexes-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s08-04-access-control-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s08-05-backup-and-protection-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "course-map",
+      "id": "s08-06-results-package-content-database-map",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-scope",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-scope",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-description",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-description",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-files",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-files",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-deliverables",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-deliverables",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-mapping",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-mapping",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-reference",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-reference",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-quality",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-quality",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-01-source-data-package-content-passport",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-01-source-data-package-content-passport",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-dependencies",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-dependencies",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-dictionary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-dictionary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-multivalue",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-multivalue",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-entities",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-entities",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-naming",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-naming",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-primary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-primary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-foreign",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-foreign",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-02-table-list-from-source-data-content-catalog",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-02-table-list-from-source-data-content-catalog",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-schema",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-schema",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-types",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-types",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-pk",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-pk",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-fk",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-fk",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-required",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-required",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-unique",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-unique",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-order",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-order",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-03-implement-table-set-content-reproducible",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-03-implement-table-set-content-reproducible",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-reverse",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-reverse",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-attributes",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-attributes",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-cardinality",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-cardinality",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-keys",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-keys",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-reconcile",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-reconcile",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-layout",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-layout",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-version",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-version",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-04-er-diagram-content-export",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-04-er-diagram-content-export",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-header",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-header",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-csv",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-csv",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-empty",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-empty",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-duplicates",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-duplicates",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-invalid",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-invalid",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-load-order",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-load-order",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-resolve",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-resolve",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-05-prepare-and-load-data-content-balance",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-05-prepare-and-load-data-content-balance",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-counts",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-counts",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-required",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-required",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-orphans",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-orphans",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-rejections",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-rejections",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-delivery",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-delivery",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-clean",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-clean",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-repeat",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-repeat",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-06-validate-load-and-delivery-script-content-protocol",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-06-validate-load-and-delivery-script-content-protocol",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-totals",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-totals",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-joins",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-joins",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-differences",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-differences",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-empty-duplicate",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-empty-duplicate",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-outer",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-outer",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-aggregate",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-aggregate",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-report",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-report",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s07-07-control-queries-content-suite",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s07-07-control-queries-content-suite",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-meaning",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-meaning",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-contract",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-contract",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-control",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-control",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-report",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-report",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-joins",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-joins",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-security",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-security",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-updates",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-updates",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-01-views-content-register",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-01-views-content-register",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-start",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-start",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-commit",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-commit",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-errors",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-errors",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-procedure",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-procedure",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-parameters",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-parameters",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-trigger",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-trigger",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-02-coordinated-data-changes-content-proof",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-02-coordinated-data-changes-content-proof",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-workload",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-workload",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-selectivity",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-selectivity",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-prefix",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-prefix",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-existing",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-existing",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-create",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-create",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-plans",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-plans",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-cost",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-cost",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-03-search-field-indexes-content-index-register",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-03-search-field-indexes-content-index-register",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-responsibility",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-responsibility",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-activation",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-activation",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-least",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-least",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-grant-revoke",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-grant-revoke",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-view",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-view",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-allowed",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-allowed",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-denied",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-denied",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-04-access-control-content-matrix",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-04-access-control-content-matrix",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-scope",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-scope",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-backup-user",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-backup-user",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-dump",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-dump",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-restore",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-restore",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-objects",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-objects",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-rows",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-rows",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-behavior",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-behavior",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-05-backup-and-protection-content-protection",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-05-backup-and-protection-content-protection",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-objects",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-objects",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-data",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-data",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-er",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-er",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-scripts",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-scripts",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-evidence",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-evidence",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-backup",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-backup",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-secrets",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-secrets",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "passport",
+      "id": "s08-06-results-package-content-final-run",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case",
+      "id": "s08-06-results-package-content-final-run",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case-light",
+      "id": "s08-01-views-content-contract",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case-light",
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case-light",
+      "id": "s08-03-search-field-indexes-content-selectivity",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case-dark",
+      "id": "s08-01-views-content-contract",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case-dark",
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "kind": "case-dark",
+      "id": "s08-03-search-field-indexes-content-selectivity",
+      "width": 320,
+      "scroll": 320
+    }
+  ]
+}

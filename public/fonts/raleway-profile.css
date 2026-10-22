@@ -1,0 +1,20 @@
+/* Keep this stylesheet next to raleway-cyrillic.woff2. */
+@font-face {
+  font-family: "Raleway";
+  src: url("./raleway-cyrillic.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+:root {
+  --font-ui: "Raleway", Arial, sans-serif;
+  --font-code: Consolas, "Courier New", monospace;
+  --weight-body: 400;
+  --weight-controls: 600;
+  --weight-heading: 700;
+}
+body { font-family: var(--font-ui); font-weight: var(--weight-body); line-height: 1.5; }
+h1, h2, h3 { font-family: var(--font-ui); font-weight: var(--weight-heading); line-height: 1.18; }
+button, input, select, textarea { font: inherit; }
+button, nav { font-weight: var(--weight-controls); }
+pre, code { font-family: var(--font-code); font-variant-ligatures: none; }
