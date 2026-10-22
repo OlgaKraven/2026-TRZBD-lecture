@@ -19,6 +19,17 @@ const bundled=JSON.parse(fs.readFileSync('public/teacher-notes.json','utf8'));
 validateTeacherPack(bundled,c);
 for(const l of c.lectures)for(const s of l.slides)if(!bundled.notes[s.id]?.script.trim())throw Error('Нет встроенного сценария: '+s.id);
 const questions=JSON.parse(fs.readFileSync('authoring/questions.json','utf8'));
+const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8'));
+assert.equal(learning.contentVersion,c.contentVersion);assert.equal(learning.questions.length,questions.length);
+assert.equal(new Set(learning.questions.map(q=>q.id)).size,questions.length);
+for(const q of learning.questions){
+ const l=c.lectures.find(l=>l.id===q.case.lectureId);assert(l,'Unknown case lecture');
+ const passport=l.slides.findIndex(s=>s.id===q.passportId),test=l.slides.findIndex(s=>s.id===q.testId);
+ assert(passport>=0&&test===passport+1,'Passport must directly precede its assessment');
+ assert(q.definition.term&&q.definition.definition&&q.case.data&&q.case.question&&q.case.reason,'Incomplete learning case');
+ assert(Number.isInteger(q.case.correct)&&q.case.correct>=0&&q.case.correct<q.case.options.length,'Invalid independent-case key');
+ for(const id of q.slideIds)assert.equal(learning.slides[id]?.questionId,q.id,'Question membership lost');
+}
 for(const l of c.lectures){
  if(l.slides[0].kind!=='title'||l.slides.at(-1).kind!=='questions')throw Error('Границы лекции');
  for(const q of questions.filter(q=>q.lectureId===l.id)){

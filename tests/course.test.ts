@@ -2,6 +2,22 @@ import { describe, expect, it } from 'vitest'
 import { course, topics, validateCourseData } from '../src/data/courseData'
 import { buildDeck, countServiceSlides } from '../src/deck/buildDeck'
 import { normalizeOrganizationUnit } from '../src/lib/teacherProfile'
+import {joinRows,transactionSnapshot} from '../src/SubjectModel'
+
+describe('independent subject models',()=>{
+ it('keeps duplicate matches and the provenance of an outer NULL',()=>{
+  const rows=[{id:'O1',parent:'C1'},{id:'O2',parent:'C1'},{id:'O3',parent:null}]
+  expect(joinRows(['C1','C2'],rows,'INNER')).toEqual([{left:'C1',right:'O1',origin:'совпадение ON'},{left:'C1',right:'O2',origin:'совпадение ON'}])
+  expect(joinRows(['C1','C2'],rows,'LEFT')).toHaveLength(3)
+  expect(joinRows(['C1','C2'],rows,'LEFT')[2]).toEqual({left:'C2',right:'NULL',origin:'NULL добавлен LEFT JOIN'})
+ })
+ it('restores the whole transaction snapshot after rollback or stepping back',()=>{
+  expect(transactionSnapshot(1,true)).toEqual({status:'CLOSED',works:0,audit:1,transaction:'Не подтверждено'})
+  expect(transactionSnapshot(3,true)).toEqual({status:'WORK',works:0,audit:0,transaction:'ROLLBACK'})
+  expect(transactionSnapshot(3,false)).toEqual({status:'CLOSED',works:1,audit:1,transaction:'COMMIT'})
+  expect(transactionSnapshot(0,true)).toEqual({status:'WORK',works:0,audit:0,transaction:'До операции'})
+ })
+})
 
 describe('teacher profile normalization', () => {
   it.each([

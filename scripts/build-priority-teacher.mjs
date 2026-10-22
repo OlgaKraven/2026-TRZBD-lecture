@@ -10,10 +10,11 @@ const routes=[];
 for(const [index,l] of c.lectures.entries()){
  if(!process.argv.includes('--all')&&(index<7||index>9))continue;
  const number=String(index+1).padStart(2,'0'),base='lecture-'+number;
- const header=`---\ncourse: ${c.id}\nlectureId: ${l.id}\ncontentVersion: ${c.contentVersion}\nsourceKind: local\nsourceSha256: ${sha}\nscope: full-lecture\n---\n\n# ${index+1}. ${l.title}\n\n`;
+ const header=`# ${index+1}. ${l.title}\n\n`;
  const minutes=slides=>Math.round(slides.reduce((sum,s)=>sum+p.notes[s.id].estimatedSeconds,0)/60);
- routes.push({lectureId:l.id,slideIds:l.slides.map(s=>s.id),estimatedMinutes:minutes(l.slides),timing:'rough scenario estimate, not classroom measurement or approved timetable'});
- const route='Текст сохраняет все вопросы и объяснения в порядке показа. На самостоятельных случаях сначала дайте группе ответить, затем откройте преподавательский разбор. Фактический темп зависит от обсуждения и демонстраций; время полей панели — предварительная оценка, а не утверждённый хронометраж занятия.\n\n';
+ const supplementary=l.slides.filter(s=>s.id.endsWith('-review'));
+ routes.push({lectureId:l.id,slideIds:l.slides.map(s=>s.id),estimatedMinutes:minutes(l.slides),explanationAndMainTasksMinutes:minutes(l.slides.filter(s=>!supplementary.includes(s))),independentSupplementsMinutes:minutes(supplementary),timing:'word-count and action-based rough estimate; supplements can be studied independently; not classroom measurement or approved timetable'});
+ const route='Текст сохраняет все вопросы и объяснения в порядке показа. На самостоятельных случаях сначала дайте группе ответить, затем откройте преподавательский разбор. Дополнения по кнопке «Интерактивная схема» пригодны и для самостоятельной работы после общего объяснения; при выполнении в аудитории им нужно отдельное время. Фактический темп зависит от обсуждения и демонстраций; время полей панели — предварительная оценка речи и действий, а не утверждённый хронометраж занятия.\n\n';
  let teacher=header+route+'Текст следует фактическому порядку экранов. В самостоятельном случае сначала дано условие; ответ расположен после него в отдельном преподавательском разборе.\n\n';
  const preparation=[...new Set(l.slides.map(s=>p.notes[s.id].preparation).filter(Boolean))];
  teacher+='## Подготовка к занятию\n\n'+preparation.join('\n\n')+'\n\n';

@@ -13,7 +13,7 @@ describe('содержательная редакция всего курса',(
   for(const q of blocks){
    const s=l.slides.find(s=>s.id===q.slideIds.find(id=>id.endsWith('T01-slide')));
    const index=l.slides.indexOf(s);
-   expect(l.slides[index+1].id).toMatch(/-review$/);
+   expect(l.slides[index-1].id).toMatch(/-review$/);
    expect(n[s.id].script).not.toContain(n[s.id].answer);
    expect(n[s.id].answer.length).toBeGreaterThan(50);
   }
@@ -28,6 +28,8 @@ describe('содержательная редакция всего курса',(
   const plan=JSON.parse(fs.readFileSync('authoring/index-plan-example.json','utf8'));
   expect(s.rows).toContainEqual(['rows: оценка',String(plan.before.rowsEstimate),String(plan.after.rowsEstimate)]);
   expect(n[s.id].script).toContain('не измеренные времена');
+  const register=selected[9].slides.find(s=>s.id.endsWith('index-register-reasoning-1'));
+  expect(register.body).toContain(String(plan.before.rowsEstimate));
  });
  it('удаляет проверки названия вопроса из выбранных тем',()=>{
   for(const l of selected)for(const s of l.slides.filter(s=>s.task))expect(s.task.prompt).not.toContain('Как называется вопрос');
@@ -45,4 +47,6 @@ describe('проверка реального CSV',()=>{
  it('разбирает кавычки, запятую внутри значения и экранированные кавычки',()=>expect(parseCsv('code,name\nB01,"Сервис, север"\nB02,"Сервис ""А"""\n')).toEqual([['code','name'],['B01','Сервис, север'],['B02','Сервис "А"']]));
  it.each(['name,code\nA,B','code\nA','code,name,extra\nA,B,C'])('отклоняет изменённый заголовок %s',text=>expect(()=>checkHeader(text,['code','name'])).toThrow('Заголовок'));
  it('отклоняет повреждённую строку и незакрытые кавычки',()=>{expect(()=>checkHeader('code,name\nA,B,C',['code','name'])).toThrow('Строка');expect(()=>parseCsv('code,name\nA,"B')).toThrow('Незакрытые');});
+ it.each(['code,name\nB01,"Сервис"X\n','code,name\nB01,Сер"вис\n','a\rb'])('не исправляет повреждённый CSV молча: %s',text=>expect(()=>parseCsv(text)).toThrow());
+ it('сохраняет перевод строки внутри кавычек и пустое последнее поле',()=>expect(parseCsv('code,name\r\nB01,"Сервис\r\nСевер"\r\nB02,')).toEqual([['code','name'],['B01','Сервис\r\nСевер'],['B02','']]));
 });

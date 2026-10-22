@@ -1,0 +1,698 @@
+{
+  "desktopTasks": [
+    {
+      "id": "s07-01-source-data-package-content-scope-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-01-source-data-package-content-description-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-01-source-data-package-content-files-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-01-source-data-package-content-deliverables-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-01-source-data-package-content-mapping-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-01-source-data-package-content-reference-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-01-source-data-package-content-quality-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-01-source-data-package-content-passport-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-dependencies-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-dictionary-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-multivalue-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-entities-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-naming-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-primary-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-foreign-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-02-table-list-from-source-data-content-catalog-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-schema-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-types-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-pk-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-fk-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-required-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-unique-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-order-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-03-implement-table-set-content-reproducible-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-reverse-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-attributes-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-cardinality-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-keys-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-reconcile-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-layout-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-version-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-04-er-diagram-content-export-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-header-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-csv-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-empty-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-duplicates-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-invalid-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-load-order-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-resolve-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-05-prepare-and-load-data-content-balance-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-counts-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-required-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-orphans-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-rejections-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-delivery-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-clean-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-repeat-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script-content-protocol-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-totals-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-joins-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-differences-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-empty-duplicate-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-outer-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-aggregate-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-report-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s07-07-control-queries-content-suite-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-meaning-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-contract-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-control-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-report-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-joins-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-security-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-updates-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-01-views-content-register-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-boundary-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-start-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-commit-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-errors-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-procedure-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-parameters-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-trigger-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-proof-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-workload-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-selectivity-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-prefix-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-existing-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-create-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-plans-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-cost-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-index-register-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-responsibility-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-activation-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-least-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-grant-revoke-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-view-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-allowed-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-denied-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-04-access-control-content-matrix-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-scope-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-backup-user-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-dump-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-restore-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-objects-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-rows-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-behavior-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-05-backup-and-protection-content-protection-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-objects-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-data-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-er-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-scripts-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-evidence-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-backup-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-secrets-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    },
+    {
+      "id": "s08-06-results-package-content-final-run-T01-slide",
+      "width": 1280,
+      "height": 424,
+      "scroll": 424
+    }
+  ],
+  "mobileDefinitions": [
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s07-01-source-data-package&slide=s07-01-source-data-package-content-scope-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s07-02-table-list-from-source-data&slide=s07-02-table-list-from-source-data-content-dependencies-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s07-03-implement-table-set&slide=s07-03-implement-table-set-content-schema-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s07-04-er-diagram&slide=s07-04-er-diagram-content-reverse-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s07-05-prepare-and-load-data&slide=s07-05-prepare-and-load-data-content-header-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s07-06-validate-load-and-delivery-script&slide=s07-06-validate-load-and-delivery-script-content-counts-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s07-07-control-queries&slide=s07-07-control-queries-content-totals-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s08-01-views&slide=s08-01-views-content-meaning-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s08-02-coordinated-data-changes&slide=s08-02-coordinated-data-changes-content-boundary-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s08-03-search-field-indexes&slide=s08-03-search-field-indexes-content-workload-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s08-04-access-control&slide=s08-04-access-control-content-responsibility-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s08-05-backup-and-protection&slide=s08-05-backup-and-protection-content-scope-notebook",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "url": "http://127.0.0.1:5194/2026-TRZBD-lecture/?lecture=s08-06-results-package&slide=s08-06-results-package-content-objects-notebook",
+      "width": 320,
+      "scroll": 320
+    }
+  ],
+  "taskOverflow": [],
+  "mobileOverflow": [],
+  "codeFontPx": 16.5275
+}

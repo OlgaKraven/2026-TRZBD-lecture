@@ -15,8 +15,8 @@
       "s08-01-views-content-meaning-example",
       "s08-01-views-content-meaning-result-step-1",
       "s08-01-views-content-meaning-result-step-2",
-      "s08-01-views-content-meaning-T01-slide",
       "s08-01-views-content-meaning-review",
+      "s08-01-views-content-meaning-T01-slide",
       "s08-01-views-content-meaning-notebook"
     ],
     "taskIds": [
@@ -43,8 +43,8 @@
       "s08-01-views-content-contract-reasoning-3",
       "s08-01-views-content-contract-example",
       "s08-01-views-content-contract-result-step-1",
-      "s08-01-views-content-contract-T01-slide",
       "s08-01-views-content-contract-review",
+      "s08-01-views-content-contract-T01-slide",
       "s08-01-views-content-contract-notebook"
     ],
     "taskIds": [
@@ -70,8 +70,8 @@
       "s08-01-views-content-control-reasoning-2",
       "s08-01-views-content-control-reasoning-3",
       "s08-01-views-content-control-example",
-      "s08-01-views-content-control-T01-slide",
       "s08-01-views-content-control-review",
+      "s08-01-views-content-control-T01-slide",
       "s08-01-views-content-control-notebook"
     ],
     "taskIds": [
@@ -97,8 +97,8 @@
       "s08-01-views-content-report-reasoning-2",
       "s08-01-views-content-report-reasoning-3",
       "s08-01-views-content-report-example",
-      "s08-01-views-content-report-T01-slide",
       "s08-01-views-content-report-review",
+      "s08-01-views-content-report-T01-slide",
       "s08-01-views-content-report-notebook"
     ],
     "taskIds": [
@@ -124,8 +124,8 @@
       "s08-01-views-content-joins-reasoning-2",
       "s08-01-views-content-joins-reasoning-3",
       "s08-01-views-content-joins-example",
-      "s08-01-views-content-joins-T01-slide",
       "s08-01-views-content-joins-review",
+      "s08-01-views-content-joins-T01-slide",
       "s08-01-views-content-joins-notebook"
     ],
     "taskIds": [
@@ -151,8 +151,8 @@
       "s08-01-views-content-security-reasoning-2",
       "s08-01-views-content-security-reasoning-3",
       "s08-01-views-content-security-example",
-      "s08-01-views-content-security-T01-slide",
       "s08-01-views-content-security-review",
+      "s08-01-views-content-security-T01-slide",
       "s08-01-views-content-security-notebook"
     ],
     "taskIds": [
@@ -178,8 +178,8 @@
       "s08-01-views-content-updates-reasoning-2",
       "s08-01-views-content-updates-reasoning-3",
       "s08-01-views-content-updates-example",
-      "s08-01-views-content-updates-T01-slide",
       "s08-01-views-content-updates-review",
+      "s08-01-views-content-updates-T01-slide",
       "s08-01-views-content-updates-notebook"
     ],
     "taskIds": [
@@ -205,8 +205,8 @@
       "s08-01-views-content-register-reasoning-2",
       "s08-01-views-content-register-reasoning-3",
       "s08-01-views-content-register-example",
-      "s08-01-views-content-register-T01-slide",
       "s08-01-views-content-register-review",
+      "s08-01-views-content-register-T01-slide",
       "s08-01-views-content-register-notebook"
     ],
     "taskIds": [
@@ -232,8 +232,8 @@
       "s08-02-coordinated-data-changes-content-boundary-reasoning-2",
       "s08-02-coordinated-data-changes-content-boundary-reasoning-3",
       "s08-02-coordinated-data-changes-content-boundary-example",
-      "s08-02-coordinated-data-changes-content-boundary-T01-slide",
       "s08-02-coordinated-data-changes-content-boundary-review",
+      "s08-02-coordinated-data-changes-content-boundary-T01-slide",
       "s08-02-coordinated-data-changes-content-boundary-notebook"
     ],
     "taskIds": [
@@ -259,8 +259,8 @@
       "s08-02-coordinated-data-changes-content-start-reasoning-2",
       "s08-02-coordinated-data-changes-content-start-reasoning-3",
       "s08-02-coordinated-data-changes-content-start-example",
-      "s08-02-coordinated-data-changes-content-start-T01-slide",
       "s08-02-coordinated-data-changes-content-start-review",
+      "s08-02-coordinated-data-changes-content-start-T01-slide",
       "s08-02-coordinated-data-changes-content-start-notebook"
     ],
     "taskIds": [
@@ -286,8 +286,8 @@
       "s08-02-coordinated-data-changes-content-commit-reasoning-2",
       "s08-02-coordinated-data-changes-content-commit-reasoning-3",
       "s08-02-coordinated-data-changes-content-commit-example",
-      "s08-02-coordinated-data-changes-content-commit-T01-slide",
       "s08-02-coordinated-data-changes-content-commit-review",
+      "s08-02-coordinated-data-changes-content-commit-T01-slide",
       "s08-02-coordinated-data-changes-content-commit-notebook"
     ],
     "taskIds": [
@@ -313,8 +313,8 @@
       "s08-02-coordinated-data-changes-content-errors-reasoning-2",
       "s08-02-coordinated-data-changes-content-errors-reasoning-3",
       "s08-02-coordinated-data-changes-content-errors-example",
-      "s08-02-coordinated-data-changes-content-errors-T01-slide",
       "s08-02-coordinated-data-changes-content-errors-review",
+      "s08-02-coordinated-data-changes-content-errors-T01-slide",
       "s08-02-coordinated-data-changes-content-errors-notebook"
     ],
     "taskIds": [
@@ -340,8 +340,8 @@
       "s08-02-coordinated-data-changes-content-procedure-reasoning-2",
       "s08-02-coordinated-data-changes-content-procedure-reasoning-3",
       "s08-02-coordinated-data-changes-content-procedure-example",
-      "s08-02-coordinated-data-changes-content-procedure-T01-slide",
       "s08-02-coordinated-data-changes-content-procedure-review",
+      "s08-02-coordinated-data-changes-content-procedure-T01-slide",
       "s08-02-coordinated-data-changes-content-procedure-notebook"
     ],
     "taskIds": [
@@ -367,8 +367,8 @@
       "s08-02-coordinated-data-changes-content-parameters-reasoning-2",
       "s08-02-coordinated-data-changes-content-parameters-reasoning-3",
       "s08-02-coordinated-data-changes-content-parameters-example",
-      "s08-02-coordinated-data-changes-content-parameters-T01-slide",
       "s08-02-coordinated-data-changes-content-parameters-review",
+      "s08-02-coordinated-data-changes-content-parameters-T01-slide",
       "s08-02-coordinated-data-changes-content-parameters-notebook"
     ],
     "taskIds": [
@@ -394,8 +394,8 @@
       "s08-02-coordinated-data-changes-content-trigger-reasoning-2",
       "s08-02-coordinated-data-changes-content-trigger-reasoning-3",
       "s08-02-coordinated-data-changes-content-trigger-example",
-      "s08-02-coordinated-data-changes-content-trigger-T01-slide",
       "s08-02-coordinated-data-changes-content-trigger-review",
+      "s08-02-coordinated-data-changes-content-trigger-T01-slide",
       "s08-02-coordinated-data-changes-content-trigger-notebook"
     ],
     "taskIds": [
@@ -421,8 +421,8 @@
       "s08-02-coordinated-data-changes-content-proof-reasoning-2",
       "s08-02-coordinated-data-changes-content-proof-reasoning-3",
       "s08-02-coordinated-data-changes-content-proof-example",
-      "s08-02-coordinated-data-changes-content-proof-T01-slide",
       "s08-02-coordinated-data-changes-content-proof-review",
+      "s08-02-coordinated-data-changes-content-proof-T01-slide",
       "s08-02-coordinated-data-changes-content-proof-notebook"
     ],
     "taskIds": [
@@ -448,8 +448,8 @@
       "s08-03-search-field-indexes-content-workload-reasoning-2",
       "s08-03-search-field-indexes-content-workload-reasoning-3",
       "s08-03-search-field-indexes-content-workload-example",
-      "s08-03-search-field-indexes-content-workload-T01-slide",
       "s08-03-search-field-indexes-content-workload-review",
+      "s08-03-search-field-indexes-content-workload-T01-slide",
       "s08-03-search-field-indexes-content-workload-notebook"
     ],
     "taskIds": [
@@ -475,8 +475,8 @@
       "s08-03-search-field-indexes-content-selectivity-reasoning-2",
       "s08-03-search-field-indexes-content-selectivity-reasoning-3",
       "s08-03-search-field-indexes-content-selectivity-example",
-      "s08-03-search-field-indexes-content-selectivity-T01-slide",
       "s08-03-search-field-indexes-content-selectivity-review",
+      "s08-03-search-field-indexes-content-selectivity-T01-slide",
       "s08-03-search-field-indexes-content-selectivity-notebook"
     ],
     "taskIds": [
@@ -502,8 +502,8 @@
       "s08-03-search-field-indexes-content-prefix-reasoning-2",
       "s08-03-search-field-indexes-content-prefix-reasoning-3",
       "s08-03-search-field-indexes-content-prefix-example",
-      "s08-03-search-field-indexes-content-prefix-T01-slide",
       "s08-03-search-field-indexes-content-prefix-review",
+      "s08-03-search-field-indexes-content-prefix-T01-slide",
       "s08-03-search-field-indexes-content-prefix-notebook"
     ],
     "taskIds": [
@@ -529,8 +529,8 @@
       "s08-03-search-field-indexes-content-existing-reasoning-2",
       "s08-03-search-field-indexes-content-existing-reasoning-3",
       "s08-03-search-field-indexes-content-existing-example",
-      "s08-03-search-field-indexes-content-existing-T01-slide",
       "s08-03-search-field-indexes-content-existing-review",
+      "s08-03-search-field-indexes-content-existing-T01-slide",
       "s08-03-search-field-indexes-content-existing-notebook"
     ],
     "taskIds": [
@@ -556,8 +556,8 @@
       "s08-03-search-field-indexes-content-create-reasoning-2",
       "s08-03-search-field-indexes-content-create-reasoning-3",
       "s08-03-search-field-indexes-content-create-example",
-      "s08-03-search-field-indexes-content-create-T01-slide",
       "s08-03-search-field-indexes-content-create-review",
+      "s08-03-search-field-indexes-content-create-T01-slide",
       "s08-03-search-field-indexes-content-create-notebook"
     ],
     "taskIds": [
@@ -584,8 +584,8 @@
       "s08-03-search-field-indexes-content-plans-reasoning-3",
       "s08-03-search-field-indexes-content-plans-example",
       "s08-03-search-field-indexes-content-plans-result",
-      "s08-03-search-field-indexes-content-plans-T01-slide",
       "s08-03-search-field-indexes-content-plans-review",
+      "s08-03-search-field-indexes-content-plans-T01-slide",
       "s08-03-search-field-indexes-content-plans-notebook"
     ],
     "taskIds": [
@@ -611,8 +611,8 @@
       "s08-03-search-field-indexes-content-cost-reasoning-2",
       "s08-03-search-field-indexes-content-cost-reasoning-3",
       "s08-03-search-field-indexes-content-cost-example",
-      "s08-03-search-field-indexes-content-cost-T01-slide",
       "s08-03-search-field-indexes-content-cost-review",
+      "s08-03-search-field-indexes-content-cost-T01-slide",
       "s08-03-search-field-indexes-content-cost-notebook"
     ],
     "taskIds": [
@@ -638,8 +638,8 @@
       "s08-03-search-field-indexes-content-index-register-reasoning-2",
       "s08-03-search-field-indexes-content-index-register-reasoning-3",
       "s08-03-search-field-indexes-content-index-register-example",
-      "s08-03-search-field-indexes-content-index-register-T01-slide",
       "s08-03-search-field-indexes-content-index-register-review",
+      "s08-03-search-field-indexes-content-index-register-T01-slide",
       "s08-03-search-field-indexes-content-index-register-notebook"
     ],
     "taskIds": [
@@ -664,8 +664,8 @@
       "s07-01-source-data-package-content-scope-reasoning-1",
       "s07-01-source-data-package-content-scope-reasoning-2",
       "s07-01-source-data-package-content-scope-example",
-      "s07-01-source-data-package-content-scope-T01-slide",
       "s07-01-source-data-package-content-scope-review",
+      "s07-01-source-data-package-content-scope-T01-slide",
       "s07-01-source-data-package-content-scope-notebook"
     ],
     "taskIds": [
@@ -690,8 +690,8 @@
       "s07-01-source-data-package-content-description-reasoning-1",
       "s07-01-source-data-package-content-description-reasoning-2",
       "s07-01-source-data-package-content-description-example",
-      "s07-01-source-data-package-content-description-T01-slide",
       "s07-01-source-data-package-content-description-review",
+      "s07-01-source-data-package-content-description-T01-slide",
       "s07-01-source-data-package-content-description-notebook"
     ],
     "taskIds": [
@@ -716,8 +716,8 @@
       "s07-01-source-data-package-content-files-reasoning-1",
       "s07-01-source-data-package-content-files-reasoning-2",
       "s07-01-source-data-package-content-files-example",
-      "s07-01-source-data-package-content-files-T01-slide",
       "s07-01-source-data-package-content-files-review",
+      "s07-01-source-data-package-content-files-T01-slide",
       "s07-01-source-data-package-content-files-notebook"
     ],
     "taskIds": [
@@ -741,8 +741,8 @@
       "s07-01-source-data-package-content-deliverables-concept",
       "s07-01-source-data-package-content-deliverables-reasoning-1",
       "s07-01-source-data-package-content-deliverables-example",
-      "s07-01-source-data-package-content-deliverables-T01-slide",
       "s07-01-source-data-package-content-deliverables-review",
+      "s07-01-source-data-package-content-deliverables-T01-slide",
       "s07-01-source-data-package-content-deliverables-notebook"
     ],
     "taskIds": [
@@ -767,8 +767,8 @@
       "s07-01-source-data-package-content-mapping-reasoning-1",
       "s07-01-source-data-package-content-mapping-reasoning-2",
       "s07-01-source-data-package-content-mapping-example",
-      "s07-01-source-data-package-content-mapping-T01-slide",
       "s07-01-source-data-package-content-mapping-review",
+      "s07-01-source-data-package-content-mapping-T01-slide",
       "s07-01-source-data-package-content-mapping-notebook"
     ],
     "taskIds": [
@@ -792,8 +792,8 @@
       "s07-01-source-data-package-content-reference-concept",
       "s07-01-source-data-package-content-reference-reasoning-1",
       "s07-01-source-data-package-content-reference-example",
-      "s07-01-source-data-package-content-reference-T01-slide",
       "s07-01-source-data-package-content-reference-review",
+      "s07-01-source-data-package-content-reference-T01-slide",
       "s07-01-source-data-package-content-reference-notebook"
     ],
     "taskIds": [
@@ -818,8 +818,8 @@
       "s07-01-source-data-package-content-quality-reasoning-1",
       "s07-01-source-data-package-content-quality-reasoning-2",
       "s07-01-source-data-package-content-quality-example",
-      "s07-01-source-data-package-content-quality-T01-slide",
       "s07-01-source-data-package-content-quality-review",
+      "s07-01-source-data-package-content-quality-T01-slide",
       "s07-01-source-data-package-content-quality-notebook"
     ],
     "taskIds": [
@@ -844,8 +844,8 @@
       "s07-01-source-data-package-content-passport-reasoning-1",
       "s07-01-source-data-package-content-passport-reasoning-2",
       "s07-01-source-data-package-content-passport-example",
-      "s07-01-source-data-package-content-passport-T01-slide",
       "s07-01-source-data-package-content-passport-review",
+      "s07-01-source-data-package-content-passport-T01-slide",
       "s07-01-source-data-package-content-passport-notebook"
     ],
     "taskIds": [
@@ -870,8 +870,8 @@
       "s07-02-table-list-from-source-data-content-dependencies-reasoning-1",
       "s07-02-table-list-from-source-data-content-dependencies-reasoning-2",
       "s07-02-table-list-from-source-data-content-dependencies-example",
-      "s07-02-table-list-from-source-data-content-dependencies-T01-slide",
       "s07-02-table-list-from-source-data-content-dependencies-review",
+      "s07-02-table-list-from-source-data-content-dependencies-T01-slide",
       "s07-02-table-list-from-source-data-content-dependencies-notebook"
     ],
     "taskIds": [
@@ -895,8 +895,8 @@
       "s07-02-table-list-from-source-data-content-dictionary-concept",
       "s07-02-table-list-from-source-data-content-dictionary-reasoning-1",
       "s07-02-table-list-from-source-data-content-dictionary-example",
-      "s07-02-table-list-from-source-data-content-dictionary-T01-slide",
       "s07-02-table-list-from-source-data-content-dictionary-review",
+      "s07-02-table-list-from-source-data-content-dictionary-T01-slide",
       "s07-02-table-list-from-source-data-content-dictionary-notebook"
     ],
     "taskIds": [
@@ -921,8 +921,8 @@
       "s07-02-table-list-from-source-data-content-multivalue-reasoning-1",
       "s07-02-table-list-from-source-data-content-multivalue-reasoning-2",
       "s07-02-table-list-from-source-data-content-multivalue-example",
-      "s07-02-table-list-from-source-data-content-multivalue-T01-slide",
       "s07-02-table-list-from-source-data-content-multivalue-review",
+      "s07-02-table-list-from-source-data-content-multivalue-T01-slide",
       "s07-02-table-list-from-source-data-content-multivalue-notebook"
     ],
     "taskIds": [
@@ -947,8 +947,8 @@
       "s07-02-table-list-from-source-data-content-entities-reasoning-1",
       "s07-02-table-list-from-source-data-content-entities-reasoning-2",
       "s07-02-table-list-from-source-data-content-entities-example",
-      "s07-02-table-list-from-source-data-content-entities-T01-slide",
       "s07-02-table-list-from-source-data-content-entities-review",
+      "s07-02-table-list-from-source-data-content-entities-T01-slide",
       "s07-02-table-list-from-source-data-content-entities-notebook"
     ],
     "taskIds": [
@@ -973,8 +973,8 @@
       "s07-02-table-list-from-source-data-content-naming-reasoning-1",
       "s07-02-table-list-from-source-data-content-naming-reasoning-2",
       "s07-02-table-list-from-source-data-content-naming-example",
-      "s07-02-table-list-from-source-data-content-naming-T01-slide",
       "s07-02-table-list-from-source-data-content-naming-review",
+      "s07-02-table-list-from-source-data-content-naming-T01-slide",
       "s07-02-table-list-from-source-data-content-naming-notebook"
     ],
     "taskIds": [
@@ -998,8 +998,8 @@
       "s07-02-table-list-from-source-data-content-primary-concept",
       "s07-02-table-list-from-source-data-content-primary-reasoning-1",
       "s07-02-table-list-from-source-data-content-primary-example",
-      "s07-02-table-list-from-source-data-content-primary-T01-slide",
       "s07-02-table-list-from-source-data-content-primary-review",
+      "s07-02-table-list-from-source-data-content-primary-T01-slide",
       "s07-02-table-list-from-source-data-content-primary-notebook"
     ],
     "taskIds": [
@@ -1024,8 +1024,8 @@
       "s07-02-table-list-from-source-data-content-foreign-reasoning-1",
       "s07-02-table-list-from-source-data-content-foreign-reasoning-2",
       "s07-02-table-list-from-source-data-content-foreign-example",
-      "s07-02-table-list-from-source-data-content-foreign-T01-slide",
       "s07-02-table-list-from-source-data-content-foreign-review",
+      "s07-02-table-list-from-source-data-content-foreign-T01-slide",
       "s07-02-table-list-from-source-data-content-foreign-notebook"
     ],
     "taskIds": [
@@ -1050,8 +1050,8 @@
       "s07-02-table-list-from-source-data-content-catalog-reasoning-1",
       "s07-02-table-list-from-source-data-content-catalog-reasoning-2",
       "s07-02-table-list-from-source-data-content-catalog-example",
-      "s07-02-table-list-from-source-data-content-catalog-T01-slide",
       "s07-02-table-list-from-source-data-content-catalog-review",
+      "s07-02-table-list-from-source-data-content-catalog-T01-slide",
       "s07-02-table-list-from-source-data-content-catalog-notebook"
     ],
     "taskIds": [
@@ -1075,8 +1075,8 @@
       "s07-03-implement-table-set-content-schema-concept",
       "s07-03-implement-table-set-content-schema-reasoning-1",
       "s07-03-implement-table-set-content-schema-example",
-      "s07-03-implement-table-set-content-schema-T01-slide",
       "s07-03-implement-table-set-content-schema-review",
+      "s07-03-implement-table-set-content-schema-T01-slide",
       "s07-03-implement-table-set-content-schema-notebook"
     ],
     "taskIds": [
@@ -1101,8 +1101,8 @@
       "s07-03-implement-table-set-content-types-reasoning-1",
       "s07-03-implement-table-set-content-types-reasoning-2",
       "s07-03-implement-table-set-content-types-example",
-      "s07-03-implement-table-set-content-types-T01-slide",
       "s07-03-implement-table-set-content-types-review",
+      "s07-03-implement-table-set-content-types-T01-slide",
       "s07-03-implement-table-set-content-types-notebook"
     ],
     "taskIds": [
@@ -1127,8 +1127,8 @@
       "s07-03-implement-table-set-content-pk-reasoning-1",
       "s07-03-implement-table-set-content-pk-reasoning-2",
       "s07-03-implement-table-set-content-pk-example",
-      "s07-03-implement-table-set-content-pk-T01-slide",
       "s07-03-implement-table-set-content-pk-review",
+      "s07-03-implement-table-set-content-pk-T01-slide",
       "s07-03-implement-table-set-content-pk-notebook"
     ],
     "taskIds": [
@@ -1152,8 +1152,8 @@
       "s07-03-implement-table-set-content-fk-concept",
       "s07-03-implement-table-set-content-fk-reasoning-1",
       "s07-03-implement-table-set-content-fk-example",
-      "s07-03-implement-table-set-content-fk-T01-slide",
       "s07-03-implement-table-set-content-fk-review",
+      "s07-03-implement-table-set-content-fk-T01-slide",
       "s07-03-implement-table-set-content-fk-notebook"
     ],
     "taskIds": [
@@ -1178,8 +1178,8 @@
       "s07-03-implement-table-set-content-required-reasoning-1",
       "s07-03-implement-table-set-content-required-reasoning-2",
       "s07-03-implement-table-set-content-required-example",
-      "s07-03-implement-table-set-content-required-T01-slide",
       "s07-03-implement-table-set-content-required-review",
+      "s07-03-implement-table-set-content-required-T01-slide",
       "s07-03-implement-table-set-content-required-notebook"
     ],
     "taskIds": [
@@ -1204,8 +1204,8 @@
       "s07-03-implement-table-set-content-unique-reasoning-1",
       "s07-03-implement-table-set-content-unique-reasoning-2",
       "s07-03-implement-table-set-content-unique-example",
-      "s07-03-implement-table-set-content-unique-T01-slide",
       "s07-03-implement-table-set-content-unique-review",
+      "s07-03-implement-table-set-content-unique-T01-slide",
       "s07-03-implement-table-set-content-unique-notebook"
     ],
     "taskIds": [
@@ -1230,8 +1230,8 @@
       "s07-03-implement-table-set-content-order-reasoning-1",
       "s07-03-implement-table-set-content-order-reasoning-2",
       "s07-03-implement-table-set-content-order-example",
-      "s07-03-implement-table-set-content-order-T01-slide",
       "s07-03-implement-table-set-content-order-review",
+      "s07-03-implement-table-set-content-order-T01-slide",
       "s07-03-implement-table-set-content-order-notebook"
     ],
     "taskIds": [
@@ -1256,8 +1256,8 @@
       "s07-03-implement-table-set-content-reproducible-reasoning-1",
       "s07-03-implement-table-set-content-reproducible-reasoning-2",
       "s07-03-implement-table-set-content-reproducible-example",
-      "s07-03-implement-table-set-content-reproducible-T01-slide",
       "s07-03-implement-table-set-content-reproducible-review",
+      "s07-03-implement-table-set-content-reproducible-T01-slide",
       "s07-03-implement-table-set-content-reproducible-notebook"
     ],
     "taskIds": [
@@ -1282,8 +1282,8 @@
       "s07-04-er-diagram-content-reverse-reasoning-1",
       "s07-04-er-diagram-content-reverse-reasoning-2",
       "s07-04-er-diagram-content-reverse-example",
-      "s07-04-er-diagram-content-reverse-T01-slide",
       "s07-04-er-diagram-content-reverse-review",
+      "s07-04-er-diagram-content-reverse-T01-slide",
       "s07-04-er-diagram-content-reverse-notebook"
     ],
     "taskIds": [
@@ -1307,8 +1307,8 @@
       "s07-04-er-diagram-content-attributes-concept",
       "s07-04-er-diagram-content-attributes-reasoning-1",
       "s07-04-er-diagram-content-attributes-example",
-      "s07-04-er-diagram-content-attributes-T01-slide",
       "s07-04-er-diagram-content-attributes-review",
+      "s07-04-er-diagram-content-attributes-T01-slide",
       "s07-04-er-diagram-content-attributes-notebook"
     ],
     "taskIds": [
@@ -1333,8 +1333,8 @@
       "s07-04-er-diagram-content-cardinality-reasoning-1",
       "s07-04-er-diagram-content-cardinality-reasoning-2",
       "s07-04-er-diagram-content-cardinality-example",
-      "s07-04-er-diagram-content-cardinality-T01-slide",
       "s07-04-er-diagram-content-cardinality-review",
+      "s07-04-er-diagram-content-cardinality-T01-slide",
       "s07-04-er-diagram-content-cardinality-notebook"
     ],
     "taskIds": [
@@ -1359,8 +1359,8 @@
       "s07-04-er-diagram-content-keys-reasoning-1",
       "s07-04-er-diagram-content-keys-reasoning-2",
       "s07-04-er-diagram-content-keys-example",
-      "s07-04-er-diagram-content-keys-T01-slide",
       "s07-04-er-diagram-content-keys-review",
+      "s07-04-er-diagram-content-keys-T01-slide",
       "s07-04-er-diagram-content-keys-notebook"
     ],
     "taskIds": [
@@ -1387,8 +1387,8 @@
       "s07-04-er-diagram-content-reconcile-example",
       "s07-04-er-diagram-content-reconcile-result-step-1",
       "s07-04-er-diagram-content-reconcile-result-step-2",
-      "s07-04-er-diagram-content-reconcile-T01-slide",
       "s07-04-er-diagram-content-reconcile-review",
+      "s07-04-er-diagram-content-reconcile-T01-slide",
       "s07-04-er-diagram-content-reconcile-notebook"
     ],
     "taskIds": [
@@ -1412,8 +1412,8 @@
       "s07-04-er-diagram-content-layout-concept",
       "s07-04-er-diagram-content-layout-reasoning-1",
       "s07-04-er-diagram-content-layout-example",
-      "s07-04-er-diagram-content-layout-T01-slide",
       "s07-04-er-diagram-content-layout-review",
+      "s07-04-er-diagram-content-layout-T01-slide",
       "s07-04-er-diagram-content-layout-notebook"
     ],
     "taskIds": [
@@ -1437,8 +1437,8 @@
       "s07-04-er-diagram-content-version-concept",
       "s07-04-er-diagram-content-version-reasoning-1",
       "s07-04-er-diagram-content-version-example",
-      "s07-04-er-diagram-content-version-T01-slide",
       "s07-04-er-diagram-content-version-review",
+      "s07-04-er-diagram-content-version-T01-slide",
       "s07-04-er-diagram-content-version-notebook"
     ],
     "taskIds": [
@@ -1463,8 +1463,8 @@
       "s07-04-er-diagram-content-export-reasoning-1",
       "s07-04-er-diagram-content-export-reasoning-2",
       "s07-04-er-diagram-content-export-example",
-      "s07-04-er-diagram-content-export-T01-slide",
       "s07-04-er-diagram-content-export-review",
+      "s07-04-er-diagram-content-export-T01-slide",
       "s07-04-er-diagram-content-export-notebook"
     ],
     "taskIds": [
@@ -1489,8 +1489,8 @@
       "s07-05-prepare-and-load-data-content-header-reasoning-1",
       "s07-05-prepare-and-load-data-content-header-reasoning-2",
       "s07-05-prepare-and-load-data-content-header-example",
-      "s07-05-prepare-and-load-data-content-header-T01-slide",
       "s07-05-prepare-and-load-data-content-header-review",
+      "s07-05-prepare-and-load-data-content-header-T01-slide",
       "s07-05-prepare-and-load-data-content-header-notebook"
     ],
     "taskIds": [
@@ -1514,8 +1514,8 @@
       "s07-05-prepare-and-load-data-content-csv-concept",
       "s07-05-prepare-and-load-data-content-csv-reasoning-1",
       "s07-05-prepare-and-load-data-content-csv-example",
-      "s07-05-prepare-and-load-data-content-csv-T01-slide",
       "s07-05-prepare-and-load-data-content-csv-review",
+      "s07-05-prepare-and-load-data-content-csv-T01-slide",
       "s07-05-prepare-and-load-data-content-csv-notebook"
     ],
     "taskIds": [
@@ -1540,8 +1540,8 @@
       "s07-05-prepare-and-load-data-content-empty-reasoning-1",
       "s07-05-prepare-and-load-data-content-empty-reasoning-2",
       "s07-05-prepare-and-load-data-content-empty-example",
-      "s07-05-prepare-and-load-data-content-empty-T01-slide",
       "s07-05-prepare-and-load-data-content-empty-review",
+      "s07-05-prepare-and-load-data-content-empty-T01-slide",
       "s07-05-prepare-and-load-data-content-empty-notebook"
     ],
     "taskIds": [
@@ -1566,8 +1566,8 @@
       "s07-05-prepare-and-load-data-content-duplicates-reasoning-1",
       "s07-05-prepare-and-load-data-content-duplicates-reasoning-2",
       "s07-05-prepare-and-load-data-content-duplicates-example",
-      "s07-05-prepare-and-load-data-content-duplicates-T01-slide",
       "s07-05-prepare-and-load-data-content-duplicates-review",
+      "s07-05-prepare-and-load-data-content-duplicates-T01-slide",
       "s07-05-prepare-and-load-data-content-duplicates-notebook"
     ],
     "taskIds": [
@@ -1592,8 +1592,8 @@
       "s07-05-prepare-and-load-data-content-invalid-reasoning-1",
       "s07-05-prepare-and-load-data-content-invalid-reasoning-2",
       "s07-05-prepare-and-load-data-content-invalid-example",
-      "s07-05-prepare-and-load-data-content-invalid-T01-slide",
       "s07-05-prepare-and-load-data-content-invalid-review",
+      "s07-05-prepare-and-load-data-content-invalid-T01-slide",
       "s07-05-prepare-and-load-data-content-invalid-notebook"
     ],
     "taskIds": [
@@ -1617,8 +1617,8 @@
       "s07-05-prepare-and-load-data-content-load-order-concept",
       "s07-05-prepare-and-load-data-content-load-order-reasoning-1",
       "s07-05-prepare-and-load-data-content-load-order-example",
-      "s07-05-prepare-and-load-data-content-load-order-T01-slide",
       "s07-05-prepare-and-load-data-content-load-order-review",
+      "s07-05-prepare-and-load-data-content-load-order-T01-slide",
       "s07-05-prepare-and-load-data-content-load-order-notebook"
     ],
     "taskIds": [
@@ -1643,8 +1643,8 @@
       "s07-05-prepare-and-load-data-content-resolve-reasoning-1",
       "s07-05-prepare-and-load-data-content-resolve-reasoning-2",
       "s07-05-prepare-and-load-data-content-resolve-example",
-      "s07-05-prepare-and-load-data-content-resolve-T01-slide",
       "s07-05-prepare-and-load-data-content-resolve-review",
+      "s07-05-prepare-and-load-data-content-resolve-T01-slide",
       "s07-05-prepare-and-load-data-content-resolve-notebook"
     ],
     "taskIds": [
@@ -1668,8 +1668,8 @@
       "s07-05-prepare-and-load-data-content-balance-concept",
       "s07-05-prepare-and-load-data-content-balance-reasoning-1",
       "s07-05-prepare-and-load-data-content-balance-example",
-      "s07-05-prepare-and-load-data-content-balance-T01-slide",
       "s07-05-prepare-and-load-data-content-balance-review",
+      "s07-05-prepare-and-load-data-content-balance-T01-slide",
       "s07-05-prepare-and-load-data-content-balance-notebook"
     ],
     "taskIds": [
@@ -1694,8 +1694,8 @@
       "s07-06-validate-load-and-delivery-script-content-counts-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-counts-reasoning-2",
       "s07-06-validate-load-and-delivery-script-content-counts-example",
-      "s07-06-validate-load-and-delivery-script-content-counts-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-counts-review",
+      "s07-06-validate-load-and-delivery-script-content-counts-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-counts-notebook"
     ],
     "taskIds": [
@@ -1719,8 +1719,8 @@
       "s07-06-validate-load-and-delivery-script-content-required-concept",
       "s07-06-validate-load-and-delivery-script-content-required-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-required-example",
-      "s07-06-validate-load-and-delivery-script-content-required-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-required-review",
+      "s07-06-validate-load-and-delivery-script-content-required-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-required-notebook"
     ],
     "taskIds": [
@@ -1744,8 +1744,8 @@
       "s07-06-validate-load-and-delivery-script-content-orphans-concept",
       "s07-06-validate-load-and-delivery-script-content-orphans-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-orphans-example",
-      "s07-06-validate-load-and-delivery-script-content-orphans-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-orphans-review",
+      "s07-06-validate-load-and-delivery-script-content-orphans-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-orphans-notebook"
     ],
     "taskIds": [
@@ -1769,8 +1769,8 @@
       "s07-06-validate-load-and-delivery-script-content-rejections-concept",
       "s07-06-validate-load-and-delivery-script-content-rejections-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-rejections-example",
-      "s07-06-validate-load-and-delivery-script-content-rejections-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-rejections-review",
+      "s07-06-validate-load-and-delivery-script-content-rejections-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-rejections-notebook"
     ],
     "taskIds": [
@@ -1794,8 +1794,8 @@
       "s07-06-validate-load-and-delivery-script-content-delivery-concept",
       "s07-06-validate-load-and-delivery-script-content-delivery-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-delivery-example",
-      "s07-06-validate-load-and-delivery-script-content-delivery-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-delivery-review",
+      "s07-06-validate-load-and-delivery-script-content-delivery-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-delivery-notebook"
     ],
     "taskIds": [
@@ -1819,8 +1819,8 @@
       "s07-06-validate-load-and-delivery-script-content-clean-concept",
       "s07-06-validate-load-and-delivery-script-content-clean-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-clean-example",
-      "s07-06-validate-load-and-delivery-script-content-clean-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-clean-review",
+      "s07-06-validate-load-and-delivery-script-content-clean-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-clean-notebook"
     ],
     "taskIds": [
@@ -1844,8 +1844,8 @@
       "s07-06-validate-load-and-delivery-script-content-repeat-concept",
       "s07-06-validate-load-and-delivery-script-content-repeat-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-repeat-example",
-      "s07-06-validate-load-and-delivery-script-content-repeat-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-repeat-review",
+      "s07-06-validate-load-and-delivery-script-content-repeat-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-repeat-notebook"
     ],
     "taskIds": [
@@ -1869,8 +1869,8 @@
       "s07-06-validate-load-and-delivery-script-content-protocol-concept",
       "s07-06-validate-load-and-delivery-script-content-protocol-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-protocol-example",
-      "s07-06-validate-load-and-delivery-script-content-protocol-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-protocol-review",
+      "s07-06-validate-load-and-delivery-script-content-protocol-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-protocol-notebook"
     ],
     "taskIds": [
@@ -1895,8 +1895,8 @@
       "s07-07-control-queries-content-totals-reasoning-1",
       "s07-07-control-queries-content-totals-reasoning-2",
       "s07-07-control-queries-content-totals-example",
-      "s07-07-control-queries-content-totals-T01-slide",
       "s07-07-control-queries-content-totals-review",
+      "s07-07-control-queries-content-totals-T01-slide",
       "s07-07-control-queries-content-totals-notebook"
     ],
     "taskIds": [
@@ -1920,8 +1920,8 @@
       "s07-07-control-queries-content-joins-concept",
       "s07-07-control-queries-content-joins-reasoning-1",
       "s07-07-control-queries-content-joins-example",
-      "s07-07-control-queries-content-joins-T01-slide",
       "s07-07-control-queries-content-joins-review",
+      "s07-07-control-queries-content-joins-T01-slide",
       "s07-07-control-queries-content-joins-notebook"
     ],
     "taskIds": [
@@ -1945,8 +1945,8 @@
       "s07-07-control-queries-content-differences-concept",
       "s07-07-control-queries-content-differences-reasoning-1",
       "s07-07-control-queries-content-differences-example",
-      "s07-07-control-queries-content-differences-T01-slide",
       "s07-07-control-queries-content-differences-review",
+      "s07-07-control-queries-content-differences-T01-slide",
       "s07-07-control-queries-content-differences-notebook"
     ],
     "taskIds": [
@@ -1971,8 +1971,8 @@
       "s07-07-control-queries-content-empty-duplicate-reasoning-1",
       "s07-07-control-queries-content-empty-duplicate-reasoning-2",
       "s07-07-control-queries-content-empty-duplicate-example",
-      "s07-07-control-queries-content-empty-duplicate-T01-slide",
       "s07-07-control-queries-content-empty-duplicate-review",
+      "s07-07-control-queries-content-empty-duplicate-T01-slide",
       "s07-07-control-queries-content-empty-duplicate-notebook"
     ],
     "taskIds": [
@@ -1997,8 +1997,8 @@
       "s07-07-control-queries-content-outer-reasoning-1",
       "s07-07-control-queries-content-outer-reasoning-2",
       "s07-07-control-queries-content-outer-example",
-      "s07-07-control-queries-content-outer-T01-slide",
       "s07-07-control-queries-content-outer-review",
+      "s07-07-control-queries-content-outer-T01-slide",
       "s07-07-control-queries-content-outer-notebook"
     ],
     "taskIds": [
@@ -2023,8 +2023,8 @@
       "s07-07-control-queries-content-aggregate-reasoning-1",
       "s07-07-control-queries-content-aggregate-reasoning-2",
       "s07-07-control-queries-content-aggregate-example",
-      "s07-07-control-queries-content-aggregate-T01-slide",
       "s07-07-control-queries-content-aggregate-review",
+      "s07-07-control-queries-content-aggregate-T01-slide",
       "s07-07-control-queries-content-aggregate-notebook"
     ],
     "taskIds": [
@@ -2049,8 +2049,8 @@
       "s07-07-control-queries-content-report-reasoning-1",
       "s07-07-control-queries-content-report-reasoning-2",
       "s07-07-control-queries-content-report-example",
-      "s07-07-control-queries-content-report-T01-slide",
       "s07-07-control-queries-content-report-review",
+      "s07-07-control-queries-content-report-T01-slide",
       "s07-07-control-queries-content-report-notebook"
     ],
     "taskIds": [
@@ -2074,8 +2074,8 @@
       "s07-07-control-queries-content-suite-concept",
       "s07-07-control-queries-content-suite-reasoning-1",
       "s07-07-control-queries-content-suite-example",
-      "s07-07-control-queries-content-suite-T01-slide",
       "s07-07-control-queries-content-suite-review",
+      "s07-07-control-queries-content-suite-T01-slide",
       "s07-07-control-queries-content-suite-notebook"
     ],
     "taskIds": [
@@ -2100,8 +2100,8 @@
       "s08-04-access-control-content-responsibility-reasoning-1",
       "s08-04-access-control-content-responsibility-reasoning-2",
       "s08-04-access-control-content-responsibility-example",
-      "s08-04-access-control-content-responsibility-T01-slide",
       "s08-04-access-control-content-responsibility-review",
+      "s08-04-access-control-content-responsibility-T01-slide",
       "s08-04-access-control-content-responsibility-notebook"
     ],
     "taskIds": [
@@ -2126,8 +2126,8 @@
       "s08-04-access-control-content-activation-reasoning-1",
       "s08-04-access-control-content-activation-reasoning-2",
       "s08-04-access-control-content-activation-example",
-      "s08-04-access-control-content-activation-T01-slide",
       "s08-04-access-control-content-activation-review",
+      "s08-04-access-control-content-activation-T01-slide",
       "s08-04-access-control-content-activation-notebook"
     ],
     "taskIds": [
@@ -2152,8 +2152,8 @@
       "s08-04-access-control-content-least-reasoning-1",
       "s08-04-access-control-content-least-reasoning-2",
       "s08-04-access-control-content-least-example",
-      "s08-04-access-control-content-least-T01-slide",
       "s08-04-access-control-content-least-review",
+      "s08-04-access-control-content-least-T01-slide",
       "s08-04-access-control-content-least-notebook"
     ],
     "taskIds": [
@@ -2178,8 +2178,8 @@
       "s08-04-access-control-content-grant-revoke-reasoning-1",
       "s08-04-access-control-content-grant-revoke-reasoning-2",
       "s08-04-access-control-content-grant-revoke-example",
-      "s08-04-access-control-content-grant-revoke-T01-slide",
       "s08-04-access-control-content-grant-revoke-review",
+      "s08-04-access-control-content-grant-revoke-T01-slide",
       "s08-04-access-control-content-grant-revoke-notebook"
     ],
     "taskIds": [
@@ -2204,8 +2204,8 @@
       "s08-04-access-control-content-view-reasoning-1",
       "s08-04-access-control-content-view-reasoning-2",
       "s08-04-access-control-content-view-example",
-      "s08-04-access-control-content-view-T01-slide",
       "s08-04-access-control-content-view-review",
+      "s08-04-access-control-content-view-T01-slide",
       "s08-04-access-control-content-view-notebook"
     ],
     "taskIds": [
@@ -2229,8 +2229,8 @@
       "s08-04-access-control-content-allowed-concept",
       "s08-04-access-control-content-allowed-reasoning-1",
       "s08-04-access-control-content-allowed-example",
-      "s08-04-access-control-content-allowed-T01-slide",
       "s08-04-access-control-content-allowed-review",
+      "s08-04-access-control-content-allowed-T01-slide",
       "s08-04-access-control-content-allowed-notebook"
     ],
     "taskIds": [
@@ -2254,8 +2254,8 @@
       "s08-04-access-control-content-denied-concept",
       "s08-04-access-control-content-denied-reasoning-1",
       "s08-04-access-control-content-denied-example",
-      "s08-04-access-control-content-denied-T01-slide",
       "s08-04-access-control-content-denied-review",
+      "s08-04-access-control-content-denied-T01-slide",
       "s08-04-access-control-content-denied-notebook"
     ],
     "taskIds": [
@@ -2279,8 +2279,8 @@
       "s08-04-access-control-content-matrix-concept",
       "s08-04-access-control-content-matrix-reasoning-1",
       "s08-04-access-control-content-matrix-example",
-      "s08-04-access-control-content-matrix-T01-slide",
       "s08-04-access-control-content-matrix-review",
+      "s08-04-access-control-content-matrix-T01-slide",
       "s08-04-access-control-content-matrix-notebook"
     ],
     "taskIds": [
@@ -2305,8 +2305,8 @@
       "s08-05-backup-and-protection-content-scope-reasoning-1",
       "s08-05-backup-and-protection-content-scope-reasoning-2",
       "s08-05-backup-and-protection-content-scope-example",
-      "s08-05-backup-and-protection-content-scope-T01-slide",
       "s08-05-backup-and-protection-content-scope-review",
+      "s08-05-backup-and-protection-content-scope-T01-slide",
       "s08-05-backup-and-protection-content-scope-notebook"
     ],
     "taskIds": [
@@ -2330,8 +2330,8 @@
       "s08-05-backup-and-protection-content-backup-user-concept",
       "s08-05-backup-and-protection-content-backup-user-reasoning-1",
       "s08-05-backup-and-protection-content-backup-user-example",
-      "s08-05-backup-and-protection-content-backup-user-T01-slide",
       "s08-05-backup-and-protection-content-backup-user-review",
+      "s08-05-backup-and-protection-content-backup-user-T01-slide",
       "s08-05-backup-and-protection-content-backup-user-notebook"
     ],
     "taskIds": [
@@ -2355,8 +2355,8 @@
       "s08-05-backup-and-protection-content-dump-concept",
       "s08-05-backup-and-protection-content-dump-reasoning-1",
       "s08-05-backup-and-protection-content-dump-example",
-      "s08-05-backup-and-protection-content-dump-T01-slide",
       "s08-05-backup-and-protection-content-dump-review",
+      "s08-05-backup-and-protection-content-dump-T01-slide",
       "s08-05-backup-and-protection-content-dump-notebook"
     ],
     "taskIds": [
@@ -2381,8 +2381,8 @@
       "s08-05-backup-and-protection-content-restore-reasoning-1",
       "s08-05-backup-and-protection-content-restore-reasoning-2",
       "s08-05-backup-and-protection-content-restore-example",
-      "s08-05-backup-and-protection-content-restore-T01-slide",
       "s08-05-backup-and-protection-content-restore-review",
+      "s08-05-backup-and-protection-content-restore-T01-slide",
       "s08-05-backup-and-protection-content-restore-notebook"
     ],
     "taskIds": [
@@ -2407,8 +2407,8 @@
       "s08-05-backup-and-protection-content-objects-reasoning-1",
       "s08-05-backup-and-protection-content-objects-reasoning-2",
       "s08-05-backup-and-protection-content-objects-example",
-      "s08-05-backup-and-protection-content-objects-T01-slide",
       "s08-05-backup-and-protection-content-objects-review",
+      "s08-05-backup-and-protection-content-objects-T01-slide",
       "s08-05-backup-and-protection-content-objects-notebook"
     ],
     "taskIds": [
@@ -2432,8 +2432,8 @@
       "s08-05-backup-and-protection-content-rows-concept",
       "s08-05-backup-and-protection-content-rows-reasoning-1",
       "s08-05-backup-and-protection-content-rows-example",
-      "s08-05-backup-and-protection-content-rows-T01-slide",
       "s08-05-backup-and-protection-content-rows-review",
+      "s08-05-backup-and-protection-content-rows-T01-slide",
       "s08-05-backup-and-protection-content-rows-notebook"
     ],
     "taskIds": [
@@ -2458,8 +2458,8 @@
       "s08-05-backup-and-protection-content-behavior-reasoning-1",
       "s08-05-backup-and-protection-content-behavior-reasoning-2",
       "s08-05-backup-and-protection-content-behavior-example",
-      "s08-05-backup-and-protection-content-behavior-T01-slide",
       "s08-05-backup-and-protection-content-behavior-review",
+      "s08-05-backup-and-protection-content-behavior-T01-slide",
       "s08-05-backup-and-protection-content-behavior-notebook"
     ],
     "taskIds": [
@@ -2484,8 +2484,8 @@
       "s08-05-backup-and-protection-content-protection-reasoning-1",
       "s08-05-backup-and-protection-content-protection-reasoning-2",
       "s08-05-backup-and-protection-content-protection-example",
-      "s08-05-backup-and-protection-content-protection-T01-slide",
       "s08-05-backup-and-protection-content-protection-review",
+      "s08-05-backup-and-protection-content-protection-T01-slide",
       "s08-05-backup-and-protection-content-protection-notebook"
     ],
     "taskIds": [
@@ -2509,8 +2509,8 @@
       "s08-06-results-package-content-objects-concept",
       "s08-06-results-package-content-objects-reasoning-1",
       "s08-06-results-package-content-objects-example",
-      "s08-06-results-package-content-objects-T01-slide",
       "s08-06-results-package-content-objects-review",
+      "s08-06-results-package-content-objects-T01-slide",
       "s08-06-results-package-content-objects-notebook"
     ],
     "taskIds": [
@@ -2535,8 +2535,8 @@
       "s08-06-results-package-content-data-reasoning-1",
       "s08-06-results-package-content-data-reasoning-2",
       "s08-06-results-package-content-data-example",
-      "s08-06-results-package-content-data-T01-slide",
       "s08-06-results-package-content-data-review",
+      "s08-06-results-package-content-data-T01-slide",
       "s08-06-results-package-content-data-notebook"
     ],
     "taskIds": [
@@ -2561,8 +2561,8 @@
       "s08-06-results-package-content-er-reasoning-1",
       "s08-06-results-package-content-er-reasoning-2",
       "s08-06-results-package-content-er-example",
-      "s08-06-results-package-content-er-T01-slide",
       "s08-06-results-package-content-er-review",
+      "s08-06-results-package-content-er-T01-slide",
       "s08-06-results-package-content-er-notebook"
     ],
     "taskIds": [
@@ -2586,8 +2586,8 @@
       "s08-06-results-package-content-scripts-concept",
       "s08-06-results-package-content-scripts-reasoning-1",
       "s08-06-results-package-content-scripts-example",
-      "s08-06-results-package-content-scripts-T01-slide",
       "s08-06-results-package-content-scripts-review",
+      "s08-06-results-package-content-scripts-T01-slide",
       "s08-06-results-package-content-scripts-notebook"
     ],
     "taskIds": [
@@ -2611,8 +2611,8 @@
       "s08-06-results-package-content-evidence-concept",
       "s08-06-results-package-content-evidence-reasoning-1",
       "s08-06-results-package-content-evidence-example",
-      "s08-06-results-package-content-evidence-T01-slide",
       "s08-06-results-package-content-evidence-review",
+      "s08-06-results-package-content-evidence-T01-slide",
       "s08-06-results-package-content-evidence-notebook"
     ],
     "taskIds": [
@@ -2636,8 +2636,8 @@
       "s08-06-results-package-content-backup-concept",
       "s08-06-results-package-content-backup-reasoning-1",
       "s08-06-results-package-content-backup-example",
-      "s08-06-results-package-content-backup-T01-slide",
       "s08-06-results-package-content-backup-review",
+      "s08-06-results-package-content-backup-T01-slide",
       "s08-06-results-package-content-backup-notebook"
     ],
     "taskIds": [
@@ -2661,8 +2661,8 @@
       "s08-06-results-package-content-secrets-concept",
       "s08-06-results-package-content-secrets-reasoning-1",
       "s08-06-results-package-content-secrets-example",
-      "s08-06-results-package-content-secrets-T01-slide",
       "s08-06-results-package-content-secrets-review",
+      "s08-06-results-package-content-secrets-T01-slide",
       "s08-06-results-package-content-secrets-notebook"
     ],
     "taskIds": [
@@ -2687,8 +2687,8 @@
       "s08-06-results-package-content-final-run-reasoning-1",
       "s08-06-results-package-content-final-run-reasoning-2",
       "s08-06-results-package-content-final-run-example",
-      "s08-06-results-package-content-final-run-T01-slide",
       "s08-06-results-package-content-final-run-review",
+      "s08-06-results-package-content-final-run-T01-slide",
       "s08-06-results-package-content-final-run-notebook"
     ],
     "taskIds": [

@@ -2,17 +2,27 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 export function parseCsv(text){
- const rows=[];let row=[],field='',quoted=false;
+ const rows=[];let row=[],field='',state='start';
  const input=text.replace(/^\uFEFF/,'');
  for(let i=0;i<input.length;i++){
   const c=input[i];
-  if(c==='"'){if(quoted&&input[i+1]==='"'){field+='"';i++;}else if(quoted||field==='')quoted=!quoted;else throw Error('Кавычка внутри некавыченного поля');}
-  else if(c===','&&!quoted){row.push(field);field='';}
-  else if(c==='\n'&&!quoted){row.push(field.replace(/\r$/,''));rows.push(row);row=[];field='';}
-  else field+=c;
+  if(state==='quoted'){
+   if(c==='"'){if(input[i+1]==='"'){field+='"';i++;}else state='closed';}
+   else field+=c;
+   continue;
+  }
+  if(c===','){row.push(field);field='';state='start';}
+  else if(c==='\n'||c==='\r'){
+   if(c==='\r'&&input[i+1]!=='\n')throw Error('Одиночный CR вне кавычек CSV');
+   if(c==='\r')i++;
+   row.push(field);rows.push(row);row=[];field='';state='start';
+  }
+  else if(state==='closed')throw Error('После закрывающей кавычки CSV допустим только разделитель или конец строки');
+  else if(c==='"'){if(state!=='start')throw Error('Кавычка внутри некавыченного поля');state='quoted';}
+  else {field+=c;state='plain';}
  }
- if(quoted)throw Error('Незакрытые кавычки CSV');
- if(field!==''||row.length){row.push(field.replace(/\r$/,''));rows.push(row);}
+ if(state==='quoted')throw Error('Незакрытые кавычки CSV');
+ if(state!=='start'||field!==''||row.length){row.push(field);rows.push(row);}
  return rows;
 }
 export function checkHeader(text,expected){
