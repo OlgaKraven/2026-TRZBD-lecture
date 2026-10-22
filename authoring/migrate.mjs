@@ -3,7 +3,7 @@ import {course as sourceCourse,topics} from './legacy-course.ts';
 import {buildDeck} from './legacy-deck.ts';
 import {rewritePriority} from './rewrite-priority.mjs';
 const write=(path,data)=>fs.writeFileSync(path,JSON.stringify(data,null,2)+'\n');
-const version='trzbd-2026.10.22-content-8-10-r2';
+const version='trzbd-2026.10.22-content-all-r4';
 fs.mkdirSync('private',{recursive:true});
 const course={schemaVersion:1,contentVersion:version,id:'trzbd',code:'МДК.11.01 · 4 курс',discipline:'Технология разработки и защиты баз данных',year:'2026–2027',heroTitle:'Разрабатывайте и защищайте',heroAccent:'базы данных',slogan:'От исходных данных — к проверенной и защищённой базе',mascot:'brand/mascot/trzbd-database-rhino-catalog.png',mascotAlt:'Носорог — разработчик и защитник баз данных',logo:'brand/synergy-logo.png',ornament:'brand/side-ornament.png',font:'fonts/raleway-cyrillic.woff2',topicArrow:'brand/topic-arrow.webp',materialsUrl:sourceCourse.materialsUrl,demo:false,semesters:sourceCourse.semesters,assessment:{mode:'autonomous',url:'assessment.json'},lectures:[],glossary:[],curriculum:[]};
 const first=buildDeck(topics[0],sourceCourse);

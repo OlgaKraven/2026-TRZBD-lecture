@@ -1,12 +1,12 @@
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';
-import {checkHeader,parseCsv} from '../scripts/check-input.mjs';
+import {checkHeader,parseCsv,isCalendarDatetime,classifyRequests} from '../scripts/check-input.mjs';
 const c=JSON.parse(fs.readFileSync('public/course.json','utf8'));
 const n=JSON.parse(fs.readFileSync('public/teacher-notes.json','utf8')).notes;
 const qs=JSON.parse(fs.readFileSync('authoring/questions.json','utf8'));
 const redirects=JSON.parse(fs.readFileSync('public/slide-redirects.json','utf8'));
-const selected=c.lectures.slice(7,10);
-describe('содержательная редакция лекций 8–10',()=>{
+const selected=c.lectures;
+describe('содержательная редакция всего курса',()=>{
  it.each(selected.map(l=>[l.id,l]))('%s покрывает исходные вопросы и самостоятельные случаи',(_,l)=>{
   const blocks=qs.filter(q=>q.lectureId===l.id);
   expect(blocks.flatMap(q=>q.sourceQuestionNumbers).sort((a,b)=>a-b)).toEqual([1,2,3,4,5,6,7,8]);
@@ -18,18 +18,27 @@ describe('содержательная редакция лекций 8–10',()=
    expect(n[s.id].answer.length).toBeGreaterThan(50);
   }
  });
- it('сохраняет все 345 прежних ссылок выбранных лекций',()=>{
-  expect(Object.keys(redirects)).toHaveLength(345);
+ it('сохраняет все 1495 прежних ссылок курса',()=>{
+  expect(Object.keys(redirects)).toHaveLength(1495);
   const ids=new Set(c.lectures.flatMap(l=>l.slides.map(s=>s.id)));
   for(const target of Object.values(redirects))expect(ids.has(target)).toBe(true);
  });
  it('показывает фактические планы и различает оценку и измерение',()=>{
-  const s=selected[2].slides.find(s=>s.id.endsWith('plans-result'));
-  expect(s.rows).toContainEqual(['rows: оценка','10093','33']);
+  const s=selected[9].slides.find(s=>s.id.endsWith('plans-result'));
+  const plan=JSON.parse(fs.readFileSync('authoring/index-plan-example.json','utf8'));
+  expect(s.rows).toContainEqual(['rows: оценка',String(plan.before.rowsEstimate),String(plan.after.rowsEstimate)]);
   expect(n[s.id].script).toContain('не измеренные времена');
  });
  it('удаляет проверки названия вопроса из выбранных тем',()=>{
   for(const l of selected)for(const s of l.slides.filter(s=>s.task))expect(s.task.prompt).not.toContain('Как называется вопрос');
+ });
+});
+describe('календарь и классификация изменённого входа',()=>{
+ it.each(['2026-02-30 10:00:00','2026-13-01 10:00:00','2026-01-01 24:00:00','0000-01-01 00:00:00','2026-01-01'])('отклоняет %s',value=>expect(isCalendarDatetime(value)).toBe(false));
+ it.each(['2024-02-29 23:59:59','2026-02-28 00:00:00'])('принимает %s',value=>expect(isCalendarDatetime(value)).toBe(true));
+ it('не теряет плохую дату, неизвестную деталь и повтор кода детали',()=>{
+  const rows=[['R200','C01','B01','NEW','2026-02-30 10:00:00','P01'],['R201','C01','B01','NEW','2026-02-28 10:00:00','P09'],['R202','C01','B01','NEW','2026-02-28 10:00:00','P01;P01']];
+  expect(classifyRequests(rows,{branches:['B01'],clients:['C01']}).map(x=>x.reason)).toEqual(['INVALID_DATETIME','INVALID_PART_LIST','INVALID_PART_LIST']);
  });
 });
 describe('проверка реального CSV',()=>{

@@ -3,6 +3,7 @@ dist/
 test-results/
 playwright-report/
 outputs/
+.playwright-cli/
 config/teacher-profile.json
 .env
 .env.*

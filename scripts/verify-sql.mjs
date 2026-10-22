@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
 import {randomBytes} from 'node:crypto';
 import {checkInputs} from './check-input.mjs';
+import {verifyBackup} from './verify-backup.mjs';
 const value=(arg,fallback)=>{const i=process.argv.indexOf(arg);return i<0?fallback:process.argv[i+1];};
 const bin=value('--bin',''),port=value('--port','33317');
 const mysql=path.join(bin,process.platform==='win32'?'mysql.exe':'mysql');
@@ -46,6 +47,7 @@ check('ошибка FK не отменяет предыдущий операто
  const out=run("USE service_training; START TRANSACTION; UPDATE requests SET status_id=3 WHERE request_no='R102'; INSERT INTO completed_works SELECT id,'UNKNOWN' FROM requests WHERE request_no='R102'; SELECT status_id FROM requests WHERE request_no='R102'; ROLLBACK; SELECT status_id FROM requests WHERE request_no='R102';",{args:[...common,'--force']});
  assert.equal(out,'3\n2');
 });
+if(process.argv.includes('--restore-port'))verifyBackup({bin,sourcePort:port,restorePort:value('--restore-port','33319')});
 const id101=q("SELECT id FROM requests WHERE request_no='R101';"),id102=q("SELECT id FROM requests WHERE request_no='R102';"),id103=q("SELECT id FROM requests WHERE request_no='R103';");
 check('процедура: отказ после UPDATE откатывает всё',()=>{
  run(`USE service_training; CALL close_request(${id102},'UNKNOWN');`,{failure:true});

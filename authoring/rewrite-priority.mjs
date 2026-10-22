@@ -1,7 +1,13 @@
 import fs from 'node:fs';
 import {priorityContent} from './priority-content.mjs';
 import {completePriority} from './priority-completeness.mjs';
+import {earlyContent} from './content-01-03.mjs';
+import {middleContent} from './content-04-05.mjs';
+import {checkingContent} from './content-06-07.mjs';
+import {accessContent} from './content-11.mjs';
+import {finalContent} from './content-12-13.mjs';
 completePriority(priorityContent);
+Object.assign(priorityContent,earlyContent,middleContent,checkingContent,accessContent,finalContent);
 
 export function rewritePriority({course,notes,keys,questions,registry,mapping,links}){
  const redirects={};
@@ -14,22 +20,22 @@ export function rewritePriority({course,notes,keys,questions,registry,mapping,li
   };
   const slide=(id,kind,title,fields={})=>({id:lectureId+'-'+id,kind,title,kicker:lecture.title,...fields});
   add(slide('title','title',lecture.title,{body:data.outcome}),data.introduction,{seconds:90});
-  for(const s of old.filter(s=>s.kind==='literature'))add(s,oldNotes[s.id].script,{seconds:15});
-  const materials=old.find(s=>s.kind==='materials');add(materials,'Основной пример подготовлен в отдельной учебной схеме. Его CSV и SQL находятся в examples/data и examples/sql репозитория. Внешняя папка сохраняется как дополнительный источник материалов; её содержимое не является скрытым условием сегодняшнего разбора.',{seconds:25});
+  for(const s of old.filter(s=>s.kind==='literature'))add(s,'Источник для подготовки: '+s.references.map(r=>r.citation).join('; ')+'. Конкретные страницы выбирайте по доступному изданию; синтаксис примеров сверяйте с указанной версией MySQL.',{seconds:20});
+  const materials=old.find(s=>s.kind==='materials');add(materials,'Для подготовки используйте согласованный учебный набор: три CSV, описание кодов, DDL, загрузку и контроль. Внешняя папка содержит дополнительные материалы; её меняющийся состав не является скрытым условием сегодняшнего разбора.',{seconds:25});
   add(slide('agenda','agenda','Вопросы темы'),'Сегодня последовательно разберём: '+data.blocks.map(b=>b.title).join('; ')+'. '+data.outcome,{seconds:45});
-  const render=(id,w)=>slide(id,'example',w.title,w.code?{visual:{type:'codeParts',parts:[{code:w.code,label:w.title,explanation:'Учебный стенд MySQL 8.4'}],caption:'Проследите исходные условия, действие и полученный результат.'}}:{columns:w.columns,rows:w.rows});
+  const render=(id,w)=>slide(id,'example',w.title,w.image?{image:{...w.image,src:'data:image/png;base64,'+fs.readFileSync('public/'+w.image.src.replace(/\.svg$/,'.png')).toString('base64')}}:w.visual?{visual:w.visual}:w.code?{visual:{type:'codeParts',parts:[{code:w.code,label:w.title,explanation:w.language||'Учебный стенд MySQL 8.4'}],caption:'Проследите исходные условия, действие и полученный результат.'}}:{columns:w.columns,rows:w.rows});
   add(render('content-context',data.context),data.context.walkthrough,{seconds:100});
   for(const [i,w] of (data.contexts||[]).entries())add(render('content-context-'+(i+1),w),w.walkthrough,{seconds:100});
   for(const [bi,b] of data.blocks.entries()){
    const prefix='content-'+b.id;
    const start=slides.length;
    const section=slide(prefix+'-section','section',`${b.questionNumber}. ${b.title}`,{body:b.lead});
-   add(section,b.lead+' '+(bi===0?'Разбор начнём с исходного условия.':'Этот вопрос опирается на предыдущий результат и добавляет новое условие.'),{seconds:30});
+   add(section,b.lead,{seconds:30});
    const concept=slide(prefix+'-concept','theory',b.title,{bullets:b.mechanism,source:b.source});
-   add(concept,b.mechanism.join(' ')+' Дальше разберём причину и конкретный случай.',{seconds:80,questions:'Почему выбранное решение зависит от исходных условий?',answer:b.mechanism.join(' ')});
-   const sentences=b.reasoning.match(/[^.!?]+[.!?]+(?:\s|$)/g)||[b.reasoning];
+   add(concept,b.mechanism.join(' '),{seconds:80,questions:b.discussion?.question||'',answer:b.discussion?.answer||''});
+   const sentences=b.reasoning.split(/(?<=[.!?])\s+(?=[А-ЯЁA-Z«])/u);
    for(let si=0;si<sentences.length;si+=3){
-    const text=sentences.slice(si,si+3).join('').trim();
+    const text=sentences.slice(si,si+3).join(' ').trim();
     add(slide(prefix+'-reasoning-'+(si/3+1),'theory',si===0?'Почему это работает':'Продолжаем рассуждение',{body:text,source:b.source}),text,{seconds:90});
    }
    const worked=render(prefix+'-example',b.worked);worked.source=b.source;
@@ -39,7 +45,7 @@ export function rewritePriority({course,notes,keys,questions,registry,mapping,li
     const p=JSON.parse(fs.readFileSync('authoring/index-plan-example.json','utf8'));
     add(slide(prefix+'-result','example','Фактический план учебного опыта',{
      columns:['Показатель','До индекса','После индекса'],rows:[['type',p.before.type,p.after.type],['key',p.before.key,p.after.key],['rows: оценка',String(p.before.rowsEstimate),String(p.after.rowsEstimate)],['Extra',p.before.extra,p.after.extra]],source:'https://dev.mysql.com/doc/refman/8.4/en/explain-output.html'
-    }),`На ${p.server} перед индексом выбран ALL: просмотр таблицы с оценкой ${p.before.rowsEstimate} строк и отдельной сортировкой. После индекса выбран ref, ключ ${p.after.key}, оценка ${p.after.rowsEstimate} строк. Реальных строк в таблице ${p.actualRows}, а условию соответствуют ${p.matchingRows}. Разница между 10093 и 10000 показывает, почему rows нельзя читать как точное число. ${p.meaning}`,{seconds:150});
+    }),`На ${p.server} перед индексом выбран ALL: просмотр таблицы с оценкой ${p.before.rowsEstimate} строк и отдельной сортировкой. После индекса выбран ref, ключ ${p.after.key}, оценка ${p.after.rowsEstimate} строк. Реальных строк в таблице ${p.actualRows}, а условию соответствуют ${p.matchingRows}. Разница между ${p.before.rowsEstimate} и ${p.actualRows} показывает, почему rows нельзя читать как точное число. ${p.meaning}`,{seconds:150});
    }
    const taskId=lectureId+'-'+prefix+'-T01',spec=b.task;
    const task={id:taskId,type:spec.type,prompt:spec.prompt};
@@ -72,7 +78,7 @@ export function rewritePriority({course,notes,keys,questions,registry,mapping,li
   }
   for(const [oldNumber,id] of Object.entries(links[lectureId]))links[lectureId][oldNumber]=redirects[id]||id;
   for(const entry of mapping.filter(m=>m.lectureId===lectureId))entry.newSlideIds=[...new Set(entry.newSlideIds.map(id=>redirects[id]||id))];
-  for(const g of course.glossary||[])g.slideIds=[...new Set(g.slideIds.map(id=>redirects[id]||id))];
+   for(const g of course.glossary||[])g.slideIds=[...new Set(g.slideIds.map(id=>redirects[id]||id))];
   for(const id of Object.keys(questions).filter(i=>questions[i].lectureId===lectureId).sort((a,b)=>b-a))questions.splice(Number(id),1);
   questions.push(...manifest);lecture.slides=slides;lecture.question=data.outcome;
   const cur=course.curriculum.find(x=>x.topic===lecture.sourceTitle);

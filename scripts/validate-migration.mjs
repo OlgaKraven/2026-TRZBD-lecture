@@ -25,7 +25,7 @@ for(const l of c.lectures){
   const slides=l.slides.filter(s=>q.slideIds.includes(s.id));
   if(q.sourceQuestionNumbers){
    if(!slides.some(s=>s.task)||!slides.some(s=>s.id.endsWith('-review')))throw Error(q.questionId+': нет самостоятельного случая или разбора');
-   if(!slides.some(s=>s.rows||s.visual))throw Error(q.questionId+': нет предметного примера');
+   if(!slides.some(s=>s.rows||s.visual||s.image))throw Error(q.questionId+': нет предметного примера');
   }else if(slides.slice(-4).map(s=>s.task?.type).join()!=='single,multiple,short,matching')throw Error(q.questionId+': порядок тестов');
   if(!slides.some(s=>s.notebook)||!slides.some(s=>s.kind==='example'))throw Error(q.questionId+': нет примера/записи');
  }

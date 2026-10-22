@@ -15,7 +15,8 @@ test('notes load without password and preserve local edits',async({page,context}
  const slide=l.slides.find((s:{id:string})=>s.id.endsWith('-concept'))
  const key=`lecture:/2026-TRZBD-lecture/:trzbd:private:${c.contentVersion}`
  await page.goto(`./?mode=presenter&lecture=${l.id}&slide=${slide.id}&session=qa-notes`)
- await expect(page.getByRole('tabpanel')).toContainText('Это объяснение нужно')
+ const notes=JSON.parse(fs.readFileSync('public/teacher-notes.json','utf8')).notes
+ await expect(page.getByRole('tabpanel')).toContainText(notes[slide.id].script)
  await expect(page.getByRole('dialog')).toHaveCount(0)
  expect(await page.evaluate(key=>Object.keys(JSON.parse(localStorage.getItem(key)||'{}')).length,key)).toBe(c.lectures.reduce((sum:number,l:{slides:unknown[]})=>sum+l.slides.length,0))
  await page.evaluate(({key,id})=>{const n=JSON.parse(localStorage.getItem(key)||'{}');n[id].script='Проверочная локальная заметка';localStorage.setItem(key,JSON.stringify(n))},{key,id:slide.id})
@@ -38,7 +39,8 @@ test('student print contains slides without notes, answers or interactive forms'
 test('all four assessment types score taught answers on desktop',async({page})=>{
  const keys=JSON.parse(fs.readFileSync('public/assessment.json','utf8')).keys
  await page.setViewportSize({width:1366,height:900})
- for(const slide of l.slides.filter((s:{task?:unknown})=>s.task).slice(0,4)){
+ for(const type of ['single','multiple','short','matching']){
+  const slide=l.slides.find((s:{task?:{type:string}})=>s.task?.type===type)
   const t=slide.task,k=keys[t.id];await page.goto(`./?lecture=${l.id}&slide=${slide.id}`)
   await page.getByRole('button',{name:'Проверить',exact:true}).click();await expect(page.locator('.task-status')).toHaveCount(0)
   if(t.type==='single'||t.type==='multiple'){

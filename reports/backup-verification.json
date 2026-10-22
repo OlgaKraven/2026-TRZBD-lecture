@@ -1,0 +1,73 @@
+{
+  "version": "8.4.13",
+  "sourcePort": "33318",
+  "restorePort": "33319",
+  "separateInstances": true,
+  "baseline": {
+    "tables": 13,
+    "foreignKeys": 8,
+    "views": 3,
+    "routines": 1,
+    "triggers": 1,
+    "requests": 3,
+    "positions": 4,
+    "works": 1
+  },
+  "dump": {
+    "sha256": "9759bfc50e58482c5043eda7c8987dacc71fa8128f8f513f5b28bb6eca89eef5",
+    "bytes": 21045,
+    "options": [
+      "--protocol=TCP",
+      "--single-transaction",
+      "--routines",
+      "--events",
+      "--triggers",
+      "--hex-blob",
+      "--no-tablespaces",
+      "--set-gtid-purged=OFF",
+      "service_training"
+    ]
+  },
+  "checks": [
+    {
+      "name": "dump выполнен ограниченной учётной записью training_backup",
+      "status": "passed"
+    },
+    {
+      "name": "13 таблиц и состав имён совпали",
+      "status": "passed"
+    },
+    {
+      "name": "все строки всех таблиц совпали",
+      "status": "passed"
+    },
+    {
+      "name": "определения таблиц и 8 FK совпали",
+      "status": "passed"
+    },
+    {
+      "name": "3 view, процедура и триггер восстановлены с определениями",
+      "status": "passed"
+    },
+    {
+      "name": "view исполняются в независимой цели",
+      "status": "passed"
+    },
+    {
+      "name": "поздняя ошибка процедуры откатывает статус, работу и журнал",
+      "status": "passed"
+    },
+    {
+      "name": "роли поставлены отдельно: viewer читает view и не читает requests",
+      "status": "passed"
+    },
+    {
+      "name": "успешное закрытие в цели создаёт статус, работу и журнал",
+      "status": "passed"
+    },
+    {
+      "name": "источник не изменён копированием и испытанием цели",
+      "status": "passed"
+    }
+  ]
+}

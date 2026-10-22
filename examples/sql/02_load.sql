@@ -20,16 +20,24 @@ INSERT INTO parts VALUES(1,'P01','Учебная деталь 01'),(7,'P07','У�
 INSERT INTO work_types VALUES('DIAG','Диагностика'),('REPAIR','Ремонт');
 INSERT INTO load_rejections
  SELECT s.source_row,CASE
- WHEN TRIM(s.request_no)='' THEN 'EMPTY_REQUEST_NO'
+ WHEN s.request_no IS NULL OR TRIM(s.request_no)='' THEN 'EMPTY_REQUEST_NO'
  WHEN b.id IS NULL THEN 'UNKNOWN_BRANCH'
  WHEN c.id IS NULL THEN 'UNKNOWN_CLIENT'
  WHEN st.id IS NULL THEN 'UNKNOWN_STATUS'
- ELSE 'DUPLICATE_REQUEST_NO' END
+ WHEN s.received_at IS NULL OR s.received_at NOT REGEXP '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}$' THEN 'INVALID_DATETIME'
+ WHEN CAST(SUBSTRING(s.received_at,1,4) AS UNSIGNED) NOT BETWEEN 1000 AND 9999 THEN 'INVALID_DATETIME'
+ WHEN CAST(SUBSTRING(s.received_at,6,2) AS UNSIGNED) NOT BETWEEN 1 AND 12 THEN 'INVALID_DATETIME'
+ WHEN CAST(SUBSTRING(s.received_at,9,2) AS UNSIGNED) NOT BETWEEN 1 AND DAY(LAST_DAY(CONCAT(LEFT(s.received_at,7),'-01'))) THEN 'INVALID_DATETIME'
+ WHEN CAST(SUBSTRING(s.received_at,12,2) AS UNSIGNED)>23 OR CAST(SUBSTRING(s.received_at,15,2) AS UNSIGNED)>59 OR CAST(SUBSTRING(s.received_at,18,2) AS UNSIGNED)>59 THEN 'INVALID_DATETIME'
+ -- В этом стенде допустимы только P01/P07, каждый не более одного раза в списке.
+ WHEN s.part_codes IS NULL OR TRIM(TRAILING '\r' FROM s.part_codes) NOT IN ('P01','P07','P01;P07','P07;P01') THEN 'INVALID_PART_LIST'
+ ELSE 'DUPLICATE_REQUEST_NO' END AS reason
  FROM stage_requests s
  LEFT JOIN branches b ON b.code=s.branch_code
  LEFT JOIN clients c ON c.code=s.client_code
  LEFT JOIN request_statuses st ON st.code=s.status_code
- WHERE TRIM(s.request_no)='' OR b.id IS NULL OR c.id IS NULL OR st.id IS NULL
+ -- CASE сначала безопасно проверяет форму и диапазон, и лишь затем календарь.
+ HAVING reason<>'DUPLICATE_REQUEST_NO'
  OR EXISTS(SELECT 1 FROM stage_requests earlier WHERE earlier.request_no=s.request_no AND earlier.source_row<s.source_row);
 INSERT INTO requests(request_no,client_id,branch_id,status_id,received_at)
  SELECT s.request_no,c.id,b.id,st.id,CAST(s.received_at AS DATETIME)

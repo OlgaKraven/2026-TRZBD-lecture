@@ -1,0 +1,41 @@
+{
+  "version": "8.4.13",
+  "checks": [
+    {
+      "name": "SQL классифицирует невозможную дату, месяц и список деталей без потери строк",
+      "status": "passed"
+    },
+    {
+      "name": "показанные контрольные запросы: коды, кратность JOIN и ноль B03",
+      "status": "passed"
+    },
+    {
+      "name": "ограничения NULL, пустого номера, повторного номера и неизвестного FK",
+      "status": "passed"
+    },
+    {
+      "name": "editor: INSERT VALUES и UPDATE разрешены, проба откатывается",
+      "status": "passed"
+    },
+    {
+      "name": "editor: DELETE, базовое чтение requests и INSERT SELECT запрещены",
+      "status": "passed"
+    },
+    {
+      "name": "отзыв INSERT даёт отказ; прямое назначение является независимым путём",
+      "status": "passed"
+    },
+    {
+      "name": "назначение роли не равно её активности",
+      "status": "passed"
+    },
+    {
+      "name": "schema_admin: CREATE, ALTER, INDEX и CREATE VIEW разрешены",
+      "status": "passed"
+    },
+    {
+      "name": "schema_admin: чтение рабочих данных и CREATE USER не выданы",
+      "status": "passed"
+    }
+  ]
+}

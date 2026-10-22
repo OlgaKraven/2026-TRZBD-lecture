@@ -11,10 +11,11 @@
     "labNumbers": [
       1
     ],
-    "slides": 115,
+    "slides": 73,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 149
+    "tasks": 8,
+    "estimatedMinutes": 105,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s07-02-table-list-from-source-data",
@@ -30,10 +31,11 @@
       2,
       3
     ],
-    "slides": 115,
+    "slides": 73,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 147
+    "tasks": 8,
+    "estimatedMinutes": 105,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s07-03-implement-table-set",
@@ -49,10 +51,11 @@
       4,
       5
     ],
-    "slides": 115,
+    "slides": 73,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 146
+    "tasks": 8,
+    "estimatedMinutes": 105,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s07-04-er-diagram",
@@ -67,10 +70,11 @@
     "labNumbers": [
       6
     ],
-    "slides": 115,
+    "slides": 74,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 145
+    "tasks": 8,
+    "estimatedMinutes": 107,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s07-05-prepare-and-load-data",
@@ -86,10 +90,11 @@
       7,
       8
     ],
-    "slides": 115,
+    "slides": 72,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 144
+    "tasks": 8,
+    "estimatedMinutes": 103,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s07-06-validate-load-and-delivery-script",
@@ -104,10 +109,11 @@
     "labNumbers": [
       9
     ],
-    "slides": 115,
+    "slides": 68,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 145
+    "tasks": 8,
+    "estimatedMinutes": 97,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s07-07-control-queries",
@@ -121,10 +127,11 @@
     "labNumbers": [
       10
     ],
-    "slides": 115,
+    "slides": 72,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 144
+    "tasks": 8,
+    "estimatedMinutes": 103,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s08-01-views",
@@ -161,7 +168,7 @@
     "slides": 83,
     "questions": 8,
     "tasks": 8,
-    "estimatedMinutes": 119,
+    "estimatedMinutes": 120,
     "contentReview": "2026-10-22"
   },
   {
@@ -195,10 +202,11 @@
     "labNumbers": [
       14
     ],
-    "slides": 115,
+    "slides": 72,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 144
+    "tasks": 8,
+    "estimatedMinutes": 103,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s08-05-backup-and-protection",
@@ -213,10 +221,11 @@
     "labNumbers": [
       15
     ],
-    "slides": 115,
+    "slides": 72,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 144
+    "tasks": 8,
+    "estimatedMinutes": 103,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s08-06-results-package",
@@ -235,9 +244,10 @@
     "labNumbers": [
       16
     ],
-    "slides": 115,
+    "slides": 70,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 143
+    "tasks": 8,
+    "estimatedMinutes": 100,
+    "contentReview": "2026-10-22"
   }
 ]

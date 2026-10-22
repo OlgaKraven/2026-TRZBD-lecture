@@ -1,45 +1,139 @@
 {
-  "contentVersion": "trzbd-2026.10.22-content-8-10-r2",
-  "slidesChecked": 255,
+  "contentVersion": "trzbd-2026.10.22-content-all-r4",
+  "sourceSha256": "a77cf19a312c534b02c798760424a5f522a290e686a7d5fd6aa858b2044b2842",
+  "slidesChecked": 974,
   "lectures": [
     {
+      "id": "s07-01-source-data-package",
+      "slides": 73,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s07-01-source-data-package-content-scope-example"
+    },
+    {
+      "id": "s07-02-table-list-from-source-data",
+      "slides": 73,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s07-02-table-list-from-source-data-content-dependencies-example"
+    },
+    {
+      "id": "s07-03-implement-table-set",
+      "slides": 73,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s07-03-implement-table-set-content-schema-example"
+    },
+    {
+      "id": "s07-04-er-diagram",
+      "slides": 74,
+      "images": 2,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s07-04-er-diagram-content-reverse-example"
+    },
+    {
+      "id": "s07-05-prepare-and-load-data",
+      "slides": 72,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s07-05-prepare-and-load-data-content-header-example"
+    },
+    {
+      "id": "s07-06-validate-load-and-delivery-script",
+      "slides": 68,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s07-06-validate-load-and-delivery-script-content-counts-example"
+    },
+    {
+      "id": "s07-07-control-queries",
+      "slides": 72,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s07-07-control-queries-content-totals-example"
+    },
+    {
       "id": "s08-01-views",
-      "slides": 88
+      "slides": 88,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s08-01-views-content-meaning-example"
     },
     {
       "id": "s08-02-coordinated-data-changes",
-      "slides": 83
+      "slides": 83,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s08-02-coordinated-data-changes-content-boundary-example"
     },
     {
       "id": "s08-03-search-field-indexes",
-      "slides": 84
+      "slides": 84,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s08-03-search-field-indexes-content-workload-example"
+    },
+    {
+      "id": "s08-04-access-control",
+      "slides": 72,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s08-04-access-control-content-responsibility-example"
+    },
+    {
+      "id": "s08-05-backup-and-protection",
+      "slides": 72,
+      "images": 0,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s08-05-backup-and-protection-content-scope-example"
+    },
+    {
+      "id": "s08-06-results-package",
+      "slides": 70,
+      "images": 1,
+      "presenter": "matches current TeacherPack",
+      "scriptSlide": "s08-06-results-package-content-objects-example"
     }
   ],
-  "taskTypesScored": 4,
-  "legacyRedirect": "passed",
-  "mobileContent": "passed",
-  "presenter": [
+  "scoredTasks": [
+    "s07-01-source-data-package-content-scope-T01",
+    "s07-01-source-data-package-content-deliverables-T01",
+    "s07-01-source-data-package-content-files-T01",
+    "s07-01-source-data-package-content-quality-T01",
+    "s07-05-prepare-and-load-data-content-header-T01",
+    "s07-06-validate-load-and-delivery-script-content-repeat-T01",
+    "s07-05-prepare-and-load-data-content-csv-T01",
+    "s07-05-prepare-and-load-data-content-load-order-T01",
+    "s08-02-coordinated-data-changes-content-commit-T01",
+    "s08-02-coordinated-data-changes-content-boundary-T01",
+    "s08-02-coordinated-data-changes-content-start-T01",
+    "s08-02-coordinated-data-changes-content-trigger-T01",
+    "s08-06-results-package-content-objects-T01",
+    "s08-06-results-package-content-secrets-T01",
+    "s08-06-results-package-content-data-T01",
+    "s08-06-results-package-content-scripts-T01"
+  ],
+  "mobile": [
     {
-      "lecture": "s08-01-views",
-      "slide": "s08-01-views-content-meaning-concept",
-      "script": "matches bundled TeacherPack"
+      "lecture": "s07-01-source-data-package",
+      "slide": "s07-01-source-data-package-content-context",
+      "horizontalOverflow": false
     },
     {
-      "lecture": "s08-02-coordinated-data-changes",
-      "slide": "s08-02-coordinated-data-changes-content-boundary-concept",
-      "script": "matches bundled TeacherPack"
+      "lecture": "s07-04-er-diagram",
+      "slide": "s07-04-er-diagram-content-cardinality-example",
+      "horizontalOverflow": false
     },
     {
-      "lecture": "s08-03-search-field-indexes",
-      "slide": "s08-03-search-field-indexes-content-workload-concept",
-      "script": "matches bundled TeacherPack"
+      "lecture": "s08-05-backup-and-protection",
+      "slide": "s08-05-backup-and-protection-content-context",
+      "horizontalOverflow": false
     }
   ],
   "download": {
     "filename": "trzbd-teacher-notes.json",
-    "contentVersion": "trzbd-2026.10.22-content-8-10-r2",
-    "totalNotes": 1405,
-    "priorityNotesMatched": 255
+    "notes": 974,
+    "allNotesMatch": true
   },
   "errors": []
 }

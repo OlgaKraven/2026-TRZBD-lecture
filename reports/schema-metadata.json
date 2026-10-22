@@ -1,0 +1,68 @@
+{
+  "version": "8.4.13",
+  "tables": [
+    "audit_request_status",
+    "branches",
+    "clients",
+    "completed_works",
+    "load_rejections",
+    "parts",
+    "request_parts",
+    "request_statuses",
+    "requests",
+    "stage_branches",
+    "stage_clients",
+    "stage_requests",
+    "work_types"
+  ],
+  "foreignKeys": [
+    {
+      "table": "audit_request_status",
+      "column": "request_id",
+      "parent": "requests",
+      "parentColumn": "id"
+    },
+    {
+      "table": "completed_works",
+      "column": "request_id",
+      "parent": "requests",
+      "parentColumn": "id"
+    },
+    {
+      "table": "completed_works",
+      "column": "work_code",
+      "parent": "work_types",
+      "parentColumn": "code"
+    },
+    {
+      "table": "request_parts",
+      "column": "part_id",
+      "parent": "parts",
+      "parentColumn": "id"
+    },
+    {
+      "table": "request_parts",
+      "column": "request_id",
+      "parent": "requests",
+      "parentColumn": "id"
+    },
+    {
+      "table": "requests",
+      "column": "branch_id",
+      "parent": "branches",
+      "parentColumn": "id"
+    },
+    {
+      "table": "requests",
+      "column": "client_id",
+      "parent": "clients",
+      "parentColumn": "id"
+    },
+    {
+      "table": "requests",
+      "column": "status_id",
+      "parent": "request_statuses",
+      "parentColumn": "id"
+    }
+  ]
+}

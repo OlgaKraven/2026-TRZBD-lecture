@@ -100,7 +100,7 @@
     }
   ],
   "plans": {
-    "before": "service_training.requests_plan\tanalyze\tstatus\tOK\n1\tSIMPLE\trequests_plan\tNULL\tALL\tNULL\tNULL\tNULL\tNULL\t10093\t1.00\tUsing where; Using filesort",
+    "before": "service_training.requests_plan\tanalyze\tstatus\tOK\n1\tSIMPLE\trequests_plan\tNULL\tALL\tNULL\tNULL\tNULL\tNULL\t9799\t1.00\tUsing where; Using filesort",
     "after": "1\tSIMPLE\trequests_plan\tNULL\tref\tidx_plan_branch_status_date\tidx_plan_branch_status_date\t8\tconst,const\t33\t100.00\tNULL"
   }
 }

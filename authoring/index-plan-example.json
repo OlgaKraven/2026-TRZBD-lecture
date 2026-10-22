@@ -3,7 +3,17 @@
   "actualRows": 10000,
   "matchingRows": 33,
   "query": "SELECT request_no FROM requests_plan WHERE branch_id=42 AND status_id=1 ORDER BY received_at",
-  "before": {"type":"ALL","key":"NULL","rowsEstimate":10093,"extra":"Using where; Using filesort"},
-  "after": {"type":"ref","key":"idx_plan_branch_status_date","rowsEstimate":33,"extra":"NULL"},
+  "before": {
+    "type": "ALL",
+    "key": "NULL",
+    "rowsEstimate": 9799,
+    "extra": "Using where; Using filesort"
+  },
+  "after": {
+    "type": "ref",
+    "key": "idx_plan_branch_status_date",
+    "rowsEstimate": 33,
+    "extra": "NULL"
+  },
   "meaning": "Это фактические планы учебного запуска, а не измеренные времена и не обещание тех же оценок на любом сервере."
 }
