@@ -139,10 +139,11 @@
     "labNumbers": [
       11
     ],
-    "slides": 115,
+    "slides": 88,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 144
+    "tasks": 8,
+    "estimatedMinutes": 128,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s08-02-coordinated-data-changes",
@@ -157,10 +158,11 @@
     "labNumbers": [
       12
     ],
-    "slides": 115,
+    "slides": 83,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 144
+    "tasks": 8,
+    "estimatedMinutes": 119,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s08-03-search-field-indexes",
@@ -174,10 +176,11 @@
     "labNumbers": [
       13
     ],
-    "slides": 115,
+    "slides": 84,
     "questions": 8,
-    "tasks": 32,
-    "estimatedMinutes": 144
+    "tasks": 8,
+    "estimatedMinutes": 122,
+    "contentReview": "2026-10-22"
   },
   {
     "id": "s08-04-access-control",

@@ -1,8 +1,10 @@
 import fs from 'node:fs';
 import {course as sourceCourse,topics} from './legacy-course.ts';
 import {buildDeck} from './legacy-deck.ts';
+import {rewritePriority} from './rewrite-priority.mjs';
 const write=(path,data)=>fs.writeFileSync(path,JSON.stringify(data,null,2)+'\n');
-const version='trzbd-2026.09.13-1';
+const version='trzbd-2026.10.22-content-8-10-r2';
+fs.mkdirSync('private',{recursive:true});
 const course={schemaVersion:1,contentVersion:version,id:'trzbd',code:'МДК.11.01 · 4 курс',discipline:'Технология разработки и защиты баз данных',year:'2026–2027',heroTitle:'Разрабатывайте и защищайте',heroAccent:'базы данных',slogan:'От исходных данных — к проверенной и защищённой базе',mascot:'brand/mascot/trzbd-database-rhino-catalog.png',mascotAlt:'Носорог — разработчик и защитник баз данных',logo:'brand/synergy-logo.png',ornament:'brand/side-ornament.png',font:'fonts/raleway-cyrillic.woff2',topicArrow:'brand/topic-arrow.webp',materialsUrl:sourceCourse.materialsUrl,demo:false,semesters:sourceCourse.semesters,assessment:{mode:'autonomous',url:'assessment.json'},lectures:[],glossary:[],curriculum:[]};
 const first=buildDeck(topics[0],sourceCourse);
 course.literature=Object.fromEntries(['primary','additional'].map((group,i)=>[group,first[i+2].bullets.map((citation,j)=>({citation,url:first[i+2].links[j].url}))]));
@@ -63,6 +65,7 @@ for(const [li,t] of topics.entries()){
  course.curriculum.push({topic:t.sourceTitle,outcome:t.objective,source:`Исходный src/data/courseData.ts: ${t.id}; ${t.lectureHours} лекционных часа; ${t.competencies.join(', ')}. Сведения сохранены из исходника.`,slideIds:slides.filter(s=>!s.task).map(s=>s.id),taskIds:slides.filter(s=>s.task).map(s=>s.task.id)});
  registry.push({id:t.id,title:t.sourceTitle,semester:t.semester,lectureHours:t.lectureHours,competencies:t.competencies,labNumbers:t.labNumbers,slides:slides.length,questions:t.questions.length,tasks:32,estimatedMinutes:Math.round(slides.reduce((n,s)=>n+notes[s.id].estimatedSeconds,0)/60)});
 }
+rewritePriority({course,notes,keys,questions,registry,mapping,links});
 const pack={schemaVersion:1,courseId:course.id,contentVersion:version,notes};
 write('public/course.json',course);write('public/teacher-notes.json',pack);write('private/teacher-pack.json',pack);
 write('public/assessment.json',{schemaVersion:1,courseId:course.id,contentVersion:version,mode:'autonomous-educational',keys});

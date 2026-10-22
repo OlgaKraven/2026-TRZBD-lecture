@@ -5809,7 +5809,7 @@
     "oldSlide": 2,
     "oldTitle": "От представлений и управления доступом к защищённому комплекту результатов",
     "newSlideIds": [
-      "s08-01-views-intro-2"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5818,7 +5818,7 @@
     "oldSlide": 6,
     "oldTitle": "Зачем эта тема нужна проекту",
     "newSlideIds": [
-      "s08-01-views-intro-6"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5827,7 +5827,7 @@
     "oldSlide": 7,
     "oldTitle": "Закрепить повторяющиеся контрольные и отчётные запросы в обоснованном наборе представлений MySQL 8.4",
     "newSlideIds": [
-      "s08-01-views-intro-7"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5836,7 +5836,7 @@
     "oldSlide": 8,
     "oldTitle": "Учебная сеть сервисных центров",
     "newSlideIds": [
-      "s08-01-views-intro-8"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5845,7 +5845,7 @@
     "oldSlide": 11,
     "oldTitle": "После занятия ты сможешь",
     "newSlideIds": [
-      "s08-01-views-intro-11"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5854,7 +5854,7 @@
     "oldSlide": 12,
     "oldTitle": "Когда представление делает проверку прозрачнее, а когда скрывает слишком сложную логику?",
     "newSlideIds": [
-      "s08-01-views-intro-12"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5863,7 +5863,7 @@
     "oldSlide": 10,
     "oldTitle": "Рабочая модель и безопасный пример",
     "newSlideIds": [
-      "s08-01-views-code"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5872,7 +5872,7 @@
     "oldSlide": 13,
     "oldTitle": "Назначение представления",
     "newSlideIds": [
-      "s08-01-views-q01-section"
+      "s08-01-views-content-meaning-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5881,7 +5881,7 @@
     "oldSlide": 14,
     "oldTitle": "Что означает «Назначение представления»",
     "newSlideIds": [
-      "s08-01-views-q01-concept"
+      "s08-01-views-content-meaning-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5890,7 +5890,7 @@
     "oldSlide": 15,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q01-rule"
+      "s08-01-views-content-meaning-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5899,7 +5899,7 @@
     "oldSlide": 16,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q01-example"
+      "s08-01-views-content-meaning-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5908,7 +5908,7 @@
     "oldSlide": 69,
     "oldTitle": "Назначение представления",
     "newSlideIds": [
-      "s08-01-views-q01-practice"
+      "s08-01-views-content-meaning-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5917,7 +5917,7 @@
     "oldSlide": 17,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q01-decision"
+      "s08-01-views-content-meaning-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5926,7 +5926,7 @@
     "oldSlide": 18,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q01-warning"
+      "s08-01-views-content-meaning-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5935,7 +5935,7 @@
     "oldSlide": 19,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q01-notebook"
+      "s08-01-views-content-meaning-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5944,7 +5944,7 @@
     "oldSlide": 20,
     "oldTitle": "Состав колонок",
     "newSlideIds": [
-      "s08-01-views-q02-section"
+      "s08-01-views-content-contract-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5953,7 +5953,7 @@
     "oldSlide": 21,
     "oldTitle": "Что означает «Состав колонок»",
     "newSlideIds": [
-      "s08-01-views-q02-concept"
+      "s08-01-views-content-contract-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5962,7 +5962,7 @@
     "oldSlide": 22,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q02-rule"
+      "s08-01-views-content-contract-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5971,7 +5971,7 @@
     "oldSlide": 23,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q02-example"
+      "s08-01-views-content-contract-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5980,7 +5980,7 @@
     "oldSlide": 70,
     "oldTitle": "Состав колонок",
     "newSlideIds": [
-      "s08-01-views-q02-practice"
+      "s08-01-views-content-contract-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5989,7 +5989,7 @@
     "oldSlide": 24,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q02-decision"
+      "s08-01-views-content-contract-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -5998,7 +5998,7 @@
     "oldSlide": 25,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q02-warning"
+      "s08-01-views-content-contract-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6007,7 +6007,7 @@
     "oldSlide": 26,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q02-notebook"
+      "s08-01-views-content-contract-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6016,7 +6016,7 @@
     "oldSlide": 27,
     "oldTitle": "Контрольное представление",
     "newSlideIds": [
-      "s08-01-views-q03-section"
+      "s08-01-views-content-control-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6025,7 +6025,7 @@
     "oldSlide": 28,
     "oldTitle": "Что означает «Контрольное представление»",
     "newSlideIds": [
-      "s08-01-views-q03-concept"
+      "s08-01-views-content-control-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6034,7 +6034,7 @@
     "oldSlide": 29,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q03-rule"
+      "s08-01-views-content-control-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6043,7 +6043,7 @@
     "oldSlide": 30,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q03-example"
+      "s08-01-views-content-control-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6052,7 +6052,7 @@
     "oldSlide": 71,
     "oldTitle": "Контрольное представление",
     "newSlideIds": [
-      "s08-01-views-q03-practice"
+      "s08-01-views-content-control-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6061,7 +6061,7 @@
     "oldSlide": 31,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q03-decision"
+      "s08-01-views-content-control-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6070,7 +6070,7 @@
     "oldSlide": 32,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q03-warning"
+      "s08-01-views-content-control-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6079,7 +6079,7 @@
     "oldSlide": 33,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q03-notebook"
+      "s08-01-views-content-control-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6088,7 +6088,7 @@
     "oldSlide": 34,
     "oldTitle": "Отчётное представление",
     "newSlideIds": [
-      "s08-01-views-q04-section"
+      "s08-01-views-content-report-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6097,7 +6097,7 @@
     "oldSlide": 35,
     "oldTitle": "Что означает «Отчётное представление»",
     "newSlideIds": [
-      "s08-01-views-q04-concept"
+      "s08-01-views-content-report-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6106,7 +6106,7 @@
     "oldSlide": 36,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q04-rule"
+      "s08-01-views-content-report-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6115,7 +6115,7 @@
     "oldSlide": 37,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q04-example"
+      "s08-01-views-content-report-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6124,7 +6124,7 @@
     "oldSlide": 72,
     "oldTitle": "Отчётное представление",
     "newSlideIds": [
-      "s08-01-views-q04-practice"
+      "s08-01-views-content-report-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6133,7 +6133,7 @@
     "oldSlide": 38,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q04-decision"
+      "s08-01-views-content-report-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6142,7 +6142,7 @@
     "oldSlide": 39,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q04-warning"
+      "s08-01-views-content-report-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6151,7 +6151,7 @@
     "oldSlide": 40,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q04-notebook"
+      "s08-01-views-content-report-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6160,7 +6160,7 @@
     "oldSlide": 41,
     "oldTitle": "Соединения и агрегаты",
     "newSlideIds": [
-      "s08-01-views-q05-section"
+      "s08-01-views-content-joins-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6169,7 +6169,7 @@
     "oldSlide": 42,
     "oldTitle": "Что означает «Соединения и агрегаты»",
     "newSlideIds": [
-      "s08-01-views-q05-concept"
+      "s08-01-views-content-joins-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6178,7 +6178,7 @@
     "oldSlide": 43,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q05-rule"
+      "s08-01-views-content-joins-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6187,7 +6187,7 @@
     "oldSlide": 44,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q05-example"
+      "s08-01-views-content-joins-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6196,7 +6196,7 @@
     "oldSlide": 73,
     "oldTitle": "Соединения и агрегаты",
     "newSlideIds": [
-      "s08-01-views-q05-practice"
+      "s08-01-views-content-joins-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6205,7 +6205,7 @@
     "oldSlide": 45,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q05-decision"
+      "s08-01-views-content-joins-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6214,7 +6214,7 @@
     "oldSlide": 46,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q05-warning"
+      "s08-01-views-content-joins-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6223,7 +6223,7 @@
     "oldSlide": 47,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q05-notebook"
+      "s08-01-views-content-joins-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6232,7 +6232,7 @@
     "oldSlide": 48,
     "oldTitle": "SQL SECURITY",
     "newSlideIds": [
-      "s08-01-views-q06-section"
+      "s08-01-views-content-security-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6241,7 +6241,7 @@
     "oldSlide": 49,
     "oldTitle": "Что означает «SQL SECURITY»",
     "newSlideIds": [
-      "s08-01-views-q06-concept"
+      "s08-01-views-content-security-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6250,7 +6250,7 @@
     "oldSlide": 50,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q06-rule"
+      "s08-01-views-content-security-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6259,7 +6259,7 @@
     "oldSlide": 51,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q06-example"
+      "s08-01-views-content-security-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6268,7 +6268,7 @@
     "oldSlide": 74,
     "oldTitle": "SQL SECURITY",
     "newSlideIds": [
-      "s08-01-views-q06-practice"
+      "s08-01-views-content-security-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6277,7 +6277,7 @@
     "oldSlide": 52,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q06-decision"
+      "s08-01-views-content-security-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6286,7 +6286,7 @@
     "oldSlide": 53,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q06-warning"
+      "s08-01-views-content-security-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6295,7 +6295,7 @@
     "oldSlide": 54,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q06-notebook"
+      "s08-01-views-content-security-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6304,7 +6304,7 @@
     "oldSlide": 55,
     "oldTitle": "Изменяемость",
     "newSlideIds": [
-      "s08-01-views-q07-section"
+      "s08-01-views-content-updates-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6313,7 +6313,7 @@
     "oldSlide": 56,
     "oldTitle": "Что означает «Изменяемость»",
     "newSlideIds": [
-      "s08-01-views-q07-concept"
+      "s08-01-views-content-updates-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6322,7 +6322,7 @@
     "oldSlide": 57,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q07-rule"
+      "s08-01-views-content-updates-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6331,7 +6331,7 @@
     "oldSlide": 58,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q07-example"
+      "s08-01-views-content-updates-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6340,7 +6340,7 @@
     "oldSlide": 75,
     "oldTitle": "Изменяемость",
     "newSlideIds": [
-      "s08-01-views-q07-practice"
+      "s08-01-views-content-updates-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6349,7 +6349,7 @@
     "oldSlide": 59,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q07-decision"
+      "s08-01-views-content-updates-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6358,7 +6358,7 @@
     "oldSlide": 60,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q07-warning"
+      "s08-01-views-content-updates-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6367,7 +6367,7 @@
     "oldSlide": 61,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q07-notebook"
+      "s08-01-views-content-updates-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6376,7 +6376,7 @@
     "oldSlide": 62,
     "oldTitle": "Реестр представлений",
     "newSlideIds": [
-      "s08-01-views-q08-section"
+      "s08-01-views-content-register-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6385,7 +6385,7 @@
     "oldSlide": 63,
     "oldTitle": "Что означает «Реестр представлений»",
     "newSlideIds": [
-      "s08-01-views-q08-concept"
+      "s08-01-views-content-register-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6394,7 +6394,7 @@
     "oldSlide": 64,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-01-views-q08-rule"
+      "s08-01-views-content-register-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6403,7 +6403,7 @@
     "oldSlide": 65,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-01-views-q08-example"
+      "s08-01-views-content-register-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6412,7 +6412,7 @@
     "oldSlide": 76,
     "oldTitle": "Реестр представлений",
     "newSlideIds": [
-      "s08-01-views-q08-practice"
+      "s08-01-views-content-register-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6421,7 +6421,7 @@
     "oldSlide": 66,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-01-views-q08-decision"
+      "s08-01-views-content-register-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6430,7 +6430,7 @@
     "oldSlide": 67,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-01-views-q08-warning"
+      "s08-01-views-content-register-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6439,7 +6439,7 @@
     "oldSlide": 68,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-01-views-q08-notebook"
+      "s08-01-views-content-register-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6448,7 +6448,7 @@
     "oldSlide": 83,
     "oldTitle": "От исходных условий к проверенному артефакту",
     "newSlideIds": [
-      "s08-01-views-summary-0"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6457,7 +6457,7 @@
     "oldSlide": 83,
     "oldTitle": "От исходных условий к проверенному артефакту",
     "newSlideIds": [
-      "s08-01-views-summary-1"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6466,7 +6466,7 @@
     "oldSlide": 84,
     "oldTitle": "реестр представлений с назначением, колонками, SQL и контрольными примерами",
     "newSlideIds": [
-      "s08-01-views-next"
+      "s08-01-views-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6484,10 +6484,7 @@
     "oldSlide": 77,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-01-views-q01-T01-slide",
-      "s08-01-views-q01-T02-slide",
-      "s08-01-views-q01-T03-slide",
-      "s08-01-views-q01-T04-slide"
+      "s08-01-views-content-meaning-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -6496,10 +6493,7 @@
     "oldSlide": 78,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-01-views-q02-T01-slide",
-      "s08-01-views-q02-T02-slide",
-      "s08-01-views-q02-T03-slide",
-      "s08-01-views-q02-T04-slide"
+      "s08-01-views-content-contract-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -6508,10 +6502,7 @@
     "oldSlide": 79,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-01-views-q03-T01-slide",
-      "s08-01-views-q03-T02-slide",
-      "s08-01-views-q03-T03-slide",
-      "s08-01-views-q03-T04-slide"
+      "s08-01-views-content-control-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -6520,10 +6511,7 @@
     "oldSlide": 80,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-01-views-q04-T01-slide",
-      "s08-01-views-q04-T02-slide",
-      "s08-01-views-q04-T03-slide",
-      "s08-01-views-q04-T04-slide"
+      "s08-01-views-content-report-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -6532,10 +6520,7 @@
     "oldSlide": 81,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-01-views-q05-T01-slide",
-      "s08-01-views-q05-T02-slide",
-      "s08-01-views-q05-T03-slide",
-      "s08-01-views-q05-T04-slide"
+      "s08-01-views-content-joins-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -6544,10 +6529,7 @@
     "oldSlide": 82,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-01-views-q06-T01-slide",
-      "s08-01-views-q06-T02-slide",
-      "s08-01-views-q06-T03-slide",
-      "s08-01-views-q06-T04-slide"
+      "s08-01-views-content-security-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -6628,7 +6610,7 @@
     "oldSlide": 2,
     "oldTitle": "От представлений и управления доступом к защищённому комплекту результатов",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-intro-2"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6637,7 +6619,7 @@
     "oldSlide": 6,
     "oldTitle": "Зачем эта тема нужна проекту",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-intro-6"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6646,7 +6628,7 @@
     "oldSlide": 7,
     "oldTitle": "Выполнить типовое изменение связанных строк в транзакции, оформить процедуру и проверить триггер журнала",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-intro-7"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6655,7 +6637,7 @@
     "oldSlide": 8,
     "oldTitle": "Учебная сеть сервисных центров",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-intro-8"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6664,7 +6646,7 @@
     "oldSlide": 11,
     "oldTitle": "После занятия ты сможешь",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-intro-11"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6673,7 +6655,7 @@
     "oldSlide": 12,
     "oldTitle": "Что должно произойти, если одна из связанных операций завершается ошибкой?",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-intro-12"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6682,7 +6664,7 @@
     "oldSlide": 10,
     "oldTitle": "Рабочая модель и безопасный пример",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-code"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6691,7 +6673,7 @@
     "oldSlide": 13,
     "oldTitle": "Граница транзакции",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-section"
+      "s08-02-coordinated-data-changes-content-boundary-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6700,7 +6682,7 @@
     "oldSlide": 14,
     "oldTitle": "Что означает «Граница транзакции»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-concept"
+      "s08-02-coordinated-data-changes-content-boundary-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6709,7 +6691,7 @@
     "oldSlide": 15,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-rule"
+      "s08-02-coordinated-data-changes-content-boundary-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6718,7 +6700,7 @@
     "oldSlide": 16,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-example"
+      "s08-02-coordinated-data-changes-content-boundary-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6727,7 +6709,7 @@
     "oldSlide": 69,
     "oldTitle": "Граница транзакции",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-practice"
+      "s08-02-coordinated-data-changes-content-boundary-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6736,7 +6718,7 @@
     "oldSlide": 17,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-decision"
+      "s08-02-coordinated-data-changes-content-boundary-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6745,7 +6727,7 @@
     "oldSlide": 18,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-warning"
+      "s08-02-coordinated-data-changes-content-boundary-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6754,7 +6736,7 @@
     "oldSlide": 19,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-notebook"
+      "s08-02-coordinated-data-changes-content-boundary-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6763,7 +6745,7 @@
     "oldSlide": 20,
     "oldTitle": "START TRANSACTION",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-section"
+      "s08-02-coordinated-data-changes-content-start-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6772,7 +6754,7 @@
     "oldSlide": 21,
     "oldTitle": "Что означает «START TRANSACTION»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-concept"
+      "s08-02-coordinated-data-changes-content-start-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6781,7 +6763,7 @@
     "oldSlide": 22,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-rule"
+      "s08-02-coordinated-data-changes-content-start-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6790,7 +6772,7 @@
     "oldSlide": 23,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-example"
+      "s08-02-coordinated-data-changes-content-start-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6799,7 +6781,7 @@
     "oldSlide": 70,
     "oldTitle": "START TRANSACTION",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-practice"
+      "s08-02-coordinated-data-changes-content-start-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6808,7 +6790,7 @@
     "oldSlide": 24,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-decision"
+      "s08-02-coordinated-data-changes-content-start-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6817,7 +6799,7 @@
     "oldSlide": 25,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-warning"
+      "s08-02-coordinated-data-changes-content-start-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6826,7 +6808,7 @@
     "oldSlide": 26,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-notebook"
+      "s08-02-coordinated-data-changes-content-start-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6835,7 +6817,7 @@
     "oldSlide": 27,
     "oldTitle": "COMMIT",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-section"
+      "s08-02-coordinated-data-changes-content-commit-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6844,7 +6826,7 @@
     "oldSlide": 28,
     "oldTitle": "Что означает «COMMIT»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-concept"
+      "s08-02-coordinated-data-changes-content-commit-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6853,7 +6835,7 @@
     "oldSlide": 29,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-rule"
+      "s08-02-coordinated-data-changes-content-commit-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6862,7 +6844,7 @@
     "oldSlide": 30,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-example"
+      "s08-02-coordinated-data-changes-content-commit-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6871,7 +6853,7 @@
     "oldSlide": 71,
     "oldTitle": "COMMIT",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-practice"
+      "s08-02-coordinated-data-changes-content-commit-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6880,7 +6862,7 @@
     "oldSlide": 31,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-decision"
+      "s08-02-coordinated-data-changes-content-commit-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6889,7 +6871,7 @@
     "oldSlide": 32,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-warning"
+      "s08-02-coordinated-data-changes-content-commit-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6898,7 +6880,7 @@
     "oldSlide": 33,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-notebook"
+      "s08-02-coordinated-data-changes-content-commit-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6907,7 +6889,7 @@
     "oldSlide": 34,
     "oldTitle": "ROLLBACK",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-section"
+      "s08-02-coordinated-data-changes-content-errors-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6916,7 +6898,7 @@
     "oldSlide": 35,
     "oldTitle": "Что означает «ROLLBACK»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-concept"
+      "s08-02-coordinated-data-changes-content-errors-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6925,7 +6907,7 @@
     "oldSlide": 36,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-rule"
+      "s08-02-coordinated-data-changes-content-errors-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6934,7 +6916,7 @@
     "oldSlide": 37,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-example"
+      "s08-02-coordinated-data-changes-content-errors-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6943,7 +6925,7 @@
     "oldSlide": 72,
     "oldTitle": "ROLLBACK",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-practice"
+      "s08-02-coordinated-data-changes-content-errors-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6952,7 +6934,7 @@
     "oldSlide": 38,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-decision"
+      "s08-02-coordinated-data-changes-content-errors-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6961,7 +6943,7 @@
     "oldSlide": 39,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-warning"
+      "s08-02-coordinated-data-changes-content-errors-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6970,7 +6952,7 @@
     "oldSlide": 40,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-notebook"
+      "s08-02-coordinated-data-changes-content-errors-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6979,7 +6961,7 @@
     "oldSlide": 41,
     "oldTitle": "Процедура изменения",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-section"
+      "s08-02-coordinated-data-changes-content-procedure-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6988,7 +6970,7 @@
     "oldSlide": 42,
     "oldTitle": "Что означает «Процедура изменения»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-concept"
+      "s08-02-coordinated-data-changes-content-procedure-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -6997,7 +6979,7 @@
     "oldSlide": 43,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-rule"
+      "s08-02-coordinated-data-changes-content-procedure-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7006,7 +6988,7 @@
     "oldSlide": 44,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-example"
+      "s08-02-coordinated-data-changes-content-procedure-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7015,7 +6997,7 @@
     "oldSlide": 73,
     "oldTitle": "Процедура изменения",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-practice"
+      "s08-02-coordinated-data-changes-content-procedure-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7024,7 +7006,7 @@
     "oldSlide": 45,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-decision"
+      "s08-02-coordinated-data-changes-content-procedure-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7033,7 +7015,7 @@
     "oldSlide": 46,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-warning"
+      "s08-02-coordinated-data-changes-content-procedure-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7042,7 +7024,7 @@
     "oldSlide": 47,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-notebook"
+      "s08-02-coordinated-data-changes-content-procedure-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7051,7 +7033,7 @@
     "oldSlide": 48,
     "oldTitle": "Проверка параметров",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-section"
+      "s08-02-coordinated-data-changes-content-parameters-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7060,7 +7042,7 @@
     "oldSlide": 49,
     "oldTitle": "Что означает «Проверка параметров»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-concept"
+      "s08-02-coordinated-data-changes-content-parameters-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7069,7 +7051,7 @@
     "oldSlide": 50,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-rule"
+      "s08-02-coordinated-data-changes-content-parameters-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7078,7 +7060,7 @@
     "oldSlide": 51,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-example"
+      "s08-02-coordinated-data-changes-content-parameters-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7087,7 +7069,7 @@
     "oldSlide": 74,
     "oldTitle": "Проверка параметров",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-practice"
+      "s08-02-coordinated-data-changes-content-parameters-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7096,7 +7078,7 @@
     "oldSlide": 52,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-decision"
+      "s08-02-coordinated-data-changes-content-parameters-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7105,7 +7087,7 @@
     "oldSlide": 53,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-warning"
+      "s08-02-coordinated-data-changes-content-parameters-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7114,7 +7096,7 @@
     "oldSlide": 54,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-notebook"
+      "s08-02-coordinated-data-changes-content-parameters-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7123,7 +7105,7 @@
     "oldSlide": 55,
     "oldTitle": "Триггер журнала",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-section"
+      "s08-02-coordinated-data-changes-content-trigger-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7132,7 +7114,7 @@
     "oldSlide": 56,
     "oldTitle": "Что означает «Триггер журнала»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-concept"
+      "s08-02-coordinated-data-changes-content-trigger-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7141,7 +7123,7 @@
     "oldSlide": 57,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-rule"
+      "s08-02-coordinated-data-changes-content-trigger-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7150,7 +7132,7 @@
     "oldSlide": 58,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-example"
+      "s08-02-coordinated-data-changes-content-trigger-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7159,7 +7141,7 @@
     "oldSlide": 75,
     "oldTitle": "Триггер журнала",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-practice"
+      "s08-02-coordinated-data-changes-content-trigger-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7168,7 +7150,7 @@
     "oldSlide": 59,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-decision"
+      "s08-02-coordinated-data-changes-content-trigger-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7177,7 +7159,7 @@
     "oldSlide": 60,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-warning"
+      "s08-02-coordinated-data-changes-content-trigger-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7186,7 +7168,7 @@
     "oldSlide": 61,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q07-notebook"
+      "s08-02-coordinated-data-changes-content-trigger-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7195,7 +7177,7 @@
     "oldSlide": 62,
     "oldTitle": "Проверка согласованности",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-section"
+      "s08-02-coordinated-data-changes-content-proof-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7204,7 +7186,7 @@
     "oldSlide": 63,
     "oldTitle": "Что означает «Проверка согласованности»",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-concept"
+      "s08-02-coordinated-data-changes-content-proof-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7213,7 +7195,7 @@
     "oldSlide": 64,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-rule"
+      "s08-02-coordinated-data-changes-content-proof-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7222,7 +7204,7 @@
     "oldSlide": 65,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-example"
+      "s08-02-coordinated-data-changes-content-proof-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7231,7 +7213,7 @@
     "oldSlide": 76,
     "oldTitle": "Проверка согласованности",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-practice"
+      "s08-02-coordinated-data-changes-content-proof-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7240,7 +7222,7 @@
     "oldSlide": 66,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-decision"
+      "s08-02-coordinated-data-changes-content-proof-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7249,7 +7231,7 @@
     "oldSlide": 67,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-warning"
+      "s08-02-coordinated-data-changes-content-proof-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7258,7 +7240,7 @@
     "oldSlide": 68,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q08-notebook"
+      "s08-02-coordinated-data-changes-content-proof-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7267,7 +7249,7 @@
     "oldSlide": 83,
     "oldTitle": "От исходных условий к проверенному артефакту",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-summary-0"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7276,7 +7258,7 @@
     "oldSlide": 83,
     "oldTitle": "От исходных условий к проверенному артефакту",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-summary-1"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7285,7 +7267,7 @@
     "oldSlide": 84,
     "oldTitle": "процедура типового изменения, триггер журнала и протокол COMMIT/ROLLBACK",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-next"
+      "s08-02-coordinated-data-changes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7303,10 +7285,7 @@
     "oldSlide": 77,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q01-T01-slide",
-      "s08-02-coordinated-data-changes-q01-T02-slide",
-      "s08-02-coordinated-data-changes-q01-T03-slide",
-      "s08-02-coordinated-data-changes-q01-T04-slide"
+      "s08-02-coordinated-data-changes-content-boundary-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -7315,10 +7294,7 @@
     "oldSlide": 78,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q02-T01-slide",
-      "s08-02-coordinated-data-changes-q02-T02-slide",
-      "s08-02-coordinated-data-changes-q02-T03-slide",
-      "s08-02-coordinated-data-changes-q02-T04-slide"
+      "s08-02-coordinated-data-changes-content-start-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -7327,10 +7303,7 @@
     "oldSlide": 79,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q03-T01-slide",
-      "s08-02-coordinated-data-changes-q03-T02-slide",
-      "s08-02-coordinated-data-changes-q03-T03-slide",
-      "s08-02-coordinated-data-changes-q03-T04-slide"
+      "s08-02-coordinated-data-changes-content-commit-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -7339,10 +7312,7 @@
     "oldSlide": 80,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q04-T01-slide",
-      "s08-02-coordinated-data-changes-q04-T02-slide",
-      "s08-02-coordinated-data-changes-q04-T03-slide",
-      "s08-02-coordinated-data-changes-q04-T04-slide"
+      "s08-02-coordinated-data-changes-content-errors-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -7351,10 +7321,7 @@
     "oldSlide": 81,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q05-T01-slide",
-      "s08-02-coordinated-data-changes-q05-T02-slide",
-      "s08-02-coordinated-data-changes-q05-T03-slide",
-      "s08-02-coordinated-data-changes-q05-T04-slide"
+      "s08-02-coordinated-data-changes-content-procedure-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -7363,10 +7330,7 @@
     "oldSlide": 82,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-02-coordinated-data-changes-q06-T01-slide",
-      "s08-02-coordinated-data-changes-q06-T02-slide",
-      "s08-02-coordinated-data-changes-q06-T03-slide",
-      "s08-02-coordinated-data-changes-q06-T04-slide"
+      "s08-02-coordinated-data-changes-content-parameters-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -7447,7 +7411,7 @@
     "oldSlide": 2,
     "oldTitle": "От представлений и управления доступом к защищённому комплекту результатов",
     "newSlideIds": [
-      "s08-03-search-field-indexes-intro-2"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7456,7 +7420,7 @@
     "oldSlide": 6,
     "oldTitle": "Зачем эта тема нужна проекту",
     "newSlideIds": [
-      "s08-03-search-field-indexes-intro-6"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7465,7 +7429,7 @@
     "oldSlide": 7,
     "oldTitle": "Выбрать поля поиска по реальным запросам, создать минимальный набор индексов и сравнить планы до и после",
     "newSlideIds": [
-      "s08-03-search-field-indexes-intro-7"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7474,7 +7438,7 @@
     "oldSlide": 8,
     "oldTitle": "Учебная сеть сервисных центров",
     "newSlideIds": [
-      "s08-03-search-field-indexes-intro-8"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7483,7 +7447,7 @@
     "oldSlide": 11,
     "oldTitle": "После занятия ты сможешь",
     "newSlideIds": [
-      "s08-03-search-field-indexes-intro-11"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7492,7 +7456,7 @@
     "oldSlide": 12,
     "oldTitle": "Почему индекс на каждый столбец не является универсальным улучшением?",
     "newSlideIds": [
-      "s08-03-search-field-indexes-intro-12"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7501,7 +7465,7 @@
     "oldSlide": 10,
     "oldTitle": "Рабочая модель и безопасный пример",
     "newSlideIds": [
-      "s08-03-search-field-indexes-code"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7510,7 +7474,7 @@
     "oldSlide": 13,
     "oldTitle": "Поля поиска",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-section"
+      "s08-03-search-field-indexes-content-workload-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7519,7 +7483,7 @@
     "oldSlide": 14,
     "oldTitle": "Что означает «Поля поиска»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-concept"
+      "s08-03-search-field-indexes-content-workload-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7528,7 +7492,7 @@
     "oldSlide": 15,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-rule"
+      "s08-03-search-field-indexes-content-workload-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7537,7 +7501,7 @@
     "oldSlide": 16,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-example"
+      "s08-03-search-field-indexes-content-workload-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7546,7 +7510,7 @@
     "oldSlide": 69,
     "oldTitle": "Поля поиска",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-practice"
+      "s08-03-search-field-indexes-content-workload-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7555,7 +7519,7 @@
     "oldSlide": 17,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-decision"
+      "s08-03-search-field-indexes-content-workload-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7564,7 +7528,7 @@
     "oldSlide": 18,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-warning"
+      "s08-03-search-field-indexes-content-workload-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7573,7 +7537,7 @@
     "oldSlide": 19,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-notebook"
+      "s08-03-search-field-indexes-content-workload-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7582,7 +7546,7 @@
     "oldSlide": 20,
     "oldTitle": "Избирательность",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-section"
+      "s08-03-search-field-indexes-content-selectivity-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7591,7 +7555,7 @@
     "oldSlide": 21,
     "oldTitle": "Что означает «Избирательность»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-concept"
+      "s08-03-search-field-indexes-content-selectivity-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7600,7 +7564,7 @@
     "oldSlide": 22,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-rule"
+      "s08-03-search-field-indexes-content-selectivity-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7609,7 +7573,7 @@
     "oldSlide": 23,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-example"
+      "s08-03-search-field-indexes-content-selectivity-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7618,7 +7582,7 @@
     "oldSlide": 70,
     "oldTitle": "Избирательность",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-practice"
+      "s08-03-search-field-indexes-content-selectivity-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7627,7 +7591,7 @@
     "oldSlide": 24,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-decision"
+      "s08-03-search-field-indexes-content-selectivity-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7636,7 +7600,7 @@
     "oldSlide": 25,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-warning"
+      "s08-03-search-field-indexes-content-selectivity-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7645,7 +7609,7 @@
     "oldSlide": 26,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-notebook"
+      "s08-03-search-field-indexes-content-selectivity-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7654,7 +7618,7 @@
     "oldSlide": 27,
     "oldTitle": "Составной индекс",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-section"
+      "s08-03-search-field-indexes-content-prefix-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7663,7 +7627,7 @@
     "oldSlide": 28,
     "oldTitle": "Что означает «Составной индекс»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-concept"
+      "s08-03-search-field-indexes-content-prefix-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7672,7 +7636,7 @@
     "oldSlide": 29,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-rule"
+      "s08-03-search-field-indexes-content-prefix-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7681,7 +7645,7 @@
     "oldSlide": 30,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-example"
+      "s08-03-search-field-indexes-content-prefix-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7690,7 +7654,7 @@
     "oldSlide": 71,
     "oldTitle": "Составной индекс",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-practice"
+      "s08-03-search-field-indexes-content-prefix-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7699,7 +7663,7 @@
     "oldSlide": 31,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-decision"
+      "s08-03-search-field-indexes-content-prefix-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7708,7 +7672,7 @@
     "oldSlide": 32,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-warning"
+      "s08-03-search-field-indexes-content-prefix-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7717,7 +7681,7 @@
     "oldSlide": 33,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-notebook"
+      "s08-03-search-field-indexes-content-prefix-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7726,7 +7690,7 @@
     "oldSlide": 34,
     "oldTitle": "Внешние ключи и уникальность",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-section"
+      "s08-03-search-field-indexes-content-existing-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7735,7 +7699,7 @@
     "oldSlide": 35,
     "oldTitle": "Что означает «Внешние ключи и уникальность»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-concept"
+      "s08-03-search-field-indexes-content-existing-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7744,7 +7708,7 @@
     "oldSlide": 36,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-rule"
+      "s08-03-search-field-indexes-content-existing-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7753,7 +7717,7 @@
     "oldSlide": 37,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-example"
+      "s08-03-search-field-indexes-content-existing-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7762,7 +7726,7 @@
     "oldSlide": 72,
     "oldTitle": "Внешние ключи и уникальность",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-practice"
+      "s08-03-search-field-indexes-content-existing-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7771,7 +7735,7 @@
     "oldSlide": 38,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-decision"
+      "s08-03-search-field-indexes-content-existing-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7780,7 +7744,7 @@
     "oldSlide": 39,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-warning"
+      "s08-03-search-field-indexes-content-existing-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7789,7 +7753,7 @@
     "oldSlide": 40,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-notebook"
+      "s08-03-search-field-indexes-content-existing-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7798,7 +7762,7 @@
     "oldSlide": 41,
     "oldTitle": "CREATE INDEX",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-section"
+      "s08-03-search-field-indexes-content-create-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7807,7 +7771,7 @@
     "oldSlide": 42,
     "oldTitle": "Что означает «CREATE INDEX»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-concept"
+      "s08-03-search-field-indexes-content-create-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7816,7 +7780,7 @@
     "oldSlide": 43,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-rule"
+      "s08-03-search-field-indexes-content-create-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7825,7 +7789,7 @@
     "oldSlide": 44,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-example"
+      "s08-03-search-field-indexes-content-create-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7834,7 +7798,7 @@
     "oldSlide": 73,
     "oldTitle": "CREATE INDEX",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-practice"
+      "s08-03-search-field-indexes-content-create-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7843,7 +7807,7 @@
     "oldSlide": 45,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-decision"
+      "s08-03-search-field-indexes-content-create-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7852,7 +7816,7 @@
     "oldSlide": 46,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-warning"
+      "s08-03-search-field-indexes-content-create-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7861,7 +7825,7 @@
     "oldSlide": 47,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-notebook"
+      "s08-03-search-field-indexes-content-create-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7870,7 +7834,7 @@
     "oldSlide": 48,
     "oldTitle": "EXPLAIN до и после",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-section"
+      "s08-03-search-field-indexes-content-plans-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7879,7 +7843,7 @@
     "oldSlide": 49,
     "oldTitle": "Что означает «EXPLAIN до и после»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-concept"
+      "s08-03-search-field-indexes-content-plans-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7888,7 +7852,7 @@
     "oldSlide": 50,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-rule"
+      "s08-03-search-field-indexes-content-plans-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7897,7 +7861,7 @@
     "oldSlide": 51,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-example"
+      "s08-03-search-field-indexes-content-plans-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7906,7 +7870,7 @@
     "oldSlide": 74,
     "oldTitle": "EXPLAIN до и после",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-practice"
+      "s08-03-search-field-indexes-content-plans-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7915,7 +7879,7 @@
     "oldSlide": 52,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-decision"
+      "s08-03-search-field-indexes-content-plans-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7924,7 +7888,7 @@
     "oldSlide": 53,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-warning"
+      "s08-03-search-field-indexes-content-plans-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7933,7 +7897,7 @@
     "oldSlide": 54,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-notebook"
+      "s08-03-search-field-indexes-content-plans-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7942,7 +7906,7 @@
     "oldSlide": 55,
     "oldTitle": "Цена индекса",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-section"
+      "s08-03-search-field-indexes-content-cost-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7951,7 +7915,7 @@
     "oldSlide": 56,
     "oldTitle": "Что означает «Цена индекса»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-concept"
+      "s08-03-search-field-indexes-content-cost-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7960,7 +7924,7 @@
     "oldSlide": 57,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-rule"
+      "s08-03-search-field-indexes-content-cost-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7969,7 +7933,7 @@
     "oldSlide": 58,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-example"
+      "s08-03-search-field-indexes-content-cost-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7978,7 +7942,7 @@
     "oldSlide": 75,
     "oldTitle": "Цена индекса",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-practice"
+      "s08-03-search-field-indexes-content-cost-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7987,7 +7951,7 @@
     "oldSlide": 59,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-decision"
+      "s08-03-search-field-indexes-content-cost-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -7996,7 +7960,7 @@
     "oldSlide": 60,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-warning"
+      "s08-03-search-field-indexes-content-cost-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8005,7 +7969,7 @@
     "oldSlide": 61,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q07-notebook"
+      "s08-03-search-field-indexes-content-cost-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8014,7 +7978,7 @@
     "oldSlide": 62,
     "oldTitle": "Реестр индексов",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-section"
+      "s08-03-search-field-indexes-content-index-register-section"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8023,7 +7987,7 @@
     "oldSlide": 63,
     "oldTitle": "Что означает «Реестр индексов»",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-concept"
+      "s08-03-search-field-indexes-content-index-register-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8032,7 +7996,7 @@
     "oldSlide": 64,
     "oldTitle": "Принцип работы",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-rule"
+      "s08-03-search-field-indexes-content-index-register-concept"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8041,7 +8005,7 @@
     "oldSlide": 65,
     "oldTitle": "Ситуация в учебном кейсе",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-example"
+      "s08-03-search-field-indexes-content-index-register-example"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8050,7 +8014,7 @@
     "oldSlide": 76,
     "oldTitle": "Реестр индексов",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-practice"
+      "s08-03-search-field-indexes-content-index-register-T01-slide"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8059,7 +8023,7 @@
     "oldSlide": 66,
     "oldTitle": "Проектное решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-decision"
+      "s08-03-search-field-indexes-content-index-register-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8068,7 +8032,7 @@
     "oldSlide": 67,
     "oldTitle": "Что часто делают неправильно",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-warning"
+      "s08-03-search-field-indexes-content-index-register-review"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8077,7 +8041,7 @@
     "oldSlide": 68,
     "oldTitle": "Критерий качества",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q08-notebook"
+      "s08-03-search-field-indexes-content-index-register-notebook"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8086,7 +8050,7 @@
     "oldSlide": 83,
     "oldTitle": "От исходных условий к проверенному артефакту",
     "newSlideIds": [
-      "s08-03-search-field-indexes-summary-0"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8095,7 +8059,7 @@
     "oldSlide": 83,
     "oldTitle": "От исходных условий к проверенному артефакту",
     "newSlideIds": [
-      "s08-03-search-field-indexes-summary-1"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8104,7 +8068,7 @@
     "oldSlide": 84,
     "oldTitle": "реестр индексов с обоснованием и сравнением EXPLAIN",
     "newSlideIds": [
-      "s08-03-search-field-indexes-next"
+      "s08-03-search-field-indexes-content-context"
     ],
     "action": "Перенесено в макет шаблона; добавлена контекстная заметка"
   },
@@ -8122,10 +8086,7 @@
     "oldSlide": 77,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q01-T01-slide",
-      "s08-03-search-field-indexes-q01-T02-slide",
-      "s08-03-search-field-indexes-q01-T03-slide",
-      "s08-03-search-field-indexes-q01-T04-slide"
+      "s08-03-search-field-indexes-content-workload-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -8134,10 +8095,7 @@
     "oldSlide": 78,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q02-T01-slide",
-      "s08-03-search-field-indexes-q02-T02-slide",
-      "s08-03-search-field-indexes-q02-T03-slide",
-      "s08-03-search-field-indexes-q02-T04-slide"
+      "s08-03-search-field-indexes-content-selectivity-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -8146,10 +8104,7 @@
     "oldSlide": 79,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q03-T01-slide",
-      "s08-03-search-field-indexes-q03-T02-slide",
-      "s08-03-search-field-indexes-q03-T03-slide",
-      "s08-03-search-field-indexes-q03-T04-slide"
+      "s08-03-search-field-indexes-content-prefix-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -8158,10 +8113,7 @@
     "oldSlide": 80,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q04-T01-slide",
-      "s08-03-search-field-indexes-q04-T02-slide",
-      "s08-03-search-field-indexes-q04-T03-slide",
-      "s08-03-search-field-indexes-q04-T04-slide"
+      "s08-03-search-field-indexes-content-existing-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -8170,10 +8122,7 @@
     "oldSlide": 81,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q05-T01-slide",
-      "s08-03-search-field-indexes-q05-T02-slide",
-      "s08-03-search-field-indexes-q05-T03-slide",
-      "s08-03-search-field-indexes-q05-T04-slide"
+      "s08-03-search-field-indexes-content-create-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },
@@ -8182,10 +8131,7 @@
     "oldSlide": 82,
     "oldTitle": "Проверь решение",
     "newSlideIds": [
-      "s08-03-search-field-indexes-q06-T01-slide",
-      "s08-03-search-field-indexes-q06-T02-slide",
-      "s08-03-search-field-indexes-q06-T03-slide",
-      "s08-03-search-field-indexes-q06-T04-slide"
+      "s08-03-search-field-indexes-content-plans-T01-slide"
     ],
     "action": "Итоговый тест заменён блоком четырёх типов самопроверки; исходный тест сохранён в authoring/legacy-deck.ts"
   },

@@ -1,0 +1,106 @@
+{
+  "version": "8.4.13",
+  "headers": {
+    "branches": 3,
+    "clients": 2,
+    "requests": 6
+  },
+  "checks": [
+    {
+      "name": "01_schema.sql",
+      "status": "passed"
+    },
+    {
+      "name": "02_load.sql",
+      "status": "passed"
+    },
+    {
+      "name": "03_verify.sql",
+      "status": "passed"
+    },
+    {
+      "name": "04_objects.sql",
+      "status": "passed"
+    },
+    {
+      "name": "05_roles.sql",
+      "status": "passed"
+    },
+    {
+      "name": "баланс 6 = 3 + 3",
+      "status": "passed"
+    },
+    {
+      "name": "причины отклонений",
+      "status": "passed"
+    },
+    {
+      "name": "четыре факта деталей",
+      "status": "passed"
+    },
+    {
+      "name": "исходное view: R101 и R102",
+      "status": "passed"
+    },
+    {
+      "name": "view видит изменение и откат",
+      "status": "passed"
+    },
+    {
+      "name": "агрегат B03 = 0",
+      "status": "passed"
+    },
+    {
+      "name": "контрольное view находит неверного существующего родителя",
+      "status": "passed"
+    },
+    {
+      "name": "агрегированный view не обновляется",
+      "status": "passed"
+    },
+    {
+      "name": "SELECT * фиксируется при CREATE VIEW",
+      "status": "passed"
+    },
+    {
+      "name": "ошибка FK не отменяет предыдущий оператор сама",
+      "status": "passed"
+    },
+    {
+      "name": "процедура: отказ после UPDATE откатывает всё",
+      "status": "passed"
+    },
+    {
+      "name": "процедура: неизвестная и закрытая заявки",
+      "status": "passed"
+    },
+    {
+      "name": "триггер игнорирует изменение другого поля",
+      "status": "passed"
+    },
+    {
+      "name": "успешный CALL: статус, работа и журнал",
+      "status": "passed"
+    },
+    {
+      "name": "viewer: активная роль и разрешённое view",
+      "status": "passed"
+    },
+    {
+      "name": "viewer: запрещены базовая таблица и UPDATE",
+      "status": "passed"
+    },
+    {
+      "name": "INVOKER без базовых прав даёт отказ",
+      "status": "passed"
+    },
+    {
+      "name": "план до и после: составной индекс выбран",
+      "status": "passed"
+    }
+  ],
+  "plans": {
+    "before": "service_training.requests_plan\tanalyze\tstatus\tOK\n1\tSIMPLE\trequests_plan\tNULL\tALL\tNULL\tNULL\tNULL\tNULL\t10093\t1.00\tUsing where; Using filesort",
+    "after": "1\tSIMPLE\trequests_plan\tNULL\tref\tidx_plan_branch_status_date\tidx_plan_branch_status_date\t8\tconst,const\t33\t100.00\tNULL"
+  }
+}

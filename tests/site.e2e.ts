@@ -17,7 +17,7 @@ test('notes load without password and preserve local edits',async({page,context}
  await page.goto(`./?mode=presenter&lecture=${l.id}&slide=${slide.id}&session=qa-notes`)
  await expect(page.getByRole('tabpanel')).toContainText('Это объяснение нужно')
  await expect(page.getByRole('dialog')).toHaveCount(0)
- expect(await page.evaluate(key=>Object.keys(JSON.parse(localStorage.getItem(key)||'{}')).length,key)).toBe(1495)
+ expect(await page.evaluate(key=>Object.keys(JSON.parse(localStorage.getItem(key)||'{}')).length,key)).toBe(c.lectures.reduce((sum:number,l:{slides:unknown[]})=>sum+l.slides.length,0))
  await page.evaluate(({key,id})=>{const n=JSON.parse(localStorage.getItem(key)||'{}');n[id].script='Проверочная локальная заметка';localStorage.setItem(key,JSON.stringify(n))},{key,id:slide.id})
  await page.reload();await expect(page.getByRole('tabpanel')).toContainText('Проверочная локальная заметка')
  const audience=await context.newPage();const requests:string[]=[];audience.on('request',r=>requests.push(r.url()))

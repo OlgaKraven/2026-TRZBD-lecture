@@ -1,0 +1,45 @@
+{
+  "contentVersion": "trzbd-2026.10.22-content-8-10-r2",
+  "slidesChecked": 255,
+  "lectures": [
+    {
+      "id": "s08-01-views",
+      "slides": 88
+    },
+    {
+      "id": "s08-02-coordinated-data-changes",
+      "slides": 83
+    },
+    {
+      "id": "s08-03-search-field-indexes",
+      "slides": 84
+    }
+  ],
+  "taskTypesScored": 4,
+  "legacyRedirect": "passed",
+  "mobileContent": "passed",
+  "presenter": [
+    {
+      "lecture": "s08-01-views",
+      "slide": "s08-01-views-content-meaning-concept",
+      "script": "matches bundled TeacherPack"
+    },
+    {
+      "lecture": "s08-02-coordinated-data-changes",
+      "slide": "s08-02-coordinated-data-changes-content-boundary-concept",
+      "script": "matches bundled TeacherPack"
+    },
+    {
+      "lecture": "s08-03-search-field-indexes",
+      "slide": "s08-03-search-field-indexes-content-workload-concept",
+      "script": "matches bundled TeacherPack"
+    }
+  ],
+  "download": {
+    "filename": "trzbd-teacher-notes.json",
+    "contentVersion": "trzbd-2026.10.22-content-8-10-r2",
+    "totalNotes": 1405,
+    "priorityNotesMatched": 255
+  },
+  "errors": []
+}
