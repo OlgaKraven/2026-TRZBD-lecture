@@ -25,11 +25,12 @@ test('notes load without password and preserve local edits',async({page,context}
  const audience=await context.newPage();const requests:string[]=[];audience.on('request',r=>requests.push(r.url()))
  await audience.goto(`./?mode=audience&lecture=${l.id}&session=qa-notes`);await expect(audience.locator('.slide-frame')).toBeVisible();expect(requests.filter(u=>u.includes('teacher-notes'))).toHaveLength(0)
 })
-test('mobile submits without exposing answer or result',async({page})=>{
+test('mobile stores reply and opens its explanation only on request',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto(`./?lecture=${l.id}&slide=${task.id}`)
  await page.getByRole('radio').first().check();await page.getByRole('button',{name:'Проверить',exact:true}).click();await expect(page.getByText('Ответ сохранён',{exact:true})).toBeVisible();await expect(page.getByRole('button',{name:'Разбор ответа',exact:true})).toHaveCount(0)
  await page.reload();await expect(page.getByText('Ответ сохранён',{exact:true})).toBeVisible()
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true)
+ await page.getByRole('button',{name:'Пояснение к случаю',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('Правильный ответ и разбор')
 })
 test('student print contains slides without notes, answers or interactive forms',async({page})=>{
  await page.emulateMedia({media:'print'});await page.goto(`./?mode=print&scope=${l.id}`);await expect(page.locator('.print-page')).toHaveCount(l.slides.length)
