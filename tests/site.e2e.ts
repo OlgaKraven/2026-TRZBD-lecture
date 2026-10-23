@@ -114,6 +114,16 @@ test('all preserved pages fit printable frames with complete definitions and cod
  const overflow=await page.locator('.paper-content').evaluateAll(els=>els.filter(e=>e.scrollHeight>e.clientHeight+3).map(e=>({id:e.parentElement?.getAttribute('data-slide-id'),over:e.scrollHeight-e.clientHeight})))
  fs.mkdirSync('outputs/verification',{recursive:true});fs.writeFileSync('outputs/verification/layout-overflow.json',JSON.stringify(overflow,null,2))
  expect(overflow).toEqual([])
+ // The frame can fit while a nested code/table scroller hides the final rows.
+ await page.setViewportSize({width:1280,height:800})
+ const dense=c.lectures.flatMap((l:{id:string;slides:{id:string}[]})=>l.slides.filter(s=>/-(procedure-example|procedure-body-finish|trigger-example|insert-resolved|requests-ddl-end|index-register-example|matrix-example|final-run-example)$/.test(s.id)).map(s=>({lecture:l.id,id:s.id})))
+ for(const mode of ['viewer','presenter'])for(const s of dense){
+  await page.goto('./?'+new URLSearchParams({mode,lecture:s.lecture,slide:s.id}))
+  await expect(page.locator('.paper')).toHaveAttribute('data-slide-id',s.id)
+  const clipping=await page.locator('.paper-content').evaluate(e=>({outer:e.scrollHeight-e.clientHeight,inner:Array.from(e.querySelectorAll('pre,.table-scroll')).filter(x=>x.scrollHeight>x.clientHeight+3||x.scrollWidth>x.clientWidth+3).length}))
+  expect(clipping,s.id+' / '+mode).toEqual({outer:expect.any(Number),inner:0})
+  expect(clipping.outer,s.id+' / '+mode).toBeLessThanOrEqual(3)
+ }
 })
 
 test('transaction actions restore rows on undo and distinguish COMMIT from ROLLBACK',async({page})=>{

@@ -13,6 +13,7 @@
       "s08-01-views-content-meaning-reasoning-1",
       "s08-01-views-content-meaning-reasoning-2",
       "s08-01-views-content-meaning-reasoning-3",
+      "s08-01-views-content-view-owner-setup",
       "s08-01-views-content-meaning-example",
       "s08-01-views-content-meaning-example-walkthrough",
       "s08-01-views-content-meaning-result-step-1",
@@ -33,6 +34,7 @@
     ],
     "evidenceSlideIds": [
       "s08-01-views-content-meaning-concept",
+      "s08-01-views-content-view-owner-setup",
       "s08-01-views-content-meaning-example",
       "s08-01-views-content-meaning-example-walkthrough",
       "s08-01-views-content-meaning-result-step-1-walkthrough",
@@ -442,8 +444,12 @@
       "s08-02-coordinated-data-changes-content-procedure-reasoning-1",
       "s08-02-coordinated-data-changes-content-procedure-reasoning-2",
       "s08-02-coordinated-data-changes-content-procedure-reasoning-3",
+      "s08-02-coordinated-data-changes-content-procedure-create-start",
       "s08-02-coordinated-data-changes-content-procedure-example",
+      "s08-02-coordinated-data-changes-content-procedure-body-finish",
+      "s08-02-coordinated-data-changes-content-procedure-create-end",
       "s08-02-coordinated-data-changes-content-procedure-example-walkthrough",
+      "s08-02-coordinated-data-changes-content-procedure-call",
       "s08-02-coordinated-data-changes-content-procedure-review",
       "s08-02-coordinated-data-changes-content-procedure-T02-slide",
       "s08-02-coordinated-data-changes-content-procedure-T03-slide",
@@ -458,8 +464,12 @@
     ],
     "evidenceSlideIds": [
       "s08-02-coordinated-data-changes-content-procedure-concept",
+      "s08-02-coordinated-data-changes-content-procedure-create-start",
       "s08-02-coordinated-data-changes-content-procedure-example",
-      "s08-02-coordinated-data-changes-content-procedure-example-walkthrough"
+      "s08-02-coordinated-data-changes-content-procedure-body-finish",
+      "s08-02-coordinated-data-changes-content-procedure-create-end",
+      "s08-02-coordinated-data-changes-content-procedure-example-walkthrough",
+      "s08-02-coordinated-data-changes-content-procedure-call"
     ],
     "notebookId": "s08-02-coordinated-data-changes-content-procedure-notebook"
   },
@@ -757,6 +767,7 @@
       "s08-03-search-field-indexes-content-plans-reasoning-1",
       "s08-03-search-field-indexes-content-plans-reasoning-2",
       "s08-03-search-field-indexes-content-plans-reasoning-3",
+      "s08-03-search-field-indexes-content-plans-reset",
       "s08-03-search-field-indexes-content-plans-example",
       "s08-03-search-field-indexes-content-plans-example-walkthrough",
       "s08-03-search-field-indexes-content-plans-result",
@@ -775,6 +786,7 @@
     ],
     "evidenceSlideIds": [
       "s08-03-search-field-indexes-content-plans-concept",
+      "s08-03-search-field-indexes-content-plans-reset",
       "s08-03-search-field-indexes-content-plans-example",
       "s08-03-search-field-indexes-content-plans-example-walkthrough",
       "s08-03-search-field-indexes-content-plans-result-walkthrough"
@@ -1608,6 +1620,8 @@
       "s07-03-implement-table-set-content-order-reasoning-2",
       "s07-03-implement-table-set-content-order-example",
       "s07-03-implement-table-set-content-order-example-walkthrough",
+      "s07-03-implement-table-set-content-requests-ddl-start",
+      "s07-03-implement-table-set-content-requests-ddl-end",
       "s07-03-implement-table-set-content-order-review",
       "s07-03-implement-table-set-content-order-T02-slide",
       "s07-03-implement-table-set-content-order-T03-slide",
@@ -1623,7 +1637,9 @@
     "evidenceSlideIds": [
       "s07-03-implement-table-set-content-order-concept",
       "s07-03-implement-table-set-content-order-example",
-      "s07-03-implement-table-set-content-order-example-walkthrough"
+      "s07-03-implement-table-set-content-order-example-walkthrough",
+      "s07-03-implement-table-set-content-requests-ddl-start",
+      "s07-03-implement-table-set-content-requests-ddl-end"
     ],
     "notebookId": "s07-03-implement-table-set-content-order-notebook"
   },
@@ -2153,6 +2169,8 @@
       "s07-05-prepare-and-load-data-content-resolve-reasoning-2",
       "s07-05-prepare-and-load-data-content-resolve-example",
       "s07-05-prepare-and-load-data-content-resolve-example-walkthrough",
+      "s07-05-prepare-and-load-data-content-insert-resolved",
+      "s07-05-prepare-and-load-data-content-insert-result",
       "s07-05-prepare-and-load-data-content-resolve-review",
       "s07-05-prepare-and-load-data-content-resolve-T01-slide",
       "s07-05-prepare-and-load-data-content-resolve-T02-slide",
@@ -2168,7 +2186,9 @@
     "evidenceSlideIds": [
       "s07-05-prepare-and-load-data-content-resolve-concept",
       "s07-05-prepare-and-load-data-content-resolve-example",
-      "s07-05-prepare-and-load-data-content-resolve-example-walkthrough"
+      "s07-05-prepare-and-load-data-content-resolve-example-walkthrough",
+      "s07-05-prepare-and-load-data-content-insert-resolved",
+      "s07-05-prepare-and-load-data-content-insert-result"
     ],
     "notebookId": "s07-05-prepare-and-load-data-content-resolve-notebook"
   },
@@ -2286,6 +2306,7 @@
       "s07-06-validate-load-and-delivery-script-content-orphans-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-orphans-example",
       "s07-06-validate-load-and-delivery-script-content-orphans-example-walkthrough",
+      "s07-06-validate-load-and-delivery-script-content-compare-source-parent",
       "s07-06-validate-load-and-delivery-script-content-orphans-review",
       "s07-06-validate-load-and-delivery-script-content-orphans-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-orphans-T02-slide",
@@ -2301,7 +2322,8 @@
     "evidenceSlideIds": [
       "s07-06-validate-load-and-delivery-script-content-orphans-concept",
       "s07-06-validate-load-and-delivery-script-content-orphans-example",
-      "s07-06-validate-load-and-delivery-script-content-orphans-example-walkthrough"
+      "s07-06-validate-load-and-delivery-script-content-orphans-example-walkthrough",
+      "s07-06-validate-load-and-delivery-script-content-compare-source-parent"
     ],
     "notebookId": "s07-06-validate-load-and-delivery-script-content-orphans-notebook"
   },
@@ -2786,6 +2808,7 @@
       "s08-04-access-control-content-activation-concept",
       "s08-04-access-control-content-activation-reasoning-1",
       "s08-04-access-control-content-activation-reasoning-2",
+      "s08-04-access-control-content-role-user-setup",
       "s08-04-access-control-content-activation-example",
       "s08-04-access-control-content-activation-example-walkthrough",
       "s08-04-access-control-content-activation-review",
@@ -2802,6 +2825,7 @@
     ],
     "evidenceSlideIds": [
       "s08-04-access-control-content-activation-concept",
+      "s08-04-access-control-content-role-user-setup",
       "s08-04-access-control-content-activation-example",
       "s08-04-access-control-content-activation-example-walkthrough"
     ],
@@ -3123,6 +3147,8 @@
       "s08-05-backup-and-protection-content-restore-reasoning-2",
       "s08-05-backup-and-protection-content-restore-example",
       "s08-05-backup-and-protection-content-restore-example-walkthrough",
+      "s08-05-backup-and-protection-content-restore-connect",
+      "s08-05-backup-and-protection-content-restore-import",
       "s08-05-backup-and-protection-content-restore-review",
       "s08-05-backup-and-protection-content-restore-T01-slide",
       "s08-05-backup-and-protection-content-restore-T02-slide",
@@ -3138,7 +3164,9 @@
     "evidenceSlideIds": [
       "s08-05-backup-and-protection-content-restore-concept",
       "s08-05-backup-and-protection-content-restore-example",
-      "s08-05-backup-and-protection-content-restore-example-walkthrough"
+      "s08-05-backup-and-protection-content-restore-example-walkthrough",
+      "s08-05-backup-and-protection-content-restore-connect",
+      "s08-05-backup-and-protection-content-restore-import"
     ],
     "notebookId": "s08-05-backup-and-protection-content-restore-notebook"
   },
@@ -3392,6 +3420,7 @@
       "s08-06-results-package-content-scripts-reasoning-1",
       "s08-06-results-package-content-scripts-example",
       "s08-06-results-package-content-scripts-example-walkthrough",
+      "s08-06-results-package-content-delivery-state",
       "s08-06-results-package-content-scripts-review",
       "s08-06-results-package-content-scripts-T02-slide",
       "s08-06-results-package-content-scripts-T03-slide",
@@ -3407,7 +3436,8 @@
     "evidenceSlideIds": [
       "s08-06-results-package-content-scripts-concept",
       "s08-06-results-package-content-scripts-example",
-      "s08-06-results-package-content-scripts-example-walkthrough"
+      "s08-06-results-package-content-scripts-example-walkthrough",
+      "s08-06-results-package-content-delivery-state"
     ],
     "notebookId": "s08-06-results-package-content-scripts-notebook"
   },

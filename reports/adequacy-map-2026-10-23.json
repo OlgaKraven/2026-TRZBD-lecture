@@ -1,5 +1,5 @@
 {
-  "contentVersion": "trzbd-2026.10.23-student-review-r12",
+  "contentVersion": "trzbd-2026.10.23-independent-paths-r14",
   "scope": "13 lectures / 104 original questions; review of definitions, mechanisms, examples, independent cases and teacher text; not a claim of RPD compliance",
   "questions": [
     {
@@ -39,7 +39,8 @@
             "Приостановить зависимую загрузку"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -78,7 +79,8 @@
             "Сравнить два правила ключа"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -118,7 +120,8 @@
             "Сохранить причину отклонения"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -156,7 +159,8 @@
             "Сверить данные и поведение"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -196,7 +200,8 @@
             "Записать внутренний ключ заказа"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -234,7 +239,8 @@
             "Сохранить полный справочник"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -273,7 +279,8 @@
             "Сохранить раздельную диагностику"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -312,7 +319,8 @@
             "Связать итог с исходными строками"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -350,7 +358,8 @@
             "Зафиксировать определяющий ключ"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -388,7 +397,8 @@
             "Отклонить неподтверждённый тип"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -427,7 +437,8 @@
             "Записать количество в связь"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -466,7 +477,8 @@
             "Связать заявки с одним клиентом"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -505,7 +517,8 @@
             "Получить имена через два JOIN"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -542,7 +555,8 @@
             "Подготовить отдельное ограничение"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -582,7 +596,8 @@
             "Разрешить правильного клиента"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -621,7 +636,8 @@
             "Зафиксировать соответствие имён"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -660,7 +676,8 @@
             "Сверить созданный объект"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -699,7 +716,8 @@
             "Сохранить значимые нули"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -737,7 +755,8 @@
             "Сопоставить с выделением номеров"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -775,7 +794,8 @@
             "Остановить неверную вставку"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -813,7 +833,8 @@
             "Вывести нарушающие строки"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -851,7 +872,8 @@
             "Найти строки без nickname"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -891,6 +913,10 @@
             "Создать родителей раньше потомков"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s07-03-implement-table-set-content-requests-ddl-start",
+        "s07-03-implement-table-set-content-requests-ddl-end"
       ]
     },
     {
@@ -930,7 +956,8 @@
             "Сверить полный DDL по метаданным"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -969,7 +996,8 @@
             "Обновить связь на ER"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -1007,7 +1035,8 @@
             "Отразить отдельные свойства"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -1046,7 +1075,8 @@
             "Подписать минимумы связи"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -1085,7 +1115,8 @@
             "Назначить ключ позиции"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -1126,7 +1157,8 @@
             "Согласовать обязательность"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -1165,7 +1197,8 @@
             "Проверить предполагаемый FK к audit"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -1203,7 +1236,8 @@
             "Привязать ER к определению"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -1242,7 +1276,8 @@
             "Восстановить область схемы"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -1281,7 +1316,8 @@
             "Применить явное именное сопоставление"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -1319,7 +1355,8 @@
             "Отклонить синтаксически неверную запись"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -1358,7 +1395,8 @@
             "Сохранить причину отказа кода"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -1396,7 +1434,8 @@
             "Отделить конфликт от загрузки"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -1435,7 +1474,8 @@
             "Отклонить недопустимое количество"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -1473,7 +1513,8 @@
             "Загрузить сотрудника с FK"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -1512,6 +1553,10 @@
             "Не назначать произвольный FK"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s07-05-prepare-and-load-data-content-insert-resolved",
+        "s07-05-prepare-and-load-data-content-insert-result"
       ]
     },
     {
@@ -1550,7 +1595,8 @@
             "Найти строку без исхода"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -1589,7 +1635,8 @@
             "Найти лишние ключи"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -1626,7 +1673,8 @@
             "Вывести нарушение обязательности"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -1665,6 +1713,9 @@
             "Сверить бизнес-код с документом"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s07-06-validate-load-and-delivery-script-content-compare-source-parent"
       ]
     },
     {
@@ -1703,7 +1754,8 @@
             "Сохранить воспроизводимую диагностику"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -1742,7 +1794,8 @@
             "Выполнить маршрут по зависимостям"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -1780,7 +1833,8 @@
             "Развернуть текущий комплект"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -1819,7 +1873,8 @@
             "Сравнить предметный результат"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -1857,7 +1912,8 @@
             "Сохранить проверяемое свидетельство"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -1896,7 +1952,8 @@
             "Посчитать уникальные заявки"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -1941,7 +1998,8 @@
             "Сравнить состав результата"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -1979,7 +2037,8 @@
             "Вычесть ожидание из факта"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -2017,7 +2076,8 @@
             "Применить HAVING COUNT(*) > 1"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -2063,7 +2123,8 @@
             "Сравнить состав результата"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -2109,7 +2170,8 @@
             "Пересчитать агрегаты"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -2147,7 +2209,8 @@
             "Вернуть контракт одной строки на клиента"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -2186,7 +2249,8 @@
             "Сверить клиента с источником"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-01-views",
@@ -2229,6 +2293,9 @@
             "Повторно прочитать VIEW в новой транзакции"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s08-01-views-content-view-owner-setup"
       ]
     },
     {
@@ -2270,7 +2337,8 @@
             "Явно задать контракт колонок"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-01-views",
@@ -2311,7 +2379,8 @@
             "Выполнить отдельную проверку даты"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-01-views",
@@ -2352,7 +2421,8 @@
             "Считать правый ключ"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-01-views",
@@ -2393,7 +2463,8 @@
             "Агрегировать дочерние наборы отдельно"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-01-views",
@@ -2434,7 +2505,8 @@
             "Проверить внутренний контекст"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-01-views",
@@ -2474,7 +2546,8 @@
             "Направить вставку в базовый интерфейс"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-01-views",
@@ -2514,7 +2587,8 @@
             "Согласовать определителя и испытать чтение"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -2566,7 +2640,8 @@
             "Подтвердить COMMIT"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -2607,7 +2682,8 @@
             "Откатить независимую транзакцию A"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -2648,7 +2724,8 @@
             "Откатить невыполненное постусловие"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -2688,7 +2765,8 @@
             "Откатить всю операцию"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -2729,6 +2807,12 @@
             "Передать отказ вызывающему"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s08-02-coordinated-data-changes-content-procedure-create-start",
+        "s08-02-coordinated-data-changes-content-procedure-body-finish",
+        "s08-02-coordinated-data-changes-content-procedure-create-end",
+        "s08-02-coordinated-data-changes-content-procedure-call"
       ]
     },
     {
@@ -2769,7 +2853,8 @@
             "Остановить недопустимый переход"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -2809,7 +2894,8 @@
             "Откатить InnoDB-транзакцию"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -2861,7 +2947,8 @@
             "Подтвердить COMMIT"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -2901,7 +2988,8 @@
             "Проверить выбранный доступ"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -2955,7 +3043,8 @@
             "Рассчитать долю"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -2995,7 +3084,8 @@
             "Сопоставить с запросом по дате"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -3035,7 +3125,8 @@
             "Сопоставить новый индекс с доступом"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -3075,7 +3166,8 @@
             "Создать индекс отдельным этапом"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -3117,6 +3209,9 @@
             "Сопоставить с фактом и его единицей"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s08-03-search-field-indexes-content-plans-reset"
       ]
     },
     {
@@ -3158,7 +3253,8 @@
             "Принять решение по всей нагрузке"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -3198,7 +3294,8 @@
             "Заполнить проверяемый реестр"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-04-access-control",
@@ -3238,7 +3335,8 @@
             "Выдать право на нужный объект"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-04-access-control",
@@ -3278,6 +3376,9 @@
             "Активировать назначенную роль"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s08-04-access-control-content-role-user-setup"
       ]
     },
     {
@@ -3317,7 +3418,8 @@
             "Выдать минимальное разрешение"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-04-access-control",
@@ -3357,7 +3459,8 @@
             "Проверить оставшийся путь"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-04-access-control",
@@ -3397,7 +3500,8 @@
             "Устранить обходной маршрут"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-04-access-control",
@@ -3436,7 +3540,8 @@
             "Испытать INSERT от редактора"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-04-access-control",
@@ -3474,7 +3579,8 @@
             "Испытать запрет по правильной причине"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-04-access-control",
@@ -3512,7 +3618,8 @@
             "Проверить запрещённую базовую таблицу"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -3551,7 +3658,8 @@
             "Восстановить полный согласованный состав"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -3589,7 +3697,8 @@
             "Согласовать минимальные права"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -3627,7 +3736,8 @@
             "Организовать окно согласованности"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -3667,6 +3777,10 @@
             "Восстановить в отдельный экземпляр"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s08-05-backup-and-protection-content-restore-connect",
+        "s08-05-backup-and-protection-content-restore-import"
       ]
     },
     {
@@ -3706,7 +3820,8 @@
             "Сверить определения нужных объектов"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -3744,7 +3859,8 @@
             "Зафиксировать непригодное восстановление"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -3784,7 +3900,8 @@
             "Испытать поведение после настройки"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -3824,7 +3941,8 @@
             "Отдельно испытать восстановление"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-06-results-package",
@@ -3862,7 +3980,8 @@
             "Совместно испытать одну ревизию"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-06-results-package",
@@ -3902,7 +4021,8 @@
             "Передать непринятые факты с причинами"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-06-results-package",
@@ -3941,7 +4061,8 @@
             "Согласовать поставочную ER"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-06-results-package",
@@ -3980,6 +4101,9 @@
             "Запустить по согласованному маршруту"
           ]
         }
+      ],
+      "standaloneSteps": [
+        "s08-06-results-package-content-delivery-state"
       ]
     },
     {
@@ -4019,7 +4143,8 @@
             "Привязать вывод к запросу и данным"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-06-results-package",
@@ -4057,7 +4182,8 @@
             "Испытать копию по переданному маршруту"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-06-results-package",
@@ -4095,7 +4221,8 @@
             "Получить секрет локально"
           ]
         }
-      ]
+      ],
+      "standaloneSteps": []
     },
     {
       "lectureId": "s08-06-results-package",
@@ -4135,6 +4262,88 @@
             "Проверить полный результат"
           ]
         }
+      ],
+      "standaloneSteps": []
+    }
+  ],
+  "lectureReadingPaths": [
+    {
+      "lectureId": "s07-01-source-data-package",
+      "slides": [
+        "s07-01-source-data-package-content-source-accepted",
+        "s07-01-source-data-package-content-source-rejected"
+      ]
+    },
+    {
+      "lectureId": "s07-02-table-list-from-source-data",
+      "slides": []
+    },
+    {
+      "lectureId": "s07-03-implement-table-set",
+      "slides": [
+        "s07-03-implement-table-set-content-requests-ddl-start",
+        "s07-03-implement-table-set-content-requests-ddl-end"
+      ]
+    },
+    {
+      "lectureId": "s07-04-er-diagram",
+      "slides": []
+    },
+    {
+      "lectureId": "s07-05-prepare-and-load-data",
+      "slides": [
+        "s07-05-prepare-and-load-data-content-insert-resolved",
+        "s07-05-prepare-and-load-data-content-insert-result"
+      ]
+    },
+    {
+      "lectureId": "s07-06-validate-load-and-delivery-script",
+      "slides": [
+        "s07-06-validate-load-and-delivery-script-content-compare-source-parent"
+      ]
+    },
+    {
+      "lectureId": "s07-07-control-queries",
+      "slides": []
+    },
+    {
+      "lectureId": "s08-01-views",
+      "slides": [
+        "s08-01-views-content-view-owner-setup"
+      ]
+    },
+    {
+      "lectureId": "s08-02-coordinated-data-changes",
+      "slides": [
+        "s08-02-coordinated-data-changes-content-procedure-create-start",
+        "s08-02-coordinated-data-changes-content-procedure-body-finish",
+        "s08-02-coordinated-data-changes-content-procedure-create-end",
+        "s08-02-coordinated-data-changes-content-procedure-call"
+      ]
+    },
+    {
+      "lectureId": "s08-03-search-field-indexes",
+      "slides": [
+        "s08-03-search-field-indexes-content-plans-reset"
+      ]
+    },
+    {
+      "lectureId": "s08-04-access-control",
+      "slides": [
+        "s08-04-access-control-content-role-user-setup"
+      ]
+    },
+    {
+      "lectureId": "s08-05-backup-and-protection",
+      "slides": [
+        "s08-05-backup-and-protection-content-restore-connect",
+        "s08-05-backup-and-protection-content-restore-import"
+      ]
+    },
+    {
+      "lectureId": "s08-06-results-package",
+      "slides": [
+        "s08-06-results-package-content-delivery-state"
       ]
     }
   ]

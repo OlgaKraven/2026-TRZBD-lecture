@@ -1,0 +1,57 @@
+{
+  "contentVersion": "trzbd-2026.10.23-independent-paths-r13",
+  "version": "8.4.13",
+  "isolated": true,
+  "checks": [
+    {
+      "name": "CSV на экранах точно соответствует всем шести строкам источника",
+      "status": "passed"
+    },
+    {
+      "name": "Два фрагмента CREATE TABLE образуют исполняемое определение с тремя именованными FK",
+      "status": "passed"
+    },
+    {
+      "name": "INSERT на экране разрешает коды в id и вставляет только три принятые строки",
+      "status": "passed"
+    },
+    {
+      "name": "Сверка обнаруживает подмену существующего клиента, которую не ловит FK",
+      "status": "passed"
+    },
+    {
+      "name": "Владелец VIEW создан до определения, и VIEW возвращает R101 и R102",
+      "status": "passed"
+    },
+    {
+      "name": "Начало, два фрагмента тела и завершение создают одну процедуру",
+      "status": "passed"
+    },
+    {
+      "name": "CALL с экрана подтверждает статус, работу и одно событие аудита",
+      "status": "passed"
+    },
+    {
+      "name": "Поздняя ошибка и повторный CALL дают отказ без частичного изменения",
+      "status": "passed"
+    },
+    {
+      "name": "Последовательный опыт индекса выполняется без повторного CREATE существующего имени",
+      "status": "passed"
+    },
+    {
+      "name": "Пользователь с новой ролью читает VIEW и не читает requests",
+      "status": "passed"
+    },
+    {
+      "name": "Однострочная команда dump с экрана создаёт копию",
+      "status": "passed"
+    },
+    {
+      "name": "SOURCE из лекции восстанавливает копию в отдельную чистую цель",
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "limits": "Execution covers the listed student paths on two fresh loopback instances. It is not execution of every fragment in the course."
+}

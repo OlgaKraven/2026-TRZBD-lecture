@@ -17,6 +17,7 @@ export function applyPractical(course,notes,questions,registry){
  for(const [li,l] of course.lectures.entries()){
   for(const [qi,q] of learning.questions.filter(q=>q.case.lectureId===l.id).entries()){
    const item=q.case;item.practical=practicalCase(li,qi,item.model);
+   for(const v of item.practical.variants)for(const s of v.stages)s.sqlRole=s.sql&&s.sql!==item.model.sql?'action':'inspection';
    item.revision=createHash('sha256').update(JSON.stringify({model:item.model,practical:item.practical})).digest('hex').slice(0,12);
    const stages=item.practical.variants[0].stages;
    notes[q.passportId].script='Откройте практический разбор. '+item.data+' '+item.question+' Последовательно выполняйте действия: '+stages.slice(1).map(s=>s.action+'. '+s.explanation).join(' ')+' После каждого действия сопоставьте строки исходной таблицы и полученный результат. Кнопка отмены восстанавливает данные предыдущего шага. '+(item.practical.variants.length>1?'Затем измените условия разбора и повторите операции: '+item.practical.variants.map(v=>v.label).join('; ')+'. Смена условий начинает новый проход с исходных данных.':'');

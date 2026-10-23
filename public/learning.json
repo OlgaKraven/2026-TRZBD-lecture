@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "trzbd-2026.10.23-student-review-r12",
+  "contentVersion": "trzbd-2026.10.23-independent-paths-r14",
   "questions": [
     {
       "id": "s07-01-source-data-package-content-scope",
@@ -64,7 +64,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-scope",
-        "revision": "92163117eeab",
+        "revision": "319f87143b90",
         "title": "Комплект исходных данных",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-scope-review",
@@ -114,7 +114,8 @@
                       "label": "branch_code → branches.code: источник справочника не передан"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти неразрешённый код",
@@ -168,7 +169,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Приостановить зависимую загрузку",
@@ -224,7 +226,8 @@
                         "ожидается согласованный источник"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -329,7 +332,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-description",
-        "revision": "4afb544914e8",
+        "revision": "36b05b568f1f",
         "title": "Ограничение целостности",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-description-review",
@@ -392,7 +395,8 @@
                       "label": "Правило уникальности определяет будущий ключ"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сгруппировать номера актов",
@@ -459,7 +463,8 @@
                         "2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить два правила ключа",
@@ -533,7 +538,8 @@
                         "да"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -642,7 +648,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-files",
-        "revision": "bb266604f870",
+        "revision": "7282d6023ce3",
         "title": "Промежуточная таблица (staging)",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-files-review",
@@ -710,7 +716,8 @@
                       "label": "Исходная строка → диагностическая запись"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить календарную дату",
@@ -784,7 +791,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить причину отклонения",
@@ -857,7 +865,8 @@
                         "INVALID_DATE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -955,7 +964,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-deliverables",
-        "revision": "f3a900ed84b3",
+        "revision": "041d239ce4ff",
         "title": "Критерий приёмки",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-deliverables-review",
@@ -1011,7 +1020,8 @@
                       "label": "dump.sql → восстановление объектов и данных"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Восстановить в отдельную цель",
@@ -1075,7 +1085,8 @@
                         "SHOW CREATE VIEW"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить данные и поведение",
@@ -1143,7 +1154,8 @@
                         "выполнены контрольные вызовы"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -1259,7 +1271,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-mapping",
-        "revision": "35a57c00b61c",
+        "revision": "c3018deea9de",
         "title": "Карта полей",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-mapping-review",
@@ -1328,7 +1340,8 @@
                       "label": "clients.id → orders.client_id"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти клиента по K9",
@@ -1401,7 +1414,8 @@
                         "17"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Записать внутренний ключ заказа",
@@ -1481,7 +1495,8 @@
                         "O1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -1583,7 +1598,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-reference",
-        "revision": "ceccf60fcc7b",
+        "revision": "4fd58f5b1e64",
         "title": "Справочник",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-reference-review",
@@ -1643,7 +1658,8 @@
                       "label": "Допустимый статус → ссылка заявки"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить файл с доменом",
@@ -1707,7 +1723,8 @@
                         "да"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить полный справочник",
@@ -1778,7 +1795,8 @@
                         "закрыта"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -1889,7 +1907,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-quality",
-        "revision": "059c2f30aa08",
+        "revision": "bb1480a78a23",
         "title": "Дефект качества данных",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-quality-review",
@@ -1959,7 +1977,8 @@
                       "label": "Одна входная строка → несколько нарушений"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить независимые проверки",
@@ -2045,7 +2064,8 @@
                         "DUPLICATE_ORDER_NO"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить раздельную диагностику",
@@ -2144,7 +2164,8 @@
                         "DUPLICATE_ORDER_NO"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -2252,7 +2273,7 @@
           ]
         },
         "id": "s07-01-source-data-package-content-passport",
-        "revision": "f86bdac05e65",
+        "revision": "cff69a31d440",
         "title": "Протокол разбора",
         "lectureId": "s07-01-source-data-package",
         "passportId": "s07-01-source-data-package-content-passport-review",
@@ -2318,7 +2339,8 @@
                       "label": "run_id связывает итог и конкретные отклонения"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить баланс",
@@ -2392,7 +2414,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Связать итог с исходными строками",
@@ -2471,7 +2494,8 @@
                         "INVALID_DATE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -2550,7 +2574,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-dependencies",
-        "revision": "06807763cc20",
+        "revision": "0f6b80fb8fc9",
         "title": "Функциональная зависимость X → Y",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-dependencies-review",
@@ -2586,7 +2610,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сгруппировать сотрудников по фамилии",
@@ -2626,7 +2651,8 @@
                         "2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Зафиксировать определяющий ключ",
@@ -2668,7 +2694,8 @@
                         "уникальный табельный номер"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -2763,7 +2790,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-dictionary",
-        "revision": "3a65b22861d2",
+        "revision": "bd1ffd808dfb",
         "title": "Категориальный справочник",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-dictionary-review",
@@ -2816,7 +2843,8 @@
                       "label": "type_code → work_types.code"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти тип работы в справочнике",
@@ -2873,7 +2901,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отклонить неподтверждённый тип",
@@ -2932,7 +2961,8 @@
                         "UNKNOWN_WORK_TYPE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -3041,7 +3071,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-multivalue",
-        "revision": "213f6565ba9d",
+        "revision": "93f44d839ae2",
         "title": "Таблица связи",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-multivalue-review",
@@ -3097,7 +3127,8 @@
                       "label": "Группировка пары сохраняет количество"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать повторения пары",
@@ -3164,7 +3195,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Записать количество в связь",
@@ -3241,7 +3273,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -3341,7 +3374,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-entities",
-        "revision": "39bedf7b60ae",
+        "revision": "85f53e397862",
         "title": "Сущность",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-entities-review",
@@ -3399,7 +3432,8 @@
                       "label": "clients.id 1 → 0..N requests.client_id"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выделить владельца телефона",
@@ -3462,7 +3496,8 @@
                         "+7…"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Связать заявки с одним клиентом",
@@ -3526,7 +3561,8 @@
                         "17"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -3631,7 +3667,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-naming",
-        "revision": "88dd00981640",
+        "revision": "c5205ab16d58",
         "title": "Внешний ключ (FK)",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-naming-review",
@@ -3694,7 +3730,8 @@
                       "label": "approved_employee_id → employees.id: утвердил"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать две роли ссылки",
@@ -3763,7 +3800,8 @@
                         "8"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Получить имена через два JOIN",
@@ -3832,7 +3870,8 @@
                         "Утвердивший"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -3911,7 +3950,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-primary",
-        "revision": "06dc9c025043",
+        "revision": "36198fc95a08",
         "title": "Первичный ключ (PK)",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-primary-review",
@@ -3947,7 +3986,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти повтор бизнес-идентификатора",
@@ -3989,7 +4029,8 @@
                         "5,8"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Подготовить отдельное ограничение",
@@ -4031,7 +4072,8 @@
                         "UNIQUE(passport_no)"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -4146,7 +4188,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-foreign",
-        "revision": "62250a95eb28",
+        "revision": "ff77ca25afc1",
         "title": "Ссылочная целостность",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-foreign-review",
@@ -4221,7 +4263,8 @@
                       "label": "Фактическая ссылка → существующий id=4"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить фактического родителя",
@@ -4302,7 +4345,8 @@
                         "K6"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Разрешить правильного клиента",
@@ -4383,7 +4427,8 @@
                         "9"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -4481,7 +4526,7 @@
           ]
         },
         "id": "s07-02-table-list-from-source-data-content-catalog",
-        "revision": "a897e7374e9b",
+        "revision": "8368b3727a3a",
         "title": "Каталог таблиц",
         "lectureId": "s07-02-table-list-from-source-data",
         "passportId": "s07-02-table-list-from-source-data-content-catalog-review",
@@ -4537,7 +4582,8 @@
                       "label": "Явное соответствие логического и физического имени"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Получить определение таблицы",
@@ -4597,7 +4643,8 @@
                         "request_id,part_id"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Зафиксировать соответствие имён",
@@ -4654,7 +4701,8 @@
                         "request_items"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -4759,7 +4807,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-schema",
-        "revision": "1253e17d7609",
+        "revision": "6e7558e1ac8c",
         "title": "Схема базы данных",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-schema-review",
@@ -4823,7 +4871,8 @@
                       "label": "USE training_a задаёт контекст неуточнённых имён"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выбрать целевую схему",
@@ -4889,7 +4938,8 @@
                         "training_a"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Сверить созданный объект",
@@ -4957,7 +5007,8 @@
                         "requests"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -5048,7 +5099,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-types",
-        "revision": "d9147a8c6352",
+        "revision": "044c6e632cc6",
         "title": "Тип данных",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-types-review",
@@ -5098,7 +5149,8 @@
                       "label": "Текстовый идентификатор → текстовый домен"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить представления артикула",
@@ -5156,7 +5208,8 @@
                         "000731"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить значимые нули",
@@ -5209,7 +5262,8 @@
                         "000731"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -5286,7 +5340,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-pk",
-        "revision": "f5f684b85e91",
+        "revision": "2ac29f355339",
         "title": "AUTO_INCREMENT",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-pk-review",
@@ -5320,7 +5374,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать подтверждённые строки",
@@ -5356,7 +5411,8 @@
                         "10"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить с выделением номеров",
@@ -5396,7 +5452,8 @@
                         "19"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -5490,7 +5547,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-fk",
-        "revision": "76b8508aeaa9",
+        "revision": "ba43d0d9ae7c",
         "title": "Родительское отношение",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-fk-review",
@@ -5542,7 +5599,8 @@
                       "label": "request.branch_id → branches.id: 77 не найден"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить существование родителя 77",
@@ -5598,7 +5656,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Остановить неверную вставку",
@@ -5656,7 +5715,8 @@
                         "нет: нужен правильный родитель"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -5730,7 +5790,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-required",
-        "revision": "949e9ddda6f7",
+        "revision": "c19953afbc85",
         "title": "NOT NULL",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-required-review",
@@ -5762,7 +5822,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Применить TRIM к имени",
@@ -5800,7 +5861,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вывести нарушающие строки",
@@ -5834,7 +5896,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -5913,7 +5976,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-unique",
-        "revision": "24af5a4d5f29",
+        "revision": "08d75fc84404",
         "title": "UNIQUE",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-unique-review",
@@ -5949,7 +6012,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вставить два отсутствующих nickname",
@@ -5992,7 +6056,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти строки без nickname",
@@ -6032,7 +6097,8 @@
                         "2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -6128,7 +6194,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-order",
-        "revision": "359a3e1cdd1e",
+        "revision": "06d30550ff96",
         "title": "Граф зависимостей DDL",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-order-review",
@@ -6183,7 +6249,8 @@
                       "label": "orders.id → order_lines.order_id"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Построить зависимости DDL",
@@ -6246,7 +6313,8 @@
                         "orders"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Создать родителей раньше потомков",
@@ -6313,7 +6381,8 @@
                         "order_lines"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -6330,6 +6399,8 @@
         "s07-03-implement-table-set-content-order-reasoning-2",
         "s07-03-implement-table-set-content-order-example",
         "s07-03-implement-table-set-content-order-example-walkthrough",
+        "s07-03-implement-table-set-content-requests-ddl-start",
+        "s07-03-implement-table-set-content-requests-ddl-end",
         "s07-03-implement-table-set-content-order-review",
         "s07-03-implement-table-set-content-order-T02-slide",
         "s07-03-implement-table-set-content-order-T03-slide",
@@ -6406,7 +6477,7 @@
           ]
         },
         "id": "s07-03-implement-table-set-content-reproducible",
-        "revision": "64c6217bf127",
+        "revision": "de27869d91a2",
         "title": "Воспроизводимый скрипт",
         "lectureId": "s07-03-implement-table-set",
         "passportId": "s07-03-implement-table-set-content-reproducible-review",
@@ -6457,7 +6528,8 @@
                       "label": "Полный скрипт проверяется без скрытых старых объектов"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Подготовить чистую цель",
@@ -6512,7 +6584,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить полный DDL по метаданным",
@@ -6567,7 +6640,8 @@
                         "столбцы, типы, PK, FK, обязательность"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -6659,7 +6733,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-reverse",
-        "revision": "17808269e0fa",
+        "revision": "aceabc57690d",
         "title": "Обратное проектирование",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-reverse-review",
@@ -6709,7 +6783,8 @@
                       "label": "Новый FK requests.client_id → clients.id"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать объявленные FK",
@@ -6767,7 +6842,8 @@
                         "id"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Обновить связь на ER",
@@ -6821,7 +6897,8 @@
                         "clients.id"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -6915,7 +6992,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-attributes",
-        "revision": "b279f74d99a9",
+        "revision": "fbcbe94e368b",
         "title": "Атрибут отношения",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-attributes-review",
@@ -6967,7 +7044,8 @@
                       "label": "invoice_id → invoices.id"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать обязательность атрибута",
@@ -7025,7 +7103,8 @@
                         "YES"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отразить отдельные свойства",
@@ -7083,7 +7162,8 @@
                         "да"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -7177,7 +7257,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-cardinality",
-        "revision": "17405617e91a",
+        "revision": "26f32fd65401",
         "title": "Кратность связи",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-cardinality-review",
@@ -7230,7 +7310,8 @@
                       "label": "customer 1 ← invoice; у customer 0..N invoices"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить клиентов и счета",
@@ -7291,7 +7372,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Подписать минимумы связи",
@@ -7355,7 +7437,8 @@
                         "N"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -7457,7 +7540,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-keys",
-        "revision": "1b8c000fc207",
+        "revision": "614a232b49fd",
         "title": "Составной ключ",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-keys-review",
@@ -7517,7 +7600,8 @@
                       "label": "receipt 1 → 0..N lines; позицию различает line_no"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить позиции одной детали",
@@ -7591,7 +7675,8 @@
                         "120"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Назначить ключ позиции",
@@ -7657,7 +7742,8 @@
                         "обе позиции D2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -7751,7 +7837,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-reconcile",
-        "revision": "d656e7d28adc",
+        "revision": "541223ea63b1",
         "title": "Сверка модели",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-reconcile-review",
@@ -7803,7 +7889,8 @@
                       "label": "Сверка обязательности одной и той же связи"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить минимум ER и DDL",
@@ -7861,7 +7948,8 @@
                         "NOT NULL + FK"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Согласовать обязательность",
@@ -7917,7 +8005,8 @@
                         "1 по согласованному обязательному правилу"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -8012,7 +8101,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-layout",
-        "revision": "b4ae85857751",
+        "revision": "c4d79e23d8da",
         "title": "Трассировка связи на ER",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-layout-review",
@@ -8062,7 +8151,8 @@
                       "label": "clients.id → requests.client_id; линия не имеет конца на audit"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проследить концы линии",
@@ -8116,7 +8206,8 @@
                         "requests.client_id"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить предполагаемый FK к audit",
@@ -8170,7 +8261,8 @@
                         "нужны концы и метаданные"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -8263,7 +8355,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-version",
-        "revision": "1a646da39de2",
+        "revision": "3013dd1c416b",
         "title": "Версия схемы",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-version-review",
@@ -8315,7 +8407,8 @@
                       "label": "Сравниваем действие FK, а не дату файла"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить действия DELETE",
@@ -8373,7 +8466,8 @@
                         "CASCADE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Привязать ER к определению",
@@ -8429,7 +8523,8 @@
                         "CASCADE из согласованной DDL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -8511,7 +8606,7 @@
           ]
         },
         "id": "s07-04-er-diagram-content-export",
-        "revision": "399ec78cda92",
+        "revision": "b5928b6e18b7",
         "title": "Переносимое изображение модели",
         "lectureId": "s07-04-er-diagram",
         "passportId": "s07-04-er-diagram-content-export-review",
@@ -8552,7 +8647,8 @@
                       "label": "Полностью видимая подпись: 1 customer ← 0..N invoices"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить границы экспорта",
@@ -8597,7 +8693,8 @@
                         "обрезан"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Восстановить область схемы",
@@ -8646,7 +8743,8 @@
                         "N"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -8735,7 +8833,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-header",
-        "revision": "5aa9459c92e5",
+        "revision": "8b20c0536604",
         "title": "Контракт CSV",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-header-review",
@@ -8782,7 +8880,8 @@
                       "label": "Позиционное сопоставление требует согласованного заголовка"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить заголовки по позиции",
@@ -8840,7 +8939,8 @@
                         "code"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Применить явное именное сопоставление",
@@ -8891,7 +8991,8 @@
                         "Сервис"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -8980,7 +9081,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-csv",
-        "revision": "97bc9814d555",
+        "revision": "2cd39fb73e05",
         "title": "Экранирование CSV",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-csv-review",
@@ -9027,7 +9128,8 @@
                       "label": "Лексический разбор должен завершиться до предметного INSERT"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Разобрать закрывающую кавычку",
@@ -9086,7 +9188,8 @@
                         "недопустим после кавычки"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отклонить синтаксически неверную запись",
@@ -9139,7 +9242,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -9230,7 +9334,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-empty",
-        "revision": "08156ceead2e",
+        "revision": "31d831e3fb69",
         "title": "NULL",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-empty-review",
@@ -9280,7 +9384,8 @@
                       "label": "Полевая политика: code и comment имеют разную обязательность"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Применить правила каждого поля",
@@ -9341,7 +9446,8 @@
                         "NULL по контракту"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить причину отказа кода",
@@ -9397,7 +9503,8 @@
                         "EMPTY_CODE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -9479,7 +9586,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-duplicates",
-        "revision": "6554833a3b5c",
+        "revision": "9d92f419d46a",
         "title": "Бизнес-дубль",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-duplicates-review",
@@ -9518,7 +9625,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти конфликт сумм по номеру",
@@ -9565,7 +9673,8 @@
                         "150"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отделить конфликт от загрузки",
@@ -9610,7 +9719,8 @@
                         "не выполнять до решения"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -9704,7 +9814,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-invalid",
-        "revision": "3e48a73778fa",
+        "revision": "f6a4b3694b00",
         "title": "Предметная валидация",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-invalid-review",
@@ -9756,7 +9866,8 @@
                       "label": "Предметная проверка количества до вставки"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить qty > 0",
@@ -9814,7 +9925,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отклонить недопустимое количество",
@@ -9872,7 +9984,8 @@
                         "NON_POSITIVE_QTY"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -9966,7 +10079,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-load-order",
-        "revision": "cbd8146f6d96",
+        "revision": "f9f85928c6ab",
         "title": "Порядок загрузки",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-load-order-review",
@@ -10018,7 +10131,8 @@
                       "label": "Родитель существует до вставки employees"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Загрузить родительское подразделение",
@@ -10073,7 +10187,8 @@
                         "D3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Загрузить сотрудника с FK",
@@ -10127,7 +10242,8 @@
                         "3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -10224,7 +10340,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-resolve",
-        "revision": "e9051bc4dcbb",
+        "revision": "b57e5cd88ec5",
         "title": "Разрешение кода",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-resolve-review",
@@ -10280,7 +10396,8 @@
                       "label": "branch_code → code: найдено два кандидата"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать родителей с кодом B8",
@@ -10342,7 +10459,8 @@
                         "2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Не назначать произвольный FK",
@@ -10404,7 +10522,8 @@
                         "AMBIGUOUS_CODE: исправить справочник"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -10421,6 +10540,8 @@
         "s07-05-prepare-and-load-data-content-resolve-reasoning-2",
         "s07-05-prepare-and-load-data-content-resolve-example",
         "s07-05-prepare-and-load-data-content-resolve-example-walkthrough",
+        "s07-05-prepare-and-load-data-content-insert-resolved",
+        "s07-05-prepare-and-load-data-content-insert-result",
         "s07-05-prepare-and-load-data-content-resolve-review",
         "s07-05-prepare-and-load-data-content-resolve-T01-slide",
         "s07-05-prepare-and-load-data-content-resolve-T02-slide",
@@ -10508,7 +10629,7 @@
           ]
         },
         "id": "s07-05-prepare-and-load-data-content-balance",
-        "revision": "1e7914556ee9",
+        "revision": "9d1e31aaab29",
         "title": "Баланс загрузки",
         "lectureId": "s07-05-prepare-and-load-data",
         "passportId": "s07-05-prepare-and-load-data-content-balance-review",
@@ -10570,7 +10691,8 @@
                       "label": "Баланс проверяется по судьбе каждой входной строки"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать учтённые исходы",
@@ -10640,7 +10762,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти строку без исхода",
@@ -10706,7 +10829,8 @@
                         "нет записи ни о приёмке, ни об отклонении"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -10807,7 +10931,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-counts",
-        "revision": "db12be637e95",
+        "revision": "c1e73a05241c",
         "title": "Контроль количества",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-counts-review",
@@ -10867,7 +10991,8 @@
                       "label": "Двустороннее сравнение ключей, COUNT одинаков"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти пропущенные ключи",
@@ -10929,7 +11054,8 @@
                         "Q3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти лишние ключи",
@@ -10991,7 +11117,8 @@
                         "Q8"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -11066,7 +11193,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-required",
-        "revision": "89382afc54b7",
+        "revision": "5005a6768157",
         "title": "Логическая пустота",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-required-review",
@@ -11098,7 +11225,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Нормализовать номер для проверки",
@@ -11134,7 +11262,8 @@
                         ""
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вывести нарушение обязательности",
@@ -11170,7 +11299,8 @@
                         "EMPTY_REQUEST_NO"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -11285,7 +11415,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-orphans",
-        "revision": "8012a731c80b",
+        "revision": "bea421ebb0f9",
         "title": "Строка-сирота",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-orphans-review",
@@ -11360,7 +11490,8 @@
                       "label": "Источник ожидал K6 → id=11"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить существование client_id",
@@ -11439,7 +11570,8 @@
                         "да"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить бизнес-код с документом",
@@ -11520,7 +11652,8 @@
                         "K6"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -11536,6 +11669,7 @@
         "s07-06-validate-load-and-delivery-script-content-orphans-reasoning-1",
         "s07-06-validate-load-and-delivery-script-content-orphans-example",
         "s07-06-validate-load-and-delivery-script-content-orphans-example-walkthrough",
+        "s07-06-validate-load-and-delivery-script-content-compare-source-parent",
         "s07-06-validate-load-and-delivery-script-content-orphans-review",
         "s07-06-validate-load-and-delivery-script-content-orphans-T01-slide",
         "s07-06-validate-load-and-delivery-script-content-orphans-T02-slide",
@@ -11621,7 +11755,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-rejections",
-        "revision": "e454c869b3f8",
+        "revision": "e5debf7d13b5",
         "title": "Протокол отклонений",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-rejections-review",
@@ -11681,7 +11815,8 @@
                       "label": "Координата = файл + строка; причина = нарушенное правило"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Различить файлы одной координаты",
@@ -11749,7 +11884,8 @@
                         "9"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить воспроизводимую диагностику",
@@ -11820,7 +11956,8 @@
                         "invalid date"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -11931,7 +12068,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-delivery",
-        "revision": "1e32f78805d2",
+        "revision": "88fc887ace3f",
         "title": "Скрипт поставки",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-delivery-review",
@@ -12002,7 +12139,8 @@
                       "label": "Данные до проверки отчётных результатов"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Установить зависимости файлов",
@@ -12085,7 +12223,8 @@
                         "структура, данные и VIEW"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить маршрут по зависимостям",
@@ -12177,7 +12316,8 @@
                         "результаты запросов"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -12278,7 +12418,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-clean",
-        "revision": "23bddef914bc",
+        "revision": "900f2b9bf144",
         "title": "Чистая цель испытания",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-clean-review",
@@ -12338,7 +12478,8 @@
                       "label": "Испытание переносится в отдельно подготовленную схему"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Исключить старые объекты",
@@ -12402,7 +12543,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Развернуть текущий комплект",
@@ -12468,7 +12610,8 @@
                         "загружены и сверены"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -12583,7 +12726,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-repeat",
-        "revision": "b3d99f656167",
+        "revision": "7434899476d6",
         "title": "Повторяемость результата",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-repeat-review",
@@ -12658,7 +12801,8 @@
                       "label": "B сохраняет ссылку на K9"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить разные внутренние id",
@@ -12744,7 +12888,8 @@
                         "K9"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить предметный результат",
@@ -12831,7 +12976,8 @@
                         "различаются; проверить требование контракта"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -12924,7 +13070,7 @@
           ]
         },
         "id": "s07-06-validate-load-and-delivery-script-content-protocol",
-        "revision": "12da0c3bd95a",
+        "revision": "fc0d52e97518",
         "title": "Свидетельство проверки",
         "lectureId": "s07-06-validate-load-and-delivery-script",
         "passportId": "s07-06-validate-load-and-delivery-script-content-protocol-review",
@@ -12976,7 +13122,8 @@
                       "label": "Утверждение → запрос → результат с версией источника"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить поиск сирот",
@@ -13027,7 +13174,8 @@
                       "missing_client"
                     ],
                     "rows": []
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить проверяемое свидетельство",
@@ -13085,7 +13233,8 @@
                         "0 строк"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -13184,7 +13333,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-totals",
-        "revision": "634da348fc71",
+        "revision": "b9f2e6584baf",
         "title": "Гранулярность результата",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-totals-review",
@@ -13242,7 +13391,8 @@
                       "label": "1 заявка → 3 строки JOIN"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Построить пары заявка–деталь",
@@ -13312,7 +13462,8 @@
                         "D3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Посчитать уникальные заявки",
@@ -13374,7 +13525,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -13473,7 +13625,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-joins",
-        "revision": "bca1304341ed",
+        "revision": "fb9f02f2d8f9",
         "title": "JOIN",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-joins-review",
@@ -13530,7 +13682,8 @@
                       "label": "INNER: clients.id = orders.client_id"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Получить пары INNER JOIN",
@@ -13595,7 +13748,8 @@
                         "O2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать строки результата",
@@ -13654,7 +13808,8 @@
                         "2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             },
@@ -13709,7 +13864,8 @@
                       "label": "INNER: clients.id = orders.client_id"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Получить пары LEFT JOIN",
@@ -13778,7 +13934,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Сравнить состав результата",
@@ -13847,7 +14004,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -13948,7 +14106,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-differences",
-        "revision": "56c1ba4d45bd",
+        "revision": "b0397b831022",
         "title": "Разность множеств ключей",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-differences-review",
@@ -14008,7 +14166,8 @@
                       "label": "expected  actual и actual  expected"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вычесть факт из ожидания",
@@ -14070,7 +14229,8 @@
                         "B"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вычесть ожидание из факта",
@@ -14132,7 +14292,8 @@
                         "D"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -14214,7 +14375,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-empty-duplicate",
-        "revision": "dcd2c3499bb3",
+        "revision": "a678830e6566",
         "title": "Бизнес-ключ",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-empty-duplicate-review",
@@ -14254,7 +14415,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сгруппировать по бизнес-номеру",
@@ -14298,7 +14460,8 @@
                         "3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Применить HAVING COUNT(*) > 1",
@@ -14342,7 +14505,8 @@
                         "3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -14439,7 +14603,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-outer",
-        "revision": "71d79fc4b24a",
+        "revision": "8d57be2c7cde",
         "title": "LEFT JOIN",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-outer-review",
@@ -14494,7 +14658,8 @@
                       "label": "LEFT JOIN сохраняет B5; WHERE r.status затем его исключает"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Построить LEFT JOIN",
@@ -14560,7 +14725,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Применить WHERE status=WORK",
@@ -14619,7 +14785,8 @@
                         "R4"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             },
@@ -14672,7 +14839,8 @@
                       "label": "LEFT JOIN сохраняет B5; WHERE r.status затем его исключает"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отбирать статус в ON",
@@ -14735,7 +14903,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Сравнить состав результата",
@@ -14798,7 +14967,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -14893,7 +15063,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-aggregate",
-        "revision": "809d972bd23a",
+        "revision": "2124b0ce9b2e",
         "title": "COUNT(выражение)",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-aggregate-review",
@@ -14946,7 +15116,8 @@
                       "label": "Для B5 справа добавлен NULL соединением"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Построить строки LEFT JOIN",
@@ -15007,7 +15178,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Посчитать строки и известные ключи",
@@ -15071,7 +15243,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             },
@@ -15122,7 +15295,8 @@
                       "label": "Для B5 справа добавлен NULL соединением"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Добавить R5 для B5",
@@ -15186,7 +15360,8 @@
                         "B5"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Пересчитать агрегаты",
@@ -15253,7 +15428,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -15335,7 +15511,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-report",
-        "revision": "b997d80e562f",
+        "revision": "e2543c34ba10",
         "title": "Контракт отчётного запроса",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-report-review",
@@ -15374,7 +15550,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сгруппировать по клиенту и статусу",
@@ -15424,7 +15601,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вернуть контракт одной строки на клиента",
@@ -15467,7 +15645,8 @@
                         "2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -15583,7 +15762,7 @@
           ]
         },
         "id": "s07-07-control-queries-content-suite",
-        "revision": "cd2d785d92b5",
+        "revision": "888bcc29ebc1",
         "title": "Набор контрольных запросов",
         "lectureId": "s07-07-control-queries",
         "passportId": "s07-07-control-queries-content-suite-review",
@@ -15658,7 +15837,8 @@
                       "label": "Соответствие родителя исходному документу"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить отсутствие сирот",
@@ -15731,7 +15911,8 @@
                       "request_no"
                     ],
                     "rows": []
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить клиента с источником",
@@ -15812,7 +15993,8 @@
                         "K6"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -15919,7 +16101,7 @@
           ]
         },
         "id": "s08-01-views-content-meaning",
-        "revision": "e43ae9ab3047",
+        "revision": "b83e0d2ca56a",
         "title": "Представление (VIEW)",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-meaning-review",
@@ -15969,7 +16151,8 @@
                       "label": "SELECT из requests WHERE status=NEW"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Изменить базовый статус Q9",
@@ -16023,7 +16206,8 @@
                         "CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Повторно прочитать VIEW в новой транзакции",
@@ -16067,7 +16251,8 @@
                       "status"
                     ],
                     "rows": []
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -16083,6 +16268,7 @@
         "s08-01-views-content-meaning-reasoning-1",
         "s08-01-views-content-meaning-reasoning-2",
         "s08-01-views-content-meaning-reasoning-3",
+        "s08-01-views-content-view-owner-setup",
         "s08-01-views-content-meaning-example",
         "s08-01-views-content-meaning-example-walkthrough",
         "s08-01-views-content-meaning-result-step-1",
@@ -16168,7 +16354,7 @@
           ]
         },
         "id": "s08-01-views-content-contract",
-        "revision": "b8b54aa55720",
+        "revision": "71d0ca31a74c",
         "title": "Контракт представления",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-contract-review",
@@ -16222,7 +16408,8 @@
                       "label": "Явная проекция двух согласованных колонок"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Создать VIEW с SELECT *",
@@ -16282,7 +16469,8 @@
                         "+7…"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Явно задать контракт колонок",
@@ -16340,7 +16528,8 @@
                         "B8"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -16451,7 +16640,7 @@
           ]
         },
         "id": "s08-01-views-content-control",
-        "revision": "c1814a279210",
+        "revision": "7bc3f687f7d4",
         "title": "Контрольное представление",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-control-review",
@@ -16518,7 +16707,8 @@
                       "label": "WHERE actual_client_code <> source.client_code"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить клиента с источником",
@@ -16582,7 +16772,8 @@
                       "request_no"
                     ],
                     "rows": []
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить отдельную проверку даты",
@@ -16654,7 +16845,8 @@
                         "INVALID_DATE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -16773,7 +16965,7 @@
           ]
         },
         "id": "s08-01-views-content-report",
-        "revision": "f93e15a4ebf6",
+        "revision": "6f6cde798e64",
         "title": "Агрегатное представление",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-report-review",
@@ -16840,7 +17032,8 @@
                       "label": "GROUP BY branch; COUNT(r.id), не COUNT(*)"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сохранить пустой филиал через LEFT",
@@ -16915,7 +17108,8 @@
                         "NULL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Считать правый ключ",
@@ -16998,7 +17192,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -17121,7 +17316,7 @@
           ]
         },
         "id": "s08-01-views-content-joins",
-        "revision": "9ebd33bc5253",
+        "revision": "d6f2b7379d40",
         "title": "Кратность соединения",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-joins-review",
@@ -17202,7 +17397,8 @@
                       "label": "requests.id → parts_used.request_id: 3 совпадения"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Соединить работы и детали",
@@ -17314,7 +17510,8 @@
                         "D3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Агрегировать дочерние наборы отдельно",
@@ -17401,7 +17598,8 @@
                         "3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -17518,7 +17716,7 @@
           ]
         },
         "id": "s08-01-views-content-security",
-        "revision": "ba31a584ede9",
+        "revision": "3e2494a2649e",
         "title": "SQL SECURITY DEFINER",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-security-review",
@@ -17593,7 +17791,8 @@
                       "label": "Внутреннее чтение проверяется по definer"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить право на VIEW",
@@ -17674,7 +17873,8 @@
                         "SELECT"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить внутренний контекст",
@@ -17760,7 +17960,8 @@
                         "нет SELECT на requests"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -17860,7 +18061,7 @@
           ]
         },
         "id": "s08-01-views-content-updates",
-        "revision": "1f4d000e8ec1",
+        "revision": "eb7d30c2f039",
         "title": "Обновляемое представление",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-updates-review",
@@ -17911,7 +18112,8 @@
                       "label": "GROUP BY branch_id превращает несколько заявок в одну группу"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Получить агрегатную строку",
@@ -17970,7 +18172,8 @@
                         "2"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Направить вставку в базовый интерфейс",
@@ -18036,7 +18239,8 @@
                         "нужны поля конкретной заявки"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -18135,7 +18339,7 @@
           ]
         },
         "id": "s08-01-views-content-register",
-        "revision": "83f4ff2460db",
+        "revision": "e4ebac5c409d",
         "title": "Реестр представлений",
         "lectureId": "s08-01-views",
         "passportId": "s08-01-views-content-register-review",
@@ -18191,7 +18395,8 @@
                       "label": "DEFINER должен существовать и обладать правами"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать сохранённый DEFINER",
@@ -18253,7 +18458,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Согласовать определителя и испытать чтение",
@@ -18315,7 +18521,8 @@
                         "успех после настройки корректного владельца и прав"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -18422,7 +18629,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-boundary",
-        "revision": "cbc11ded7bea",
+        "revision": "abe87ed0409d",
         "title": "Транзакция",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-boundary-review",
@@ -18483,7 +18690,8 @@
                       "label": "UPDATE requests → AFTER-триггер → status_audit"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить UPDATE requests",
@@ -18547,7 +18755,8 @@
                         "CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Выполнить AFTER-триггер",
@@ -18615,7 +18824,8 @@
                         "WORK → CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Получить отказ второго шага",
@@ -18683,7 +18893,8 @@
                         "FK: type_id=999 отсутствует"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Откатить всю операцию",
@@ -18749,7 +18960,8 @@
                         "ROLLBACK"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             },
@@ -18808,7 +19020,8 @@
                       "label": "UPDATE requests → AFTER-триггер → status_audit"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить UPDATE requests",
@@ -18872,7 +19085,8 @@
                         "CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Выполнить AFTER-триггер",
@@ -18940,7 +19154,8 @@
                         "WORK → CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Добавить допустимую работу",
@@ -19012,7 +19227,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Подтвердить COMMIT",
@@ -19088,7 +19304,8 @@
                         "COMMIT"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -19196,7 +19413,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-start",
-        "revision": "57e0cb44cb44",
+        "revision": "e8f5863c5248",
         "title": "START TRANSACTION",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-start-review",
@@ -19262,7 +19479,8 @@
                       "label": "Изменение принадлежит транзакции B, не A"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Подтвердить UPDATE в соединении B",
@@ -19334,7 +19552,8 @@
                         "COMMIT B"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Откатить независимую транзакцию A",
@@ -19406,7 +19625,8 @@
                         "подтверждённая транзакция B"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -19522,7 +19742,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-commit",
-        "revision": "98df4cb141da",
+        "revision": "d16699f8140f",
         "title": "COMMIT",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-commit-review",
@@ -19590,7 +19810,8 @@
                       "label": "Несовпадение контрольной суммы → ROLLBACK"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить контрольную сумму до COMMIT",
@@ -19664,7 +19885,8 @@
                         "150"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Откатить невыполненное постусловие",
@@ -19736,7 +19958,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -19835,7 +20058,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-errors",
-        "revision": "749457437829",
+        "revision": "0ebfd0d4616c",
         "title": "Ошибка оператора",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-errors-review",
@@ -19891,7 +20114,8 @@
                       "label": "Повтор W1 нарушает индекс; W2 ещё внутри транзакции"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вставить W2, затем получить дубликат W1",
@@ -19955,7 +20179,8 @@
                         "первая вставка ещё не подтверждена"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Откатить всю операцию",
@@ -20015,7 +20240,8 @@
                         "W1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -20123,7 +20349,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-procedure",
-        "revision": "cf1e8d59c780",
+        "revision": "79a3e59215a7",
         "title": "Хранимая процедура",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-procedure-review",
@@ -20189,7 +20415,8 @@
                       "label": "Второй шаг может завершиться ошибкой"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Перейти в EXIT HANDLER",
@@ -20259,7 +20486,8 @@
                         "ROLLBACK"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Передать отказ вызывающему",
@@ -20329,7 +20557,8 @@
                         "RESIGNAL сохраняет ошибку"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -20345,8 +20574,12 @@
         "s08-02-coordinated-data-changes-content-procedure-reasoning-1",
         "s08-02-coordinated-data-changes-content-procedure-reasoning-2",
         "s08-02-coordinated-data-changes-content-procedure-reasoning-3",
+        "s08-02-coordinated-data-changes-content-procedure-create-start",
         "s08-02-coordinated-data-changes-content-procedure-example",
+        "s08-02-coordinated-data-changes-content-procedure-body-finish",
+        "s08-02-coordinated-data-changes-content-procedure-create-end",
         "s08-02-coordinated-data-changes-content-procedure-example-walkthrough",
+        "s08-02-coordinated-data-changes-content-procedure-call",
         "s08-02-coordinated-data-changes-content-procedure-review",
         "s08-02-coordinated-data-changes-content-procedure-T02-slide",
         "s08-02-coordinated-data-changes-content-procedure-T03-slide",
@@ -20419,7 +20652,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-parameters",
-        "revision": "dd6334efc375",
+        "revision": "3fb25dbc49c9",
         "title": "Предусловие операции",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-parameters-review",
@@ -20466,7 +20699,8 @@
                       "label": "Работа добавляется только после допустимого перехода заявки"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить условный UPDATE",
@@ -20519,7 +20753,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Остановить недопустимый переход",
@@ -20572,7 +20807,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -20663,7 +20899,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-trigger",
-        "revision": "b7c4347edc73",
+        "revision": "651a276c9fd0",
         "title": "Триггер",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-trigger-review",
@@ -20711,7 +20947,8 @@
                       "label": "AFTER UPDATE вставляет аудит в той же транзакции"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить UPDATE и AFTER-триггер",
@@ -20765,7 +21002,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Откатить InnoDB-транзакцию",
@@ -20819,7 +21057,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -20922,7 +21161,7 @@
           ]
         },
         "id": "s08-02-coordinated-data-changes-content-proof",
-        "revision": "74beb2be164d",
+        "revision": "a1b225bdcdab",
         "title": "Матрица испытаний",
         "lectureId": "s08-02-coordinated-data-changes",
         "passportId": "s08-02-coordinated-data-changes-content-proof-review",
@@ -20983,7 +21222,8 @@
                       "label": "UPDATE requests → AFTER-триггер → status_audit"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить UPDATE requests",
@@ -21047,7 +21287,8 @@
                         "CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Выполнить AFTER-триггер",
@@ -21115,7 +21356,8 @@
                         "WORK → CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Получить отказ второго шага",
@@ -21183,7 +21425,8 @@
                         "FK: type_id=999 отсутствует"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Откатить всю операцию",
@@ -21249,7 +21492,8 @@
                         "ROLLBACK"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             },
@@ -21308,7 +21552,8 @@
                       "label": "UPDATE requests → AFTER-триггер → status_audit"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить UPDATE requests",
@@ -21372,7 +21617,8 @@
                         "CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Выполнить AFTER-триггер",
@@ -21440,7 +21686,8 @@
                         "WORK → CLOSED"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Добавить допустимую работу",
@@ -21512,7 +21759,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 },
                 {
                   "title": "Подтвердить COMMIT",
@@ -21588,7 +21836,8 @@
                         "COMMIT"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -21694,7 +21943,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-workload",
-        "revision": "e5fb0174138b",
+        "revision": "46fcb0e08696",
         "title": "Индекс",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-workload-review",
@@ -21757,7 +22006,8 @@
                       "label": "WHERE branch_id = … AND received_at >= …"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вывести порядок ключа из условия",
@@ -21831,7 +22081,8 @@
                         "диапазон"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить выбранный доступ",
@@ -21900,7 +22151,8 @@
                         "EXPLAIN и отдельное измерение"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -21997,7 +22249,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-selectivity",
-        "revision": "e723228d10c5",
+        "revision": "5fe0fd9b6920",
         "title": "Избирательность условия",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-selectivity-review",
@@ -22051,7 +22303,8 @@
                       "label": "matched / total = 18000 / 24000"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать совпадения и общее число",
@@ -22111,7 +22364,8 @@
                         "24000"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вычислить долю совпадений",
@@ -22171,7 +22425,8 @@
                         "75%"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             },
@@ -22205,7 +22460,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать совпадения",
@@ -22245,7 +22501,8 @@
                         "24000"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Рассчитать долю",
@@ -22285,7 +22542,8 @@
                         "25%"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             },
@@ -22319,7 +22577,8 @@
                     }
                   ],
                   "links": [],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Посчитать совпадения",
@@ -22359,7 +22618,8 @@
                         "24000"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Рассчитать долю",
@@ -22399,7 +22659,8 @@
                         "5%"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "action"
                 }
               ]
             }
@@ -22500,7 +22761,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-prefix",
-        "revision": "ae7eb6f4a5c6",
+        "revision": "74190e1a766f",
         "title": "Левый префикс составного B-tree",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-prefix-review",
@@ -22558,7 +22819,8 @@
                       "label": "Ведущая часть branch_id не ограничена"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать порядок B-tree",
@@ -22620,7 +22882,8 @@
                         "received_at"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить с запросом по дате",
@@ -22684,7 +22947,8 @@
                         "получить фактический план и сравнить альтернативы"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -22788,7 +23052,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-existing",
-        "revision": "a7976dc1bf28",
+        "revision": "b4fa50fd17f0",
         "title": "Ключ индекса",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-existing-review",
@@ -22849,7 +23113,8 @@
                       "label": "Сравнение полей, порядка, префиксов и свойств доступа"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить существующий UNIQUE",
@@ -22916,7 +23181,8 @@
                         "0"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить новый индекс с доступом",
@@ -22983,7 +23249,8 @@
                         "не добавлять без отличающейся пользы"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -23078,7 +23345,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-create",
-        "revision": "f92443ae5eba",
+        "revision": "52820656ad6f",
         "title": "CREATE INDEX",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-create-review",
@@ -23130,7 +23397,8 @@
                       "label": "DDL MySQL меняет ожидаемые границы опыта"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Завершить DML отдельно",
@@ -23186,7 +23454,8 @@
                         "явно завершена до DDL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Создать индекс отдельным этапом",
@@ -23244,7 +23513,8 @@
                         "общий ROLLBACK DML не обещан"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -23335,7 +23605,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-plans",
-        "revision": "b26d01026d0f",
+        "revision": "c30bec8c1372",
         "title": "План выполнения",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-plans-review",
@@ -23383,7 +23653,8 @@
                       "label": "Оценка чтения узла ≠ число выходных строк"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать оценку узла EXPLAIN",
@@ -23435,7 +23706,8 @@
                         "50"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить с фактом и его единицей",
@@ -23489,7 +23761,8 @@
                         "нужно измерить отдельно"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -23505,6 +23778,7 @@
         "s08-03-search-field-indexes-content-plans-reasoning-1",
         "s08-03-search-field-indexes-content-plans-reasoning-2",
         "s08-03-search-field-indexes-content-plans-reasoning-3",
+        "s08-03-search-field-indexes-content-plans-reset",
         "s08-03-search-field-indexes-content-plans-example",
         "s08-03-search-field-indexes-content-plans-example-walkthrough",
         "s08-03-search-field-indexes-content-plans-result",
@@ -23608,7 +23882,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-cost",
-        "revision": "309216afcc77",
+        "revision": "fecdf4f10874",
         "title": "Стоимость поддержания индекса",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-cost-review",
@@ -23683,7 +23957,8 @@
                       "label": "Стоимость поддержания"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить чтение и запись",
@@ -23766,7 +24041,8 @@
                         "поддержание индекса дороже"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Принять решение по всей нагрузке",
@@ -23853,7 +24129,8 @@
                         "вывод по совокупной нагрузке"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -23954,7 +24231,7 @@
           ]
         },
         "id": "s08-03-search-field-indexes-content-index-register",
-        "revision": "b239e8a53386",
+        "revision": "4b764aa0212c",
         "title": "Реестр индексов",
         "lectureId": "s08-03-search-field-indexes",
         "passportId": "s08-03-search-field-indexes-content-index-register-review",
@@ -24012,7 +24289,8 @@
                       "label": "Утверждение об ускорении → условия и измерение"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Восстановить условия опыта",
@@ -24076,7 +24354,8 @@
                         "точные параметры"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Заполнить проверяемый реестр",
@@ -24141,7 +24420,8 @@
                         "планы и измерения до/после"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -24250,7 +24530,7 @@
           ]
         },
         "id": "s08-04-access-control-content-responsibility",
-        "revision": "8f0ce107c1dd",
+        "revision": "41d9ce7e5ed1",
         "title": "Привилегия",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-responsibility-review",
@@ -24317,7 +24597,8 @@
                       "label": "Изменение не требуется"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вывести право из операции",
@@ -24390,7 +24671,8 @@
                         "v_report"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выдать право на нужный объект",
@@ -24471,7 +24753,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -24581,7 +24864,7 @@
           ]
         },
         "id": "s08-04-access-control-content-activation",
-        "revision": "c157295be3fa",
+        "revision": "9fbcf0385a1d",
         "title": "Роль",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-activation-review",
@@ -24650,7 +24933,8 @@
                       "label": "Но не активирована в соединении"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать активные роли соединения",
@@ -24723,7 +25007,8 @@
                         "NONE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Активировать назначенную роль",
@@ -24796,7 +25081,8 @@
                         "разрешён"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -24811,6 +25097,7 @@
         "s08-04-access-control-content-activation-concept",
         "s08-04-access-control-content-activation-reasoning-1",
         "s08-04-access-control-content-activation-reasoning-2",
+        "s08-04-access-control-content-role-user-setup",
         "s08-04-access-control-content-activation-example",
         "s08-04-access-control-content-activation-example-walkthrough",
         "s08-04-access-control-content-activation-review",
@@ -24886,7 +25173,7 @@
           ]
         },
         "id": "s08-04-access-control-content-least",
-        "revision": "60ff6750741b",
+        "revision": "47b899e1d7ac",
         "title": "Принцип минимальных привилегий",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-least-review",
@@ -24934,7 +25221,8 @@
                       "label": "INSERT без неоговорённых DELETE и DDL"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отделить добавление от удаления",
@@ -24986,7 +25274,8 @@
                         "INSERT"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выдать минимальное разрешение",
@@ -25040,7 +25329,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -25147,7 +25437,7 @@
           ]
         },
         "id": "s08-04-access-control-content-grant-revoke",
-        "revision": "8ffdf9632bfa",
+        "revision": "950392ad28b0",
         "title": "REVOKE",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-grant-revoke-review",
@@ -25208,7 +25498,8 @@
                       "label": "Остался другой путь права"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отозвать прямой SELECT",
@@ -25273,7 +25564,8 @@
                         "есть SELECT"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить оставшийся путь",
@@ -25343,7 +25635,8 @@
                         "активная роль reader"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -25453,7 +25746,7 @@
           ]
         },
         "id": "s08-04-access-control-content-view",
-        "revision": "bfe755da2848",
+        "revision": "971a5fe8b10d",
         "title": "Интерфейс доступа через VIEW",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-view-review",
@@ -25522,7 +25815,8 @@
                       "label": "Обход через прямое чтение базовой таблицы"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать телефон в обход VIEW",
@@ -25595,7 +25889,8 @@
                         "+7…"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Устранить обходной маршрут",
@@ -25672,7 +25967,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -25778,7 +26074,7 @@
           ]
         },
         "id": "s08-04-access-control-content-allowed",
-        "revision": "4779284e6667",
+        "revision": "70fbf9e9b356",
         "title": "Позитивный тест доступа",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-allowed-review",
@@ -25843,7 +26139,8 @@
                       "label": "Нужное соединение для позитивного испытания"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Открыть соединение редактора",
@@ -25910,7 +26207,8 @@
                         "editor@localhost"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Испытать INSERT от редактора",
@@ -25981,7 +26279,8 @@
                         "ожидаемый успех и проверенный эффект"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -26074,7 +26373,7 @@
           ]
         },
         "id": "s08-04-access-control-content-denied",
-        "revision": "5fb391804416",
+        "revision": "0cedf8f3515e",
         "title": "Негативный тест доступа",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-denied-review",
@@ -26126,7 +26425,8 @@
                       "label": "Сначала корректный SQL, затем проверка авторизации"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Устранить синтаксическую ошибку",
@@ -26180,7 +26480,8 @@
                         "DELETE FROM requests WHERE id=-1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Испытать запрет по правильной причине",
@@ -26238,7 +26539,8 @@
                         "DELETE denied"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -26339,7 +26641,7 @@
           ]
         },
         "id": "s08-04-access-control-content-matrix",
-        "revision": "e7dd9033e9be",
+        "revision": "a8f75fb810bf",
         "title": "Матрица доступа",
         "lectureId": "s08-04-access-control",
         "passportId": "s08-04-access-control-content-matrix-review",
@@ -26399,7 +26701,8 @@
                       "label": "Оба направления матрицы проверяются целевым соединением"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать разрешённое VIEW",
@@ -26465,7 +26768,8 @@
                         "успех"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить запрещённую базовую таблицу",
@@ -26531,7 +26835,8 @@
                         "отказ по правам"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -26636,7 +26941,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-scope",
-        "revision": "b2ccea6c01c5",
+        "revision": "056e781ff267",
         "title": "Резервная копия",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-scope-review",
@@ -26700,7 +27005,8 @@
                       "label": "Сверка состава перед восстановлением"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить состав копии",
@@ -26776,7 +27082,8 @@
                         "обязательны"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Восстановить полный согласованный состав",
@@ -26852,7 +27159,8 @@
                         "контрольные вызовы"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -26950,7 +27258,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-backup-user",
-        "revision": "f323b6fdc8c4",
+        "revision": "15297885bc04",
         "title": "Учётная запись резервирования",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-backup-user-review",
@@ -27006,7 +27314,8 @@
                       "label": "Права зависят от версии сервера и параметров dump"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти причину отказа routines",
@@ -27068,7 +27377,8 @@
                         "недостаточно прав"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Согласовать минимальные права",
@@ -27130,7 +27440,8 @@
                         "минимум для обязательного состава"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -27221,7 +27532,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-dump",
-        "revision": "b678e76e229f",
+        "revision": "30928d8dfde2",
         "title": "Логическая резервная копия",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-dump-review",
@@ -27271,7 +27582,8 @@
                       "label": "Конфликтующий DDL нарушает предпосылки способа копирования"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Найти конфликтующий DDL",
@@ -27325,7 +27637,8 @@
                         "ALTER TABLE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Организовать окно согласованности",
@@ -27379,7 +27692,8 @@
                         "исключён на время копирования"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -27488,7 +27802,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-restore",
-        "revision": "c2119b677087",
+        "revision": "a95a1cde737f",
         "title": "Контрольное восстановление",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-restore-review",
@@ -27557,7 +27871,8 @@
                       "label": "Отдельный экземпляр сохраняет имя схемы без обходного доступа"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать квалифицированную ссылку VIEW",
@@ -27630,7 +27945,8 @@
                         "service_training"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Восстановить в отдельный экземпляр",
@@ -27705,7 +28021,8 @@
                         "восстановленная requests"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -27722,6 +28039,8 @@
         "s08-05-backup-and-protection-content-restore-reasoning-2",
         "s08-05-backup-and-protection-content-restore-example",
         "s08-05-backup-and-protection-content-restore-example-walkthrough",
+        "s08-05-backup-and-protection-content-restore-connect",
+        "s08-05-backup-and-protection-content-restore-import",
         "s08-05-backup-and-protection-content-restore-review",
         "s08-05-backup-and-protection-content-restore-T01-slide",
         "s08-05-backup-and-protection-content-restore-T02-slide",
@@ -27807,7 +28126,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-objects",
-        "revision": "2603c0f5dc13",
+        "revision": "ec771a6a991d",
         "title": "Состав объектов восстановления",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-objects-review",
@@ -27867,7 +28186,8 @@
                       "label": "Множество имён и определения, не только число 8"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить множества имён",
@@ -27931,7 +28251,8 @@
                         "unrelated"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить определения нужных объектов",
@@ -27999,7 +28320,8 @@
                         "SHOW CREATE каждого существенного объекта"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -28097,7 +28419,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-rows",
-        "revision": "e280696a780d",
+        "revision": "a59bfe585c4b",
         "title": "Сверка восстановленных данных",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-rows-review",
@@ -28153,7 +28475,8 @@
                       "label": "Сравнение одной пары ключа и её существенных значений"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сопоставить строку по ключу",
@@ -28217,7 +28540,8 @@
                         "5"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Зафиксировать непригодное восстановление",
@@ -28279,7 +28603,8 @@
                         "диагностировать копию и повторить restore"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -28388,7 +28713,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-behavior",
-        "revision": "578ef4cd28f3",
+        "revision": "ce3918f0bc75",
         "title": "Проверка поведения после восстановления",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-behavior-review",
@@ -28457,7 +28782,8 @@
                       "label": "Успех и отказ проверяются по эффектам"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Прочитать DEFINER процедуры",
@@ -28530,7 +28856,8 @@
                         "нет"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Испытать поведение после настройки",
@@ -28607,7 +28934,8 @@
                         "откат всех эффектов и сообщение ошибки"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -28719,7 +29047,7 @@
           ]
         },
         "id": "s08-05-backup-and-protection-content-protection",
-        "revision": "db024acbf58e",
+        "revision": "9f55336b804c",
         "title": "Протокол резервирования",
         "lectureId": "s08-05-backup-and-protection",
         "passportId": "s08-05-backup-and-protection-content-protection-review",
@@ -28790,7 +29118,8 @@
                       "label": "Восстановимость требует отдельного испытания"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить SHA-256 при передаче",
@@ -28867,7 +29196,8 @@
                         "да"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Отдельно испытать восстановление",
@@ -28946,7 +29276,8 @@
                         "restore и проверки объектов, данных, поведения"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -29048,7 +29379,7 @@
           ]
         },
         "id": "s08-06-results-package-content-objects",
-        "revision": "bbb8bed1a73e",
+        "revision": "b672b95ff862",
         "title": "Комплект результатов",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-objects-review",
@@ -29108,7 +29439,8 @@
                       "label": "Сверка таблиц, ключей, загрузки и контрольных результатов"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сравнить ревизии комплекта",
@@ -29174,7 +29506,8 @@
                         "1"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Совместно испытать одну ревизию",
@@ -29240,7 +29573,8 @@
                         "испытаны с DDL 3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -29355,7 +29689,7 @@
           ]
         },
         "id": "s08-06-results-package-content-data",
-        "revision": "d1026a72b95e",
+        "revision": "b65a4b4e87ff",
         "title": "Происхождение данных",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-data-review",
@@ -29430,7 +29764,8 @@
                       "label": "Три непринятых факта с координатами"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Восстановить судьбу шести строк",
@@ -29511,7 +29846,8 @@
                         "3"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Передать непринятые факты с причинами",
@@ -29598,7 +29934,8 @@
                         "duplicate key"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -29692,7 +30029,7 @@
           ]
         },
         "id": "s08-06-results-package-content-er",
-        "revision": "8e52b9e32732",
+        "revision": "033490bed11f",
         "title": "Поставочная ER-модель",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-er-review",
@@ -29744,7 +30081,8 @@
                       "label": "Существенное свойство code должно совпасть"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Сверить новое ограничение DDL",
@@ -29802,7 +30140,8 @@
                         "UNIQUE"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Согласовать поставочную ER",
@@ -29860,7 +30199,8 @@
                         "UNIQUE как в DDL"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -29970,7 +30310,7 @@
           ]
         },
         "id": "s08-06-results-package-content-scripts",
-        "revision": "c95a8bab3cc6",
+        "revision": "02e8009fb829",
         "title": "Маршрут развёртывания",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-scripts-review",
@@ -30039,7 +30379,8 @@
                       "label": "Затем подготовленное состояние и проверка VIEW"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Вывести порядок из зависимостей",
@@ -30116,7 +30457,8 @@
                         "состояние после load.sql по заданному маршруту"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Запустить по согласованному маршруту",
@@ -30201,7 +30543,8 @@
                         "контрольные запросы"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -30217,6 +30560,7 @@
         "s08-06-results-package-content-scripts-reasoning-1",
         "s08-06-results-package-content-scripts-example",
         "s08-06-results-package-content-scripts-example-walkthrough",
+        "s08-06-results-package-content-delivery-state",
         "s08-06-results-package-content-scripts-review",
         "s08-06-results-package-content-scripts-T02-slide",
         "s08-06-results-package-content-scripts-T03-slide",
@@ -30310,7 +30654,7 @@
           ]
         },
         "id": "s08-06-results-package-content-evidence",
-        "revision": "4df271b8d5a3",
+        "revision": "a3a3e964529a",
         "title": "Трассируемость результата",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-evidence-review",
@@ -30379,7 +30723,8 @@
                       "label": "Свидетельство должно отвечать данному утверждению"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Выполнить поиск ненулевых сирот",
@@ -30446,7 +30791,8 @@
                       "request_id"
                     ],
                     "rows": []
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Привязать вывод к запросу и данным",
@@ -30521,7 +30867,8 @@
                         "0 строк"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -30618,7 +30965,7 @@
           ]
         },
         "id": "s08-06-results-package-content-backup",
-        "revision": "5dbc2e969318",
+        "revision": "15cd6ce93cc2",
         "title": "Испытанная резервная копия",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-backup-review",
@@ -30674,7 +31021,8 @@
                       "label": "Создание копии → условия передачи → испытание восстановления"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Восстановить условия создания dump",
@@ -30738,7 +31086,8 @@
                         "проверить достаточность"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Испытать копию по переданному маршруту",
@@ -30798,7 +31147,8 @@
                         "состав, данные, поведение"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -30893,7 +31243,7 @@
           ]
         },
         "id": "s08-06-results-package-content-secrets",
-        "revision": "f53b49c132cf",
+        "revision": "ba06bc6bb28c",
         "title": "Секрет доступа",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-secrets-review",
@@ -30947,7 +31297,8 @@
                       "label": "Секрет подставляется локально, не входит в учебную поставку"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Удалить действующий пароль из примера",
@@ -31005,7 +31356,8 @@
                         "<LOCAL_SECRET>"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Получить секрет локально",
@@ -31061,7 +31413,8 @@
                         "mysql --host=127.0.0.1 --user=training_reader --password"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -31166,7 +31519,7 @@
           ]
         },
         "id": "s08-06-results-package-content-final-run",
-        "revision": "e0bf839f4c5e",
+        "revision": "07f2b7d7a6fa",
         "title": "Сквозное испытание поставки",
         "lectureId": "s08-06-results-package",
         "passportId": "s08-06-results-package-content-final-run-review",
@@ -31231,7 +31584,8 @@
                       "label": "Контроль результата полного маршрута"
                     }
                   ],
-                  "result": null
+                  "result": null,
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Развернуть распакованный архив",
@@ -31300,7 +31654,8 @@
                         "чистая учебная цель"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 },
                 {
                   "title": "Проверить полный результат",
@@ -31381,7 +31736,8 @@
                         "испытаны от целевых пользователей и в restore"
                       ]
                     ]
-                  }
+                  },
+                  "sqlRole": "inspection"
                 }
               ]
             }
@@ -36416,6 +36772,66 @@
     "s08-06-results-package-content-final-run-example-walkthrough": {
       "questionId": "s08-06-results-package-content-final-run",
       "number": 8
+    },
+    "s07-03-implement-table-set-content-requests-ddl-start": {
+      "questionId": "s07-03-implement-table-set-content-order",
+      "number": 7
+    },
+    "s07-03-implement-table-set-content-requests-ddl-end": {
+      "questionId": "s07-03-implement-table-set-content-order",
+      "number": 7
+    },
+    "s07-05-prepare-and-load-data-content-insert-resolved": {
+      "questionId": "s07-05-prepare-and-load-data-content-resolve",
+      "number": 7
+    },
+    "s07-05-prepare-and-load-data-content-insert-result": {
+      "questionId": "s07-05-prepare-and-load-data-content-resolve",
+      "number": 7
+    },
+    "s07-06-validate-load-and-delivery-script-content-compare-source-parent": {
+      "questionId": "s07-06-validate-load-and-delivery-script-content-orphans",
+      "number": 3
+    },
+    "s08-01-views-content-view-owner-setup": {
+      "questionId": "s08-01-views-content-meaning",
+      "number": 1
+    },
+    "s08-02-coordinated-data-changes-content-procedure-create-start": {
+      "questionId": "s08-02-coordinated-data-changes-content-procedure",
+      "number": 5
+    },
+    "s08-02-coordinated-data-changes-content-procedure-body-finish": {
+      "questionId": "s08-02-coordinated-data-changes-content-procedure",
+      "number": 5
+    },
+    "s08-02-coordinated-data-changes-content-procedure-create-end": {
+      "questionId": "s08-02-coordinated-data-changes-content-procedure",
+      "number": 5
+    },
+    "s08-02-coordinated-data-changes-content-procedure-call": {
+      "questionId": "s08-02-coordinated-data-changes-content-procedure",
+      "number": 5
+    },
+    "s08-03-search-field-indexes-content-plans-reset": {
+      "questionId": "s08-03-search-field-indexes-content-plans",
+      "number": 6
+    },
+    "s08-04-access-control-content-role-user-setup": {
+      "questionId": "s08-04-access-control-content-activation",
+      "number": 2
+    },
+    "s08-05-backup-and-protection-content-restore-connect": {
+      "questionId": "s08-05-backup-and-protection-content-restore",
+      "number": 4
+    },
+    "s08-05-backup-and-protection-content-restore-import": {
+      "questionId": "s08-05-backup-and-protection-content-restore",
+      "number": 4
+    },
+    "s08-06-results-package-content-delivery-state": {
+      "questionId": "s08-06-results-package-content-scripts",
+      "number": 4
     }
   },
   "lectureModels": {
@@ -37213,5 +37629,24 @@
     "s08-06-results-package-content-backup-example-walkthrough",
     "s08-06-results-package-content-secrets-example-walkthrough",
     "s08-06-results-package-content-final-run-example-walkthrough"
+  ],
+  "standaloneAdditions": [
+    "s07-01-source-data-package-content-source-accepted",
+    "s07-01-source-data-package-content-source-rejected",
+    "s07-03-implement-table-set-content-requests-ddl-start",
+    "s07-03-implement-table-set-content-requests-ddl-end",
+    "s07-05-prepare-and-load-data-content-insert-resolved",
+    "s07-05-prepare-and-load-data-content-insert-result",
+    "s07-06-validate-load-and-delivery-script-content-compare-source-parent",
+    "s08-01-views-content-view-owner-setup",
+    "s08-02-coordinated-data-changes-content-procedure-create-start",
+    "s08-02-coordinated-data-changes-content-procedure-body-finish",
+    "s08-02-coordinated-data-changes-content-procedure-create-end",
+    "s08-02-coordinated-data-changes-content-procedure-call",
+    "s08-03-search-field-indexes-content-plans-reset",
+    "s08-04-access-control-content-role-user-setup",
+    "s08-05-backup-and-protection-content-restore-connect",
+    "s08-05-backup-and-protection-content-restore-import",
+    "s08-06-results-package-content-delivery-state"
   ]
 }

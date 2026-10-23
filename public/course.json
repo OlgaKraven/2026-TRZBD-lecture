@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "trzbd-2026.10.23-student-review-r12",
+  "contentVersion": "trzbd-2026.10.23-independent-paths-r14",
   "id": "trzbd",
   "code": "МДК.11.01 · 4 курс",
   "discipline": "Технология разработки и защиты баз данных",
@@ -175,6 +175,42 @@
           "kicker": "Разобранное решение",
           "title": "Ход решения: Откуда берётся учебная база",
           "body": "Начинаем до создания БД: файлы содержат внешние коды, а не готовые внутренние id. Сначала выясняем смысл строки и допустимые значения, затем проектируем хранение.\n\nТри файла не исчерпывают описание. Статусы NEW, WORK, CLOSED и допустимые детали P01, P07 заданы условиями случая. Паспорту нужны сами файлы и эти правила, иначе другой разработчик не сможет объяснить возникновение справочников. Количества относятся к нашему стенду, а не ко всем проектам баз данных."
+        },
+        {
+          "id": "s07-01-source-data-package-content-source-accepted",
+          "kicker": "От условия к выполнению",
+          "title": "Исходник: строки 1–3",
+          "kind": "example",
+          "body": "Это CSV, а не SQL. После заголовка считаются строки данных: R101, R102, R103. Точка с запятой в part_codes разделяет детали внутри одного поля.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "request_no,client_code,branch_code,status_code,received_at,part_codes\nR101,C01,B01,NEW,2026-09-01 09:00:00,P01;P07\nR102,C02,B01,WORK,2026-09-01 10:00:00,P01\nR103,C01,B02,CLOSED,2026-09-02 11:00:00,P07",
+                "label": "Исходник: строки 1–3",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Исходник: строки 1–3"
+          }
+        },
+        {
+          "id": "s07-01-source-data-package-content-source-rejected",
+          "kicker": "От условия к выполнению",
+          "title": "Исходник: строки 4–6",
+          "kind": "example",
+          "body": "B99 отсутствует в branches; у строки 5 нет номера; строка 6 повторяет R101. Эти три строки сохраняются в staging и получают причины отказа. Они не исчезают из баланса шести строк.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "request_no,client_code,branch_code,status_code,received_at,part_codes\nR104,C01,B99,NEW,2026-09-02 12:00:00,P01\n,C02,B02,NEW,2026-09-02 13:00:00,P07\nR101,C01,B01,NEW,2026-09-01 09:00:00,P01;P07",
+                "label": "Исходник: строки 4–6",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Исходник: строки 4–6"
+          }
         },
         {
           "id": "s07-01-source-data-package-content-database-map",
@@ -1986,7 +2022,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Откуда берётся учебная база",
-          "body": "Используем опись и правила первой темы. Теперь решаем, какому объекту принадлежит каждый факт: повтор названия сам по себе ещё не основание для новой таблицы.\n\nТри файла не исчерпывают описание. Статусы NEW, WORK, CLOSED и допустимые детали P01, P07 заданы условиями случая. Паспорту нужны сами файлы и эти правила, иначе другой разработчик не сможет объяснить возникновение справочников. Количества относятся к нашему стенду, а не ко всем проектам баз данных."
+          "body": "Используем опись и правила первой темы. Теперь решаем, какому объекту принадлежит каждый факт: повтор названия сам по себе ещё не основание для новой таблицы.\n\nR101 связан с C01 и B01; P01 и P07 образуют две позиции request_parts. Сведения о клиенте относятся к clients, сведения о филиале — к branches. Количество детали принадлежит паре заявки и детали. Так из одного входа получаются разные единицы учёта."
         },
         {
           "id": "s07-02-table-list-from-source-data-content-database-map",
@@ -3803,7 +3839,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Откуда берётся учебная база",
-          "body": "Исходный каталог уже задаёт таблицы и связи. Здесь переводим его в исполняемые ограничения MySQL: типы, PK, UNIQUE, NOT NULL, CHECK и FK.\n\nТри файла не исчерпывают описание. Статусы NEW, WORK, CLOSED и допустимые детали P01, P07 заданы условиями случая. Паспорту нужны сами файлы и эти правила, иначе другой разработчик не сможет объяснить возникновение справочников. Количества относятся к нашему стенду, а не ко всем проектам баз данных."
+          "body": "Исходный каталог уже задаёт таблицы и связи. Здесь переводим его в исполняемые ограничения MySQL: типы, PK, UNIQUE, NOT NULL, CHECK и FK.\n\nДля трёх заявок уже известны родители: clients 1=C01, 2=C02; branches 1=B01, 2=B02; статусы 1=NEW, 2=WORK, 3=CLOSED. CREATE TABLE закрепляет типы, уникальность номера и три обязательные ссылки. DDL проверяется по определениям, а не по наличию этих трёх строк."
         },
         {
           "id": "s07-03-implement-table-set-content-database-map",
@@ -4463,7 +4499,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Ограничение филиала",
-          "body": "При вставке branch_id=999 InnoDB проверит branches.id и отвергнет строку, если такого филиала нет. Существующий, но неверно выбранный id всё ещё нужно обнаружить сверкой с источником.",
+          "body": "При вставке branch_id=999 InnoDB проверит branches.id и отвергнет строку, если такого филиала нет. Существующий, но неверно выбранный id всё ещё нужно обнаружить сверкой с источником. Здесь CONSTRAINT — фрагмент внутри CREATE TABLE. Полное определение requests следует в вопросе 7, после разбора всех ограничений.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/create-table.html"
         },
         {
@@ -5074,6 +5110,44 @@
           "source": "https://dev.mysql.com/doc/refman/8.4/en/create-table.html"
         },
         {
+          "id": "s07-03-implement-table-set-content-requests-ddl-start",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/create-table.html",
+          "title": "requests: поля и ключи",
+          "kind": "example",
+          "body": "Начало одной команды CREATE TABLE; продолжение — на следующем экране. Родители clients, branches, request_statuses уже созданы. Типы их id совпадают с типами ссылок.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "CREATE TABLE requests (\n id BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,\n request_no VARCHAR(24) NOT NULL UNIQUE,\n client_id BIGINT UNSIGNED NOT NULL,\n branch_id BIGINT UNSIGNED NOT NULL,\n status_id BIGINT UNSIGNED NOT NULL,\n received_at DATETIME NOT NULL,",
+                "label": "requests: поля и ключи",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "requests: поля и ключи"
+          }
+        },
+        {
+          "id": "s07-03-implement-table-set-content-requests-ddl-end",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/create-table.html",
+          "title": "requests: ограничения и завершение",
+          "kind": "example",
+          "body": "Продолжение предыдущего фрагмента. CHECK запрещает пустой номер; три FK проверяют родителей. Скобка и точка с запятой завершают одну команду CREATE TABLE.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": " CONSTRAINT chk_request_no\n  CHECK (CHAR_LENGTH(TRIM(request_no)) > 0),\n CONSTRAINT fk_requests_client FOREIGN KEY (client_id)\n  REFERENCES clients(id),\n CONSTRAINT fk_requests_branch FOREIGN KEY (branch_id)\n  REFERENCES branches(id),\n CONSTRAINT fk_requests_status FOREIGN KEY (status_id)\n  REFERENCES request_statuses(id)\n) ENGINE=InnoDB;",
+                "label": "requests: ограничения и завершение",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "requests: ограничения и завершение"
+          }
+        },
+        {
           "id": "s07-03-implement-table-set-content-order-review",
           "kind": "theory",
           "title": "Граф зависимостей DDL: самостоятельное исследование",
@@ -5560,7 +5634,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Учебный набор: три принятые заявки",
-          "body": "Таблицы уже созданы DDL из предыдущей темы. Читаем их фактические метаданные; нарисованная линия без ограничения в базе не обеспечивает целостность.\n\nЭто синтетический стенд курса. В справочнике клиентов 1=C01, 2=C02; филиалы 1=B01, 2=B02, 3=B03; статусы 1=NEW, 2=WORK, 3=CLOSED. Рядом всегда различаем внутренний id и код источника: одинаковые цифры в разных таблицах не означают один объект. Исходных строк requests.csv шесть; ещё три строки отклонены, а не потеряны."
+          "body": "Таблицы уже созданы DDL из предыдущей темы. Читаем их фактические метаданные; нарисованная линия без ограничения в базе не обеспечивает целостность.\n\nВ R101 ссылки client_id=1, branch_id=1, status_id=1 ведут к C01, B01 и NEW. На ER каждая линия читается по паре столбцов и кратностям. Три FK заявки — часть восьми FK стенда; остальные связывают детали, работы и журнал."
         },
         {
           "id": "s07-04-er-diagram-content-database-map",
@@ -7403,7 +7477,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Учебный набор: три принятые заявки",
-          "body": "Структура и ключи уже существуют. Сначала сохраняем исходные строки в staging, затем проверяем их и переводим внешние коды в внутренние ссылки.\n\nЭто синтетический стенд курса. В справочнике клиентов 1=C01, 2=C02; филиалы 1=B01, 2=B02, 3=B03; статусы 1=NEW, 2=WORK, 3=CLOSED. Рядом всегда различаем внутренний id и код источника: одинаковые цифры в разных таблицах не означают один объект. Исходных строк requests.csv шесть; ещё три строки отклонены, а не потеряны."
+          "body": "Структура и ключи уже существуют. Сначала сохраняем исходные строки в staging, затем проверяем их и переводим внешние коды в внутренние ссылки.\n\nВо входном requests.csv шесть строк. Первые три дают R101, R102, R103; строки 4–6 содержат B99, пустой номер и повтор R101. Staging сохраняет все шесть, requests — только три принятых. R101 с P01;P07 даёт две строки request_parts, поэтому позиций всего четыре."
         },
         {
           "id": "s07-05-prepare-and-load-data-content-database-map",
@@ -8692,6 +8766,59 @@
           "source": "https://dev.mysql.com/doc/refman/8.4/en/load-data.html"
         },
         {
+          "id": "s07-05-prepare-and-load-data-content-insert-resolved",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/load-data.html",
+          "title": "От найденных id к INSERT",
+          "kind": "example",
+          "body": "requests пуста; staging, справочники и протокол отказов подготовлены.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "INSERT INTO requests\n (request_no,client_id,branch_id,status_id,received_at)\nSELECT s.request_no,c.id,b.id,d.id,\n CAST(s.received_at AS DATETIME)\nFROM stage_requests s\nJOIN clients c ON c.code=s.client_code\nJOIN branches b ON b.code=s.branch_code\nJOIN request_statuses d ON d.code=s.status_code\nWHERE NOT EXISTS (SELECT 1 FROM load_rejections e\n WHERE e.source_row=s.source_row);",
+                "label": "От найденных id к INSERT",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "От найденных id к INSERT"
+          }
+        },
+        {
+          "id": "s07-05-prepare-and-load-data-content-insert-result",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/load-data.html",
+          "title": "Три строки после преобразования",
+          "kind": "example",
+          "columns": [
+            "request_no",
+            "client_id",
+            "branch_id",
+            "status_id"
+          ],
+          "rows": [
+            [
+              "R101",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "R102",
+              "2",
+              "1",
+              "2"
+            ],
+            [
+              "R103",
+              "1",
+              "2",
+              "3"
+            ]
+          ],
+          "body": "R101 получил ссылки на C01, B01 и NEW. NOT EXISTS оставил строки, для которых в load_rejections нет записи с тем же source_row. Строки 4–6 исключены; исходные коды сохранены в staging. Повторный INSERT требует отдельного правила."
+        },
+        {
           "id": "s07-05-prepare-and-load-data-content-resolve-review",
           "kind": "theory",
           "title": "Разрешение кода: самостоятельное исследование",
@@ -9186,7 +9313,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Учебный набор: три принятые заявки",
-          "body": "Загрузка завершена: три строки приняты, три отклонены. Теперь независимо проверяем и количество, и значения, и связи; повторение команды загрузки такой проверки не заменяет.\n\nЭто синтетический стенд курса. В справочнике клиентов 1=C01, 2=C02; филиалы 1=B01, 2=B02, 3=B03; статусы 1=NEW, 2=WORK, 3=CLOSED. Рядом всегда различаем внутренний id и код источника: одинаковые цифры в разных таблицах не означают один объект. Исходных строк requests.csv шесть; ещё три строки отклонены, а не потеряны."
+          "body": "Загрузка завершена: три строки приняты, три отклонены. Теперь независимо проверяем и количество, и значения, и связи; повторение команды загрузки такой проверки не заменяет.\n\nНа исходном состоянии requests=3, request_parts=4, completed_works=1. R101 должен ссылаться на C01, B01 и NEW. Сохранение количества при подмене client_id на существующего C02 объясняет, зачем после COUNT независимо сравниваются поля и ссылки."
         },
         {
           "id": "s07-06-validate-load-and-delivery-script-content-database-map",
@@ -9653,6 +9780,25 @@
           "title": "Ход решения: Что увидят две проверки",
           "body": "Третье состояние не создаётся штатным INSERT со включённым FK; оно показывает роль проверки полученной неизвестной базы. Второй случай реально можно получить допустимым UPDATE, поэтому он особенно важен.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/information-schema.html"
+        },
+        {
+          "id": "s07-06-validate-load-and-delivery-script-content-compare-source-parent",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/information-schema.html",
+          "title": "Сверка существующего родителя",
+          "kind": "example",
+          "body": "В исходном исправном наборе результат пуст. Если R101 ошибочно ссылается на C02, запрос вернёт expected=C01, actual=C02. FK такую подмену не обнаруживает: оба клиента существуют. Отклонённые исходные строки не участвуют в сверке.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "SELECT s.source_row,s.client_code AS expected,\n c.code AS actual\nFROM stage_requests s\nJOIN requests r ON r.request_no=s.request_no\nJOIN clients c ON c.id=r.client_id\nWHERE NOT EXISTS (SELECT 1 FROM load_rejections e\n WHERE e.source_row=s.source_row)\n AND c.code<>s.client_code;",
+                "label": "Сверка существующего родителя",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Сверка существующего родителя"
+          }
         },
         {
           "id": "s07-06-validate-load-and-delivery-script-content-orphans-review",
@@ -10942,7 +11088,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Учебный набор: три принятые заявки",
-          "body": "Опираемся на загруженные заявки и FK. Перед каждым SELECT определяем смысл одной строки результата: заявка, позиция детали или итог по филиалу.\n\nЭто синтетический стенд курса. В справочнике клиентов 1=C01, 2=C02; филиалы 1=B01, 2=B02, 3=B03; статусы 1=NEW, 2=WORK, 3=CLOSED. Рядом всегда различаем внутренний id и код источника: одинаковые цифры в разных таблицах не означают один объект. Исходных строк requests.csv шесть; ещё три строки отклонены, а не потеряны."
+          "body": "Опираемся на загруженные заявки и FK. Перед каждым SELECT определяем смысл одной строки результата: заявка, позиция детали или итог по филиалу.\n\nТри строки requests означают три заявки. Соединение с четырьмя позициями request_parts даёт четыре строки: R101 повторяется для P01 и P07. Филиал B03 не имеет заявок. На этих двух свойствах проверяются гранулярность, LEFT JOIN и агрегаты."
         },
         {
           "id": "s07-07-control-queries-content-database-map",
@@ -12802,7 +12948,7 @@
           "kicker": "Представления по загруженной базе",
           "bullets": [
             "VIEW хранит определение SELECT. Результат SELECT определяется данными, видимыми текущей транзакции; VIEW не хранит собственную копию строк.",
-            "WHERE s.code <> CLOSED исключает закрытую заявку. JOIN восстанавливает код филиала по ключу; его корректность сначала проверяем как у обычного запроса."
+            "WHERE s.code <> 'CLOSED' исключает закрытую заявку. JOIN восстанавливает код филиала по ключу; его корректность сначала проверяем как у обычного запроса."
           ],
           "source": "https://dev.mysql.com/doc/refman/8.4/en/create-view.html"
         },
@@ -12829,6 +12975,25 @@
           "kicker": "Представления по загруженной базе",
           "body": "Это полезно для повторяемого чтения, но не подходит для фиксации отчёта на определённый момент: для такого отчёта потребуются отдельно сохранённый результат и время снимка.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/create-view.html"
+        },
+        {
+          "id": "s08-01-views-content-view-owner-setup",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/create-view.html",
+          "title": "Кто исполняет запрос VIEW",
+          "kind": "example",
+          "body": "Однократная подготовка администратором в отдельном стенде перед CREATE VIEW. ACCOUNT LOCK запрещает вход владельцу, но не использование его прав через DEFINER. Здесь выбрано чтение учебной схемы; существующую учётную запись сначала проверяют, а не создают повторно.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "CREATE USER 'trzbd_view_owner'@'localhost'\n ACCOUNT LOCK;\nGRANT SELECT ON service_training.*\n TO 'trzbd_view_owner'@'localhost';",
+                "label": "Кто исполняет запрос VIEW",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Кто исполняет запрос VIEW"
+          }
         },
         {
           "id": "s08-01-views-content-meaning-example",
@@ -15653,6 +15818,25 @@
           "source": "https://dev.mysql.com/doc/refman/8.4/en/declare-handler.html"
         },
         {
+          "id": "s08-02-coordinated-data-changes-content-procedure-create-start",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/declare-handler.html",
+          "title": "Создание процедуры: начало",
+          "kind": "example",
+          "body": "Далее идут два фрагмента тела этой же команды, затем END и возврат разделителя. Процедура сама управляет транзакцией: CALL выполняют вне уже начатой транзакции. INVOKER требует необходимых прав у вызывающего.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "DELIMITER $$\nCREATE PROCEDURE close_request(\n IN p_request_id BIGINT UNSIGNED,\n IN p_work_code VARCHAR(12))\nSQL SECURITY INVOKER\nBEGIN",
+                "label": "Создание процедуры: начало",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Создание процедуры: начало"
+          }
+        },
+        {
           "id": "s08-02-coordinated-data-changes-content-procedure-example",
           "kind": "example",
           "title": "Тело согласованной операции",
@@ -15661,7 +15845,7 @@
             "type": "codeParts",
             "parts": [
               {
-                "code": "DECLARE v_closed BIGINT UNSIGNED;\n DECLARE EXIT HANDLER FOR SQLEXCEPTION BEGIN ROLLBACK; RESIGNAL; END;\n  START TRANSACTION;\n SELECT id INTO v_closed FROM request_statuses WHERE code='CLOSED';\n UPDATE requests SET status_id=v_closed WHERE id=p_request_id AND status_id<>v_closed;\n IF ROW_COUNT()<>1 THEN\n  SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Заявка отсутствует или уже закрыта';\n END IF;\n  INSERT INTO completed_works(request_id,work_code) VALUES(p_request_id,p_work_code);\n COMMIT;",
+                "code": "DECLARE v_closed BIGINT UNSIGNED;\nDECLARE EXIT HANDLER FOR SQLEXCEPTION\n BEGIN ROLLBACK; RESIGNAL; END;\nSTART TRANSACTION;\nSELECT id INTO v_closed FROM request_statuses\n WHERE code='CLOSED';\nUPDATE requests SET status_id=v_closed\n WHERE id=p_request_id AND status_id<>v_closed;",
                 "label": "Тело согласованной операции",
                 "explanation": "Учебный стенд MySQL 8.4"
               }
@@ -15671,12 +15855,69 @@
           "source": "https://dev.mysql.com/doc/refman/8.4/en/declare-handler.html"
         },
         {
+          "id": "s08-02-coordinated-data-changes-content-procedure-body-finish",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/declare-handler.html",
+          "title": "Проверка изменения и запись работы",
+          "kind": "example",
+          "body": "Продолжение тела: ROW_COUNT проверяется сразу после UPDATE. SIGNAL попадёт в обработчик; ошибка INSERT вызовет тот же полный откат. COMMIT выполняется только при успехе.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "IF ROW_COUNT()<>1 THEN\n SIGNAL SQLSTATE '45000'\n  SET MESSAGE_TEXT='Заявка отсутствует или уже закрыта';\nEND IF;\nINSERT INTO completed_works(request_id,work_code)\n VALUES(p_request_id,p_work_code);\nCOMMIT;",
+                "label": "Проверка изменения и запись работы",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Проверка изменения и запись работы"
+          }
+        },
+        {
+          "id": "s08-02-coordinated-data-changes-content-procedure-create-end",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/declare-handler.html",
+          "title": "Создание процедуры: завершение",
+          "kind": "example",
+          "body": "Соедините начало, тело и завершение в один сценарий клиента mysql. DELIMITER — команда клиента, позволяющая передать BEGIN…END целиком. Только после успешного CREATE процедура доступна для CALL; отдельный DECLARE на верхнем уровне не выполняется.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "END$$\nDELIMITER ;\nSHOW CREATE PROCEDURE close_request;",
+                "label": "Создание процедуры: завершение",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Создание процедуры: завершение"
+          }
+        },
+        {
           "id": "s08-02-coordinated-data-changes-content-procedure-example-walkthrough",
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Тело согласованной операции",
           "body": "Прочитаем тело в порядке исполнения. Сначала устанавливается закрытый статус из справочника, затем условно изменяется заявка. Проверка ROW_COUNT стоит перед INSERT. Если INSERT не может сохранить работу, обработчик откатывает уже выполненный UPDATE и действие триггера. RESIGNAL не маскирует причину: клиент получает отказ и может показать его пользователю. Полное определение с параметрами и DELIMITER сохранено в examples/sql/04_objects.sql; DELIMITER — команда клиента для передачи тела, а не оператор бизнес-логики сервера.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/declare-handler.html"
+        },
+        {
+          "id": "s08-02-coordinated-data-changes-content-procedure-call",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/declare-handler.html",
+          "title": "Вызов и проверка обоих фактов",
+          "kind": "example",
+          "body": "Первый успешный опыт на исходном R101: ожидается CLOSED / DIAG и одна новая запись аудита. Повторный CALL даст отказ «уже закрыта». Для поздней ошибки используйте ещё открытую R102 и UNKNOWN: её статус WORK и число работ должны сохраниться.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "SELECT id INTO @request_id FROM requests\n WHERE request_no='R101';\nCALL close_request(@request_id,'DIAG');\nSELECT s.code,w.work_code FROM requests r\nJOIN request_statuses s ON s.id=r.status_id\nJOIN completed_works w ON w.request_id=r.id\nWHERE r.id=@request_id;",
+                "label": "Вызов и проверка обоих фактов",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Вызов и проверка обоих фактов"
+          }
         },
         {
           "id": "s08-02-coordinated-data-changes-content-procedure-review",
@@ -16078,7 +16319,7 @@
             "type": "codeParts",
             "parts": [
               {
-                "code": "CREATE TRIGGER audit_status AFTER UPDATE ON requests FOR EACH ROW\nBEGIN\n IF OLD.status_id <> NEW.status_id THEN\n  INSERT INTO audit_request_status(request_id,old_status_id,new_status_id) VALUES(NEW.id,OLD.status_id,NEW.status_id);\n END IF;\nEND$$",
+                "code": "DELIMITER $$\nCREATE TRIGGER audit_status AFTER UPDATE ON requests FOR EACH ROW\nBEGIN\n IF OLD.status_id <> NEW.status_id THEN\n  INSERT INTO audit_request_status(request_id,old_status_id,new_status_id) VALUES(NEW.id,OLD.status_id,NEW.status_id);\n END IF;\nEND$$\nDELIMITER ;",
                 "label": "Фиксируем только смену статуса",
                 "explanation": "Учебный стенд MySQL 8.4"
               }
@@ -17735,6 +17976,25 @@
           "source": "https://dev.mysql.com/doc/refman/8.4/en/explain-output.html"
         },
         {
+          "id": "s08-03-search-field-indexes-content-plans-reset",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/explain-output.html",
+          "title": "Возврат опыта к исходной точке",
+          "kind": "example",
+          "body": "В предыдущем вопросе этот индекс уже создан. В собственной таблице опыта сначала подтвердите его имя и состав, затем удалите только этот индекс. Теперь следующий фрагмент корректно сравнит план без него и после создания. Если индекса нет, DROP не выполняют.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "SHOW INDEX FROM requests_plan\n WHERE Key_name='idx_plan_branch_status_date';\nALTER TABLE requests_plan\n DROP INDEX idx_plan_branch_status_date;",
+                "label": "Возврат опыта к исходной точке",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Возврат опыта к исходной точке"
+          }
+        },
+        {
           "id": "s08-03-search-field-indexes-content-plans-example",
           "kind": "example",
           "title": "Две точки сравнения",
@@ -18527,7 +18787,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Учебный набор: три принятые заявки",
-          "body": "Таблицы, VIEW и процедура уже определены. Теперь проверяем, какой пользователь и через какой объект вправе выполнить каждую операцию.\n\nЭто синтетический стенд курса. В справочнике клиентов 1=C01, 2=C02; филиалы 1=B01, 2=B02, 3=B03; статусы 1=NEW, 2=WORK, 3=CLOSED. Рядом всегда различаем внутренний id и код источника: одинаковые цифры в разных таблицах не означают один объект. Исходных строк requests.csv шесть; ещё три строки отклонены, а не потеряны."
+          "body": "Таблицы, VIEW и процедура уже определены. Теперь проверяем, какой пользователь и через какой объект вправе выполнить каждую операцию.\n\nЗаявки и их связи уже корректны; меняется контекст доступа. Viewer читает v_open_requests, editor работает с completed_works. Исходный R102 имеет id=2; этот подготовленный ключ позволяет проверить INSERT редактора без дополнительного SELECT из закрытой для него requests."
         },
         {
           "id": "s08-04-access-control-content-database-map",
@@ -18789,6 +19049,25 @@
           "kicker": "Разграничение доступа к загруженной базе",
           "body": "Сначала устанавливаем, под какой учётной записью произошло подключение и какая роль активна. Для проверки используем новое отдельное соединение.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/roles.html"
+        },
+        {
+          "id": "s08-04-access-control-content-role-user-setup",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/roles.html",
+          "title": "Подготовка роли и пользователя",
+          "kind": "example",
+          "body": "Администратор выполняет это один раз перед назначением роли. MySQL возвращает сгенерированный пароль: его сохраняют локально для входа оператора. Имя роли ещё не назначает её пользователю. После GRANT и SET DEFAULT ROLE откройте отдельное соединение оператора.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "CREATE ROLE 'trzbd_viewer';\nGRANT SELECT ON service_training.v_open_requests\n TO 'trzbd_viewer';\nCREATE USER 'training_operator'@'localhost'\n IDENTIFIED BY RANDOM PASSWORD;",
+                "label": "Подготовка роли и пользователя",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Подготовка роли и пользователя"
+          }
         },
         {
           "id": "s08-04-access-control-content-activation-example",
@@ -20308,7 +20587,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Учебный набор: три принятые заявки",
-          "body": "Восстанавливаем весь рабочий результат предыдущих тем: структуру, строки, VIEW, процедуру, триггер и отдельно настроенные права. Наличие файла копии ещё не означает восстановимость.\n\nЭто синтетический стенд курса. В справочнике клиентов 1=C01, 2=C02; филиалы 1=B01, 2=B02, 3=B03; статусы 1=NEW, 2=WORK, 3=CLOSED. Рядом всегда различаем внутренний id и код источника: одинаковые цифры в разных таблицах не означают один объект. Исходных строк requests.csv шесть; ещё три строки отклонены, а не потеряны."
+          "body": "Восстанавливаем весь рабочий результат предыдущих тем: структуру, строки, VIEW, процедуру, триггер и отдельно настроенные права. Наличие файла копии ещё не означает восстановимость.\n\nКопируется исходное состояние: три заявки, четыре позиции, одна работа и пустой журнал смены статуса. Восстановление сначала должно вернуть именно этот снимок. Успешные и ошибочные CALL запускаются после сравнения снимка, поскольку меняют проверяемые данные."
         },
         {
           "id": "s08-05-backup-and-protection-content-database-map",
@@ -20770,7 +21049,7 @@
             "type": "codeParts",
             "parts": [
               {
-                "code": "mysqldump --defaults-extra-file=backup.cnf\n --single-transaction --routines --events --triggers\n --hex-blob --no-tablespaces --set-gtid-purged=OFF\n --result-file=service_training.sql service_training",
+                "code": "mysqldump --defaults-extra-file=backup.cnf --single-transaction --routines --events --triggers --hex-blob --no-tablespaces --set-gtid-purged=OFF --result-file=service_training.sql service_training",
                 "label": "Параметры учебного dump",
                 "explanation": "Учебный стенд MySQL 8.4"
               }
@@ -20784,7 +21063,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Параметры учебного dump",
-          "body": "Это одна логическая команда, переносы показаны для чтения. defaults-extra-file указывается первым параметром; локальный конфигурационный файл содержит секрет и не входит в комплект. result-file исключает случайное перекодирование SQL средствами перенаправления оболочки.",
+          "body": "Это одна физическая команда; перенос на экране происходит автоматически. defaults-extra-file стоит первым параметром. backup.cnf содержит локальное соединение и не передаётся в комплекте. --result-file записывает SQL средствами mysqldump. Перед запуском подтверждают источник и отсутствие конфликтующего DDL; успешное завершение ещё требует восстановления и сверки.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html"
         },
         {
@@ -20997,6 +21276,44 @@
           "title": "Ход решения: Источник и цель опыта",
           "body": "Одинаковое имя допустимо, потому что экземпляры разные. В протоколе различают соединения. Новое имя на том же сервере потребовало бы дополнительной проверки всех квалифицированных ссылок.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html"
+        },
+        {
+          "id": "s08-05-backup-and-protection-content-restore-connect",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html",
+          "title": "Подключение к отдельной цели",
+          "kind": "example",
+          "body": "Первую строку запускают в оболочке из каталога копии. restore.cnf указывает отдельный целевой экземпляр. Затем выполняют SQL внутри клиента. Схемы service_training в цели ещё нет; при неожиданном сервере или существующей схеме импорт не начинают.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "mysql --defaults-extra-file=restore.cnf\n\n-- Уже внутри клиента mysql:\nSELECT @@hostname,@@port,VERSION(),CURRENT_USER();\nSELECT SCHEMA_NAME FROM information_schema.schemata\n WHERE SCHEMA_NAME='service_training';",
+                "label": "Подключение к отдельной цели",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Подключение к отдельной цели"
+          }
+        },
+        {
+          "id": "s08-05-backup-and-protection-content-restore-import",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html",
+          "title": "Импорт копии и первая сверка",
+          "kind": "example",
+          "body": "Файл находится в рабочем каталоге клиента; SOURCE — его команда чтения SQL-файла. До импорта подготовлены владельцы DEFINER, после — роли и GRANT. При ошибке остановитесь и разберите причину. В исходной копии ожидаются 13 таблиц, три VIEW и три заявки; далее проверяются определения, значения и поведение.",
+          "visual": {
+            "type": "codeParts",
+            "parts": [
+              {
+                "code": "CREATE DATABASE service_training\n CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;\nUSE service_training;\nSOURCE service_training.sql;\nSHOW FULL TABLES;\nSELECT COUNT(*) AS requests_count FROM requests;",
+                "label": "Импорт копии и первая сверка",
+                "explanation": "Учебный стенд MySQL 8.4"
+              }
+            ],
+            "caption": "Импорт копии и первая сверка"
+          }
         },
         {
           "id": "s08-05-backup-and-protection-content-restore-review",
@@ -22103,7 +22420,7 @@
           "kind": "theory",
           "kicker": "Разобранное решение",
           "title": "Ход решения: Учебный набор: три принятые заявки",
-          "body": "Собираем результаты предыдущих тем в один воспроизводимый комплект. Новых предметных таблиц здесь не вводим: проверяем согласованность входа, модели, SQL, полномочий и копии.\n\nЭто синтетический стенд курса. В справочнике клиентов 1=C01, 2=C02; филиалы 1=B01, 2=B02, 3=B03; статусы 1=NEW, 2=WORK, 3=CLOSED. Рядом всегда различаем внутренний id и код источника: одинаковые цифры в разных таблицах не означают один объект. Исходных строк requests.csv шесть; ещё три строки отклонены, а не потеряны."
+          "body": "Собираем результаты предыдущих тем в один воспроизводимый комплект. Новых предметных таблиц здесь не вводим: проверяем согласованность входа, модели, SQL, полномочий и копии.\n\nОдин и тот же R101 прослеживается от строки CSV через client_id/branch_id/status_id к отчёту, операции закрытия и восстановленной копии. Передаваемый комплект должен сохранять эту цепочку происхождения и правила отказов, а не только целевые три строки."
         },
         {
           "id": "s08-06-results-package-content-database-map",
@@ -22780,6 +23097,14 @@
           "title": "Ход решения: Порядок итогового запуска",
           "body": "Опыт индекса добавляет requests_plan. Если он включён в передаваемое состояние, это явно отмечают; базовый каталог не меняется незаметно.",
           "source": "https://dev.mysql.com/doc/refman/8.4/en/backup-and-recovery.html"
+        },
+        {
+          "id": "s08-06-results-package-content-delivery-state",
+          "kicker": "От условия к выполнению",
+          "source": "https://dev.mysql.com/doc/refman/8.4/en/backup-and-recovery.html",
+          "title": "Как повторить маршрут без скрытых шагов",
+          "kind": "theory",
+          "body": "До запуска выбраны отдельный сервер, новая схема и исходные три CSV. 01_schema создаёт структуру; 02_load читает файлы и классифицирует строки; 03_verify сверяет результат. 04_objects требует владельца VIEW и создаёт поведение, 05_roles задаёт прикладные полномочия. Локальных пользователей создают до назначения им ролей. Опыт индекса выполняется отдельно. Если шаг завершился ошибкой, следующий не считается успешным продолжением: сохраняют журнал и исправляют исходный сценарий."
         },
         {
           "id": "s08-06-results-package-content-scripts-review",
@@ -24482,6 +24807,8 @@
         "s07-01-source-data-package-agenda",
         "s07-01-source-data-package-content-context",
         "s07-01-source-data-package-content-context-walkthrough",
+        "s07-01-source-data-package-content-source-accepted",
+        "s07-01-source-data-package-content-source-rejected",
         "s07-01-source-data-package-content-database-map",
         "s07-01-source-data-package-content-database-map-walkthrough",
         "s07-01-source-data-package-content-scope-section",
@@ -24767,6 +25094,8 @@
         "s07-03-implement-table-set-content-order-reasoning-2",
         "s07-03-implement-table-set-content-order-example",
         "s07-03-implement-table-set-content-order-example-walkthrough",
+        "s07-03-implement-table-set-content-requests-ddl-start",
+        "s07-03-implement-table-set-content-requests-ddl-end",
         "s07-03-implement-table-set-content-order-review",
         "s07-03-implement-table-set-content-reproducible-section",
         "s07-03-implement-table-set-content-reproducible-notebook",
@@ -25000,6 +25329,8 @@
         "s07-05-prepare-and-load-data-content-resolve-reasoning-2",
         "s07-05-prepare-and-load-data-content-resolve-example",
         "s07-05-prepare-and-load-data-content-resolve-example-walkthrough",
+        "s07-05-prepare-and-load-data-content-insert-resolved",
+        "s07-05-prepare-and-load-data-content-insert-result",
         "s07-05-prepare-and-load-data-content-resolve-review",
         "s07-05-prepare-and-load-data-content-balance-section",
         "s07-05-prepare-and-load-data-content-balance-notebook",
@@ -25082,6 +25413,7 @@
         "s07-06-validate-load-and-delivery-script-content-orphans-reasoning-1",
         "s07-06-validate-load-and-delivery-script-content-orphans-example",
         "s07-06-validate-load-and-delivery-script-content-orphans-example-walkthrough",
+        "s07-06-validate-load-and-delivery-script-content-compare-source-parent",
         "s07-06-validate-load-and-delivery-script-content-orphans-review",
         "s07-06-validate-load-and-delivery-script-content-rejections-section",
         "s07-06-validate-load-and-delivery-script-content-rejections-notebook",
@@ -25295,6 +25627,7 @@
         "s08-01-views-content-meaning-reasoning-1",
         "s08-01-views-content-meaning-reasoning-2",
         "s08-01-views-content-meaning-reasoning-3",
+        "s08-01-views-content-view-owner-setup",
         "s08-01-views-content-meaning-example",
         "s08-01-views-content-meaning-example-walkthrough",
         "s08-01-views-content-meaning-result-step-1",
@@ -25462,8 +25795,12 @@
         "s08-02-coordinated-data-changes-content-procedure-reasoning-1",
         "s08-02-coordinated-data-changes-content-procedure-reasoning-2",
         "s08-02-coordinated-data-changes-content-procedure-reasoning-3",
+        "s08-02-coordinated-data-changes-content-procedure-create-start",
         "s08-02-coordinated-data-changes-content-procedure-example",
+        "s08-02-coordinated-data-changes-content-procedure-body-finish",
+        "s08-02-coordinated-data-changes-content-procedure-create-end",
         "s08-02-coordinated-data-changes-content-procedure-example-walkthrough",
+        "s08-02-coordinated-data-changes-content-procedure-call",
         "s08-02-coordinated-data-changes-content-procedure-review",
         "s08-02-coordinated-data-changes-content-parameters-section",
         "s08-02-coordinated-data-changes-content-parameters-notebook",
@@ -25596,6 +25933,7 @@
         "s08-03-search-field-indexes-content-plans-reasoning-1",
         "s08-03-search-field-indexes-content-plans-reasoning-2",
         "s08-03-search-field-indexes-content-plans-reasoning-3",
+        "s08-03-search-field-indexes-content-plans-reset",
         "s08-03-search-field-indexes-content-plans-example",
         "s08-03-search-field-indexes-content-plans-example-walkthrough",
         "s08-03-search-field-indexes-content-plans-result",
@@ -25685,6 +26023,7 @@
         "s08-04-access-control-content-activation-concept",
         "s08-04-access-control-content-activation-reasoning-1",
         "s08-04-access-control-content-activation-reasoning-2",
+        "s08-04-access-control-content-role-user-setup",
         "s08-04-access-control-content-activation-example",
         "s08-04-access-control-content-activation-example-walkthrough",
         "s08-04-access-control-content-activation-review",
@@ -25815,6 +26154,8 @@
         "s08-05-backup-and-protection-content-restore-reasoning-2",
         "s08-05-backup-and-protection-content-restore-example",
         "s08-05-backup-and-protection-content-restore-example-walkthrough",
+        "s08-05-backup-and-protection-content-restore-connect",
+        "s08-05-backup-and-protection-content-restore-import",
         "s08-05-backup-and-protection-content-restore-review",
         "s08-05-backup-and-protection-content-objects-section",
         "s08-05-backup-and-protection-content-objects-notebook",
@@ -25929,6 +26270,7 @@
         "s08-06-results-package-content-scripts-reasoning-1",
         "s08-06-results-package-content-scripts-example",
         "s08-06-results-package-content-scripts-example-walkthrough",
+        "s08-06-results-package-content-delivery-state",
         "s08-06-results-package-content-scripts-review",
         "s08-06-results-package-content-evidence-section",
         "s08-06-results-package-content-evidence-notebook",

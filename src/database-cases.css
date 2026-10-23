@@ -15,3 +15,5 @@
 .paper:has(.course-map-meaning) .database-table li{font-size:1.5cqw;line-height:1.3}.paper:has(.course-map-meaning) .database-relations{font-size:1.4cqw}.case-dataset-note{font-size:14px!important;color:var(--muted)}
 .paper:has(.course-map-meaning) .database-table li{font-size:max(13px,1.5cqw)}@media(max-width:600px){.paper:has(.course-map-meaning) .database-table li{font-size:15px}.paper:has(.course-map-meaning) .database-relations{font-size:14px}}
 @media(min-width:601px){.paper:has(.course-map-meaning) h1{margin-bottom:1.2cqw}.paper:has(.course-map-meaning) .schema-key{margin-top:.2cqw!important}}
+.paper .teaching-visual .table-scroll,.paper .teaching-visual pre{max-height:none}
+@media(min-width:601px){.paper:has(.code-example) h1{margin-bottom:1.2cqw}.paper:has(.code-example) .paper-content>p{margin-bottom:1cqw}}

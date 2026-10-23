@@ -34,7 +34,7 @@ for(const [index,l] of c.lectures.entries()){
    const cell=v=>String(v).replaceAll('|','\\|').replaceAll('\n','<br>');
    teacher+='| '+s.columns.map(cell).join(' | ')+' |\n| '+s.columns.map(()=>'---').join(' | ')+' |\n'+s.rows.map(row=>'| '+row.map(cell).join(' | ')+' |').join('\n')+'\n\n';
   }
-  if(s.visual?.type==='codeParts')for(const part of s.visual.parts)teacher+='```'+(/^(node|mysqldump)/.test(part.code)?'text':'sql')+'\n'+part.code+'\n```\n\n';
+  if(s.visual?.type==='codeParts')for(const part of s.visual.parts)teacher+='```'+(/^(node|mysql(?:dump)?\b|request_no,)/.test(part.code)?'text':'sql')+'\n'+part.code+'\n```\n\n';
   if(s.task?.items)teacher+='**Элементы для сопоставления:**\n\n'+s.task.items.map((x,i)=>(i+1)+'. '+x.text).join('\n')+'\n\n';
   if(s.task?.options)teacher+='**Варианты ответа:**\n\n'+s.task.options.map((x,i)=>(i+1)+'. '+x.text).join('\n')+'\n\n';
   if(s.image?.src.startsWith('data:image/png;base64,')){

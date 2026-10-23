@@ -1,0 +1,30 @@
+{
+  "version": "trzbd-2026.10.23-independent-paths-r14",
+  "slides": 1428,
+  "desktopChecks": 2856,
+  "outerIssues": [],
+  "innerIssues": [],
+  "mobileChecks": 120,
+  "mobileIssues": [],
+  "desktopViewport": {
+    "width": 1366,
+    "height": 900
+  },
+  "mobileWidths": [
+    320,
+    390
+  ],
+  "printFrames": 1428,
+  "overflowTolerancePx": 3,
+  "limits": "Geometry and selected visual inspection; not a classroom trial.",
+  "finalTextRecheck": {
+    "checks": 12,
+    "issues": []
+  },
+  "referenceViewportGuard": {
+    "width": 1280,
+    "height": 800,
+    "denseCases": 16,
+    "status": "passed"
+  }
+}

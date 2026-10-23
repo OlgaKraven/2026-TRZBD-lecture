@@ -10,6 +10,8 @@
       "s07-01-source-data-package-agenda",
       "s07-01-source-data-package-content-context",
       "s07-01-source-data-package-content-context-walkthrough",
+      "s07-01-source-data-package-content-source-accepted",
+      "s07-01-source-data-package-content-source-rejected",
       "s07-01-source-data-package-content-database-map",
       "s07-01-source-data-package-content-database-map-walkthrough",
       "s07-01-source-data-package-content-scope-section",
@@ -109,8 +111,8 @@
       "s07-01-source-data-package-content-summary",
       "s07-01-source-data-package-questions"
     ],
-    "estimatedMinutes": 143,
-    "explanationMinutes": 54,
+    "estimatedMinutes": 147,
+    "explanationMinutes": 58,
     "selfAssessmentMinutes": 58,
     "independentSupplementsMinutes": 31,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -321,6 +323,8 @@
       "s07-03-implement-table-set-content-order-reasoning-2",
       "s07-03-implement-table-set-content-order-example",
       "s07-03-implement-table-set-content-order-example-walkthrough",
+      "s07-03-implement-table-set-content-requests-ddl-start",
+      "s07-03-implement-table-set-content-requests-ddl-end",
       "s07-03-implement-table-set-content-order-review",
       "s07-03-implement-table-set-content-order-T02-slide",
       "s07-03-implement-table-set-content-order-T03-slide",
@@ -341,8 +345,8 @@
       "s07-03-implement-table-set-content-summary",
       "s07-03-implement-table-set-questions"
     ],
-    "estimatedMinutes": 143,
-    "explanationMinutes": 54,
+    "estimatedMinutes": 147,
+    "explanationMinutes": 58,
     "selfAssessmentMinutes": 58,
     "independentSupplementsMinutes": 30,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -556,6 +560,8 @@
       "s07-05-prepare-and-load-data-content-resolve-reasoning-2",
       "s07-05-prepare-and-load-data-content-resolve-example",
       "s07-05-prepare-and-load-data-content-resolve-example-walkthrough",
+      "s07-05-prepare-and-load-data-content-insert-resolved",
+      "s07-05-prepare-and-load-data-content-insert-result",
       "s07-05-prepare-and-load-data-content-resolve-review",
       "s07-05-prepare-and-load-data-content-resolve-T01-slide",
       "s07-05-prepare-and-load-data-content-resolve-T02-slide",
@@ -575,8 +581,8 @@
       "s07-05-prepare-and-load-data-content-summary",
       "s07-05-prepare-and-load-data-questions"
     ],
-    "estimatedMinutes": 142,
-    "explanationMinutes": 54,
+    "estimatedMinutes": 146,
+    "explanationMinutes": 57,
     "selfAssessmentMinutes": 58,
     "independentSupplementsMinutes": 30,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -623,6 +629,7 @@
       "s07-06-validate-load-and-delivery-script-content-orphans-reasoning-1",
       "s07-06-validate-load-and-delivery-script-content-orphans-example",
       "s07-06-validate-load-and-delivery-script-content-orphans-example-walkthrough",
+      "s07-06-validate-load-and-delivery-script-content-compare-source-parent",
       "s07-06-validate-load-and-delivery-script-content-orphans-review",
       "s07-06-validate-load-and-delivery-script-content-orphans-T01-slide",
       "s07-06-validate-load-and-delivery-script-content-orphans-T02-slide",
@@ -686,8 +693,8 @@
       "s07-06-validate-load-and-delivery-script-content-summary",
       "s07-06-validate-load-and-delivery-script-questions"
     ],
-    "estimatedMinutes": 140,
-    "explanationMinutes": 51,
+    "estimatedMinutes": 142,
+    "explanationMinutes": 53,
     "selfAssessmentMinutes": 58,
     "independentSupplementsMinutes": 30,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -830,6 +837,7 @@
       "s08-01-views-content-meaning-reasoning-1",
       "s08-01-views-content-meaning-reasoning-2",
       "s08-01-views-content-meaning-reasoning-3",
+      "s08-01-views-content-view-owner-setup",
       "s08-01-views-content-meaning-example",
       "s08-01-views-content-meaning-example-walkthrough",
       "s08-01-views-content-meaning-result-step-1",
@@ -937,8 +945,8 @@
       "s08-01-views-content-summary",
       "s08-01-views-questions"
     ],
-    "estimatedMinutes": 165,
-    "explanationMinutes": 76,
+    "estimatedMinutes": 167,
+    "explanationMinutes": 78,
     "selfAssessmentMinutes": 59,
     "independentSupplementsMinutes": 31,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -1014,8 +1022,12 @@
       "s08-02-coordinated-data-changes-content-procedure-reasoning-1",
       "s08-02-coordinated-data-changes-content-procedure-reasoning-2",
       "s08-02-coordinated-data-changes-content-procedure-reasoning-3",
+      "s08-02-coordinated-data-changes-content-procedure-create-start",
       "s08-02-coordinated-data-changes-content-procedure-example",
+      "s08-02-coordinated-data-changes-content-procedure-body-finish",
+      "s08-02-coordinated-data-changes-content-procedure-create-end",
       "s08-02-coordinated-data-changes-content-procedure-example-walkthrough",
+      "s08-02-coordinated-data-changes-content-procedure-call",
       "s08-02-coordinated-data-changes-content-procedure-review",
       "s08-02-coordinated-data-changes-content-procedure-T02-slide",
       "s08-02-coordinated-data-changes-content-procedure-T03-slide",
@@ -1063,8 +1075,8 @@
       "s08-02-coordinated-data-changes-content-summary",
       "s08-02-coordinated-data-changes-questions"
     ],
-    "estimatedMinutes": 155,
-    "explanationMinutes": 65,
+    "estimatedMinutes": 163,
+    "explanationMinutes": 73,
     "selfAssessmentMinutes": 59,
     "independentSupplementsMinutes": 31,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -1153,6 +1165,7 @@
       "s08-03-search-field-indexes-content-plans-reasoning-1",
       "s08-03-search-field-indexes-content-plans-reasoning-2",
       "s08-03-search-field-indexes-content-plans-reasoning-3",
+      "s08-03-search-field-indexes-content-plans-reset",
       "s08-03-search-field-indexes-content-plans-example",
       "s08-03-search-field-indexes-content-plans-example-walkthrough",
       "s08-03-search-field-indexes-content-plans-result",
@@ -1191,8 +1204,8 @@
       "s08-03-search-field-indexes-content-summary",
       "s08-03-search-field-indexes-questions"
     ],
-    "estimatedMinutes": 157,
-    "explanationMinutes": 68,
+    "estimatedMinutes": 159,
+    "explanationMinutes": 70,
     "selfAssessmentMinutes": 59,
     "independentSupplementsMinutes": 30,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -1227,6 +1240,7 @@
       "s08-04-access-control-content-activation-concept",
       "s08-04-access-control-content-activation-reasoning-1",
       "s08-04-access-control-content-activation-reasoning-2",
+      "s08-04-access-control-content-role-user-setup",
       "s08-04-access-control-content-activation-example",
       "s08-04-access-control-content-activation-example-walkthrough",
       "s08-04-access-control-content-activation-review",
@@ -1306,8 +1320,8 @@
       "s08-04-access-control-content-summary",
       "s08-04-access-control-questions"
     ],
-    "estimatedMinutes": 142,
-    "explanationMinutes": 54,
+    "estimatedMinutes": 144,
+    "explanationMinutes": 56,
     "selfAssessmentMinutes": 58,
     "independentSupplementsMinutes": 30,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -1366,6 +1380,8 @@
       "s08-05-backup-and-protection-content-restore-reasoning-2",
       "s08-05-backup-and-protection-content-restore-example",
       "s08-05-backup-and-protection-content-restore-example-walkthrough",
+      "s08-05-backup-and-protection-content-restore-connect",
+      "s08-05-backup-and-protection-content-restore-import",
       "s08-05-backup-and-protection-content-restore-review",
       "s08-05-backup-and-protection-content-restore-T01-slide",
       "s08-05-backup-and-protection-content-restore-T02-slide",
@@ -1421,8 +1437,8 @@
       "s08-05-backup-and-protection-content-summary",
       "s08-05-backup-and-protection-questions"
     ],
-    "estimatedMinutes": 143,
-    "explanationMinutes": 54,
+    "estimatedMinutes": 147,
+    "explanationMinutes": 58,
     "selfAssessmentMinutes": 58,
     "independentSupplementsMinutes": 30,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"
@@ -1481,6 +1497,7 @@
       "s08-06-results-package-content-scripts-reasoning-1",
       "s08-06-results-package-content-scripts-example",
       "s08-06-results-package-content-scripts-example-walkthrough",
+      "s08-06-results-package-content-delivery-state",
       "s08-06-results-package-content-scripts-review",
       "s08-06-results-package-content-scripts-T02-slide",
       "s08-06-results-package-content-scripts-T03-slide",
@@ -1534,8 +1551,8 @@
       "s08-06-results-package-content-summary",
       "s08-06-results-package-questions"
     ],
-    "estimatedMinutes": 141,
-    "explanationMinutes": 53,
+    "estimatedMinutes": 143,
+    "explanationMinutes": 54,
     "selfAssessmentMinutes": 58,
     "independentSupplementsMinutes": 30,
     "timing": "word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable"

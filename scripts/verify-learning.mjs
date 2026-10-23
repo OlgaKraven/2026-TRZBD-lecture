@@ -11,14 +11,23 @@ const ids=current.lectures.flatMap(l=>l.slides.map(s=>s.id));
 const redirects=JSON.parse(fs.readFileSync('public/slide-redirects.json','utf8'));
 const regrouped=[...before.values()].filter(s=>!ids.includes(s.id));
 assert.equal(regrouped.length,26);for(const s of regrouped){assert.equal(s.kind,'literature');assert(ids.includes(redirects[s.id]));}
-assert.equal(ids.filter(id=>!before.has(id)).length,325+learning.workedExplanations.length);
+assert.equal(ids.filter(id=>!before.has(id)).length,325+learning.workedExplanations.length+(learning.standaloneAdditions?.length||0));
 assert.equal(Object.keys(learning.lectureModels).length,13);
 const inputs=new Set();let worked=0;
 for(const l of current.lectures){
  const oldLecture=previous.lectures.find(x=>x.id===l.id);
  assert.deepEqual(l.slides.filter(s=>s.kind==='literature').flatMap(s=>s.references),oldLecture.slides.filter(s=>s.kind==='literature').flatMap(s=>s.references));
  for(const s of l.slides){const old=before.get(s.id);
-  if(s.visual||s.image||s.rows){for(const field of ['visual','image','columns','rows'])assert.deepEqual(s[field],old[field],s.id);worked++;}
+  if((s.visual||s.image||s.rows)&&old){
+   if(s.id.endsWith('-procedure-example')){
+    const continuation=l.slides.find(x=>x.id.endsWith('-procedure-body-finish'));
+    assert.equal((s.visual.parts[0].code+continuation.visual.parts[0].code).replace(/\s+/g,''),old.visual.parts[0].code.replace(/\s+/g,''),'Procedure commands lost');
+   }
+   else if(s.id.endsWith('-trigger-example'))assert.equal(s.visual.parts[0].code,'DELIMITER $$\n'+old.visual.parts[0].code+'\nDELIMITER ;');
+   else if(s.id.endsWith('-dump-example'))assert.equal(s.visual.parts[0].code,old.visual.parts[0].code.replace(/\s*\n\s*/g,' '));
+   else for(const field of ['visual','image','columns','rows'])assert.deepEqual(s[field],old[field],s.id);
+   worked++;
+  }
   if(s.id.includes('-reasoning-'))assert.ok(s.body.length>35,'Reasoning missing: '+s.id);
   if(s.kind==='notebook')assert.ok(s.notebook.includes(old.notebook),'Rule lost: '+s.id);
  }
@@ -37,5 +46,5 @@ for(const l of current.lectures){
   assert.deepEqual(q.testIds.map(id=>l.slides.find(s=>s.id===id).task.type),['single','multiple','short','matching']);
  }
 }
-const report={lectures:13,slides:ids.length,existingIdsRetained:ids.filter(id=>before.has(id)).length,readingPagesRegroupedWithRedirects:regrouped.length,addedAssessmentPages:312,addedDatabaseMaps:13,visibleWorkedExplanations:learning.workedExplanations.length,assessmentTasks:416,workedDisplaysUnchanged:worked,practicalCases:inputs.size,definitions:learning.questions.length,legacyReviews:'retained in post-attempt teacher answers and assessment explanation',status:'passed'};
+const report={lectures:13,slides:ids.length,existingIdsRetained:ids.filter(id=>before.has(id)).length,readingPagesRegroupedWithRedirects:regrouped.length,addedAssessmentPages:312,addedDatabaseMaps:13,visibleWorkedExplanations:learning.workedExplanations.length,assessmentTasks:416,workedDisplaysRetained:worked,formattedCodeDisplays:3,standaloneSteps:learning.standaloneAdditions?.length||0,practicalCases:inputs.size,definitions:learning.questions.length,legacyReviews:'retained in post-attempt teacher answers and assessment explanation',status:'passed'};
 fs.writeFileSync('reports/learning-verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
