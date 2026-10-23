@@ -1,6 +1,6 @@
 {
   "desktop": {
-    "version": "trzbd-2026.10.23-database-cases-r8",
+    "version": "trzbd-2026.10.23-database-cases-r9",
     "checks": [
       {
         "id": "s07-01-source-data-package-content-context",
@@ -5401,6 +5401,232 @@
     {
       "kind": "case-dark",
       "id": "s08-03-search-field-indexes-content-selectivity",
+      "width": 320,
+      "scroll": 320
+    }
+  ],
+  "caseBranchesMobile": [
+    {
+      "id": "s07-07-control-queries-content-joins",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-joins",
+      "theme": "light",
+      "scenario": "compare",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-outer",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-outer",
+      "theme": "light",
+      "scenario": "compare",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-aggregate",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-aggregate",
+      "theme": "light",
+      "scenario": "compare",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-01-views-content-joins",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "theme": "light",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-errors",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-errors",
+      "theme": "light",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-trigger",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-trigger",
+      "theme": "light",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-proof",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-proof",
+      "theme": "light",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-selectivity",
+      "theme": "light",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-joins",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-joins",
+      "theme": "dark",
+      "scenario": "compare",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-outer",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-outer",
+      "theme": "dark",
+      "scenario": "compare",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-aggregate",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s07-07-control-queries-content-aggregate",
+      "theme": "dark",
+      "scenario": "compare",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-01-views-content-joins",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-boundary",
+      "theme": "dark",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-errors",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-errors",
+      "theme": "dark",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-trigger",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-trigger",
+      "theme": "dark",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-proof",
+      "theme": "dark",
+      "scenario": "base",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-02-coordinated-data-changes-content-proof",
+      "theme": "dark",
+      "scenario": "success",
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "id": "s08-03-search-field-indexes-content-selectivity",
+      "theme": "dark",
+      "scenario": "base",
       "width": 320,
       "scroll": 320
     }

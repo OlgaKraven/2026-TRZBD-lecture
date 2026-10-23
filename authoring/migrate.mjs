@@ -5,7 +5,7 @@ import {rewritePriority} from './rewrite-priority.mjs';
 import {enrichLearning} from './enrich-learning.mjs';
 import {restoreTeaching} from './restore-teaching.mjs';
 const write=(path,data)=>fs.writeFileSync(path,JSON.stringify(data,null,2)+'\n');
-const version='trzbd-2026.10.23-database-cases-r8';
+const version='trzbd-2026.10.23-database-cases-r9';
 fs.mkdirSync('private',{recursive:true});
 const course={schemaVersion:1,contentVersion:version,id:'trzbd',code:'МДК.11.01 · 4 курс',discipline:'Технология разработки и защиты баз данных',year:'2026–2027',heroTitle:'Разрабатывайте и защищайте',heroAccent:'базы данных',slogan:'От исходных данных — к проверенной и защищённой базе',mascot:'brand/mascot/trzbd-schema-protection-catalog.png',mascotAlt:'Носорог — разработчик и защитник баз данных',logo:'brand/synergy-wordmark.jpg',ornament:'brand/side-ornament.png',font:'fonts/raleway-cyrillic.woff2',topicArrow:'brand/topic-arrow.webp',materialsUrl:sourceCourse.materialsUrl,demo:false,semesters:sourceCourse.semesters,assessment:{mode:'autonomous',url:'assessment.json'},lectures:[],glossary:[],curriculum:[]};
 const first=buildDeck(topics[0],sourceCourse);

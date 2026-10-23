@@ -51,7 +51,15 @@
       "status": "passed"
     },
     {
+      "name": "Перенос фильтра WORK в ON сохраняет B5 с NULL",
+      "status": "passed"
+    },
+    {
       "name": "COUNT(*) и COUNT(r.id) для пустого B5 равны 1 и 0",
+      "status": "passed"
+    },
+    {
+      "name": "Реальная R5 увеличивает COUNT(r.id) до 1, не меняя COUNT(*)",
       "status": "passed"
     },
     {

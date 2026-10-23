@@ -2,9 +2,17 @@ import { describe, expect, it } from 'vitest'
 import { course, topics, validateCourseData } from '../src/data/courseData'
 import { buildDeck, countServiceSlides } from '../src/deck/buildDeck'
 import { normalizeOrganizationUnit } from '../src/lib/teacherProfile'
-import {joinRows,transactionSnapshot} from '../src/SubjectModel'
+import {joinRows,joinCase,transactionSnapshot} from '../src/SubjectModel'
 
 describe('independent subject models',()=>{
+ it('changes the complete result when the outer predicate moves between WHERE and ON',()=>{
+  expect(joinCase('question-outer','base').result.map(r=>r.left)).toEqual(['B4'])
+  expect(joinCase('question-outer','compare').result.map(r=>[r.left,r.right])).toEqual([['B4','R4'],['B5','NULL']])
+ })
+ it('recomputes COUNT expression when the missing child becomes a real row',()=>{
+  expect(joinCase('question-aggregate','base').counts[1]).toEqual({id:'B5',all:1,keys:0})
+  expect(joinCase('question-aggregate','compare').counts[1]).toEqual({id:'B5',all:1,keys:1})
+ })
  it('keeps duplicate matches and the provenance of an outer NULL',()=>{
   const rows=[{id:'O1',parent:'C1'},{id:'O2',parent:'C1'},{id:'O3',parent:null}]
   expect(joinRows(['C1','C2'],rows,'INNER')).toEqual([{left:'C1',right:'O1',origin:'совпадение ON'},{left:'C1',right:'O2',origin:'совпадение ON'}])

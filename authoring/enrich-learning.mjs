@@ -34,6 +34,12 @@ export function enrichLearning(course,notes,questions,keys,registry){
    passport.body=activity.data;
    notes[passport.id].script='Рассмотрим другой набор данных для этого правила. '+activity.data+' '+activity.question+' Покажите схему '+model.tables.map(t=>t.name).join(' → ')+'. '+model.trace[0]+' Попросите группу зафиксировать прогноз. Откройте «Разбор кейса» в этом окне; в режиме показа схема и шаги появятся у аудитории. На этапе проверки разберите конкретные поля и условие операции: '+model.trace[1]+' Ответ группы сопоставьте с данными после попытки, затем отдельно разрешите показ разбора аудитории.';
    notes[passport.id].questions=activity.question;
+   const scenarioTeaching={
+    's07-07-control-queries-content-joins':'В предметной модели сначала покажите две пары INNER JOIN. Затем выберите LEFT JOIN, повторите шаги и найдите добавленную C9–NULL. Меняется оператор сравнения, но исходный вопрос по-прежнему относится к INNER JOIN.',
+    's07-07-control-queries-content-outer':"Сначала доведите вариант WHERE до полного результата: B4–R4, без B5. Перенесите условие r.status='WORK' в ON выбором варианта и повторите шаги: теперь B5 сохраняется с правым NULL. Покажите, на каком этапе применяется фильтр; исходный ответ относится к WHERE.",
+    's07-07-control-queries-content-aggregate':'Сначала получите для пустого B5 COUNT(*)=1 и COUNT(r.id)=0. Выберите вариант с реальной заявкой R5: она появляется в исходной таблице. Повторите шаги и сравните: COUNT(*) остаётся 1, COUNT(r.id) становится 1. Это изменённое условие, исходный вопрос относится к филиалу без заявок.'
+   };
+   if(scenarioTeaching[id])notes[passport.id].script+=' '+scenarioTeaching[id];
    notes[passport.id].answer='Для самостоятельного дополнения: '+activity.options[activity.correct]+'. '+activity.reason+' '+model.trace[2];
    notes[test.id].answer+='\nРазбор исходного самостоятельного случая: '+previousReview.script;
    notes[test.id].script=notes[test.id].script.replace('После ответа перейдём к следующему экрану с объяснением.','После попытки откройте разбор ответа и сопоставьте его с обоснованием группы.');

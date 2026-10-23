@@ -4,3 +4,5 @@
 @media(prefers-reduced-motion:reduce){.database-table{transition:none}}
 .course-map-meaning{font-size:1.8cqw;line-height:1.4}.paper:has(.course-map-meaning) .database-table h3{font-size:1.5cqw}.paper:has(.course-map-meaning) .database-table li{font-size:1.3cqw;padding:.3cqw 0}.paper:has(.course-map-meaning) .database-relations{font-size:1.3cqw;line-height:1.45}.schema-key{font-size:1.1cqw!important;color:var(--muted);margin-top:1cqw!important}
 @media(max-width:600px){.course-map-meaning{font-size:17px}.paper:has(.course-map-meaning) .database-table h3{font-size:16px}.paper:has(.course-map-meaning) .database-table li{font-size:15px;padding:4px 0}.paper:has(.course-map-meaning) .database-relations{font-size:14px}.schema-key{font-size:13px!important;margin-top:16px!important}}
+.subject-model .model-columns>div{min-width:0}.subject-model th{overflow-wrap:anywhere}.scenario-comparison{border-left:3px solid var(--red);padding:12px;background:var(--soft);font-size:15px}
+@media(max-width:700px){.subject-model .model-columns{grid-template-columns:minmax(0,1fr)}.subject-model .case-sql{font-size:14px}.subject-model .aggregate-result{font-size:13px}}

@@ -238,3 +238,19 @@ test('matching dropdowns remain readable and keyboard usable in presenter mode a
   await page.getByRole('button',{name:'Содержание',exact:true}).click();await expect(page.getByRole('dialog').getByRole('button',{name:/Вопрос 1\./})).toHaveCount(1);await page.getByRole('button',{name:'Закрыть',exact:true}).click()
  }
 })
+
+test('case dropdown changes input and complete JOIN results rather than only its label',async({page})=>{
+ const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8'))
+ for(const suffix of ['joins','outer','aggregate']){
+  const q=learning.questions.find((q:{id:string})=>q.id==='s07-07-control-queries-content-'+suffix)
+  await page.goto('./?mode=interactive&case='+q.id);await page.getByLabel('Мой прогноз',{exact:true}).fill('Прослежу пары и затем применю условие.');await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('radio').nth(q.case.correct).check();await page.getByLabel('Моё обоснование',{exact:true}).fill('Сверяю операцию с исходными строками.');await page.getByRole('button',{name:'Проверить решение',exact:true}).click()
+  const model=page.getByRole('region',{name:'Предметная модель',exact:true});for(let n=0;n<3;n++)await model.getByRole('button',{name:'Далее по модели',exact:true}).click()
+  await expect(model.locator('.join-result tbody tr')).toHaveCount(suffix==='joins'?2:suffix==='outer'?1:2)
+  if(suffix==='aggregate')await expect(model.locator('.aggregate-result tbody tr').last()).toHaveText('B510')
+  await model.getByRole('combobox').selectOption('compare');await expect(model).toContainText('Шаг 0 / 3');for(let n=0;n<3;n++)await model.getByRole('button',{name:'Далее по модели',exact:true}).click()
+  await expect(model.locator('.join-result tbody tr')).toHaveCount(suffix==='joins'?3:2)
+  if(suffix==='aggregate'){await expect(model.locator('.aggregate-result tbody tr').last()).toHaveText('B511');await expect(model.locator('.model-columns')).toContainText('R5')}
+  else await expect(model.locator('.join-result')).toContainText('NULL')
+  await expect(model.locator('.scenario-comparison')).toContainText('исходный')
+ }
+})
