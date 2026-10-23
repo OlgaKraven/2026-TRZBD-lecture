@@ -8,6 +8,7 @@ import {Dialog,Quiz,Visual} from './Slides'
 import {SlidePaper} from './SlidePaper'
 import {QuestionResults} from './QuestionResults'
 import {mergeTeacherNotes} from './teacherNotes'
+import {teacherMarkdown} from './lib/teacherMarkdown'
 import './lecture.css'
 import './reference-fixes.css'
 import './database-cases.css'
@@ -56,6 +57,7 @@ export function LectureApp({course,learning,base}:{course:Course;learning:Learni
  if(!lecture||!slide)return <CourseCatalog course={course} base={base} profile={profile} materials={materials} theme={theme} storagePrefix={prefix} invalidLecture={query.has('lecture')} onOpenLecture={openLecture} onPrint={printScope} onProfileChange={setProfile} onMaterialsChange={setMaterials} onThemeChange={t=>{setAutoTheme(false);setTheme(t)}}/>
  const audience=mode==='audience',presenter=mode==='presenter'
  const currentNote=notes[slide.id]
+ const teacherFile='lecture-'+String(course.lectures.indexOf(lecture)+1).padStart(2,'0')+'.teacher.md'
  return <main className={'lecture-app '+(presenter?'presenter':audience?'audience':'viewer')}>
  {!audience&&<header className="toolbar"><button onClick={()=>navigate({})}>Каталог</button><div className="toolbar-title"><small>{course.code.split('·')[0].trim()} · {lecture.semester} семестр</small><b>{lecture.title}</b></div><button aria-label="Содержание" title="Содержание" onClick={()=>setModal('contents')}><List/></button><button aria-label="Указка" title="Указка" aria-pressed={pointerOn} onClick={()=>setPointerOn(x=>!x)}><MousePointer2/></button><button aria-label="Во весь экран" title="Во весь экран" onClick={full}><Maximize/></button><button aria-label="Ещё" title="Ещё" onClick={()=>setModal('more')}><MoreHorizontal/></button><button className="primary" onClick={presenter&&session?stop:start}><MonitorPlay/>{presenter&&session?'Завершить показ':'Режим показа'}</button></header>}
  {notice&&!audience&&<p className="notice" role="alert">{notice}</p>}
@@ -67,7 +69,19 @@ export function LectureApp({course,learning,base}:{course:Course;learning:Learni
  {presenter&&<aside className="teacher-panel"><div role="tablist" aria-label="Материал преподавателя">{[['script','Сценарий'],['notebook','Запишите'],['questions','Вопросы'],['answer','Ответ'],['personal','Личные заметки']].map(([id,label])=><button key={id} role="tab" aria-selected={tab===id} onClick={()=>setTab(id)}>{label}</button>)}</div>
  <div role="tabpanel">{notesError&&<p role="alert">{notesError}</p>}{tab==='personal'?<PersonalNote key={slide.id} storage={prefix+':personal:'+slide.id}/>:<div className="teacher-text">{currentNote?.[tab as keyof Note]||'Для этого экрана отдельная запись не требуется.'}</div>}</div>
  {slide.task&&<button className="primary" onClick={()=>setReveal(x=>!x)}>{reveal?'Скрыть ответ у аудитории':'Показать ответ аудитории'}</button>}
- <a className="button teacher-download" href={base+'teacher-text/lecture-'+String(course.lectures.indexOf(lecture)+1).padStart(2,'0')+'.teacher.md'} download>Скачать текст преподавателя</a>
+ <a className="button teacher-download" href={base+'teacher-text/'+teacherFile} download={teacherFile} onClick={async event=>{
+  if(import.meta.env.DEV)return
+  event.preventDefault()
+  try{
+   const response=await fetch(base+'teacher-notes.json')
+   if(!response.ok)throw Error('Download failed')
+   const pack=await response.json()
+   if(pack.contentVersion!==course.contentVersion)throw Error('Teacher text version mismatch')
+   const blob=new Blob([teacherMarkdown(course,lecture,learning,pack.notes)],{type:'text/markdown;charset=utf-8'}),url=URL.createObjectURL(blob),link=document.createElement('a')
+   link.href=url;link.download=teacherFile;document.body.append(link);link.click();link.remove()
+   setTimeout(()=>URL.revokeObjectURL(url),1000)
+  }catch{setNotice('Не удалось скачать текст преподавателя. Повторите попытку.')}
+ }}>Скачать текст преподавателя</a>
  </aside>}
  </div>
  {modal==='contents'&&<Dialog title="Содержание" close={()=>setModal('')}><div className="contents-list">{lecture.slides.map((s,i)=><button key={s.id} aria-current={s.id===slide.id?'step':undefined} onClick={()=>{go(i);setModal('')}}><span className="contents-page">{i+1}.</span> {s.kind==='section'?'Вопрос '+s.title:s.title}</button>)}</div></Dialog>}

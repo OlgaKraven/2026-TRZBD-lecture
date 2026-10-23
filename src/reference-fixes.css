@@ -15,3 +15,7 @@
 @media(max-width:600px){.reading-card{grid-template-columns:74px minmax(0,1fr)}.ok-page .ok-hero{display:flex;flex-direction:column;align-items:flex-start;min-height:0;gap:12px;padding:24px 20px}.ok-page .ok-hero-copy{max-width:100%;padding-right:0}.ok-page h1{max-width:none}.ok-page .ok-rhino{position:relative;align-self:flex-end;right:auto;bottom:auto;width:155px;height:155px;flex-basis:auto;margin:-4px 0 0}}
 .visual-controls-outlet{order:1;flex-shrink:0}.visual-controls-outlet:empty{display:none}.visual-controls-outlet .lesson-player{margin:10px auto 0;max-width:900px}.visual-controls-outlet .player-buttons{justify-content:center}.visual-controls-outlet .player-buttons>span{margin-left:0}.visual-controls-outlet+.slide-nav{order:2}.next-slide{order:3}.expanded-visual .teaching-visual pre,.expanded-visual .teaching-visual .table-scroll{max-height:none}.teaching-visual pre{font-size:max(15px,1.7cqw)}.teaching-visual .player-buttons button{font-size:13px;min-height:44px;padding:8px 12px}.teaching-visual .player-buttons>span{font-size:12px}
 .slide-eyebrow,.topic-map li>span{color:var(--red)}
+/* Keep dense code readable beside the teacher panel across system fonts. */
+.presenter .paper:has(.code-example) .paper-header{margin-bottom:1cqw}
+.presenter .paper:has(.code-example) h1{margin-bottom:1cqw}
+.presenter .paper:has(.code-example) p{margin-bottom:1cqw}

@@ -120,6 +120,7 @@ test('all preserved pages fit printable frames with complete definitions and cod
  for(const mode of ['viewer','presenter'])for(const s of dense){
   await page.goto('./?'+new URLSearchParams({mode,lecture:s.lecture,slide:s.id}))
   await expect(page.locator('.paper')).toHaveAttribute('data-slide-id',s.id)
+  await page.evaluate(()=>document.fonts.ready)
   const clipping=await page.locator('.paper-content').evaluate(e=>({outer:e.scrollHeight-e.clientHeight,inner:Array.from(e.querySelectorAll('pre,.table-scroll')).filter(x=>x.scrollHeight>x.clientHeight+3||x.scrollWidth>x.clientWidth+3).length}))
   expect(clipping,s.id+' / '+mode).toEqual({outer:expect.any(Number),inner:0})
   expect(clipping.outer,s.id+' / '+mode).toBeLessThanOrEqual(3)
