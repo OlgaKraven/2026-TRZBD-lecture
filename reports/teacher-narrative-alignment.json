@@ -767,7 +767,7 @@
       "slideId": "s07-01-source-data-package-content-summary",
       "displayNumber": 107,
       "teacherAnchor": "screen-107",
-      "scriptSha256": "bfc8c8d67182838cfb50ace48d5e308e1b69d4bd072d5c62612dfaefa1740bb7"
+      "scriptSha256": "801316d5f4a5a190cb4f0d1597bedc4f4e05a0e3155a944d3e51886fbdcf6c59"
     },
     {
       "lectureId": "s07-01-source-data-package",
@@ -1509,7 +1509,7 @@
       "slideId": "s07-02-table-list-from-source-data-content-summary",
       "displayNumber": 105,
       "teacherAnchor": "screen-105",
-      "scriptSha256": "f95439e9db5a291c0350d65e049db7593a8b0bf7a1a559e72e5538bea62614ac"
+      "scriptSha256": "198120376fb746e64fe0b65ee357fa9b5b7046d057533db85b97a96d66301751"
     },
     {
       "lectureId": "s07-02-table-list-from-source-data",
@@ -2265,7 +2265,7 @@
       "slideId": "s07-03-implement-table-set-content-summary",
       "displayNumber": 107,
       "teacherAnchor": "screen-107",
-      "scriptSha256": "6a8d127f8c8f57614c9dbf0bfbc285521b38441d1a6d2ba413176e754df4d9d0"
+      "scriptSha256": "00caaef4f72cd1d63032c99b1a057b90b36072c148049ed7530d376829d65624"
     },
     {
       "lectureId": "s07-03-implement-table-set",
@@ -3028,7 +3028,7 @@
       "slideId": "s07-04-er-diagram-content-summary",
       "displayNumber": 108,
       "teacherAnchor": "screen-108",
-      "scriptSha256": "9a567b41bf738faf99c2277095c2631d90ab2b79754804ec9fc6086336cb938a"
+      "scriptSha256": "65f1f036136fe54685843bd76e51c56870167d1597d9e8a178145d949ce97b94"
     },
     {
       "lectureId": "s07-04-er-diagram",
@@ -3777,7 +3777,7 @@
       "slideId": "s07-05-prepare-and-load-data-content-summary",
       "displayNumber": 106,
       "teacherAnchor": "screen-106",
-      "scriptSha256": "3a09fced515f3d5b32b17b83b0cb87e2fdc2edbc91ffb26ccfea7f1e4acc2b3a"
+      "scriptSha256": "76f7f46b354db8b5ab6d815b572a2b2fcd2eda53cc601520ccd0431f777e8c64"
     },
     {
       "lectureId": "s07-05-prepare-and-load-data",
@@ -4491,7 +4491,7 @@
       "slideId": "s07-06-validate-load-and-delivery-script-content-summary",
       "displayNumber": 101,
       "teacherAnchor": "screen-101",
-      "scriptSha256": "b12ae4a063b76b296d1cd32e4c06b355c2be632ac78c8deb69d8b0032b8a5886"
+      "scriptSha256": "ac6e619b1cc1e3a431df2859bbb808ccc70da008cd4471250229d9b5fdecaf40"
     },
     {
       "lectureId": "s07-06-validate-load-and-delivery-script",
@@ -5226,7 +5226,7 @@
       "slideId": "s07-07-control-queries-content-summary",
       "displayNumber": 104,
       "teacherAnchor": "screen-104",
-      "scriptSha256": "76beaed632a46328b13653622aa20e1ecd31a7f9bd13d50032d8e2720217a6fe"
+      "scriptSha256": "2e1a24483aaf113fd91231f29f7c34b5f0ae8dd297bc0fca1cdcc76b24c09173"
     },
     {
       "lectureId": "s07-07-control-queries",
@@ -6115,7 +6115,7 @@
       "slideId": "s08-01-views-content-summary",
       "displayNumber": 126,
       "teacherAnchor": "screen-126",
-      "scriptSha256": "88fcc787286e371f0e27eea09049f809f3e06518798c5048b765ff3887b94e1b"
+      "scriptSha256": "da9fc5e8e967bb00f7b233d76c7b9b99c714cbaa3de1a37cf02facfd9337e609"
     },
     {
       "lectureId": "s08-01-views",
@@ -6955,7 +6955,7 @@
       "slideId": "s08-02-coordinated-data-changes-content-summary",
       "displayNumber": 119,
       "teacherAnchor": "screen-119",
-      "scriptSha256": "4fce3513e277fdacdd57e59bfc8d6da7d630746dc0a415534a5b21da5b699b82"
+      "scriptSha256": "b7134430df4bea9c3dae3c6384a7da2fc325031b10d440bf9d06695830d965b0"
     },
     {
       "lectureId": "s08-02-coordinated-data-changes",
@@ -7788,7 +7788,7 @@
       "slideId": "s08-03-search-field-indexes-content-summary",
       "displayNumber": 118,
       "teacherAnchor": "screen-118",
-      "scriptSha256": "8e245cb908a7fa8cf3bfcf3fe4a0eda7447b2d6b324717feb67b0b3ad0aa85c8"
+      "scriptSha256": "0f37a7db27c6393cccefa75d43267a7392b2a2c3358aed41bb85e83819d08ad0"
     },
     {
       "lectureId": "s08-03-search-field-indexes",
@@ -8530,7 +8530,7 @@
       "slideId": "s08-04-access-control-content-summary",
       "displayNumber": 105,
       "teacherAnchor": "screen-105",
-      "scriptSha256": "e70149cb3d4d13f006ded59348636cdd06a6a201934bd9ebd557fe4a7ece17e0"
+      "scriptSha256": "f0c088c60966586dd4512587bc6adb824d3b1bca0b4e5ef91e0cba72613be9f9"
     },
     {
       "lectureId": "s08-04-access-control",
@@ -9279,7 +9279,7 @@
       "slideId": "s08-05-backup-and-protection-content-summary",
       "displayNumber": 106,
       "teacherAnchor": "screen-106",
-      "scriptSha256": "f2589fd5ab697c764870c89c57245c5edc372027f717fe90f61a8771e59a716f"
+      "scriptSha256": "c82c943de0163d05f38cc042526b10ad3b9b8c8abb39f5de1dd1132835b8974c"
     },
     {
       "lectureId": "s08-05-backup-and-protection",
@@ -10007,7 +10007,7 @@
       "slideId": "s08-06-results-package-content-summary",
       "displayNumber": 103,
       "teacherAnchor": "screen-103",
-      "scriptSha256": "dee0c60a82afe8c1dc157ce05b51bec7822330ff311bc840716c0c619af4d53d"
+      "scriptSha256": "bfe77eacc235dcb7fd009cd3ec8cef7f180ef4e6ad4b9344df3390cc07dcbdba"
     },
     {
       "lectureId": "s08-06-results-package",

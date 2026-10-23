@@ -22,6 +22,7 @@ for(const [li,l]of course.lectures.entries()){
  assert.equal([...text.matchAll(/<!-- source-slides: /g)].length,l.slides.length);
  for(const [si,s]of l.slides.entries()){
   const note=pack.notes[s.id];assert(note?.script.trim(),s.id);
+  assert(!/\bundefined\b/u.test(note.script),s.id+': отсутствует исходное значение');
   assert.deepEqual(exported.notes[s.id],note,s.id+': пакет расходится с панелью');
   const marker='<!-- source-slides: '+s.id+' -->';
   const start=text.indexOf(marker),end=text.indexOf('<a id="screen-',start);

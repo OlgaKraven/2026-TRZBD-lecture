@@ -387,7 +387,7 @@ export function applyTeacherEditorial(course, pack, learning, keys) {
     set(s.id,part+' Ссылки на экране открывают карточки изданий.');
    }
    if(s.kind==='questions')set(s.id,'Вернёмся к решению по теме «'+lecture.title+'», которое вызвало затруднение. Назовите конкретную строку, связь или команду; затем изменим одно условие и проверим, сохранится ли наш вывод.');
-   if(s.id.endsWith('-content-summary'))set(s.id,s.body+'\n\n'+lectureBridges[li]);
+   if(s.id.endsWith('-content-summary'))set(s.id,[s.body,...(s.bullets||[])].filter(Boolean).join(' ')+'\n\n'+lectureBridges[li]);
   }
  }
  // Убрать оценку от прежнего запуска: текущий план на следующем экране — другой снимок.
