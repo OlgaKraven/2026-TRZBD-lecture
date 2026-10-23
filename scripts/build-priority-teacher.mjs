@@ -6,7 +6,7 @@ const out=path.resolve(process.argv[i+1]);fs.mkdirSync(out,{recursive:true});
 const bytes=fs.readFileSync('public/course.json'),c=JSON.parse(bytes),p=JSON.parse(fs.readFileSync('public/teacher-notes.json','utf8'));
 const sha=createHash('sha256').update(bytes).digest('hex');
 const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8'));
-const modelText=model=>model.tables.map(t=>'**'+t.name+'**\n\n'+t.columns.map(c=>'- '+c).join('\n')+(t.rows.length?'\n\n| '+t.columns.join(' | ')+' |\n| '+t.columns.map(()=>'---').join(' | ')+' |\n'+t.rows.map(r=>'| '+r.map(v=>String(v).replaceAll('|','\\|')||'∅').join(' | ')+' |').join('\n'):'')).join('\n\n')+'\n\n'+model.links.map(l=>'- '+l.label).join('\n')+(model.sql?'\n\n```sql\n'+model.sql+'\n```':'')+'\n\n';
+const modelText=model=>model.tables.map(t=>'**'+t.name+'**\n\n'+t.columns.map(c=>'- '+c).join('\n')+(t.rows.length?'\n\n| '+t.columns.join(' | ')+' |\n| '+t.columns.map(()=>'---').join(' | ')+' |\n'+t.rows.map(r=>'| '+r.map(v=>String(v).replaceAll('|','\\|')||'∅').join(' | ')+' |').join('\n'):'')).join('\n\n')+'\n\n'+model.links.map(l=>'- '+model.tables[l.from].name+' → '+model.tables[l.to].name+': '+l.label).join('\n')+(model.sql?'\n\n```sql\n'+model.sql+'\n```':'')+'\n\n';
 const support=path.join(out,'_support');fs.mkdirSync(support,{recursive:true});
 const routes=[];
 for(const [index,l] of c.lectures.entries()){
@@ -28,7 +28,7 @@ for(const [index,l] of c.lectures.entries()){
   const practical=learning.questions.find(q=>q.passportId===s.id)?.case.practical;
   const initial=practical?.variants[0].stages[0];
   const model=learning.lectureModels?.[s.id]||(initial?{...initial,links:initial.links||[]}:null);
-  if(model)teacher+='### Схема и исходные данные\n\n'+modelText(model);
+  if(model&&!practical)teacher+='### Схема и исходные данные\n\n'+modelText(model);
   if(s.references)teacher+=s.references.map(r=>r.citation+(r.url?'\n\n[Открыть источник]('+r.url+')':'')).join('\n\n')+'\n\n';
   if(s.rows&&s.columns){
    const cell=v=>String(v).replaceAll('|','\\|').replaceAll('\n','<br>');
@@ -42,13 +42,16 @@ for(const [index,l] of c.lectures.entries()){
    fs.writeFileSync(path.join(support,name),bytes);
    teacher+=`![${s.image.alt}](_support/${name})\n\n`;
   }
-  teacher+=(practical?learning.questions.find(q=>q.passportId===s.id).case.data+' '+learning.questions.find(q=>q.passportId===s.id).case.question:n.script)+'\n\n';
+  teacher+=n.script+'\n\n';
   if(practical)for(const variant of practical.variants){
    teacher+='### Условия: '+variant.label+'\n\n';
    for(const [step,stage] of variant.stages.entries()){
     teacher+='#### Шаг '+step+'. '+stage.title+'\n\n'+stage.explanation+'\n\n';
+    const previous=variant.stages[step-1];
+    const tablesChanged=!previous||JSON.stringify(stage.tables)!==JSON.stringify(previous.tables);
+    if(tablesChanged)teacher+=modelText({tables:stage.tables,links:stage.links||[],sql:''});
     if(stage.sql)teacher+='```sql\n'+stage.sql+'\n```\n\n';
-    if(stage.result)teacher+=modelText({tables:[stage.result],links:[],sql:''});
+    if(stage.result&&!(tablesChanged&&stage.tables.some(t=>JSON.stringify(t)===JSON.stringify(stage.result))))teacher+=modelText({tables:[stage.result],links:[],sql:''});
    }
   }
   if(n.questions&&n.questions!==s.task?.prompt)teacher+=`**Вопрос группе:** ${n.questions}\n\n`;
