@@ -67,31 +67,29 @@ test('arrow navigation survives clicked buttons and leaves input editing alone',
  const current=page.url();await page.keyboard.press('ArrowLeft');expect(page.url()).toBe(current)
 })
 
-test('each independent case supports a wrong and correct attempt without changing main scores',async({page})=>{
+test('all 104 cases expose practical actions and complete result rows without quizzes',async({page})=>{
  test.setTimeout(240_000)
  const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8'))
  for(const q of learning.questions){
-  const item=q.case
-  await page.goto(`./?mode=interactive&case=${item.id}`)
-  await expect(page.getByRole('heading',{level:1})).toHaveText(item.title)
-  await expect(page.locator('.case-feedback')).toHaveCount(0)
-  await page.getByLabel('Мой прогноз',{exact:true}).fill('Сначала проверю условия и ожидаемый эффект.')
-  await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('button',{name:'Далее',exact:true}).click()
-  await page.getByRole('radio').nth((item.correct+1)%item.options.length).check()
-  await page.getByLabel('Моё обоснование',{exact:true}).fill('Сопоставляю решение с исходным условием.')
-  await page.getByRole('button',{name:'Проверить решение',exact:true}).click();await expect(page.locator('.case-feedback')).toContainText('Пересмотрите выбор')
-  await page.getByRole('radio').nth(item.correct).check()
-  await page.getByRole('button',{name:'Проверить решение',exact:true}).click();await expect(page.locator('.case-feedback')).toContainText('Выбор верен')
-  await expect(page.locator('.case-feedback')).toContainText(item.reason)
-  const data=page.getByRole('region',{name:'Схема и данные кейса',exact:true})
-  await expect(data.locator('.database-table')).toHaveCount(item.model.tables.length)
-  for(let step=0;step<3;step++)await data.getByRole('button',{name:'Далее по данным',exact:true}).click()
-  await expect(data.locator('.model-result')).toHaveText('Наблюдаемый результат'+item.model.trace[2])
-  await expect(data.locator('.case-sql')).toContainText(item.model.sql)
+  await page.goto('./?mode=interactive&case='+q.id)
+  const work=page.getByRole('region',{name:'Практическое решение',exact:true})
+  await expect(page.getByRole('heading',{level:1})).toHaveText(q.case.title)
+  await expect(page.locator('textarea,input[type=radio]')).toHaveCount(0)
+  for(const v of q.case.practical.variants){
+   if(q.case.practical.variants.length>1)await work.getByRole('combobox').selectOption(v.id)
+   for(const [i,stage] of v.stages.entries()){
+    await work.locator('.action-sequence button').nth(i).click()
+    await expect(work.locator('.practical-stage')).toHaveAttribute('data-step',String(i))
+    await expect(work.locator('.database-table')).toHaveCount(stage.tables.length)
+    const result=work.locator('.operation-result')
+    expect(await result.locator('tbody tr').evaluateAll(rows=>rows.map(r=>Array.from(r.children).map(c=>c.textContent)))).toEqual(stage.result?.rows.map((r:string[])=>r.map(v=>v===''?'∅ (пустой текст)':v))||[])
+    if(stage.sql)await expect(work.locator('.operation-code code')).toHaveText(stage.sql)
+   }
+   await work.getByRole('button',{name:'Повторить',exact:true}).click()
+   await expect(work.locator('.practical-stage')).toHaveAttribute('data-step','0')
+  }
  }
  expect(await page.evaluate(()=>Object.keys(localStorage).filter(k=>k.includes(':answers:')).length)).toBe(0)
- await page.reload();await expect(page.locator('.case-feedback')).toContainText('Выбор верен')
- await expect(page.getByLabel('Мой прогноз',{exact:true})).not.toBeEmpty()
 })
 
 test('teacher and audience sync only public state and reveal answers explicitly',async({page,context})=>{
@@ -118,21 +116,22 @@ test('all preserved pages fit printable frames with complete definitions and cod
  expect(overflow).toEqual([])
 })
 
-test('transaction model restores data on back and resets safely on scenario change',async({page})=>{
- const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8'))
- const q=learning.questions.find((q:{id:string})=>q.id==='s08-02-coordinated-data-changes-content-boundary')
- await page.goto(`./?mode=interactive&case=${q.id}`)
- await page.getByLabel('Мой прогноз',{exact:true}).fill('При отказе оба изменения должны откатиться.')
- await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('button',{name:'Далее',exact:true}).click()
- await page.getByRole('radio').nth(q.case.correct).check();await page.getByLabel('Моё обоснование',{exact:true}).fill('Атомарность связывает оба факта.')
- await page.getByRole('button',{name:'Проверить решение',exact:true}).click()
- const model=page.getByRole('region',{name:'Предметная модель'})
- for(let i=0;i<3;i++)await model.getByRole('button',{name:'Далее по модели',exact:true}).click()
- await expect(model.locator('tbody')).toContainText('ROLLBACK');await expect(model.locator('tbody')).toContainText('WORK')
- await model.getByRole('button',{name:'Назад по модели',exact:true}).click();await expect(model.locator('tbody')).toContainText('Не подтверждено')
- await model.getByRole('combobox').selectOption('success');await expect(model).toContainText('Шаг 0 / 3');await expect(model.locator('tbody')).toContainText('WORK')
- for(let i=0;i<3;i++)await model.getByRole('button',{name:'Далее по модели',exact:true}).click()
- await expect(model.locator('tbody')).toContainText('COMMIT');await page.reload();await expect(model.locator('tbody')).toContainText('COMMIT')
+test('transaction actions restore rows on undo and distinguish COMMIT from ROLLBACK',async({page})=>{
+ await page.goto('./?mode=interactive&case=s08-02-coordinated-data-changes-content-boundary')
+ const work=page.getByRole('region',{name:'Практическое решение',exact:true})
+ await work.locator('.action-sequence button').nth(4).click()
+ await expect(work.locator('.operation-result')).toContainText('ROLLBACK')
+ await expect(work.locator('.database-table').first().locator('tbody')).toContainText('WORK')
+ await expect(work.locator('.database-table').nth(2).locator('tbody tr')).toHaveCount(0)
+ await work.getByRole('button',{name:'Отменить шаг',exact:true}).click()
+ await expect(work.locator('.database-table').first().locator('tbody')).toContainText('CLOSED')
+ await expect(work.locator('.database-table').nth(2).locator('tbody tr')).toHaveCount(1)
+ await work.getByRole('combobox').selectOption('success')
+ await expect(work.locator('.practical-stage')).toHaveAttribute('data-step','0')
+ await work.locator('.action-sequence button').nth(4).click()
+ await expect(work.locator('.operation-result')).toContainText('COMMIT')
+ await expect(work.locator('.database-table').nth(1).locator('tbody tr')).toHaveCount(1)
+ await page.reload();await expect(work.locator('.operation-result')).toContainText('COMMIT')
 })
 
 test('previous personal script edits migrate without replacing revised defaults',async({page})=>{
@@ -186,13 +185,14 @@ test('diagram play pauses at a fractional position, resumes, and supports reduce
  expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),storage)).toEqual(hidden)
 })
 
-test('switching case scenario cancels an in-flight explanation',async({page})=>{
+test('switching practical conditions cancels an in-flight operation',async({page})=>{
  await page.goto('./?mode=interactive&case=s08-02-coordinated-data-changes-content-boundary')
- await page.getByLabel('Мой прогноз',{exact:true}).fill('Изменения должны быть совместными.');await page.getByRole('button',{name:'Далее',exact:true}).click()
- const model=page.getByRole('region',{name:'Предметная модель'})
- await model.getByRole('button',{name:'Показать',exact:true}).click();await page.waitForTimeout(300)
- await model.getByRole('combobox').selectOption('success');await expect(model).toContainText('Шаг 0 /');await expect(model.getByRole('button',{name:'Показать',exact:true})).toBeVisible()
- await page.waitForTimeout(350);await expect(model).toContainText('Шаг 0 /');await expect(model.locator('tbody')).toContainText('WORK')
+ const work=page.getByRole('region',{name:'Практическое решение',exact:true})
+ await work.getByRole('button',{name:'Показать',exact:true}).click();await page.waitForTimeout(300)
+ await work.getByRole('combobox').selectOption('success')
+ await expect(work.locator('.practical-stage')).toHaveAttribute('data-step','0')
+ await expect(work.getByRole('button',{name:'Показать',exact:true})).toBeVisible()
+ await page.waitForTimeout(1900);await expect(work.locator('.practical-stage')).toHaveAttribute('data-step','0')
 })
 
 test('diagram steps and animated focus sync to the audience without controls',async({page,context})=>{
@@ -207,24 +207,29 @@ test('diagram steps and animated focus sync to the audience without controls',as
  await page.getByRole('button',{name:'Завершить показ',exact:true}).click();await expect(audience.locator('.black-screen')).toBeVisible();await audience.close()
 })
 
-test('case stays in presentation, syncs database steps and scenarios, and reveals no private draft',async({page,context})=>{
+test('practical case remains in presenter and syncs actions and conditions to audience',async({page,context})=>{
  const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8')),q=learning.questions.find((q:{id:string})=>q.id==='s08-02-coordinated-data-changes-content-boundary')
- await page.goto(`./?lecture=${q.case.lectureId}&slide=${q.passportId}`)
+ await page.goto('./?lecture='+q.case.lectureId+'&slide='+q.passportId)
  const pending=context.waitForEvent('page');await page.getByRole('button',{name:'Режим показа',exact:true}).click();const audience=await pending
  await page.getByRole('button',{name:'Разбор кейса ↗',exact:true}).click()
- await expect(page.getByRole('dialog',{name:'Разбор кейса',exact:true})).toBeVisible();expect(new URL(page.url()).searchParams.get('mode')).toBe('presenter')
- await expect(audience.locator('.case-projection')).toBeVisible();await expect(audience.locator('textarea,input,select,button')).toHaveCount(0)
- await page.getByLabel('Мой прогноз',{exact:true}).fill('Личная гипотеза преподавателя, не для трансляции')
- await page.getByRole('button',{name:'Далее',exact:true}).click()
- const model=page.getByRole('region',{name:'Схема и данные кейса',exact:true});await model.getByRole('button',{name:'Далее по данным',exact:true}).click()
- await expect(audience.locator('.case-sql')).toContainText('START TRANSACTION')
- await expect(audience.locator('.case-projection')).not.toContainText('Личная гипотеза')
- const subject=page.getByRole('region',{name:'Предметная модель',exact:true});await subject.getByRole('combobox').selectOption('success');await subject.getByRole('button',{name:'Далее по модели',exact:true}).click()
- const projected=audience.getByRole('region',{name:'Предметная модель',exact:true});await expect(projected).toContainText(/допустимая работа/i);await expect(projected.locator('tbody')).toContainText('CLOSED')
- await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('radio').nth(q.case.correct).check();await page.getByLabel('Моё обоснование',{exact:true}).fill('Проверены все изменения InnoDB.');await page.getByRole('button',{name:'Проверить решение',exact:true}).click()
- await expect(audience.locator('.case-public-answer')).toHaveCount(0);await page.getByRole('button',{name:'Показать разбор аудитории',exact:true}).click();await expect(audience.locator('.case-public-answer')).toContainText(q.case.reason)
- await page.getByRole('button',{name:'Скрыть разбор у аудитории',exact:true}).click();await expect(audience.locator('.case-public-answer')).toHaveCount(0)
- await page.getByRole('button',{name:'К слайдам',exact:false}).click();await expect(audience.locator('.case-projection')).toHaveCount(0);await expect(audience.locator('.paper')).toHaveAttribute('data-slide-id',q.passportId);await audience.close()
+ await expect(page.getByRole('dialog',{name:'Разбор кейса',exact:true})).toBeVisible()
+ expect(new URL(page.url()).searchParams.get('mode')).toBe('presenter')
+ await expect(audience.locator('.case-projection')).toBeVisible()
+ await expect(audience.locator('textarea,input,select,button')).toHaveCount(0)
+ const work=page.getByRole('region',{name:'Практическое решение',exact:true})
+ await work.locator('.action-sequence button').nth(4).click()
+ await expect(audience.locator('.operation-result')).toContainText('ROLLBACK')
+ await work.getByRole('combobox').selectOption('success')
+ await expect(audience.locator('.practical-stage')).toHaveAttribute('data-step','0')
+ await work.locator('.action-sequence button').nth(4).click()
+ await expect(audience.locator('.operation-result')).toContainText('COMMIT')
+ await expect(audience.locator('.database-table').nth(1).locator('tbody tr')).toHaveCount(1)
+ expect((await audience.locator('.practical-stage').boundingBox())!.y).toBeLessThan(100)
+ await audience.screenshot({path:'outputs/verification/practical-audience.png'})
+ await page.getByRole('button',{name:'← К слайдам',exact:true}).click()
+ await expect(audience.locator('.case-projection')).toHaveCount(0)
+ await expect(audience.locator('.paper')).toHaveAttribute('data-slide-id',q.passportId)
+ await audience.close()
 })
 
 test('matching dropdowns remain readable and keyboard usable in presenter mode and contents names questions',async({page})=>{
@@ -239,18 +244,20 @@ test('matching dropdowns remain readable and keyboard usable in presenter mode a
  }
 })
 
-test('case dropdown changes input and complete JOIN results rather than only its label',async({page})=>{
- const learning=JSON.parse(fs.readFileSync('public/learning.json','utf8'))
+test('JOIN alternatives change actual pairs and aggregates',async({page})=>{
  for(const suffix of ['joins','outer','aggregate']){
-  const q=learning.questions.find((q:{id:string})=>q.id==='s07-07-control-queries-content-'+suffix)
-  await page.goto('./?mode=interactive&case='+q.id);await page.getByLabel('Мой прогноз',{exact:true}).fill('Прослежу пары и затем применю условие.');await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('button',{name:'Далее',exact:true}).click();await page.getByRole('radio').nth(q.case.correct).check();await page.getByLabel('Моё обоснование',{exact:true}).fill('Сверяю операцию с исходными строками.');await page.getByRole('button',{name:'Проверить решение',exact:true}).click()
-  const model=page.getByRole('region',{name:'Предметная модель',exact:true});for(let n=0;n<3;n++)await model.getByRole('button',{name:'Далее по модели',exact:true}).click()
-  await expect(model.locator('.join-result tbody tr')).toHaveCount(suffix==='joins'?2:suffix==='outer'?1:2)
-  if(suffix==='aggregate')await expect(model.locator('.aggregate-result tbody tr').last()).toHaveText('B510')
-  await model.getByRole('combobox').selectOption('compare');await expect(model).toContainText('Шаг 0 / 3');for(let n=0;n<3;n++)await model.getByRole('button',{name:'Далее по модели',exact:true}).click()
-  await expect(model.locator('.join-result tbody tr')).toHaveCount(suffix==='joins'?3:2)
-  if(suffix==='aggregate'){await expect(model.locator('.aggregate-result tbody tr').last()).toHaveText('B511');await expect(model.locator('.model-columns')).toContainText('R5')}
-  else await expect(model.locator('.join-result')).toContainText('NULL')
-  await expect(model.locator('.scenario-comparison')).toContainText('исходный')
+  await page.goto('./?mode=interactive&case=s07-07-control-queries-content-'+suffix)
+  const work=page.getByRole('region',{name:'Практическое решение',exact:true})
+  await work.locator('.action-sequence button').nth(1).click()
+  if(suffix==='joins')await expect(work.locator('.operation-result tbody tr')).toHaveCount(2)
+  await work.locator('.action-sequence button').nth(2).click()
+  if(suffix==='aggregate')await expect(work.locator('.operation-result tbody tr').last()).toHaveText('B510')
+  if(suffix==='outer')await expect(work.locator('.operation-result tbody tr')).toHaveCount(1)
+  await work.getByRole('combobox').selectOption('changed')
+  await expect(work.locator('.practical-stage')).toHaveAttribute('data-step','0')
+  await work.locator('.action-sequence button').nth(2).click()
+  await expect(work.locator('.operation-result tbody tr')).toHaveCount(suffix==='joins'?3:2)
+  if(suffix==='aggregate')await expect(work.locator('.operation-result tbody tr').last()).toHaveText('B511')
+  else await expect(work.locator('.operation-result')).toContainText('NULL')
  }
 })

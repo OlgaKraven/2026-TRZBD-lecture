@@ -16,8 +16,8 @@ for(const [index,l] of c.lectures.entries()){
  const minutes=slides=>Math.round(slides.reduce((sum,s)=>sum+p.notes[s.id].estimatedSeconds,0)/60);
  const supplementary=l.slides.filter(s=>s.id.endsWith('-review'));
  routes.push({lectureId:l.id,slideIds:l.slides.map(s=>s.id),estimatedMinutes:minutes(l.slides),explanationMinutes:minutes(l.slides.filter(s=>!s.task&&!supplementary.includes(s))),selfAssessmentMinutes:minutes(l.slides.filter(s=>s.task)),independentSupplementsMinutes:minutes(supplementary),timing:'word-count and action-based rough estimate; four-format assessment and case work can be assigned independently; not classroom measurement or approved timetable'});
- const route='Текст сохраняет все вопросы и объяснения в порядке показа. На самостоятельных случаях сначала дайте группе ответить, затем откройте преподавательский разбор. Схемы показывают конкретные поля, связи и операцию; просите объяснить каждую линию и предсказать результат. В режиме показа разбор открывается в текущем окне и у аудитории; прогноз, обоснование и личные заметки аудитории не передаются. Итоговый ответ показывайте отдельной командой после обсуждения. Дополнения по кнопке «Разбор кейса» и четыре формата самопроверки пригодны для самостоятельной работы после общего объяснения; при выполнении в аудитории им нужно отдельное время. Фактический темп зависит от обсуждения и демонстраций; время полей панели — предварительная оценка речи и действий, а не утверждённый хронометраж занятия.\n\n';
- let teacher=header+route+'Текст следует фактическому порядку экранов. В самостоятельном случае сначала дано условие; ответ расположен после него в отдельном преподавательском разборе.\n\n';
+ const route='Текст следует порядку экранов. В разборе кейса выполняйте действия по шагам: сопоставляйте исходные строки, SQL или правило операции и результат. Возврат восстанавливает предыдущий шаг; смена условий начинает новый проход. В режиме показа действия и данные синхронно видны аудитории. Мини-набор каждого кейса задан в его условии и может отличаться от общего стенда. Отдельная самопроверка сохраняет четыре формата вопросов: сначала самостоятельная попытка, затем объяснение ответа. Время зависит от обсуждения и демонстраций; оценка панели не является утверждённым хронометражем.\n\n';
+ let teacher=header+route;
  const preparation=[...new Set(l.slides.map(s=>p.notes[s.id].preparation).filter(Boolean))];
  teacher+='## Подготовка к занятию\n\n'+preparation.join('\n\n')+'\n\n';
  const alignment={schemaVersion:1,courseId:c.id,contentVersion:c.contentVersion,sourceKind:'local',sourceSha256:sha,lectureIds:[l.id],documents:{teacher:base+'.teacher.md'},slides:[]};
@@ -25,7 +25,9 @@ for(const [index,l] of c.lectures.entries()){
  for(const [si,s] of l.slides.entries()){
   const n=p.notes[s.id],anchor='screen-'+String(si+1).padStart(3,'0');
   teacher+=`<a id="${anchor}"></a>\n## Слайд ${si+1}. ${s.title}\n<!-- source-slides: ${s.id} -->\n\n`;
-  const model=learning.lectureModels?.[s.id]||learning.questions.find(q=>q.passportId===s.id)?.case.model;
+  const practical=learning.questions.find(q=>q.passportId===s.id)?.case.practical;
+  const initial=practical?.variants[0].stages[0];
+  const model=learning.lectureModels?.[s.id]||(initial?{...initial,links:initial.links||[]}:null);
   if(model)teacher+='### Схема и исходные данные\n\n'+modelText(model);
   if(s.references)teacher+=s.references.map(r=>r.citation+(r.url?'\n\n[Открыть источник]('+r.url+')':'')).join('\n\n')+'\n\n';
   if(s.rows&&s.columns){
@@ -40,7 +42,15 @@ for(const [index,l] of c.lectures.entries()){
    fs.writeFileSync(path.join(support,name),bytes);
    teacher+=`![${s.image.alt}](_support/${name})\n\n`;
   }
-  teacher+=n.script+'\n\n';
+  teacher+=(practical?learning.questions.find(q=>q.passportId===s.id).case.data+' '+learning.questions.find(q=>q.passportId===s.id).case.question:n.script)+'\n\n';
+  if(practical)for(const variant of practical.variants){
+   teacher+='### Условия: '+variant.label+'\n\n';
+   for(const [step,stage] of variant.stages.entries()){
+    teacher+='#### Шаг '+step+'. '+stage.title+'\n\n'+stage.explanation+'\n\n';
+    if(stage.sql)teacher+='```sql\n'+stage.sql+'\n```\n\n';
+    if(stage.result)teacher+=modelText({tables:[stage.result],links:[],sql:''});
+   }
+  }
   if(n.questions&&n.questions!==s.task?.prompt)teacher+=`**Вопрос группе:** ${n.questions}\n\n`;
   if(n.answer)teacher+=`### ${s.task?'Для преподавателя: после самостоятельной попытки':'Ожидаемый ответ и разбор'}\n\n${n.answer}\n\n`;
   if(n.notebook&&!n.script.includes(n.notebook))teacher+=`**Запись в тетрадь:** ${n.notebook}\n\n`;

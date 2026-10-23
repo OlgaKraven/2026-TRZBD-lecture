@@ -1,0 +1,182 @@
+{
+  "version": "trzbd-2026.10.23-student-review-r12",
+  "checked": 2822,
+  "overflow": [],
+  "mobile": [
+    {
+      "theme": "light",
+      "id": "s07-01-source-data-package-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s07-02-table-list-from-source-data-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s07-03-implement-table-set-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s07-04-er-diagram-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s07-05-prepare-and-load-data-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s07-07-control-queries-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s08-01-views-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s08-02-coordinated-data-changes-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s08-03-search-field-indexes-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s08-04-access-control-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s08-05-backup-and-protection-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "light",
+      "id": "s08-06-results-package-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s07-01-source-data-package-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s07-02-table-list-from-source-data-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s07-03-implement-table-set-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s07-04-er-diagram-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s07-05-prepare-and-load-data-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s07-06-validate-load-and-delivery-script-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s07-07-control-queries-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s08-01-views-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s08-02-coordinated-data-changes-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s08-03-search-field-indexes-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s08-04-access-control-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s08-05-backup-and-protection-content-database-map",
+      "overX": 0,
+      "minField": 15
+    },
+    {
+      "theme": "dark",
+      "id": "s08-06-results-package-content-database-map",
+      "overX": 0,
+      "minField": 15
+    }
+  ],
+  "desktopViewport": {
+    "width": 1366,
+    "height": 900
+  },
+  "modes": [
+    "lecture",
+    "presenter"
+  ],
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "printedFrames": 1411,
+  "printViewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "overflowTolerancePx": 3,
+  "limit": "Geometry checks detect clipping and horizontal overflow; selected screenshots were visually inspected. Not a classroom trial."
+}

@@ -29,7 +29,7 @@ describe('содержательная редакция всего курса',(
   const s=selected[9].slides.find(s=>s.id.endsWith('plans-result'));
   const plan=JSON.parse(fs.readFileSync('authoring/index-plan-example.json','utf8'));
   expect(s.rows).toContainEqual(['rows: оценка',String(plan.before.rowsEstimate),String(plan.after.rowsEstimate)]);
-  expect(n[s.id].script).toContain('не измеренные времена');
+  expect(selected[9].slides.find(x=>x.id===s.id+'-walkthrough').body).toContain('не измеренные времена');
   const register=selected[9].slides.find(s=>s.id.endsWith('index-register-reasoning-1'));
   expect(register.body).toContain(String(plan.before.rowsEstimate));
  });

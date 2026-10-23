@@ -1,5 +1,5 @@
 {
-  "contentVersion": "trzbd-2026.10.23-database-cases-r9",
+  "contentVersion": "trzbd-2026.10.23-student-review-r12",
   "scope": "13 lectures / 104 original questions; review of definitions, mechanisms, examples, independent cases and teacher text; not a claim of RPD compliance",
   "questions": [
     {
@@ -27,6 +27,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-scope-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти неразрешённый код",
+            "Приостановить зависимую загрузку"
+          ]
+        }
       ]
     },
     {
@@ -54,6 +66,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-description-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сгруппировать номера актов",
+            "Сравнить два правила ключа"
+          ]
+        }
       ]
     },
     {
@@ -82,6 +106,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-files-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить календарную дату",
+            "Сохранить причину отклонения"
+          ]
+        }
       ]
     },
     {
@@ -108,6 +144,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-deliverables-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Восстановить в отдельную цель",
+            "Сверить данные и поведение"
+          ]
+        }
       ]
     },
     {
@@ -136,6 +184,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-mapping-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти клиента по K9",
+            "Записать внутренний ключ заказа"
+          ]
+        }
       ]
     },
     {
@@ -162,6 +222,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-reference-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сопоставить файл с доменом",
+            "Сохранить полный справочник"
+          ]
+        }
       ]
     },
     {
@@ -189,6 +261,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-quality-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Выполнить независимые проверки",
+            "Сохранить раздельную диагностику"
+          ]
+        }
       ]
     },
     {
@@ -216,6 +300,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-01-source-data-package-content-passport-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить баланс",
+            "Связать итог с исходными строками"
+          ]
+        }
       ]
     },
     {
@@ -242,6 +338,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-dependencies-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сгруппировать сотрудников по фамилии",
+            "Зафиксировать определяющий ключ"
+          ]
+        }
       ]
     },
     {
@@ -268,6 +376,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-dictionary-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти тип работы в справочнике",
+            "Отклонить неподтверждённый тип"
+          ]
+        }
       ]
     },
     {
@@ -295,6 +415,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-multivalue-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Посчитать повторения пары",
+            "Записать количество в связь"
+          ]
+        }
       ]
     },
     {
@@ -322,6 +454,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-entities-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Выделить владельца телефона",
+            "Связать заявки с одним клиентом"
+          ]
+        }
       ]
     },
     {
@@ -349,6 +493,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-naming-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать две роли ссылки",
+            "Получить имена через два JOIN"
+          ]
+        }
       ]
     },
     {
@@ -374,6 +530,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-primary-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти повтор бизнес-идентификатора",
+            "Подготовить отдельное ограничение"
+          ]
+        }
       ]
     },
     {
@@ -402,6 +570,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-foreign-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сверить фактического родителя",
+            "Разрешить правильного клиента"
+          ]
+        }
       ]
     },
     {
@@ -429,6 +609,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-02-table-list-from-source-data-content-catalog-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Получить определение таблицы",
+            "Зафиксировать соответствие имён"
+          ]
+        }
       ]
     },
     {
@@ -456,6 +648,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-schema-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Выбрать целевую схему",
+            "Сверить созданный объект"
+          ]
+        }
       ]
     },
     {
@@ -483,6 +687,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-types-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить представления артикула",
+            "Сохранить значимые нули"
+          ]
+        }
       ]
     },
     {
@@ -509,6 +725,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-pk-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Посчитать подтверждённые строки",
+            "Сопоставить с выделением номеров"
+          ]
+        }
       ]
     },
     {
@@ -535,6 +763,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-fk-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить существование родителя 77",
+            "Остановить неверную вставку"
+          ]
+        }
       ]
     },
     {
@@ -561,6 +801,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-required-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Применить TRIM к имени",
+            "Вывести нарушающие строки"
+          ]
+        }
       ]
     },
     {
@@ -587,6 +839,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-unique-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Вставить два отсутствующих nickname",
+            "Найти строки без nickname"
+          ]
+        }
       ]
     },
     {
@@ -615,6 +879,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-order-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Построить зависимости DDL",
+            "Создать родителей раньше потомков"
+          ]
+        }
       ]
     },
     {
@@ -642,6 +918,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-03-implement-table-set-content-reproducible-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Подготовить чистую цель",
+            "Сверить полный DDL по метаданным"
+          ]
+        }
       ]
     },
     {
@@ -669,6 +957,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-reverse-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать объявленные FK",
+            "Обновить связь на ER"
+          ]
+        }
       ]
     },
     {
@@ -695,6 +995,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-attributes-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать обязательность атрибута",
+            "Отразить отдельные свойства"
+          ]
+        }
       ]
     },
     {
@@ -722,6 +1034,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-cardinality-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сопоставить клиентов и счета",
+            "Подписать минимумы связи"
+          ]
+        }
       ]
     },
     {
@@ -749,6 +1073,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-keys-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить позиции одной детали",
+            "Назначить ключ позиции"
+          ]
+        }
       ]
     },
     {
@@ -776,6 +1112,20 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-reconcile-example-walkthrough",
+        "s07-04-er-diagram-content-reconcile-result-step-1-walkthrough",
+        "s07-04-er-diagram-content-reconcile-result-step-2-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить минимум ER и DDL",
+            "Согласовать обязательность"
+          ]
+        }
       ]
     },
     {
@@ -803,6 +1153,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-layout-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проследить концы линии",
+            "Проверить предполагаемый FK к audit"
+          ]
+        }
       ]
     },
     {
@@ -829,6 +1191,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-version-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить действия DELETE",
+            "Привязать ER к определению"
+          ]
+        }
       ]
     },
     {
@@ -856,6 +1230,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-04-er-diagram-content-export-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить границы экспорта",
+            "Восстановить область схемы"
+          ]
+        }
       ]
     },
     {
@@ -883,6 +1269,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-header-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сопоставить заголовки по позиции",
+            "Применить явное именное сопоставление"
+          ]
+        }
       ]
     },
     {
@@ -909,6 +1307,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-csv-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Разобрать закрывающую кавычку",
+            "Отклонить синтаксически неверную запись"
+          ]
+        }
       ]
     },
     {
@@ -936,6 +1346,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-empty-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Применить правила каждого поля",
+            "Сохранить причину отказа кода"
+          ]
+        }
       ]
     },
     {
@@ -962,6 +1384,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-duplicates-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти конфликт сумм по номеру",
+            "Отделить конфликт от загрузки"
+          ]
+        }
       ]
     },
     {
@@ -989,6 +1423,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-invalid-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить qty > 0",
+            "Отклонить недопустимое количество"
+          ]
+        }
       ]
     },
     {
@@ -1015,6 +1461,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-load-order-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Загрузить родительское подразделение",
+            "Загрузить сотрудника с FK"
+          ]
+        }
       ]
     },
     {
@@ -1042,6 +1500,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-resolve-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Посчитать родителей с кодом B8",
+            "Не назначать произвольный FK"
+          ]
+        }
       ]
     },
     {
@@ -1068,6 +1538,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-05-prepare-and-load-data-content-balance-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Посчитать учтённые исходы",
+            "Найти строку без исхода"
+          ]
+        }
       ]
     },
     {
@@ -1095,6 +1577,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-counts-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти пропущенные ключи",
+            "Найти лишние ключи"
+          ]
+        }
       ]
     },
     {
@@ -1120,6 +1614,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-required-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Нормализовать номер для проверки",
+            "Вывести нарушение обязательности"
+          ]
+        }
       ]
     },
     {
@@ -1147,6 +1653,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-orphans-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить существование client_id",
+            "Сверить бизнес-код с документом"
+          ]
+        }
       ]
     },
     {
@@ -1173,6 +1691,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-rejections-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Различить файлы одной координаты",
+            "Сохранить воспроизводимую диагностику"
+          ]
+        }
       ]
     },
     {
@@ -1200,6 +1730,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-delivery-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Установить зависимости файлов",
+            "Выполнить маршрут по зависимостям"
+          ]
+        }
       ]
     },
     {
@@ -1226,6 +1768,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-clean-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Исключить старые объекты",
+            "Развернуть текущий комплект"
+          ]
+        }
       ]
     },
     {
@@ -1253,6 +1807,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-repeat-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сопоставить разные внутренние id",
+            "Сравнить предметный результат"
+          ]
+        }
       ]
     },
     {
@@ -1279,6 +1845,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-06-validate-load-and-delivery-script-content-protocol-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Выполнить поиск сирот",
+            "Сохранить проверяемое свидетельство"
+          ]
+        }
       ]
     },
     {
@@ -1306,6 +1884,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-totals-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Построить пары заявка–деталь",
+            "Посчитать уникальные заявки"
+          ]
+        }
       ]
     },
     {
@@ -1332,6 +1922,25 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-joins-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "INNER JOIN",
+          "actions": [
+            "Получить пары INNER JOIN",
+            "Посчитать строки результата"
+          ]
+        },
+        {
+          "label": "LEFT JOIN",
+          "actions": [
+            "Получить пары LEFT JOIN",
+            "Сравнить состав результата"
+          ]
+        }
       ]
     },
     {
@@ -1358,6 +1967,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-differences-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Вычесть факт из ожидания",
+            "Вычесть ожидание из факта"
+          ]
+        }
       ]
     },
     {
@@ -1384,6 +2005,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-empty-duplicate-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сгруппировать по бизнес-номеру",
+            "Применить HAVING COUNT(*) > 1"
+          ]
+        }
       ]
     },
     {
@@ -1411,6 +2044,25 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-outer-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Построить LEFT JOIN",
+            "Применить WHERE status=WORK"
+          ]
+        },
+        {
+          "label": "Фильтр статуса в ON",
+          "actions": [
+            "Отбирать статус в ON",
+            "Сравнить состав результата"
+          ]
+        }
       ]
     },
     {
@@ -1438,6 +2090,25 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-aggregate-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Построить строки LEFT JOIN",
+            "Посчитать строки и известные ключи"
+          ]
+        },
+        {
+          "label": "У B5 появилась заявка R5",
+          "actions": [
+            "Добавить R5 для B5",
+            "Пересчитать агрегаты"
+          ]
+        }
       ]
     },
     {
@@ -1464,6 +2135,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-report-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сгруппировать по клиенту и статусу",
+            "Вернуть контракт одной строки на клиента"
+          ]
+        }
       ]
     },
     {
@@ -1491,6 +2174,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s07-07-control-queries-content-suite-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить отсутствие сирот",
+            "Сверить клиента с источником"
+          ]
+        }
       ]
     },
     {
@@ -1520,6 +2215,20 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-meaning-example-walkthrough",
+        "s08-01-views-content-meaning-result-step-1-walkthrough",
+        "s08-01-views-content-meaning-result-step-2-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Изменить базовый статус Q9",
+            "Повторно прочитать VIEW в новой транзакции"
+          ]
+        }
       ]
     },
     {
@@ -1548,6 +2257,19 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-contract-example-walkthrough",
+        "s08-01-views-content-contract-result-step-1-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Создать VIEW с SELECT *",
+            "Явно задать контракт колонок"
+          ]
+        }
       ]
     },
     {
@@ -1577,6 +2299,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-control-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить клиента с источником",
+            "Выполнить отдельную проверку даты"
+          ]
+        }
       ]
     },
     {
@@ -1606,6 +2340,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-report-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сохранить пустой филиал через LEFT",
+            "Считать правый ключ"
+          ]
+        }
       ]
     },
     {
@@ -1635,6 +2381,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-joins-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Соединить работы и детали",
+            "Агрегировать дочерние наборы отдельно"
+          ]
+        }
       ]
     },
     {
@@ -1664,6 +2422,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-security-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Проверить право на VIEW",
+            "Проверить внутренний контекст"
+          ]
+        }
       ]
     },
     {
@@ -1692,6 +2462,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-updates-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Получить агрегатную строку",
+            "Направить вставку в базовый интерфейс"
+          ]
+        }
       ]
     },
     {
@@ -1720,6 +2502,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-01-views-content-register-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать сохранённый DEFINER",
+            "Согласовать определителя и испытать чтение"
+          ]
+        }
       ]
     },
     {
@@ -1749,6 +2543,29 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-boundary-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Отказ FK: ROLLBACK",
+          "actions": [
+            "Выполнить UPDATE requests",
+            "Выполнить AFTER-триггер",
+            "Получить отказ второго шага",
+            "Откатить всю операцию"
+          ]
+        },
+        {
+          "label": "Допустимая работа: COMMIT",
+          "actions": [
+            "Выполнить UPDATE requests",
+            "Выполнить AFTER-триггер",
+            "Добавить допустимую работу",
+            "Подтвердить COMMIT"
+          ]
+        }
       ]
     },
     {
@@ -1778,6 +2595,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-start-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Подтвердить UPDATE в соединении B",
+            "Откатить независимую транзакцию A"
+          ]
+        }
       ]
     },
     {
@@ -1807,6 +2636,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-commit-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сверить контрольную сумму до COMMIT",
+            "Откатить невыполненное постусловие"
+          ]
+        }
       ]
     },
     {
@@ -1835,6 +2676,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-errors-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Вставить W2, затем получить дубликат W1",
+            "Откатить всю операцию"
+          ]
+        }
       ]
     },
     {
@@ -1864,6 +2717,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-procedure-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Перейти в EXIT HANDLER",
+            "Передать отказ вызывающему"
+          ]
+        }
       ]
     },
     {
@@ -1892,6 +2757,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-parameters-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Выполнить условный UPDATE",
+            "Остановить недопустимый переход"
+          ]
+        }
       ]
     },
     {
@@ -1920,6 +2797,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-trigger-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Выполнить UPDATE и AFTER-триггер",
+            "Откатить InnoDB-транзакцию"
+          ]
+        }
       ]
     },
     {
@@ -1949,6 +2838,29 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-02-coordinated-data-changes-content-proof-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Отказ FK: ROLLBACK",
+          "actions": [
+            "Выполнить UPDATE requests",
+            "Выполнить AFTER-триггер",
+            "Получить отказ второго шага",
+            "Откатить всю операцию"
+          ]
+        },
+        {
+          "label": "Допустимая работа: COMMIT",
+          "actions": [
+            "Выполнить UPDATE requests",
+            "Выполнить AFTER-триггер",
+            "Добавить допустимую работу",
+            "Подтвердить COMMIT"
+          ]
+        }
       ]
     },
     {
@@ -1977,6 +2889,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-workload-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Вывести порядок ключа из условия",
+            "Проверить выбранный доступ"
+          ]
+        }
       ]
     },
     {
@@ -2005,6 +2929,32 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-selectivity-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Посчитать совпадения и общее число",
+            "Вычислить долю совпадений"
+          ]
+        },
+        {
+          "label": "6000 совпадений из 24000",
+          "actions": [
+            "Посчитать совпадения",
+            "Рассчитать долю"
+          ]
+        },
+        {
+          "label": "1200 совпадений из 24000",
+          "actions": [
+            "Посчитать совпадения",
+            "Рассчитать долю"
+          ]
+        }
       ]
     },
     {
@@ -2033,6 +2983,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-prefix-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать порядок B-tree",
+            "Сопоставить с запросом по дате"
+          ]
+        }
       ]
     },
     {
@@ -2061,6 +3023,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-existing-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сверить существующий UNIQUE",
+            "Сопоставить новый индекс с доступом"
+          ]
+        }
       ]
     },
     {
@@ -2089,6 +3063,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-create-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Завершить DML отдельно",
+            "Создать индекс отдельным этапом"
+          ]
+        }
       ]
     },
     {
@@ -2118,6 +3104,19 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-plans-example-walkthrough",
+        "s08-03-search-field-indexes-content-plans-result-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать оценку узла EXPLAIN",
+            "Сопоставить с фактом и его единицей"
+          ]
+        }
       ]
     },
     {
@@ -2147,6 +3146,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-cost-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сопоставить чтение и запись",
+            "Принять решение по всей нагрузке"
+          ]
+        }
       ]
     },
     {
@@ -2175,6 +3186,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-03-search-field-indexes-content-index-register-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Восстановить условия опыта",
+            "Заполнить проверяемый реестр"
+          ]
+        }
       ]
     },
     {
@@ -2203,6 +3226,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-responsibility-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Вывести право из операции",
+            "Выдать право на нужный объект"
+          ]
+        }
       ]
     },
     {
@@ -2231,6 +3266,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-activation-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать активные роли соединения",
+            "Активировать назначенную роль"
+          ]
+        }
       ]
     },
     {
@@ -2258,6 +3305,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-least-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Отделить добавление от удаления",
+            "Выдать минимальное разрешение"
+          ]
+        }
       ]
     },
     {
@@ -2286,6 +3345,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-grant-revoke-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Отозвать прямой SELECT",
+            "Проверить оставшийся путь"
+          ]
+        }
       ]
     },
     {
@@ -2314,6 +3385,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-view-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать телефон в обход VIEW",
+            "Устранить обходной маршрут"
+          ]
+        }
       ]
     },
     {
@@ -2341,6 +3424,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-allowed-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Открыть соединение редактора",
+            "Испытать INSERT от редактора"
+          ]
+        }
       ]
     },
     {
@@ -2367,6 +3462,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-denied-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Устранить синтаксическую ошибку",
+            "Испытать запрет по правильной причине"
+          ]
+        }
       ]
     },
     {
@@ -2393,6 +3500,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-04-access-control-content-matrix-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать разрешённое VIEW",
+            "Проверить запрещённую базовую таблицу"
+          ]
+        }
       ]
     },
     {
@@ -2420,6 +3539,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-scope-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сверить состав копии",
+            "Восстановить полный согласованный состав"
+          ]
+        }
       ]
     },
     {
@@ -2446,6 +3577,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-backup-user-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти причину отказа routines",
+            "Согласовать минимальные права"
+          ]
+        }
       ]
     },
     {
@@ -2472,6 +3615,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-dump-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Найти конфликтующий DDL",
+            "Организовать окно согласованности"
+          ]
+        }
       ]
     },
     {
@@ -2500,6 +3655,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-restore-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать квалифицированную ссылку VIEW",
+            "Восстановить в отдельный экземпляр"
+          ]
+        }
       ]
     },
     {
@@ -2527,6 +3694,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-objects-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить множества имён",
+            "Сверить определения нужных объектов"
+          ]
+        }
       ]
     },
     {
@@ -2553,6 +3732,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-rows-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сопоставить строку по ключу",
+            "Зафиксировать непригодное восстановление"
+          ]
+        }
       ]
     },
     {
@@ -2581,6 +3772,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-behavior-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Прочитать DEFINER процедуры",
+            "Испытать поведение после настройки"
+          ]
+        }
       ]
     },
     {
@@ -2609,6 +3812,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-05-backup-and-protection-content-protection-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить SHA-256 при передаче",
+            "Отдельно испытать восстановление"
+          ]
+        }
       ]
     },
     {
@@ -2635,6 +3850,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-objects-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сравнить ревизии комплекта",
+            "Совместно испытать одну ревизию"
+          ]
+        }
       ]
     },
     {
@@ -2663,6 +3890,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-data-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Восстановить судьбу шести строк",
+            "Передать непринятые факты с причинами"
+          ]
+        }
       ]
     },
     {
@@ -2690,6 +3929,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-er-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Сверить новое ограничение DDL",
+            "Согласовать поставочную ER"
+          ]
+        }
       ]
     },
     {
@@ -2717,6 +3968,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-scripts-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Вывести порядок из зависимостей",
+            "Запустить по согласованному маршруту"
+          ]
+        }
       ]
     },
     {
@@ -2744,6 +4007,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-evidence-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Выполнить поиск ненулевых сирот",
+            "Привязать вывод к запросу и данным"
+          ]
+        }
       ]
     },
     {
@@ -2770,6 +4045,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-backup-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Восстановить условия создания dump",
+            "Испытать копию по переданному маршруту"
+          ]
+        }
       ]
     },
     {
@@ -2796,6 +4083,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-secrets-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Удалить действующий пароль из примера",
+            "Получить секрет локально"
+          ]
+        }
       ]
     },
     {
@@ -2824,6 +4123,18 @@
         "multiple",
         "short",
         "matching"
+      ],
+      "workedExplanations": [
+        "s08-06-results-package-content-final-run-example-walkthrough"
+      ],
+      "practicalVariants": [
+        {
+          "label": "Исходные условия",
+          "actions": [
+            "Развернуть распакованный архив",
+            "Проверить полный результат"
+          ]
+        }
       ]
     }
   ]

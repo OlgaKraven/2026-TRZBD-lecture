@@ -11,10 +11,10 @@
     "labNumbers": [
       1
     ],
-    "slides": 96,
+    "slides": 106,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 141,
+    "estimatedMinutes": 143,
     "contentReview": "2026-10-23"
   },
   {
@@ -31,10 +31,10 @@
       2,
       3
     ],
-    "slides": 96,
+    "slides": 106,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 140,
+    "estimatedMinutes": 142,
     "contentReview": "2026-10-23"
   },
   {
@@ -51,10 +51,10 @@
       4,
       5
     ],
-    "slides": 96,
+    "slides": 106,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 144,
+    "estimatedMinutes": 143,
     "contentReview": "2026-10-23"
   },
   {
@@ -70,10 +70,10 @@
     "labNumbers": [
       6
     ],
-    "slides": 97,
+    "slides": 109,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 143,
+    "estimatedMinutes": 146,
     "contentReview": "2026-10-23"
   },
   {
@@ -90,7 +90,7 @@
       7,
       8
     ],
-    "slides": 95,
+    "slides": 105,
     "questions": 8,
     "tasks": 32,
     "estimatedMinutes": 142,
@@ -109,10 +109,10 @@
     "labNumbers": [
       9
     ],
-    "slides": 91,
+    "slides": 101,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 139,
+    "estimatedMinutes": 140,
     "contentReview": "2026-10-23"
   },
   {
@@ -127,10 +127,10 @@
     "labNumbers": [
       10
     ],
-    "slides": 95,
+    "slides": 105,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 144,
+    "estimatedMinutes": 143,
     "contentReview": "2026-10-23"
   },
   {
@@ -146,10 +146,10 @@
     "labNumbers": [
       11
     ],
-    "slides": 111,
+    "slides": 126,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 164,
+    "estimatedMinutes": 165,
     "contentReview": "2026-10-23"
   },
   {
@@ -165,7 +165,7 @@
     "labNumbers": [
       12
     ],
-    "slides": 106,
+    "slides": 116,
     "questions": 8,
     "tasks": 32,
     "estimatedMinutes": 155,
@@ -183,7 +183,7 @@
     "labNumbers": [
       13
     ],
-    "slides": 107,
+    "slides": 118,
     "questions": 8,
     "tasks": 32,
     "estimatedMinutes": 157,
@@ -202,7 +202,7 @@
     "labNumbers": [
       14
     ],
-    "slides": 95,
+    "slides": 105,
     "questions": 8,
     "tasks": 32,
     "estimatedMinutes": 142,
@@ -221,10 +221,10 @@
     "labNumbers": [
       15
     ],
-    "slides": 95,
+    "slides": 105,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 142,
+    "estimatedMinutes": 143,
     "contentReview": "2026-10-23"
   },
   {
@@ -244,10 +244,10 @@
     "labNumbers": [
       16
     ],
-    "slides": 93,
+    "slides": 103,
     "questions": 8,
     "tasks": 32,
-    "estimatedMinutes": 138,
+    "estimatedMinutes": 141,
     "contentReview": "2026-10-23"
   }
 ]

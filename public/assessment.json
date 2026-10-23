@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "courseId": "trzbd",
-  "contentVersion": "trzbd-2026.10.23-database-cases-r9",
+  "contentVersion": "trzbd-2026.10.23-student-review-r12",
   "mode": "autonomous-educational",
   "keys": {
     "s08-01-views-content-meaning-T01": {
@@ -2285,7 +2285,7 @@
     },
     "s08-01-views-content-report-T03": {
       "type": "multiple",
-      "explanation": "INNER теряет пустые филиалы. LEFT сохраняет их; COUNT правого ненулевого ключа даёт ноль. Остальные варианты меняют условие или не обеспечивают требуемого свойства.",
+      "explanation": "INNER теряет пустые филиалы. LEFT сохраняет их; COUNT правого ключа, отличного от NULL, даёт ноль. Остальные варианты меняют условие или не обеспечивают требуемого свойства.",
       "correct": [
         "o1",
         "o2"
